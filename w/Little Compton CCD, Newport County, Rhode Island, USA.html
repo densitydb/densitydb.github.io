@@ -1,0 +1,191 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+
+    .fill a {
+        width: 50%;
+        min-height: 100%
+    }
+
+    .text {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+
+    .shortname {
+        font-size: 5vw;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .longname {
+        font-size: 2vw;
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+    }
+
+    .value {
+        font-size: 1.2vw;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ordinal {
+        font-size: 1.2vw;
+        font-style: italic;
+        color: #444;
+        margin: 0;
+        padding: 0;
+    }
+
+    .description {
+        font-size: 0.9vw;
+        font-style: italic;
+        color: #444;
+        margin-top: 1.2vw;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 0;
+    }
+
+    .centered_table {
+        width: 50vw;
+        position: relative;
+        left: calc(-25vw + 50%);
+    }
+</style>
+
+<div class="text shortname">Little Compton CCD</div>
+<div class="text longname">Little Compton CCD, Newport County, Rhode Island, USA</div>
+
+<table class="centered_table">
+    
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">3.6k</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">10720 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">62/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">9675 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">326/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">18489 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">114/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">18798 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">74/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">16315 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">63/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">13843 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+</tr>
+
+
+<tr>
+    <td style="width: 30%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text value">55/km²</span>
+    </td>
+    <td style="width: 30%;">
+        <span class="text ordinal">11865 of 35407 CCDs</span>
+    </td>
+    <td style="width: 20%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+</tr>
+
+</table>
+
+<div class="text description">Source for Little Compton CCD's shape is Census. AW (area weighted) density is the standard Population/Area density.
+    PW (population weighted) density with a radius of X is the population-weighted density within
+    X miles of each census block's interior point, as defined by the census. For more information,
+    see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>
+</div>
