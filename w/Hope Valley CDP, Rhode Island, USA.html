@@ -1,76 +1,23 @@
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<html>
 
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden
-    }
+<head>
+    <meta charset="utf-8">
+    <title>Hope Valley CDP</title>
+    <favicon>densitydb.png</favicon>
+</head>
 
-    .fill a {
-        width: 50%;
-        min-height: 100%
-    }
+<body>
 
-    .text {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-    }
+    <link rel="stylesheet" href="/styles/style.css">
 
-    .shortname {
-        font-size: 5vw;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
+    <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
 
-    .longname {
-        font-size: 2vw;
-        font-style: italic;
-        margin: 0;
-        padding: 0;
-    }
+    <div class="text shortname">Hope Valley CDP</div>
+    <div class="text longname">Hope Valley CDP, Rhode Island, USA</div>
 
-    .value {
-        font-size: 1.2vw;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
-
-    .ordinal {
-        font-size: 1.2vw;
-        font-style: italic;
-        color: #444;
-        margin: 0;
-        padding: 0;
-    }
-
-    .description {
-        font-size: 0.9vw;
-        font-style: italic;
-        color: #444;
-        margin-top: 1.2vw;
-        margin-left: 25%;
-        margin-right: 25%;
-        padding: 0;
-    }
-
-    .centered_table {
-        width: 50vw;
-        position: relative;
-        left: calc(-25vw + 50%);
-    }
-</style>
-
-<div class="text shortname">Hope Valley CDP</div>
-<div class="text longname">Hope Valley CDP, Rhode Island, USA</div>
-
-<table class="centered_table">
-    
+    <table class="centered_table">
+        
 <tr>
     <td style="width: 30%;">
         <span class="text value">Population:</span>
@@ -92,7 +39,7 @@
         <span class="text value">AW Density:</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">205/km²</span>
+        <span class="text value">205/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">17440 of 29291 Citys</span>
@@ -108,7 +55,7 @@
         <span class="text value">PW Density (r=250m):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">543/km²</span>
+        <span class="text value">543/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">17216 of 29291 Citys</span>
@@ -124,7 +71,7 @@
         <span class="text value">PW Density (r=500m):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">259/km²</span>
+        <span class="text value">259/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">18137 of 29291 Citys</span>
@@ -140,7 +87,7 @@
         <span class="text value">PW Density (r=1km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">198/km²</span>
+        <span class="text value">198/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">15445 of 29291 Citys</span>
@@ -156,7 +103,7 @@
         <span class="text value">PW Density (r=2km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">153/km²</span>
+        <span class="text value">153/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">12523 of 29291 Citys</span>
@@ -172,7 +119,7 @@
         <span class="text value">PW Density (r=4km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">90/km²</span>
+        <span class="text value">90/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">11947 of 29291 Citys</span>
@@ -182,10 +129,59 @@
     </td>
 </tr>
 
-</table>
+    </table>
 
-<div class="text description">Source for Hope Valley CDP's shape is Census. AW (area weighted) density is the standard Population/Area density.
-    PW (population weighted) density with a radius of X is the population-weighted density within
-    X miles of each census block's interior point, as defined by the census. For more information,
-    see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>
-</div>
+    <div id="map" class="centered_table" style="width: 50vw; height: 30vw; border: 1px solid #ccc"></div>
+
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Contains</li>
+            
+<li class="linklistel"><a class="button" href="Washington County, Rhode Island, USA.html">Washington County</a></li>
+
+        </ul>
+    </div>
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Contained By</li>
+            
+<li class="linklistel"><a class="button" href="Rhode Island, USA.html">Rhode Island</a></li>
+
+
+<li class="linklistel"><a class="button" href="Washington County, Rhode Island, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button" href="Hopkinton CCD, Washington County, Rhode Island, USA.html">Hopkinton CCD</a></li>
+
+
+<li class="linklistel"><a class="button" href="Richmond CCD, Washington County, Rhode Island, USA.html">Richmond CCD</a></li>
+
+        </ul>
+    </div>
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Borders/Overlaps</li>
+            
+<li class="linklistel"><a class="button" href="Hope Valley CDP, Rhode Island, USA.html">Hope Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button" href="Wyoming CDP, Rhode Island, USA.html">Wyoming CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description">Source for Hope Valley CDP's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

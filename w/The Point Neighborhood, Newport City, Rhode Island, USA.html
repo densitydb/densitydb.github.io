@@ -1,76 +1,23 @@
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<html>
 
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden
-    }
+<head>
+    <meta charset="utf-8">
+    <title>The Point, Newport</title>
+    <favicon>densitydb.png</favicon>
+</head>
 
-    .fill a {
-        width: 50%;
-        min-height: 100%
-    }
+<body>
 
-    .text {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-    }
+    <link rel="stylesheet" href="/styles/style.css">
 
-    .shortname {
-        font-size: 5vw;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
+    <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
 
-    .longname {
-        font-size: 2vw;
-        font-style: italic;
-        margin: 0;
-        padding: 0;
-    }
+    <div class="text shortname">The Point, Newport</div>
+    <div class="text longname">The Point Neighborhood, Newport City, Rhode Island, USA</div>
 
-    .value {
-        font-size: 1.2vw;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
-
-    .ordinal {
-        font-size: 1.2vw;
-        font-style: italic;
-        color: #444;
-        margin: 0;
-        padding: 0;
-    }
-
-    .description {
-        font-size: 0.9vw;
-        font-style: italic;
-        color: #444;
-        margin-top: 1.2vw;
-        margin-left: 25%;
-        margin-right: 25%;
-        padding: 0;
-    }
-
-    .centered_table {
-        width: 50vw;
-        position: relative;
-        left: calc(-25vw + 50%);
-    }
-</style>
-
-<div class="text shortname">The Point, Newport</div>
-<div class="text longname">The Point Neighborhood, Newport City, Rhode Island, USA</div>
-
-<table class="centered_table">
-    
+    <table class="centered_table">
+        
 <tr>
     <td style="width: 30%;">
         <span class="text value">Population:</span>
@@ -92,7 +39,7 @@
         <span class="text value">AW Density:</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">2667/km²</span>
+        <span class="text value">2667/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">4196 of 16511 Neighborhoods</span>
@@ -108,7 +55,7 @@
         <span class="text value">PW Density (r=250m):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">2294/km²</span>
+        <span class="text value">2294/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">8377 of 16511 Neighborhoods</span>
@@ -124,7 +71,7 @@
         <span class="text value">PW Density (r=500m):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">1631/km²</span>
+        <span class="text value">1631/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">9418 of 16511 Neighborhoods</span>
@@ -140,7 +87,7 @@
         <span class="text value">PW Density (r=1km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">1691/km²</span>
+        <span class="text value">1691/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">7773 of 16511 Neighborhoods</span>
@@ -156,7 +103,7 @@
         <span class="text value">PW Density (r=2km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">1271/km²</span>
+        <span class="text value">1271/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">9858 of 16511 Neighborhoods</span>
@@ -172,7 +119,7 @@
         <span class="text value">PW Density (r=4km):</span>
     </td>
     <td style="width: 20%;">
-        <span class="text value">677/km²</span>
+        <span class="text value">677/km<sup>2</sup></span>
     </td>
     <td style="width: 30%;">
         <span class="text ordinal">13910 of 16511 Neighborhoods</span>
@@ -182,10 +129,69 @@
     </td>
 </tr>
 
-</table>
+    </table>
 
-<div class="text description">Source for The Point, Newport's shape is Zillow. AW (area weighted) density is the standard Population/Area density.
-    PW (population weighted) density with a radius of X is the population-weighted density within
-    X miles of each census block's interior point, as defined by the census. For more information,
-    see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>
-</div>
+    <div id="map" class="centered_table" style="width: 50vw; height: 30vw; border: 1px solid #ccc"></div>
+
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Contains</li>
+            
+        </ul>
+    </div>
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Contained By</li>
+            
+<li class="linklistel"><a class="button" href="Rhode Island, USA.html">Rhode Island</a></li>
+
+
+<li class="linklistel"><a class="button" href="Newport County, Rhode Island, USA.html">Newport County</a></li>
+
+
+<li class="linklistel"><a class="button" href="Newport city, Rhode Island, USA.html">Newport city</a></li>
+
+
+<li class="linklistel"><a class="button" href="Newport CCD, Newport County, Rhode Island, USA.html">Newport CCD</a></li>
+
+        </ul>
+    </div>
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Borders/Overlaps</li>
+            
+<li class="linklistel"><a class="button" href="02840, USA.html">02840</a></li>
+
+
+<li class="linklistel"><a class="button" href="North End Neighborhood, Newport City, Rhode Island, USA.html">North End, Newport</a></li>
+
+
+<li class="linklistel"><a class="button" href="Kerry Hill slash Van Zandt Neighborhood, Newport City, Rhode Island, USA.html">Kerry Hill/Van Zandt, Newport</a></li>
+
+
+<li class="linklistel"><a class="button" href="The Point Neighborhood, Newport City, Rhode Island, USA.html">The Point, Newport</a></li>
+
+
+<li class="linklistel"><a class="button" href="Downtown Neighborhood, Newport City, Rhode Island, USA.html">Downtown, Newport</a></li>
+
+
+<li class="linklistel"><a class="button" href="Long Wharf Neighborhood, Newport City, Rhode Island, USA.html">Long Wharf, Newport</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description">Source for The Point, Newport's shape is Zillow. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>
