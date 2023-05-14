@@ -1,0 +1,587 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>El Dorado MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">El Dorado MSA</div>
+    <div class="text longname">El Dorado MSA, Arkansas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">39.1k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">647 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Riverton MSA, Wyoming, USA.html"><</a> <a class="button" href="Alexandria MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="Greenpoint Neighborhood, New York City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">282/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">744 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vicksburg MSA, Mississippi, USA.html"><</a> <a class="button" href="Cedartown MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Walnuttown CDP, Pennsylvania, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">693 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Marys MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Yuma MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="Hazelhurst CCD, Oneida County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">663 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington MSA, Nebraska, USA.html"><</a> <a class="button" href="Crescent City MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taylor County, Georgia, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.49%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">589 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elizabeth City MSA, North Carolina, USA.html"><</a> <a class="button" href="Erie MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="Novice CCD, Coleman County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">32.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">62 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laurel MSA, Mississippi, USA.html"><</a> <a class="button" href="Tuscaloosa MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lenox town, Georgia, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">590 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arkadelphia MSA, Arkansas, USA.html"><</a> <a class="button" href="Sweetwater MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Buena Vista CCD, Chaffee County, Colorado, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">466 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hutchinson MSA, Minnesota, USA.html"><</a> <a class="button" href="Raleigh MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="53579, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">394 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jonesboro MSA, Arkansas, USA.html"><</a> <a class="button" href="Lexington-Fayette MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="30312, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">618 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winona MSA, Minnesota, USA.html"><</a> <a class="button" href="New Philadelphia-Dover MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="37862, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.618</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">140 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Platte MSA, Nebraska, USA.html"><</a> <a class="button" href="Oxford MSA, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cazenovia Park Neighborhood, Buffalo City, New York, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">278 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Riverton MSA, Wyoming, USA.html"><</a> <a class="button" href="Asheville MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="45410, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">744/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">767 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Owosso MSA, Michigan, USA.html"><</a> <a class="button" href="Gadsden MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rafael Pena CDP, Texas, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">395/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">771 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley MSA, Alabama, USA.html"><</a> <a class="button" href="Madisonville MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="Mullens city, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">216/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">698 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palestine MSA, Texas, USA.html"><</a> <a class="button" href="Summit Park MSA, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upper Hominy CCD, Buncombe County, North Carolina, USA.html"><</a> <a class="button" href="Union County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">141/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">635 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Auburn MSA, Indiana, USA.html"><</a> <a class="button" href="Payson MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Arkansas, USA.html"><</a> <a class="button" href="Rapids City village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Louisiana, USA.html">Louisiana</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Arkansas, USA.html">Arkansas</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Monroe-Ruston-Bastrop CSA, Louisiana, USA.html">Monroe-Ruston-Bastrop CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Monroe MSA, Louisiana, USA.html">Monroe MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Union County, Arkansas, USA.html">Union County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Camden MSA, Arkansas, USA.html">Camden MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Morehouse County, Louisiana, USA.html">Morehouse County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bastrop MSA, Louisiana, USA.html">Bastrop MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="El Dorado CCD, Union County, Arkansas, USA.html">El Dorado CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Magnolia MSA, Arkansas, USA.html">Magnolia MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Columbia County, Arkansas, USA.html">Columbia County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ouachita County, Arkansas, USA.html">Ouachita County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Union County, Louisiana, USA.html">Union County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ashley County, Arkansas, USA.html">Ashley County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Dorado city, Arkansas, USA.html">El Dorado city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Claiborne County, Louisiana, USA.html">Claiborne County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bradley County, Arkansas, USA.html">Bradley County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Egypt CCD, Ashley County, Arkansas, USA.html">Egypt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Calhoun County, Arkansas, USA.html">Calhoun County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Union Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Union Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smackover CCD, Union County, Arkansas, USA.html">Smackover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, Union County, Arkansas, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Union Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Emerson CCD, Columbia County, Arkansas, USA.html">Emerson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Union Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norphlet CCD, Union County, Arkansas, USA.html">Norphlet CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lapile CCD, Union County, Arkansas, USA.html">Lapile CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Smackover city, Arkansas, USA.html">Smackover city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johnson CCD, Union County, Arkansas, USA.html">Johnson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Claiborne Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smackover CCD, Ouachita County, Arkansas, USA.html">Smackover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norphlet city, Arkansas, USA.html">Norphlet city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Union County, Arkansas, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Village CCD, Columbia County, Arkansas, USA.html">Village CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Van Buren CCD, Union County, Arkansas, USA.html">Van Buren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Ouachita County, Arkansas, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Calhoun County, Arkansas, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Henderson CCD, Union County, Arkansas, USA.html">Henderson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilmington CCD, Union County, Arkansas, USA.html">Wilmington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridge Creek CCD, Ouachita County, Arkansas, USA.html">Bridge Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cornie CCD, Union County, Arkansas, USA.html">Cornie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Union County, Arkansas, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Junction City city, Arkansas, USA.html">Junction City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Huttig city, Arkansas, USA.html">Huttig city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Junction City village, Louisiana, USA.html">Junction City village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Calion city, Arkansas, USA.html">Calion city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wesson CCD, Union County, Arkansas, USA.html">Wesson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Strong city, Arkansas, USA.html">Strong city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boone CCD, Union County, Arkansas, USA.html">Boone CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garner CCD, Union County, Arkansas, USA.html">Garner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tubal CCD, Union County, Arkansas, USA.html">Tubal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marais Saline CCD, Ashley County, Arkansas, USA.html">Marais Saline CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eagle CCD, Bradley County, Arkansas, USA.html">Eagle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="River CCD, Bradley County, Arkansas, USA.html">River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Felsenthal town, Arkansas, USA.html">Felsenthal town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for El Dorado MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

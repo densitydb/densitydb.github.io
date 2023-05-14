@@ -1,0 +1,536 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Washington County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Washington County</div>
+    <div class="text longname">Washington County, Utah, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">180.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">371 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kanawha County, West Virginia, USA.html"><</a> <a class="button" href="Vanderburgh County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montgomery CCD, Montgomery County, Alabama, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">920/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">358 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Moore County, Texas, USA.html"><</a> <a class="button" href="Hamilton County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Lakewood Heights Neighborhood, Atlanta City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">29/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1090 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgan County, West Virginia, USA.html"><</a> <a class="button" href="Nicollet County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Hanover CCD, Beaver County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">81.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1506 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warren County, Ohio, USA.html"><</a> <a class="button" href="Cottonwood County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Georgetown CCD, Scott County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">723 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall County, Indiana, USA.html"><</a> <a class="button" href="Wake County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shawnee CCD, Frederick County, Virginia, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.51%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2343 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Asotin County, Washington, USA.html"><</a> <a class="button" href="Jefferson County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shanor-Northvue CDP, Pennsylvania, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">955 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Calhoun County, Alabama, USA.html"><</a> <a class="button" href="Wasatch County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="23072, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">587 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sheridan County, North Dakota, USA.html"><</a> <a class="button" href="Collingsworth County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lucama town, North Carolina, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">44 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benton County, Arkansas, USA.html"><</a> <a class="button" href="Davis County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="98203, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1805 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hardin County, Tennessee, USA.html"><</a> <a class="button" href="Taylor County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Wayne CCD, Kosciusko County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.559</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2114 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crook County, Oregon, USA.html"><</a> <a class="button" href="Cleveland County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gaylord city, Minnesota, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1054 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benewah County, Idaho, USA.html"><</a> <a class="button" href="Mellette County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Elmore CCD, Faribault County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1669/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">576 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Willacy County, Texas, USA.html"><</a> <a class="button" href="Niagara County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Poulsbo CCD, Kitsap County, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1190/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">353 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Moore County, Texas, USA.html"><</a> <a class="button" href="Niagara County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Robinson's Addition Neighborhood, Jacksonville City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">676/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">398 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lafayette County, Louisiana, USA.html"><</a> <a class="button" href="Sheboygan County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Newtown CCD, Bucks County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">467/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">409 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Maryland, USA.html"><</a> <a class="button" href="Tuscaloosa County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Victoria MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Arizona, USA.html">Arizona</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Utah, USA.html">Utah</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nevada, USA.html">Nevada</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">Lake Havasu City-Kingman MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mohave County, Arizona, USA.html">Mohave County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. George MSA, Utah, USA.html">St. George MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. George CCD, Washington County, Utah, USA.html">St. George CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. George city, Utah, USA.html">St. George city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iron County, Utah, USA.html">Iron County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cedar City MSA, Utah, USA.html">Cedar City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar City CCD, Iron County, Utah, USA.html">Cedar City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hurricane CCD, Washington County, Utah, USA.html">Hurricane CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Washington city, Utah, USA.html">Washington city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hurricane city, Utah, USA.html">Hurricane city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ivins city, Utah, USA.html">Ivins city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Mohave CCD, Mohave County, Arizona, USA.html">North Mohave CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kane County, Utah, USA.html">Kane County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Santa Clara city, Utah, USA.html">Santa Clara city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kanab CCD, Kane County, Utah, USA.html">Kanab CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Nevada, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Verkin city, Utah, USA.html">La Verkin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Enterprise CCD, Washington County, Utah, USA.html">Enterprise CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pioche CCD, Lincoln County, Nevada, USA.html">Pioche CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Enterprise city, Utah, USA.html">Enterprise city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Toquerville city, Utah, USA.html">Toquerville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orderville CCD, Kane County, Utah, USA.html">Orderville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beryl-Newcastle CCD, Iron County, Utah, USA.html">Beryl-Newcastle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hildale city, Utah, USA.html">Hildale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caliente CCD, Lincoln County, Nevada, USA.html">Caliente CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dammeron Valley CDP, Utah, USA.html">Dammeron Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leeds town, Utah, USA.html">Leeds town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Apple Valley town, Utah, USA.html">Apple Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Virgin town, Utah, USA.html">Virgin town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Central CDP, Utah, USA.html">Central CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Veyo CDP, Utah, USA.html">Veyo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Springdale town, Utah, USA.html">Springdale town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pine Valley CDP, Utah, USA.html">Pine Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Harmony town, Utah, USA.html">New Harmony town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockville town, Utah, USA.html">Rockville town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Washington County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

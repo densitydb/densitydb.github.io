@@ -1,0 +1,626 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Yuba City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Yuba City MSA</div>
+    <div class="text longname">Yuba City MSA, California, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">181.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">206 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Joplin MSA, Missouri, USA.html"><</a> <a class="button" href="St. George MSA, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wimauma-Riverview CCD, Hillsborough County, Florida, USA.html"><</a> <a class="button" href="Chattanooga city, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1271/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">73 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="College Station-Bryan MSA, Texas, USA.html"><</a> <a class="button" href="Ithaca MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ridgeview Neighborhood, Mesa City, Arizona, USA.html"><</a> <a class="button" href="Pleasant Hill Neighborhood, Winston-Salem City, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">56/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">238 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warsaw MSA, Indiana, USA.html"><</a> <a class="button" href="Joplin MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kosciusko County, Indiana, USA.html"><</a> <a class="button" href="Ashby CCD, Rockingham County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">45.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">761 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Killeen-Temple MSA, Texas, USA.html"><</a> <a class="button" href="Wilson MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Serra Mesa Neighborhood, San Diego City, California, USA.html"><</a> <a class="button" href="Claremont CCD, Surry County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">30.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">94 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corsicana MSA, Texas, USA.html"><</a> <a class="button" href="Phoenix-Mesa-Scottsdale MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="88250, USA.html"><</a> <a class="button" href="20170, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">508 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ogdensburg-Massena MSA, New York, USA.html"><</a> <a class="button" href="Green Bay MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Collegeville CCD, Stearns County, Minnesota, USA.html"><</a> <a class="button" href="Corbett-Terwilliger-Lair Hill Neighborhood, Portland City, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sacramento--Roseville--Arden-Arcade MSA, California, USA.html"><</a> <a class="button" href="Trenton MSA, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilkes Neighborhood, Portland City, Oregon, USA.html"><</a> <a class="button" href="98327, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">150 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sheridan MSA, Wyoming, USA.html"><</a> <a class="button" href="Las Vegas MSA, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="66042, USA.html"><</a> <a class="button" href="76635, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">61 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rexburg MSA, Idaho, USA.html"><</a> <a class="button" href="Mountain Home MSA, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lemoore city, California, USA.html"><</a> <a class="button" href="92069, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.76%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">59 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Aberdeen MSA, Washington, USA.html"><</a> <a class="button" href="Bellingham MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Derby city, Kansas, USA.html"><</a> <a class="button" href="Felton town, Delaware, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.477</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">842 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Faribault-Northfield MSA, Minnesota, USA.html"><</a> <a class="button" href="Gallup MSA, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="6 CCD, Robertson County, Tennessee, USA.html"><</a> <a class="button" href="08558, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">816 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eau Claire MSA, Wisconsin, USA.html"><</a> <a class="button" href="Sioux Falls MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="71007, USA.html"><</a> <a class="button" href="Spring Valley CCD, Fillmore County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2246/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">112 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tallahassee MSA, Florida, USA.html"><</a> <a class="button" href="Pensacola-Ferry Pass-Brent MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Braun Station West Neighborhood, San Antonio City, Texas, USA.html"><</a> <a class="button" href="30354, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1660/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">72 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Springfield MSA, Massachusetts, USA.html"><</a> <a class="button" href="Iowa City MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="1, Buckeystown CCD, Frederick County, Maryland, USA.html"><</a> <a class="button" href="Warr Acres city, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">888/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">103 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indianapolis-Carmel-Anderson MSA, Indiana, USA.html"><</a> <a class="button" href="Gainesville MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indianapolis-Carmel-Anderson MSA, Indiana, USA.html"><</a> <a class="button" href="68025, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">615/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">113 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape Coral-Fort Myers MSA, Florida, USA.html"><</a> <a class="button" href="Iowa City MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78596, USA.html"><</a> <a class="button" href="Luzerne County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="California, USA.html">California</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Sacramento-Roseville CSA, California, USA.html">Sacramento-Roseville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sacramento--Roseville--Arden-Arcade MSA, California, USA.html">Sacramento--Roseville--Arden-Arcade MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sacramento County, California, USA.html">Sacramento County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sacramento CCD, Sacramento County, California, USA.html">Sacramento CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Placer County, California, USA.html">Placer County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yolo County, California, USA.html">Yolo County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Butte County, California, USA.html">Butte County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Chico MSA, California, USA.html">Chico MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Truckee-Grass Valley MSA, California, USA.html">Truckee-Grass Valley MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nevada County, California, USA.html">Nevada County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Placer County, California, USA.html">Lincoln CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sutter County, California, USA.html">Sutter County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yuba County, California, USA.html">Yuba County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yuba City CCD, Sutter County, California, USA.html">Yuba City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yuba City city, California, USA.html">Yuba City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grass Valley CCD, Nevada County, California, USA.html">Grass Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Yolo CCD, Yolo County, California, USA.html">East Yolo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Olivehurst CCD, Yuba County, California, USA.html">Olivehurst CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Colusa County, California, USA.html">Colusa County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Linda CDP, California, USA.html">Linda CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linda CCD, Yuba County, California, USA.html">Linda CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Plumas County, California, USA.html">Plumas County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nevada City CCD, Nevada County, California, USA.html">Nevada City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Olivehurst CDP, California, USA.html">Olivehurst CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marysville CCD, Yuba County, California, USA.html">Marysville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marysville city, California, USA.html">Marysville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gridley CCD, Butte County, California, USA.html">Gridley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Live Oak CCD, Sutter County, California, USA.html">Live Oak CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palermo CCD, Butte County, California, USA.html">Palermo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Live Oak city, California, USA.html">Live Oak city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Colusa CCD, Colusa County, California, USA.html">East Colusa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plumas Lake CDP, California, USA.html">Plumas Lake CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marysville Northeast CCD, Yuba County, California, USA.html">Marysville Northeast CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Quincy CCD, Plumas County, California, USA.html">Quincy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Yuba-Beale AFB CCD, Yuba County, California, USA.html">East Yuba-Beale AFB CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elverta CDP, California, USA.html">Elverta CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Feather Falls CCD, Butte County, California, USA.html">Feather Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yuba Foothills CCD, Yuba County, California, USA.html">Yuba Foothills CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheatland CCD, Yuba County, California, USA.html">Wheatland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Knights Landing CCD, Yolo County, California, USA.html">Knights Landing CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wheatland city, California, USA.html">Wheatland city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sutter CCD, Sutter County, California, USA.html">Sutter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sierra County, California, USA.html">Sierra County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sutter CDP, California, USA.html">Sutter CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Sutter CCD, Sutter County, California, USA.html">South Sutter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loma Rica CDP, California, USA.html">Loma Rica CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yuba City Southwest CCD, Sutter County, California, USA.html">Yuba City Southwest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meridian-Robbins CCD, Sutter County, California, USA.html">Meridian-Robbins CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sheridan CDP, California, USA.html">Sheridan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beale AFB CDP, California, USA.html">Beale AFB CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Challenge-Brownsville CDP, California, USA.html">Challenge-Brownsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Sierra CCD, Sierra County, California, USA.html">West Sierra CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bangor CDP, California, USA.html">Bangor CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dobbins CDP, California, USA.html">Dobbins CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Forbestown CDP, California, USA.html">Forbestown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rio Oso CDP, California, USA.html">Rio Oso CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robbins CDP, California, USA.html">Robbins CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meridian CDP, California, USA.html">Meridian CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North San Juan CDP, California, USA.html">North San Juan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Trowbridge CDP, California, USA.html">Trowbridge CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Nicolaus CDP, California, USA.html">East Nicolaus CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rackerby CDP, California, USA.html">Rackerby CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Smartsville CDP, California, USA.html">Smartsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nicolaus CDP, California, USA.html">Nicolaus CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clipper Mills CDP, California, USA.html">Clipper Mills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pike CDP, California, USA.html">Pike CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Camptonville CDP, California, USA.html">Camptonville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robinson Mill CDP, California, USA.html">Robinson Mill CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Yuba City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,986 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portland-Lewiston-South Portland CSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Portland-Lewiston-South Portland CSA</div>
+    <div class="text longname">Portland-Lewiston-South Portland CSA, Maine, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">662.8k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">48 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson-Vicksburg-Brookhaven CSA, Mississippi, USA.html"><</a> <a class="button" href="Reno-Carson City-Fernley CSA, Nevada, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson-Vicksburg-Brookhaven CSA, Mississippi, USA.html"><</a> <a class="button" href="Syracuse MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">663/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">77 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kokomo-Peru CSA, Indiana, USA.html"><</a> <a class="button" href="Kalamazoo-Battle Creek-Portage CSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="96863, USA.html"><</a> <a class="button" href="Windmill Ridge Neighborhood, Fort Wayne City, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">92/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">33 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lansing-East Lansing-Owosso CSA, Michigan, USA.html"><</a> <a class="button" href="Modesto-Merced CSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04861, USA.html"><</a> <a class="button" href="76247, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">88.39%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamsport-Lock Haven CSA, Pennsylvania, USA.html"><</a> <a class="button" href="Wausau-Stevens Point-Wisconsin Rapids CSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48706, USA.html"><</a> <a class="button" href="Kasota CCD, Le Sueur County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">124 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgantown-Fairmont CSA, West Virginia, USA.html"><</a> <a class="button" href="Oskaloosa-Pella CSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="47929, USA.html"><</a> <a class="button" href="52346, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">101 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tucson-Nogales CSA, Arizona, USA.html"><</a> <a class="button" href="State College-DuBois CSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portales city, New Mexico, USA.html"><</a> <a class="button" href="Long Branch CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">82 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Little Rock-North Little Rock CSA, Arkansas, USA.html"><</a> <a class="button" href="Mobile-Daphne-Fairhope CSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Overlea Neighborhood, Baltimore City, Maryland, USA.html"><</a> <a class="button" href="19th Ward Neighborhood, Rochester City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">68 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hickory-Lenoir CSA, North Carolina, USA.html"><</a> <a class="button" href="San Jose-San Francisco-Oakland CSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mattapan Neighborhood, Boston City, Massachusetts, USA.html"><</a> <a class="button" href="North Tamarind Neighborhood, West Palm Beach City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">84 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hartford-West Hartford CSA, Connecticut, USA.html"><</a> <a class="button" href="Mankato-New Ulm-North Mankato CSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="19464, USA.html"><</a> <a class="button" href="Skowhegan CDP, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">61 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison-Janesville-Beloit CSA, Wisconsin, USA.html"><</a> <a class="button" href="Mobile-Daphne-Fairhope CSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="34471, USA.html"><</a> <a class="button" href="28052, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.612</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mobile-Daphne-Fairhope CSA, Alabama, USA.html"><</a> <a class="button" href="Asheville-Brevard CSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenville CCD, Darke County, Ohio, USA.html"><</a> <a class="button" href="56013, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hot Springs-Malvern CSA, Arkansas, USA.html"><</a> <a class="button" href="Corpus Christi-Kingsville-Alice CSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Town Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="Royal CCD, White County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1646/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">67 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Erie-Meadville CSA, Pennsylvania, USA.html"><</a> <a class="button" href="Pueblo-Cañon City CSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wakefield CDP, Virginia, USA.html"><</a> <a class="button" href="Hop Brook Neighborhood, Waterbury City, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">940/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">72 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Victoria-Port Lavaca CSA, Texas, USA.html"><</a> <a class="button" href="Peoria-Canton CSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Terrebonne County, Louisiana, USA.html"><</a> <a class="button" href="Pettis CCD, Platte County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">474/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">87 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrisonburg-Staunton-Waynesboro CSA, Virginia, USA.html"><</a> <a class="button" href="Fayetteville-Lumberton-Laurinburg CSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="King-Thompson Neighborhood, Arlington City, Washington, USA.html"><</a> <a class="button" href="Samuel Miller CCD, Albemarle County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">336/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">93 of 129 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redding-Red Bluff CSA, California, USA.html"><</a> <a class="button" href="Eau Claire-Menomonie CSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="98531, USA.html"><</a> <a class="button" href="Newell CCD, Vermilion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_msa" href="Boston-Cambridge-Newton MSA, Maine, USA.html">Boston-Cambridge-Newton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Hampshire, USA.html">New Hampshire</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Maine, USA.html">Maine</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Portland-South Portland MSA, Maine, USA.html">Portland-South Portland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockingham County, New Hampshire, USA.html">Rockingham County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cumberland County, Maine, USA.html">Cumberland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="York County, Maine, USA.html">York County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Strafford County, New Hampshire, USA.html">Strafford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kennebec County, Maine, USA.html">Kennebec County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Augusta-Waterville MSA, Maine, USA.html">Augusta-Waterville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lewiston-Auburn MSA, Maine, USA.html">Lewiston-Auburn MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Androscoggin County, Maine, USA.html">Androscoggin County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Portland city, Maine, USA.html">Portland city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portland CCD, Cumberland County, Maine, USA.html">Portland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oxford County, Maine, USA.html">Oxford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Carroll County, New Hampshire, USA.html">Carroll County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lewiston city, Maine, USA.html">Lewiston city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lewiston CCD, Androscoggin County, Maine, USA.html">Lewiston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sagadahoc County, Maine, USA.html">Sagadahoc County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Maine, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dover CCD, Strafford County, New Hampshire, USA.html">Dover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dover city, New Hampshire, USA.html">Dover city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rochester CCD, Strafford County, New Hampshire, USA.html">Rochester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rochester city, New Hampshire, USA.html">Rochester city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Maine, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Portland city, Maine, USA.html">South Portland city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Portland CCD, Cumberland County, Maine, USA.html">South Portland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Auburn CCD, Androscoggin County, Maine, USA.html">Auburn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Auburn city, Maine, USA.html">Auburn city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Biddeford CCD, York County, Maine, USA.html">Biddeford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Biddeford city, Maine, USA.html">Biddeford city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scarborough CCD, Cumberland County, Maine, USA.html">Scarborough CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sanford city, Maine, USA.html">Sanford city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sanford CCD, York County, Maine, USA.html">Sanford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Portsmouth city, New Hampshire, USA.html">Portsmouth city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portsmouth CCD, Rockingham County, New Hampshire, USA.html">Portsmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brunswick CCD, Cumberland County, Maine, USA.html">Brunswick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westbrook CCD, Cumberland County, Maine, USA.html">Westbrook CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saco city, Maine, USA.html">Saco city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westbrook city, Maine, USA.html">Westbrook city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saco CCD, York County, Maine, USA.html">Saco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Windham CCD, Cumberland County, Maine, USA.html">Windham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gorham CCD, Cumberland County, Maine, USA.html">Gorham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brunswick CDP, Maine, USA.html">Brunswick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York CCD, York County, Maine, USA.html">York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Falmouth CCD, Cumberland County, Maine, USA.html">Falmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Somersworth city, New Hampshire, USA.html">Somersworth city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Somersworth CCD, Strafford County, New Hampshire, USA.html">Somersworth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kennebunk CCD, York County, Maine, USA.html">Kennebunk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wells CCD, York County, Maine, USA.html">Wells CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Standish CCD, Cumberland County, Maine, USA.html">Standish CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kittery CCD, York County, Maine, USA.html">Kittery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lisbon CCD, Androscoggin County, Maine, USA.html">Lisbon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Topsham CCD, Sagadahoc County, Maine, USA.html">Topsham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cape Elizabeth CCD, Cumberland County, Maine, USA.html">Cape Elizabeth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yarmouth CCD, Cumberland County, Maine, USA.html">Yarmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Old Orchard Beach CCD, York County, Maine, USA.html">Old Orchard Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Orchard Beach CDP, Maine, USA.html">Old Orchard Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bath CCD, Sagadahoc County, Maine, USA.html">Bath CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bath city, Maine, USA.html">Bath city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Freeport CCD, Cumberland County, Maine, USA.html">Freeport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cumberland CCD, Cumberland County, Maine, USA.html">Cumberland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buxton CCD, York County, Maine, USA.html">Buxton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gray CCD, Cumberland County, Maine, USA.html">Gray CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berwick CCD, York County, Maine, USA.html">Berwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waterboro CCD, York County, Maine, USA.html">Waterboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gorham CDP, Maine, USA.html">Gorham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Berwick CCD, York County, Maine, USA.html">South Berwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eliot CCD, York County, Maine, USA.html">Eliot CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Topsham CDP, Maine, USA.html">Topsham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lebanon CCD, York County, Maine, USA.html">Lebanon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yarmouth CDP, Maine, USA.html">Yarmouth CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gardiner CCD, Kennebec County, Maine, USA.html">Gardiner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gardiner city, Maine, USA.html">Gardiner city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Poland CCD, Androscoggin County, Maine, USA.html">Poland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Turner CCD, Androscoggin County, Maine, USA.html">Turner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kennebunk CDP, Maine, USA.html">Kennebunk CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scarborough CDP, Maine, USA.html">Scarborough CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Gloucester CCD, Cumberland County, Maine, USA.html">New Gloucester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridgton CCD, Cumberland County, Maine, USA.html">Bridgton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Windham CDP, Maine, USA.html">North Windham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wakefield CCD, Carroll County, New Hampshire, USA.html">Wakefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norway CCD, Oxford County, Maine, USA.html">Norway CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sabattus CCD, Androscoggin County, Maine, USA.html">Sabattus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harpswell CCD, Cumberland County, Maine, USA.html">Harpswell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Berwick CCD, York County, Maine, USA.html">North Berwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kittery CDP, Maine, USA.html">Kittery CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hollis CCD, York County, Maine, USA.html">Hollis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jay CCD, Franklin County, Maine, USA.html">Jay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Raymond CCD, Cumberland County, Maine, USA.html">Raymond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyman CCD, York County, Maine, USA.html">Lyman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milton CCD, Strafford County, New Hampshire, USA.html">Milton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greene CCD, Androscoggin County, Maine, USA.html">Greene CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arundel CCD, York County, Maine, USA.html">Arundel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oxford CCD, Oxford County, Maine, USA.html">Oxford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Durham CCD, Androscoggin County, Maine, USA.html">Durham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lisbon Falls CDP, Maine, USA.html">Lisbon Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Yarmouth CCD, Cumberland County, Maine, USA.html">North Yarmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monmouth CCD, Kennebec County, Maine, USA.html">Monmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Naples CCD, Cumberland County, Maine, USA.html">Naples CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Limington CCD, York County, Maine, USA.html">Limington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wiscasset CCD, Lincoln County, Maine, USA.html">Wiscasset CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Eliot CDP, Maine, USA.html">South Eliot CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Casco CCD, Cumberland County, Maine, USA.html">Casco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kennebunkport CCD, York County, Maine, USA.html">Kennebunkport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Litchfield CCD, Kennebec County, Maine, USA.html">Litchfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richmond CCD, Sagadahoc County, Maine, USA.html">Richmond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fryeburg CCD, Oxford County, Maine, USA.html">Fryeburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Arrowhead CDP, Maine, USA.html">Lake Arrowhead CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Limerick CCD, York County, Maine, USA.html">Limerick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bowdoin CCD, Sagadahoc County, Maine, USA.html">Bowdoin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="York Harbor CDP, Maine, USA.html">York Harbor CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mechanic Falls CCD, Androscoggin County, Maine, USA.html">Mechanic Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alfred CCD, York County, Maine, USA.html">Alfred CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woolwich CCD, Sagadahoc County, Maine, USA.html">Woolwich CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Livermore Falls CCD, Androscoggin County, Maine, USA.html">Livermore Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bowdoinham CCD, Sagadahoc County, Maine, USA.html">Bowdoinham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cape Neddick CDP, Maine, USA.html">Cape Neddick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shapleigh CCD, York County, Maine, USA.html">Shapleigh CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pittston CCD, Kennebec County, Maine, USA.html">Pittston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minot CCD, Androscoggin County, Maine, USA.html">Minot CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cumberland Center CDP, Maine, USA.html">Cumberland Center CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Acton CCD, York County, Maine, USA.html">Acton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rollinsford CCD, Strafford County, New Hampshire, USA.html">Rollinsford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Cumberland County, Maine, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Berwick CDP, Maine, USA.html">Berwick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leeds CCD, Androscoggin County, Maine, USA.html">Leeds CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mechanic Falls CDP, Maine, USA.html">Mechanic Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Phippsburg CCD, Sagadahoc County, Maine, USA.html">Phippsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton CCD, York County, Maine, USA.html">Dayton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Livermore CCD, Androscoggin County, Maine, USA.html">Livermore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgton CDP, Maine, USA.html">Bridgton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Falmouth CDP, Maine, USA.html">Falmouth CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buckfield CCD, Oxford County, Maine, USA.html">Buckfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sebago CCD, Cumberland County, Maine, USA.html">Sebago CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Bath CCD, Sagadahoc County, Maine, USA.html">West Bath CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otisfield CCD, Oxford County, Maine, USA.html">Otisfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Richmond CDP, Maine, USA.html">Richmond CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parsonsfield CCD, York County, Maine, USA.html">Parsonsfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dresden CCD, Lincoln County, Maine, USA.html">Dresden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Freeport CDP, Maine, USA.html">Freeport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Effingham CCD, Carroll County, New Hampshire, USA.html">Effingham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Freedom CCD, Carroll County, New Hampshire, USA.html">Freedom CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Berwick CDP, Maine, USA.html">North Berwick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newfield CCD, York County, Maine, USA.html">Newfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hiram CCD, Oxford County, Maine, USA.html">Hiram CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wales CCD, Androscoggin County, Maine, USA.html">Wales CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Porter CCD, Oxford County, Maine, USA.html">Porter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ogunquit CCD, York County, Maine, USA.html">Ogunquit CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waterford CCD, Oxford County, Maine, USA.html">Waterford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pownal CCD, Cumberland County, Maine, USA.html">Pownal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Falmouth Foreside CDP, Maine, USA.html">Falmouth Foreside CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Livermore Falls CDP, Maine, USA.html">Livermore Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Baldwin CCD, Cumberland County, Maine, USA.html">Baldwin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cornish CCD, York County, Maine, USA.html">Cornish CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chisholm CDP, Maine, USA.html">Chisholm CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chesterville CCD, Franklin County, Maine, USA.html">Chesterville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kennebunkport CDP, Maine, USA.html">Kennebunkport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hebron CCD, Oxford County, Maine, USA.html">Hebron CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Steep Falls CDP, Maine, USA.html">Steep Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Windham CDP, Maine, USA.html">South Windham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Denmark CCD, Oxford County, Maine, USA.html">Denmark CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Kennebunk CDP, Maine, USA.html">West Kennebunk CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartford CCD, Oxford County, Maine, USA.html">Hartford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fayette CCD, Kennebec County, Maine, USA.html">Fayette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Kennebec County, Maine, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canton CCD, Oxford County, Maine, USA.html">Canton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brunswick Station CDP, Maine, USA.html">Brunswick Station CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Georgetown CCD, Sagadahoc County, Maine, USA.html">Georgetown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kittery Point CDP, Maine, USA.html">Kittery Point CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Castle CCD, Rockingham County, New Hampshire, USA.html">New Castle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gray CDP, Maine, USA.html">Gray CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alfred CDP, Maine, USA.html">Alfred CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Little Falls CDP, Maine, USA.html">Little Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newington CCD, Rockingham County, New Hampshire, USA.html">Newington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bowdoinham CDP, Maine, USA.html">Bowdoinham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westport Island CCD, Lincoln County, Maine, USA.html">Westport Island CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milton CDP, New Hampshire, USA.html">Milton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Casco CDP, Maine, USA.html">Casco CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cousins Island CDP, Maine, USA.html">Cousins Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Standish CDP, Maine, USA.html">Standish CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arrowsic CCD, Sagadahoc County, Maine, USA.html">Arrowsic CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Naples CDP, Maine, USA.html">Naples CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sweden CCD, Oxford County, Maine, USA.html">Sweden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chebeague Island CCD, Cumberland County, Maine, USA.html">Chebeague Island CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milton Mills CDP, New Hampshire, USA.html">Milton Mills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Long Island CCD, Cumberland County, Maine, USA.html">Long Island CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Littlejohn Island CDP, Maine, USA.html">Littlejohn Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Frye Island CCD, Cumberland County, Maine, USA.html">Frye Island CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Portland-Lewiston-South Portland CSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

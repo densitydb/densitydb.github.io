@@ -1,0 +1,929 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Syracuse MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Syracuse MSA</div>
+    <div class="text longname">Syracuse MSA, New York, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">662.1k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">72 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deltona-Daytona Beach-Ormond Beach MSA, Florida, USA.html"><</a> <a class="button" href="Wichita MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portland-Lewiston-South Portland CSA, Maine, USA.html"><</a> <a class="button" href="Providence County, Rhode Island, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1101/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">104 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Medford MSA, Oregon, USA.html"><</a> <a class="button" href="Sioux Falls MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="14068, USA.html"><</a> <a class="button" href="Shelbyville city, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">103/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">110 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pensacola-Ferry Pass-Brent MSA, Florida, USA.html"><</a> <a class="button" href="Spartanburg MSA, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Derby CDP, Ohio, USA.html"><</a> <a class="button" href="Jeffersonville city, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">77.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">390 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bowling Green MSA, Kentucky, USA.html"><</a> <a class="button" href="Springfield MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Prospect Park Neighborhood, Ypsilanti City, Michigan, USA.html"><</a> <a class="button" href="Springfield MSA, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.81%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">563 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mankato-North Mankato MSA, Minnesota, USA.html"><</a> <a class="button" href="Rapid City MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55342, USA.html"><</a> <a class="button" href="Fieldale CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.59%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">250 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Galesburg MSA, Illinois, USA.html"><</a> <a class="button" href="Carbondale-Marion MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Enoree CDP, South Carolina, USA.html"><</a> <a class="button" href="44515, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">119 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Leonard Wood MSA, Missouri, USA.html"><</a> <a class="button" href="Stillwater MSA, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crete CCD, Saline County, Nebraska, USA.html"><</a> <a class="button" href="Parkville Neighborhood, Hartford City, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">238 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Big Spring MSA, Texas, USA.html"><</a> <a class="button" href="Bend-Redmond MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04981, USA.html"><</a> <a class="button" href="64747, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">650 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lafayette-West Lafayette MSA, Indiana, USA.html"><</a> <a class="button" href="Bloomsburg-Berwick MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hatch CCD, Doña Ana County, New Mexico, USA.html"><</a> <a class="button" href="Yuma CCD, Yuma County, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">205 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pierre MSA, South Dakota, USA.html"><</a> <a class="button" href="Bloomington MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="21771, USA.html"><</a> <a class="button" href="17401, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.563</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">489 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Tucson MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brooksville CCD, Blount County, Alabama, USA.html"><</a> <a class="button" href="Powdersville CDP, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">569 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Little Rock-North Little Rock-Conway MSA, Arkansas, USA.html"><</a> <a class="button" href="Marshall MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="56516, USA.html"><</a> <a class="button" href="5 CCD, Anderson County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1921/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">167 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bellingham MSA, Washington, USA.html"><</a> <a class="button" href="Montgomery MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="60433, USA.html"><</a> <a class="button" href="Prairie CCD, Jackson County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1351/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">112 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Des Moines-West Des Moines MSA, Iowa, USA.html"><</a> <a class="button" href="Rochester MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Doctor Phillips CDP, Florida, USA.html"><</a> <a class="button" href="19810, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">891/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">99 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Odessa MSA, Texas, USA.html"><</a> <a class="button" href="Midland MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hartford-West Hartford CSA, Connecticut, USA.html"><</a> <a class="button" href="High Point CCD, Guilford County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">709/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">86 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dayton MSA, Ohio, USA.html"><</a> <a class="button" href="Grand Rapids-Wyoming MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Downtown Neighborhood, Charleston City, West Virginia, USA.html"><</a> <a class="button" href="11 CCD, Rutherford County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Syracuse-Auburn CSA, New York, USA.html">Syracuse-Auburn CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Onondaga County, New York, USA.html">Onondaga County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Utica-Rome MSA, New York, USA.html">Utica-Rome MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oneida County, New York, USA.html">Oneida County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Ithaca-Cortland CSA, New York, USA.html">Ithaca-Cortland CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Syracuse CCD, Onondaga County, New York, USA.html">Syracuse CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Syracuse city, New York, USA.html">Syracuse city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oswego County, New York, USA.html">Oswego County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, New York, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Watertown-Fort Drum MSA, New York, USA.html">Watertown-Fort Drum MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cayuga County, New York, USA.html">Cayuga County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Auburn MSA, New York, USA.html">Auburn MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, New York, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay CCD, Onondaga County, New York, USA.html">Clay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Oneonta MSA, New York, USA.html">Oneonta MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Otsego County, New York, USA.html">Otsego County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chenango County, New York, USA.html">Chenango County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cortland County, New York, USA.html">Cortland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cortland MSA, New York, USA.html">Cortland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manlius CCD, Onondaga County, New York, USA.html">Manlius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salina CCD, Onondaga County, New York, USA.html">Salina CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cicero CCD, Onondaga County, New York, USA.html">Cicero CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lewis County, New York, USA.html">Lewis County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="De Witt CCD, Onondaga County, New York, USA.html">De Witt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camillus CCD, Onondaga County, New York, USA.html">Camillus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lysander CCD, Onondaga County, New York, USA.html">Lysander CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Onondaga CCD, Onondaga County, New York, USA.html">Onondaga CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Geddes CCD, Onondaga County, New York, USA.html">Geddes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oswego city, New York, USA.html">Oswego city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sullivan CCD, Madison County, New York, USA.html">Sullivan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Van Buren CCD, Onondaga County, New York, USA.html">Van Buren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fulton CCD, Oswego County, New York, USA.html">Fulton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fulton city, New York, USA.html">Fulton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oneida CCD, Madison County, New York, USA.html">Oneida CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oneida city, New York, USA.html">Oneida city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairmount CDP, New York, USA.html">Fairmount CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hastings CCD, Oswego County, New York, USA.html">Hastings CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lenox CCD, Madison County, New York, USA.html">Lenox CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vernon CCD, Oneida County, New York, USA.html">Vernon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Schroeppel CCD, Oswego County, New York, USA.html">Schroeppel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baldwinsville village, New York, USA.html">Baldwinsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oswego CCD, Oswego County, New York, USA.html">Oswego CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Skaneateles CCD, Onondaga County, New York, USA.html">Skaneateles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pompey CCD, Onondaga County, New York, USA.html">Pompey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cazenovia CCD, Madison County, New York, USA.html">Cazenovia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Syracuse village, New York, USA.html">North Syracuse village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scriba CCD, Oswego County, New York, USA.html">Scriba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Solvay village, New York, USA.html">Solvay village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granby CCD, Oswego County, New York, USA.html">Granby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton CCD, Madison County, New York, USA.html">Hamilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mattydale CDP, New York, USA.html">Mattydale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marcellus CCD, Onondaga County, New York, USA.html">Marcellus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Verona CCD, Oneida County, New York, USA.html">Verona CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Volney CCD, Oswego County, New York, USA.html">Volney CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Oswego County, New York, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elbridge CCD, Onondaga County, New York, USA.html">Elbridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vienna CCD, Oneida County, New York, USA.html">Vienna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mexico CCD, Oswego County, New York, USA.html">Mexico CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westvale CDP, New York, USA.html">Westvale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="LaFayette CCD, Onondaga County, New York, USA.html">LaFayette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chittenango village, New York, USA.html">Chittenango village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camden CCD, Oneida County, New York, USA.html">Camden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Constantia CCD, Oswego County, New York, USA.html">Constantia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manlius village, New York, USA.html">Manlius village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Canastota village, New York, USA.html">Canastota village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hannibal CCD, Oswego County, New York, USA.html">Hannibal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Galeville CDP, New York, USA.html">Galeville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lyncourt CDP, New York, USA.html">Lyncourt CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brutus CCD, Cayuga County, New York, USA.html">Brutus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eaton CCD, Madison County, New York, USA.html">Eaton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fayetteville village, New York, USA.html">Fayetteville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hamilton village, New York, USA.html">Hamilton village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Monroe CCD, Oswego County, New York, USA.html">West Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherburne CCD, Chenango County, New York, USA.html">Sherburne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brewerton CDP, New York, USA.html">Brewerton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Village Green CDP, New York, USA.html">Village Green CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandy Creek CCD, Oswego County, New York, USA.html">Sandy Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minoa village, New York, USA.html">Minoa village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Owasco CCD, Cayuga County, New York, USA.html">Owasco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palermo CCD, Oswego County, New York, USA.html">Palermo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="SUNY Oswego CDP, New York, USA.html">SUNY Oswego CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ellisburg CCD, Jefferson County, New York, USA.html">Ellisburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sennett CCD, Cayuga County, New York, USA.html">Sennett CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sterling CCD, Cayuga County, New York, USA.html">Sterling CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Syracuse village, New York, USA.html">East Syracuse village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sherrill city, New York, USA.html">Sherrill city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Haven CCD, Oswego County, New York, USA.html">New Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cazenovia village, New York, USA.html">Cazenovia village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Madison County, New York, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tully CCD, Onondaga County, New York, USA.html">Tully CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lakeland CDP, New York, USA.html">Lakeland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Skaneateles village, New York, USA.html">Skaneateles village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cato CCD, Cayuga County, New York, USA.html">Cato CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parish CCD, Oswego County, New York, USA.html">Parish CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otisco CCD, Onondaga County, New York, USA.html">Otisco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sangerfield CCD, Oneida County, New York, USA.html">Sangerfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Liverpool village, New York, USA.html">Liverpool village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, Madison County, New York, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Phoenix village, New York, USA.html">Phoenix village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pulaski village, New York, USA.html">Pulaski village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ira CCD, Cayuga County, New York, USA.html">Ira CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nedrow CDP, New York, USA.html">Nedrow CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Augusta CCD, Oneida County, New York, USA.html">Augusta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Albion CCD, Oswego County, New York, USA.html">Albion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fabius CCD, Onondaga County, New York, USA.html">Fabius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stockbridge CCD, Madison County, New York, USA.html">Stockbridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marshall CCD, Oneida County, New York, USA.html">Marshall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seneca Knolls CDP, New York, USA.html">Seneca Knolls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edmeston CCD, Otsego County, New York, USA.html">Edmeston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nelson CCD, Madison County, New York, USA.html">Nelson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Central Square village, New York, USA.html">Central Square village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Madison County, New York, USA.html">Lincoln CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marcellus village, New York, USA.html">Marcellus village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fenner CCD, Madison County, New York, USA.html">Fenner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Victory CCD, Cayuga County, New York, USA.html">Victory CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minetto CCD, Oswego County, New York, USA.html">Minetto CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morrisville village, New York, USA.html">Morrisville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spafford CCD, Onondaga County, New York, USA.html">Spafford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mexico village, New York, USA.html">Mexico village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridgewater CCD, Oneida County, New York, USA.html">Bridgewater CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgeport CDP, New York, USA.html">Bridgeport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Preble CCD, Cortland County, New York, USA.html">Preble CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williamstown CCD, Oswego County, New York, USA.html">Williamstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lebanon CCD, Madison County, New York, USA.html">Lebanon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Florence CCD, Oneida County, New York, USA.html">Florence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="DeRuyter CCD, Madison County, New York, USA.html">DeRuyter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Amboy CCD, Oswego County, New York, USA.html">Amboy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smyrna CCD, Chenango County, New York, USA.html">Smyrna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Camillus village, New York, USA.html">Camillus village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jordan village, New York, USA.html">Jordan village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Niles CCD, Cayuga County, New York, USA.html">Niles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smithfield CCD, Madison County, New York, USA.html">Smithfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Constantia CDP, New York, USA.html">Constantia CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orwell CCD, Oswego County, New York, USA.html">Orwell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scott CCD, Cortland County, New York, USA.html">Scott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minetto CDP, New York, USA.html">Minetto CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Truxton CCD, Cortland County, New York, USA.html">Truxton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lorraine CCD, Jefferson County, New York, USA.html">Lorraine CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plainfield CCD, Otsego County, New York, USA.html">Plainfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elbridge village, New York, USA.html">Elbridge village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cuyler CCD, Cortland County, New York, USA.html">Cuyler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tully village, New York, USA.html">Tully village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbus CCD, Chenango County, New York, USA.html">Columbus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otselic CCD, Chenango County, New York, USA.html">Otselic CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sand Ridge CDP, New York, USA.html">Sand Ridge CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sempronius CCD, Cayuga County, New York, USA.html">Sempronius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Onondaga Nation CCD, Onondaga County, New York, USA.html">Onondaga Nation CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Earlville village, New York, USA.html">Earlville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cleveland village, New York, USA.html">Cleveland village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oriskany Falls village, New York, USA.html">Oriskany Falls village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lacona village, New York, USA.html">Lacona village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Georgetown CCD, Madison County, New York, USA.html">Georgetown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sandy Creek village, New York, USA.html">Sandy Creek village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oneida Castle village, New York, USA.html">Oneida Castle village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wampsville village, New York, USA.html">Wampsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hannibal village, New York, USA.html">Hannibal village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Durhamville CDP, New York, USA.html">Durhamville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgewater CDP, New York, USA.html">Bridgewater CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boylston CCD, Oswego County, New York, USA.html">Boylston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Redfield CCD, Oswego County, New York, USA.html">Redfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Munnsville village, New York, USA.html">Munnsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parish village, New York, USA.html">Parish village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="DeRuyter village, New York, USA.html">DeRuyter village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincklaen CCD, Chenango County, New York, USA.html">Lincklaen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Altmar CDP, New York, USA.html">Altmar CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Madison village, New York, USA.html">Madison village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fabius village, New York, USA.html">Fabius village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osceola CCD, Lewis County, New York, USA.html">Osceola CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Worth CCD, Jefferson County, New York, USA.html">Worth CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Syracuse MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

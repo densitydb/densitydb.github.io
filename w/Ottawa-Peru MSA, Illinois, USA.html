@@ -1,0 +1,974 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ottawa-Peru MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Ottawa-Peru MSA</div>
+    <div class="text longname">Ottawa-Peru MSA, Illinois, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">148.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">253 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson City MSA, Missouri, USA.html"><</a> <a class="button" href="Wichita Falls MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Syracuse city, New York, USA.html"><</a> <a class="button" href="Wayne CCD, Marion County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">567/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">389 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Altus MSA, Oklahoma, USA.html"><</a> <a class="button" href="Morgan City MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Opstad Neighborhood, North Bend City, Washington, USA.html"><</a> <a class="button" href="Elida village, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">26/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">522 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fitzgerald MSA, Georgia, USA.html"><</a> <a class="button" href="Bogalusa MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sutherland CDP, Utah, USA.html"><</a> <a class="button" href="28425, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">263 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mankato-North Mankato MSA, Minnesota, USA.html"><</a> <a class="button" href="Frankfort MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denning town, Arkansas, USA.html"><</a> <a class="button" href="9 CCD, Hardin County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">321 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ottumwa MSA, Iowa, USA.html"><</a> <a class="button" href="Crestview-Fort Walton Beach-Destin MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Skyview Neighborhood, Nashville City, Tennessee, USA.html"><</a> <a class="button" href="28144, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.88%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">564 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Urban Honolulu MSA, Hawaii, USA.html"><</a> <a class="button" href="Duncan MSA, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48117, USA.html"><</a> <a class="button" href="Southmoore Neighborhood, Chandler City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.79%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">539 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pine Bluff MSA, Arkansas, USA.html"><</a> <a class="button" href="Marion MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="53137, USA.html"><</a> <a class="button" href="Van city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">779 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Martinsville MSA, Virginia, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="1 CCD, Shenandoah County, Virginia, USA.html"><</a> <a class="button" href="Murrayville CCD, Hall County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">629 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Macon-Bibb County MSA, Georgia, USA.html"><</a> <a class="button" href="Rockford MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crestline CCD, Crawford County, Ohio, USA.html"><</a> <a class="button" href="2 CCD, Lauderdale County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">568 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bakersfield MSA, California, USA.html"><</a> <a class="button" href="Sebastian-Vero Beach MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="46122, USA.html"><</a> <a class="button" href="Upper Clinton Hill Neighborhood, Newark City, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.579</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">348 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dyersburg MSA, Tennessee, USA.html"><</a> <a class="button" href="Flint MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Minnetonka city, Minnesota, USA.html"><</a> <a class="button" href="Spiro CCD, Le Flore County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">539 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison MSA, Indiana, USA.html"><</a> <a class="button" href="Marietta MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lincoln Knolls Neighborhood, Youngstown City, Ohio, USA.html"><</a> <a class="button" href="68626, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1084/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">514 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevierville MSA, Tennessee, USA.html"><</a> <a class="button" href="Hailey MSA, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Golf village, Illinois, USA.html"><</a> <a class="button" href="Brooklet CCD, Bulloch County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">761/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">411 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oak Harbor MSA, Washington, USA.html"><</a> <a class="button" href="Jonesboro MSA, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dudley Lake CCD, Jefferson County, Arkansas, USA.html"><</a> <a class="button" href="Chickasha CCD, Grady County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">365/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">420 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arkansas City-Winfield MSA, Kansas, USA.html"><</a> <a class="button" href="Oak Harbor MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="58072, USA.html"><</a> <a class="button" href="Island County, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">175/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">515 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fallon MSA, Nevada, USA.html"><</a> <a class="button" href="Marshall MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Killingly CCD, Northeastern Connecticut Planning Region, Connecticut, USA.html"><</a> <a class="button" href="Waynesville city, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Illinois, USA.html">Illinois</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Peoria-Canton CSA, Illinois, USA.html">Peoria-Canton CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Peoria MSA, Illinois, USA.html">Peoria MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Bloomington-Pontiac CSA, Illinois, USA.html">Bloomington-Pontiac CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kendall County, Illinois, USA.html">Kendall County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="LaSalle County, Illinois, USA.html">LaSalle County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="DeKalb County, Illinois, USA.html">DeKalb County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Dixon-Sterling CSA, Illinois, USA.html">Dixon-Sterling CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sterling MSA, Illinois, USA.html">Sterling MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Whiteside County, Illinois, USA.html">Whiteside County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grundy County, Illinois, USA.html">Grundy County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Henry County, Illinois, USA.html">Henry County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Woodford County, Illinois, USA.html">Woodford County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pontiac MSA, Illinois, USA.html">Pontiac MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Livingston County, Illinois, USA.html">Livingston County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lee County, Illinois, USA.html">Lee County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Dixon MSA, Illinois, USA.html">Dixon MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bureau County, Illinois, USA.html">Bureau County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ottawa city, Illinois, USA.html">Ottawa city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little Rock CCD, Kendall County, Illinois, USA.html">Little Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="LaSalle CCD, LaSalle County, Illinois, USA.html">LaSalle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Streator city, Illinois, USA.html">Streator city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bruce CCD, LaSalle County, Illinois, USA.html">Bruce CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Marshall County, Illinois, USA.html">Marshall County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ottawa CCD, LaSalle County, Illinois, USA.html">Ottawa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peru CCD, LaSalle County, Illinois, USA.html">Peru CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kewanee CCD, Henry County, Illinois, USA.html">Kewanee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peru city, Illinois, USA.html">Peru city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="LaSalle city, Illinois, USA.html">LaSalle city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Princeton CCD, Bureau County, Illinois, USA.html">Princeton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Ottawa CCD, LaSalle County, Illinois, USA.html">South Ottawa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hall CCD, Bureau County, Illinois, USA.html">Hall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Princeton city, Illinois, USA.html">Princeton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandwich CCD, DeKalb County, Illinois, USA.html">Sandwich CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northville CCD, LaSalle County, Illinois, USA.html">Northville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sandwich city, Illinois, USA.html">Sandwich city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mendota CCD, LaSalle County, Illinois, USA.html">Mendota CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mendota city, Illinois, USA.html">Mendota city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manlius CCD, LaSalle County, Illinois, USA.html">Manlius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Putnam County, Illinois, USA.html">Putnam County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Valley city, Illinois, USA.html">Spring Valley city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stark County, Illinois, USA.html">Stark County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marseilles city, Illinois, USA.html">Marseilles city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Holiday CDP, Illinois, USA.html">Lake Holiday CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mission CCD, LaSalle County, Illinois, USA.html">Mission CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oglesby city, Illinois, USA.html">Oglesby city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rutland CCD, LaSalle County, Illinois, USA.html">Rutland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granville CCD, Putnam County, Illinois, USA.html">Granville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otter Creek CCD, LaSalle County, Illinois, USA.html">Otter Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Henry CCD, Marshall County, Illinois, USA.html">Henry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton CCD, LaSalle County, Illinois, USA.html">Dayton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Earl CCD, LaSalle County, Illinois, USA.html">Earl CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Erienna CCD, Grundy County, Illinois, USA.html">Erienna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sheridan village, Illinois, USA.html">Sheridan village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Henry city, Illinois, USA.html">Henry city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seneca village, Illinois, USA.html">Seneca village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Selby CCD, Bureau County, Illinois, USA.html">Selby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minonk CCD, Woodford County, Illinois, USA.html">Minonk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reading CCD, Livingston County, Illinois, USA.html">Reading CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Somonauk CCD, DeKalb County, Illinois, USA.html">Somonauk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minonk city, Illinois, USA.html">Minonk city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Utica CCD, LaSalle County, Illinois, USA.html">Utica CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Somonauk village, Illinois, USA.html">Somonauk village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fox CCD, Kendall County, Illinois, USA.html">Fox CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="De Pue village, Illinois, USA.html">De Pue village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Grove CCD, Kendall County, Illinois, USA.html">Big Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Earlville city, Illinois, USA.html">Earlville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams CCD, LaSalle County, Illinois, USA.html">Adams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eagle CCD, LaSalle County, Illinois, USA.html">Eagle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walnut CCD, Bureau County, Illinois, USA.html">Walnut CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bennington CCD, Marshall County, Illinois, USA.html">Bennington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Concord CCD, Bureau County, Illinois, USA.html">Concord CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden CCD, LaSalle County, Illinois, USA.html">Eden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Utica village, Illinois, USA.html">North Utica village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Walnut village, Illinois, USA.html">Walnut village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nebraska CCD, Livingston County, Illinois, USA.html">Nebraska CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Granville village, Illinois, USA.html">Granville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ladd village, Illinois, USA.html">Ladd village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troy Grove CCD, LaSalle County, Illinois, USA.html">Troy Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyoming CCD, Lee County, Illinois, USA.html">Wyoming CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyanet CCD, Bureau County, Illinois, USA.html">Wyanet CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hennepin CCD, Putnam County, Illinois, USA.html">Hennepin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Serena CCD, LaSalle County, Illinois, USA.html">Serena CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Evans CCD, Marshall County, Illinois, USA.html">Evans CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Annawan CCD, Henry County, Illinois, USA.html">Annawan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, LaSalle County, Illinois, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Magnolia CCD, Putnam County, Illinois, USA.html">Magnolia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="La Moille CCD, Bureau County, Illinois, USA.html">La Moille CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wenona city, Illinois, USA.html">Wenona city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leland village, Illinois, USA.html">Leland village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osceola CCD, Stark County, Illinois, USA.html">Osceola CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Roberts CCD, Marshall County, Illinois, USA.html">Roberts CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wyanet village, Illinois, USA.html">Wyanet village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Annawan town, Illinois, USA.html">Annawan town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westfield CCD, Bureau County, Illinois, USA.html">Westfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Farm Ridge CCD, LaSalle County, Illinois, USA.html">Farm Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ohio CCD, Bureau County, Illinois, USA.html">Ohio CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fall River CCD, LaSalle County, Illinois, USA.html">Fall River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sheffield village, Illinois, USA.html">Sheffield village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hennepin village, Illinois, USA.html">Hennepin village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arispie CCD, Bureau County, Illinois, USA.html">Arispie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dimmick CCD, LaSalle County, Illinois, USA.html">Dimmick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tonica village, Illinois, USA.html">Tonica village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newtown CCD, Livingston County, Illinois, USA.html">Newtown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tiskilwa village, Illinois, USA.html">Tiskilwa village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brooklyn CCD, Lee County, Illinois, USA.html">Brooklyn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Moille village, Illinois, USA.html">La Moille village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sublette CCD, Lee County, Illinois, USA.html">Sublette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vienna CCD, Grundy County, Illinois, USA.html">Vienna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dalzell village, Illinois, USA.html">Dalzell village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berlin CCD, Bureau County, Illinois, USA.html">Berlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Neponset CCD, Bureau County, Illinois, USA.html">Neponset CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Freedom CCD, LaSalle County, Illinois, USA.html">Freedom CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millington village, Illinois, USA.html">Millington village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Senachwine CCD, Putnam County, Illinois, USA.html">Senachwine CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Indiantown CCD, Bureau County, Illinois, USA.html">Indiantown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wallace CCD, LaSalle County, Illinois, USA.html">Wallace CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Miller CCD, LaSalle County, Illinois, USA.html">Miller CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manlius CCD, Bureau County, Illinois, USA.html">Manlius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hope CCD, LaSalle County, Illinois, USA.html">Hope CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Groveland CCD, LaSalle County, Illinois, USA.html">Groveland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dayton CDP, Illinois, USA.html">Dayton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allen CCD, LaSalle County, Illinois, USA.html">Allen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopewell CCD, Marshall County, Illinois, USA.html">Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mark village, Illinois, USA.html">Mark village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grand Ridge village, Illinois, USA.html">Grand Ridge village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waltham CCD, LaSalle County, Illinois, USA.html">Waltham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nettle Creek CCD, Grundy County, Illinois, USA.html">Nettle Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dover CCD, Bureau County, Illinois, USA.html">Dover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Buda village, Illinois, USA.html">Buda village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mineral CCD, Bureau County, Illinois, USA.html">Mineral CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ohio village, Illinois, USA.html">Ohio village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Long Point CCD, Livingston County, Illinois, USA.html">Long Point CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deer Park CCD, LaSalle County, Illinois, USA.html">Deer Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yorktown CCD, Henry County, Illinois, USA.html">Yorktown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ophir CCD, LaSalle County, Illinois, USA.html">Ophir CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cherry village, Illinois, USA.html">Cherry village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Neponset village, Illinois, USA.html">Neponset village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lostant village, Illinois, USA.html">Lostant village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clarion CCD, Bureau County, Illinois, USA.html">Clarion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Naplate village, Illinois, USA.html">Naplate village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vermillion CCD, LaSalle County, Illinois, USA.html">Vermillion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield CCD, Bureau County, Illinois, USA.html">Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, LaSalle County, Illinois, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenville CCD, Bureau County, Illinois, USA.html">Greenville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paw Paw CCD, DeKalb County, Illinois, USA.html">Paw Paw CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leepertown CCD, Bureau County, Illinois, USA.html">Leepertown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norman CCD, Grundy County, Illinois, USA.html">Norman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Malden village, Illinois, USA.html">Malden village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elmira CCD, Stark County, Illinois, USA.html">Elmira CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ransom village, Illinois, USA.html">Ransom village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand Rapids CCD, LaSalle County, Illinois, USA.html">Grand Rapids CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seatonville village, Illinois, USA.html">Seatonville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bureau Junction village, Illinois, USA.html">Bureau Junction village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manlius village, Illinois, USA.html">Manlius village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bureau CCD, Bureau County, Illinois, USA.html">Bureau CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="May CCD, Lee County, Illinois, USA.html">May CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McNabb village, Illinois, USA.html">McNabb village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Victor CCD, DeKalb County, Illinois, USA.html">Victor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Whitefield CCD, Marshall County, Illinois, USA.html">Whitefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meriden CCD, LaSalle County, Illinois, USA.html">Meriden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar Point village, Illinois, USA.html">Cedar Point village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rutland village, Illinois, USA.html">Rutland village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Highland CCD, Grundy County, Illinois, USA.html">Highland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Magnolia village, Illinois, USA.html">Magnolia village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saratoga CCD, Marshall County, Illinois, USA.html">Saratoga CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sunbury CCD, Livingston County, Illinois, USA.html">Sunbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Grove CCD, Lee County, Illinois, USA.html">East Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kangley village, Illinois, USA.html">Kangley village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osage CCD, LaSalle County, Illinois, USA.html">Osage CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Troy Grove village, Illinois, USA.html">Troy Grove village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Standard village, Illinois, USA.html">Standard village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mineral village, Illinois, USA.html">Mineral village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Macon CCD, Bureau County, Illinois, USA.html">Macon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milo CCD, Bureau County, Illinois, USA.html">Milo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton CCD, Lee County, Illinois, USA.html">Hamilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alba CCD, Henry County, Illinois, USA.html">Alba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arlington village, Illinois, USA.html">Arlington village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dana village, Illinois, USA.html">Dana village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gold CCD, Bureau County, Illinois, USA.html">Gold CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheatland CCD, Bureau County, Illinois, USA.html">Wheatland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dover village, Illinois, USA.html">Dover village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leonore village, Illinois, USA.html">Leonore village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Bedford village, Illinois, USA.html">New Bedford village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hollowayville village, Illinois, USA.html">Hollowayville village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Ottawa-Peru MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

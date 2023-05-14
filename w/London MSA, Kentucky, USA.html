@@ -1,0 +1,620 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>London MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">London MSA</div>
+    <div class="text longname">London MSA, Kentucky, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">129.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">278 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="The Villages MSA, Florida, USA.html"><</a> <a class="button" href="Mount Vernon-Anacortes MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hunter Mill CCD, Fairfax County, Virginia, USA.html"><</a> <a class="button" href="Mount Vernon-Anacortes MSA, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">195/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">833 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">5th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hope MSA, Arkansas, USA.html"><</a> <a class="button" href="Branson MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Spring Valley village, Wisconsin, USA.html"><</a> <a class="button" href="Murray city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">39/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">362 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmington MSA, Ohio, USA.html"><</a> <a class="button" href="Danville MSA, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="35962, USA.html"><</a> <a class="button" href="Cass County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">93.49%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">17 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carroll MSA, Iowa, USA.html"><</a> <a class="button" href="Celina MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oscoda County, Michigan, USA.html"><</a> <a class="button" href="Avoca CCD, Iowa County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">837 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bradford MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Hannibal MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Noble village, Illinois, USA.html"><</a> <a class="button" href="Bremen CCD, Lincoln County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.97%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">698 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redding MSA, California, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redding MSA, California, USA.html"><</a> <a class="button" href="17579, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">701 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sterling MSA, Colorado, USA.html"><</a> <a class="button" href="Sterling MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coshocton city, Ohio, USA.html"><</a> <a class="button" href="Johnston Square Neighborhood, Baltimore City, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">517 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morristown MSA, Tennessee, USA.html"><</a> <a class="button" href="Cortland MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Troy CCD, Perry County, Indiana, USA.html"><</a> <a class="button" href="Whitley County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">764 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taos MSA, New Mexico, USA.html"><</a> <a class="button" href="Boone MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="11559, USA.html"><</a> <a class="button" href="45693, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">678 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Logansport MSA, Indiana, USA.html"><</a> <a class="button" href="Boone MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48745, USA.html"><</a> <a class="button" href="38804, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.562</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">507 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jasper MSA, Indiana, USA.html"><</a> <a class="button" href="Celina MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="23238, USA.html"><</a> <a class="button" href="Ronda town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">508 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hattiesburg MSA, Mississippi, USA.html"><</a> <a class="button" href="Roanoke MSA, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="45121, USA.html"><</a> <a class="button" href="Osceola Mills CCD, Clearfield County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">812/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">721 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warsaw MSA, Indiana, USA.html"><</a> <a class="button" href="Celina MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brookville borough, Pennsylvania, USA.html"><</a> <a class="button" href="Bottineau CCD, Bottineau County, North Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">312/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">823 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Moultrie MSA, Georgia, USA.html"><</a> <a class="button" href="Washington MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Callery borough, Pennsylvania, USA.html"><</a> <a class="button" href="Calhoun City town, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">146/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">820 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laurel MSA, Mississippi, USA.html"><</a> <a class="button" href="Show Low MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Glade CCD, Warren County, Pennsylvania, USA.html"><</a> <a class="button" href="28516, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">112/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">741 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coshocton MSA, Ohio, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benton city, Kentucky, USA.html"><</a> <a class="button" href="72501, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Tennessee, USA.html">Tennessee</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Kentucky, USA.html">Kentucky</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Knoxville-Morristown-Sevierville CSA, Tennessee, USA.html">Knoxville-Morristown-Sevierville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Knoxville MSA, Tennessee, USA.html">Knoxville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lexington-Fayette--Richmond--Frankfort CSA, Kentucky, USA.html">Lexington-Fayette--Richmond--Frankfort CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Richmond-Berea MSA, Kentucky, USA.html">Richmond-Berea MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pulaski County, Kentucky, USA.html">Pulaski County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Somerset MSA, Kentucky, USA.html">Somerset MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Laurel County, Kentucky, USA.html">Laurel County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Campbell County, Tennessee, USA.html">Campbell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Whitley County, Kentucky, USA.html">Whitley County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Claiborne County, Tennessee, USA.html">Claiborne County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Knox County, Kentucky, USA.html">Knox County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bell County, Kentucky, USA.html">Bell County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Middlesborough MSA, Kentucky, USA.html">Middlesborough MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clay County, Kentucky, USA.html">Clay County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="London CCD, Laurel County, Kentucky, USA.html">London CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McCreary County, Kentucky, USA.html">McCreary County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockcastle County, Kentucky, USA.html">Rockcastle County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barbourville CCD, Knox County, Kentucky, USA.html">Barbourville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jackson County, Kentucky, USA.html">Jackson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corbin CCD, Whitley County, Kentucky, USA.html">Corbin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williamsburg CCD, Whitley County, Kentucky, USA.html">Williamsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Corbin CCD, Laurel County, Kentucky, USA.html">North Corbin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Vernon CCD, Rockcastle County, Kentucky, USA.html">Mount Vernon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Keavy CCD, Laurel County, Kentucky, USA.html">Keavy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corbin city, Kentucky, USA.html">Corbin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pineville CCD, Bell County, Kentucky, USA.html">Pineville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corbin CCD, Knox County, Kentucky, USA.html">Corbin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="London city, Kentucky, USA.html">London city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pine Knot CCD, McCreary County, Kentucky, USA.html">Pine Knot CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Campbell County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Bernstadt CCD, Laurel County, Kentucky, USA.html">East Bernstadt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stearns-Whitley City CCD, McCreary County, Kentucky, USA.html">Stearns-Whitley City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cumberland Falls CCD, Whitley County, Kentucky, USA.html">Cumberland Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burning Springs CCD, Clay County, Kentucky, USA.html">Burning Springs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Annville CCD, Jackson County, Kentucky, USA.html">Annville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bush CCD, Laurel County, Kentucky, USA.html">Bush CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Williamsburg city, Kentucky, USA.html">Williamsburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Colony CCD, Laurel County, Kentucky, USA.html">Colony CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saxton CCD, Whitley County, Kentucky, USA.html">Saxton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camp Ground CCD, Laurel County, Kentucky, USA.html">Camp Ground CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Girdler CCD, Knox County, Kentucky, USA.html">Girdler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenmount-Langnau CCD, Laurel County, Kentucky, USA.html">Greenmount-Langnau CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Barbourville city, Kentucky, USA.html">Barbourville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gray CCD, Knox County, Kentucky, USA.html">Gray CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shopville CCD, Pulaski County, Kentucky, USA.html">Shopville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sibert-Hima CCD, Clay County, Kentucky, USA.html">Sibert-Hima CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Livingston CCD, Rockcastle County, Kentucky, USA.html">Livingston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parkers Lake CCD, McCreary County, Kentucky, USA.html">Parkers Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jellico city, Tennessee, USA.html">Jellico city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Siler CCD, Whitley County, Kentucky, USA.html">Siler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Corbin CDP, Kentucky, USA.html">North Corbin CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Victory CCD, Pulaski County, Kentucky, USA.html">Mount Victory CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dewitt CCD, Knox County, Kentucky, USA.html">Dewitt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ashers Fork CCD, Clay County, Kentucky, USA.html">Ashers Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bryants Store CCD, Knox County, Kentucky, USA.html">Bryants Store CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Trosper CCD, Knox County, Kentucky, USA.html">Trosper CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Flat Lick CDP, Kentucky, USA.html">Flat Lick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pruden-Fonde CCD, Bell County, Kentucky, USA.html">Pruden-Fonde CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Bernstadt CDP, Kentucky, USA.html">East Bernstadt CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Claiborne County, Tennessee, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Artemus CDP, Kentucky, USA.html">Artemus CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emlyn CDP, Kentucky, USA.html">Emlyn CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockholds CDP, Kentucky, USA.html">Rockholds CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pleasant View CDP, Kentucky, USA.html">Pleasant View CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pearl CCD, Whitley County, Kentucky, USA.html">Pearl CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for London MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

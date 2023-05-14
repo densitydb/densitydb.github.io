@@ -1,0 +1,677 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Davidson County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Davidson County</div>
+    <div class="text longname">Davidson County, Tennessee, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">715.8k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">96 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denver County, Colorado, USA.html"><</a> <a class="button" href="Lake County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denver County, Colorado, USA.html"><</a> <a class="button" href="Denver CCD, Denver County, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1285/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">182 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lubbock County, Texas, USA.html"><</a> <a class="button" href="Oklahoma County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shore Acres Neighborhood, Saint Petersburg City, Florida, USA.html"><</a> <a class="button" href="Northwest Neighborhood, Reno City, Nevada, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">526/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">107 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Seminole County, Florida, USA.html"><</a> <a class="button" href="Hillsborough County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ottawa city, Illinois, USA.html"><</a> <a class="button" href="Marlboro CCD, Monmouth County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">54.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2645 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hamilton County, Kansas, USA.html"><</a> <a class="button" href="Nottoway County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="23836, USA.html"><</a> <a class="button" href="Waverly Park Neighborhood, Mountain View City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.71%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">611 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rock Island County, Illinois, USA.html"><</a> <a class="button" href="Sioux County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="10 CCD, Rutherford County, Tennessee, USA.html"><</a> <a class="button" href="Image Neighborhood, Vancouver City, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">23.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">399 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arkansas County, Arkansas, USA.html"><</a> <a class="button" href="Ascension County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="MLK Neighborhood, Austin City, Texas, USA.html"><</a> <a class="button" href="62988, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">255 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson County, Illinois, USA.html"><</a> <a class="button" href="Lexington County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vistas of Encino Park Neighborhood, San Antonio City, Texas, USA.html"><</a> <a class="button" href="Dyer town, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2287 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grant County, Wisconsin, USA.html"><</a> <a class="button" href="Ozaukee County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="23060, USA.html"><</a> <a class="button" href="Gloucester City city, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1160 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Massac County, Illinois, USA.html"><</a> <a class="button" href="Palo Pinto County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arlington Heights Neighborhood, Los Angeles City, California, USA.html"><</a> <a class="button" href="Southwest Travis CCD, Travis County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.21%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1220 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamsburg County, Virginia, USA.html"><</a> <a class="button" href="Chattooga County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sarritt Point Neighborhood, Kansas City City, Missouri, USA.html"><</a> <a class="button" href="Whiskey Creek CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.573</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1816 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beauregard County, Louisiana, USA.html"><</a> <a class="button" href="Greer County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48108, USA.html"><</a> <a class="button" href="Ranson corporation, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2501 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kankakee County, Illinois, USA.html"><</a> <a class="button" href="Caroline County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Two Creeks Neighborhood, Lakewood City, Colorado, USA.html"><</a> <a class="button" href="Ames CCD, Athens County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3110/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">124 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ramsey County, Minnesota, USA.html"><</a> <a class="button" href="DeKalb County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Florida, USA.html"><</a> <a class="button" href="Aquia CCD, Stafford County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1633/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">185 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madera County, California, USA.html"><</a> <a class="button" href="Osceola County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="08816, USA.html"><</a> <a class="button" href="Tomahawk Ridge Neighborhood, Overland Park City, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1123/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">160 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tulare County, California, USA.html"><</a> <a class="button" href="Oklahoma County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shadow Mountain Neighborhood, Arvada City, Colorado, USA.html"><</a> <a class="button" href="Northwoods Neighborhood, Columbus City, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">966/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">135 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Broomfield County, Colorado, USA.html"><</a> <a class="button" href="Hartford County, Connecticut, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78665, USA.html"><</a> <a class="button" href="Odette,Witherbee,Iroquios Neighborhood, Flint City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Tennessee, USA.html">Tennessee</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Nashville-Davidson--Murfreesboro CSA, Tennessee, USA.html">Nashville-Davidson--Murfreesboro CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Nashville-Davidson--Murfreesboro--Franklin MSA, Tennessee, USA.html">Nashville-Davidson--Murfreesboro--Franklin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nashville-Davidson metropolitan government (balance), Tennessee, USA.html">Nashville-Davidson metropolitan government (balance)</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rutherford County, Tennessee, USA.html">Rutherford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Williamson County, Tennessee, USA.html">Williamson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sumner County, Tennessee, USA.html">Sumner County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wilson County, Tennessee, USA.html">Wilson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Robertson County, Tennessee, USA.html">Robertson County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hendersonville city, Tennessee, USA.html">Hendersonville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brentwood city, Tennessee, USA.html">Brentwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cheatham County, Tennessee, USA.html">Cheatham County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Juliet city, Tennessee, USA.html">Mount Juliet city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Vergne city, Tennessee, USA.html">La Vergne city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Williamson County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="19 CCD, Davidson County, Tennessee, USA.html">19 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="33 CCD, Davidson County, Tennessee, USA.html">33 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="31 CCD, Davidson County, Tennessee, USA.html">31 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="32 CCD, Davidson County, Tennessee, USA.html">32 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="22 CCD, Davidson County, Tennessee, USA.html">22 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="17 CCD, Davidson County, Tennessee, USA.html">17 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="29 CCD, Davidson County, Tennessee, USA.html">29 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="21 CCD, Davidson County, Tennessee, USA.html">21 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="14 CCD, Davidson County, Tennessee, USA.html">14 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Davidson County, Tennessee, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="27 CCD, Davidson County, Tennessee, USA.html">27 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="28 CCD, Davidson County, Tennessee, USA.html">28 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, Davidson County, Tennessee, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Davidson County, Tennessee, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="25 CCD, Davidson County, Tennessee, USA.html">25 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Williamson County, Tennessee, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="26 CCD, Davidson County, Tennessee, USA.html">26 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Davidson County, Tennessee, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Williamson County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="30 CCD, Davidson County, Tennessee, USA.html">30 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, Davidson County, Tennessee, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Davidson County, Tennessee, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Davidson County, Tennessee, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="15 CCD, Davidson County, Tennessee, USA.html">15 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="16 CCD, Davidson County, Tennessee, USA.html">16 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="34 CCD, Davidson County, Tennessee, USA.html">34 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="20 CCD, Davidson County, Tennessee, USA.html">20 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="24 CCD, Davidson County, Tennessee, USA.html">24 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="35 CCD, Davidson County, Tennessee, USA.html">35 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Davidson County, Tennessee, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Williamson County, Tennessee, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, Davidson County, Tennessee, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="23 CCD, Davidson County, Tennessee, USA.html">23 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Davidson County, Tennessee, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="18 CCD, Davidson County, Tennessee, USA.html">18 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Goodlettsville city, Tennessee, USA.html">Goodlettsville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Davidson County, Tennessee, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Williamson County, Tennessee, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Williamson County, Tennessee, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Davidson County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Davidson County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Rutherford County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Rutherford County, Tennessee, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Rutherford County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Rutherford County, Tennessee, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, Sumner County, Tennessee, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Sumner County, Tennessee, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Sumner County, Tennessee, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nolensville town, Tennessee, USA.html">Nolensville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Cheatham County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="16 CCD, Wilson County, Tennessee, USA.html">16 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Cheatham County, Tennessee, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Green Hill CDP, Tennessee, USA.html">Green Hill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Cheatham County, Tennessee, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millersville city, Tennessee, USA.html">Millersville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Cheatham County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Robertson County, Tennessee, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Robertson County, Tennessee, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Wilson County, Tennessee, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, Wilson County, Tennessee, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ashland City town, Tennessee, USA.html">Ashland City town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Wilson County, Tennessee, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Forest Hills city, Tennessee, USA.html">Forest Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oak Hill city, Tennessee, USA.html">Oak Hill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coopertown town, Tennessee, USA.html">Coopertown town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Wilson County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belle Meade city, Tennessee, USA.html">Belle Meade city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ridgetop city, Tennessee, USA.html">Ridgetop city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Berry Hill city, Tennessee, USA.html">Berry Hill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rural Hill CDP, Tennessee, USA.html">Rural Hill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pegram town, Tennessee, USA.html">Pegram town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Davidson County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

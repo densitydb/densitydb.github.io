@@ -1,0 +1,575 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>San Mateo County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">San Mateo County</div>
+    <div class="text longname">San Mateo County, California, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">764.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">87 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DeKalb County, Georgia, USA.html"><</a> <a class="button" href="Lee County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DeKalb County, Georgia, USA.html"><</a> <a class="button" href="Cape Coral-Fort Myers MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3267/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">24 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Clara County, California, USA.html"><</a> <a class="button" href="Orange County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bixby Knolls Neighborhood, Long Beach City, California, USA.html"><</a> <a class="button" href="19036, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">644/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">83 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Allegheny County, Pennsylvania, USA.html"><</a> <a class="button" href="Honolulu County, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bottineau CCD, Bottineau County, North Dakota, USA.html"><</a> <a class="button" href="Wellston city, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">36.09%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2954 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Franklin County, Virginia, USA.html"><</a> <a class="button" href="Bibb County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Traffic Circle Neighborhood, Long Beach City, California, USA.html"><</a> <a class="button" href="Bibb County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">25.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">311 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Real County, Texas, USA.html"><</a> <a class="button" href="Kaufman County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Berryessa CCD, Napa County, California, USA.html"><</a> <a class="button" href="28273, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.92%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1587 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe County, Kentucky, USA.html"><</a> <a class="button" href="Knox County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Village Neighborhood, New York City, New York, USA.html"><</a> <a class="button" href="Dublin city, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">29.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alameda County, California, USA.html"><</a> <a class="button" href="Aleutians West County, Alaska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="98178, USA.html"><</a> <a class="button" href="Foothill Terrace Neighborhood, San Mateo City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2744 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nicholas County, Kentucky, USA.html"><</a> <a class="button" href="Knox County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="94086, USA.html"><</a> <a class="button" href="Tujunga Neighborhood, Los Angeles City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">32 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Geary County, Kansas, USA.html"><</a> <a class="button" href="Sacramento County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Evansville Neighborhood, Burien City, Washington, USA.html"><</a> <a class="button" href="Logan CCD, Cuming County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">304 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Camden County, North Carolina, USA.html"><</a> <a class="button" href="Wheeler County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Camden County, North Carolina, USA.html"><</a> <a class="button" href="Wells town, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.465</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3057 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Riverside County, California, USA.html"><</a> <a class="button" href="Alameda County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Channahon CCD, Will County, Illinois, USA.html"><</a> <a class="button" href="10458, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3015 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kent County, Michigan, USA.html"><</a> <a class="button" href="Fulton County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kent County, Michigan, USA.html"><</a> <a class="button" href="Southridge Neighborhood, Denton City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4717/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, California, USA.html"><</a> <a class="button" href="San Diego County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chula Vista city, California, USA.html"><</a> <a class="button" href="The Museum District Neighborhood, Richmond City, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3820/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">25 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Clara County, California, USA.html"><</a> <a class="button" href="Orange County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corbett-Terwilliger-Lair Hill Neighborhood, Portland City, Oregon, USA.html"><</a> <a class="button" href="Escondido city, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2668/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nassau County, New York, USA.html"><</a> <a class="button" href="Honolulu County, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richardson Village Neighborhood, Sacramento City, California, USA.html"><</a> <a class="button" href="Park Place Neighborhood, Fort Worth City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1987/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">31 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware County, Pennsylvania, USA.html"><</a> <a class="button" href="Milwaukee County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cedar Park Neighborhood, Melrose City, Massachusetts, USA.html"><</a> <a class="button" href="Medford Neighborhood, Baltimore City, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="California, USA.html">California</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="San Jose-San Francisco-Oakland CSA, California, USA.html">San Jose-San Francisco-Oakland CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="San Francisco-Oakland-Hayward MSA, California, USA.html">San Francisco-Oakland-Hayward MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="San Jose-Sunnyvale-Santa Clara MSA, California, USA.html">San Jose-Sunnyvale-Santa Clara MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Santa Clara County, California, USA.html">Santa Clara County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="San Jose CCD, Santa Clara County, California, USA.html">San Jose CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Francisco city, California, USA.html">San Francisco city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Francisco County, California, USA.html">San Francisco County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="San Mateo CCD, San Mateo County, California, USA.html">San Mateo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South San Francisco CCD, San Mateo County, California, USA.html">South San Francisco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Santa Cruz County, California, USA.html">Santa Cruz County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Santa Cruz-Watsonville MSA, California, USA.html">Santa Cruz-Watsonville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Merced-McLaren CCD, San Francisco County, California, USA.html">Merced-McLaren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Mateo city, California, USA.html">San Mateo city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Daly City city, California, USA.html">Daly City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Redwood City city, California, USA.html">Redwood City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palo Alto city, California, USA.html">Palo Alto city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South San Francisco city, California, USA.html">South San Francisco city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Bruno city, California, USA.html">San Bruno city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bayview CCD, San Francisco County, California, USA.html">Bayview CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pacifica city, California, USA.html">Pacifica city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Foster City city, California, USA.html">Foster City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Menlo Park city, California, USA.html">Menlo Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burlingame city, California, USA.html">Burlingame city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Carlos city, California, USA.html">San Carlos city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Palo Alto city, California, USA.html">East Palo Alto city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Half Moon Bay CCD, San Mateo County, California, USA.html">Half Moon Bay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belmont city, California, USA.html">Belmont city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="San Lorenzo Valley CCD, Santa Cruz County, California, USA.html">San Lorenzo Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millbrae city, California, USA.html">Millbrae city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stanford CDP, California, USA.html">Stanford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Fair Oaks CDP, California, USA.html">North Fair Oaks CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Half Moon Bay city, California, USA.html">Half Moon Bay city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillsborough town, California, USA.html">Hillsborough town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Santa Clara CCD, Santa Clara County, California, USA.html">West Santa Clara CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Atherton town, California, USA.html">Atherton town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Granada CDP, California, USA.html">El Granada CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodside town, California, USA.html">Woodside town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brisbane city, California, USA.html">Brisbane city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Santa Cruz CCD, Santa Cruz County, California, USA.html">West Santa Cruz CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Portola Valley town, California, USA.html">Portola Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Broadmoor CDP, California, USA.html">Broadmoor CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emerald Lake Hills CDP, California, USA.html">Emerald Lake Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Highlands-Baywood Park CDP, California, USA.html">Highlands-Baywood Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Menlo Park CDP, California, USA.html">West Menlo Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Moss Beach CDP, California, USA.html">Moss Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Montara CDP, California, USA.html">Montara CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ladera CDP, California, USA.html">Ladera CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Colma town, California, USA.html">Colma town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Honda CDP, California, USA.html">La Honda CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pescadero CDP, California, USA.html">Pescadero CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loma Mar CDP, California, USA.html">Loma Mar CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for San Mateo County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

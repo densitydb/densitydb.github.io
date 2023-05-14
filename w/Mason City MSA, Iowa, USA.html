@@ -1,0 +1,686 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mason City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Mason City MSA</div>
+    <div class="text longname">Mason City MSA, Iowa, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">50.6k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">535 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pahrump MSA, Nevada, USA.html"><</a> <a class="button" href="Oil City MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="60626, USA.html"><</a> <a class="button" href="Milford city (balance), Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">607/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">358 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mitchell MSA, South Dakota, USA.html"><</a> <a class="button" href="Tiffin MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78257, USA.html"><</a> <a class="button" href="Westwood Valley Neighborhood, Fort Wayne City, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">20/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">593 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Amarillo MSA, Texas, USA.html"><</a> <a class="button" href="Americus MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wye CCD, Perry County, Arkansas, USA.html"><</a> <a class="button" href="Brady CCD, Clearfield County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">88.52%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">136 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hutchinson MSA, Minnesota, USA.html"><</a> <a class="button" href="Butte-Silver Bow MSA, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="28461, USA.html"><</a> <a class="button" href="New Hope CCD, Izard County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.85%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">560 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albemarle MSA, North Carolina, USA.html"><</a> <a class="button" href="Oshkosh-Neenah MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Neenah CCD, Winnebago County, Wisconsin, USA.html"><</a> <a class="button" href="Eagle River city, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">578 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Port Lavaca MSA, Texas, USA.html"><</a> <a class="button" href="Winona MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norton city, Ohio, USA.html"><</a> <a class="button" href="Winona County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">411 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brunswick MSA, Georgia, USA.html"><</a> <a class="button" href="Valley MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chenango Bridge CDP, New York, USA.html"><</a> <a class="button" href="Marion Center CDP, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">608 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Urbana MSA, Ohio, USA.html"><</a> <a class="button" href="Warner Robins MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Princeton Heights Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="61455, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">80 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sedalia MSA, Missouri, USA.html"><</a> <a class="button" href="Vernal MSA, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Pasadena Neighborhood, Saint Petersburg City, Florida, USA.html"><</a> <a class="button" href="Woodbridge CDP, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">660 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indiana MSA, Pennsylvania, USA.html"><</a> <a class="button" href="San Antonio-New Braunfels MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Joy CCD, Lancaster County, Pennsylvania, USA.html"><</a> <a class="button" href="Los Alamos CDP, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.643</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">87 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hope MSA, Arkansas, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indian Village Neighborhood, Detroit City, Michigan, USA.html"><</a> <a class="button" href="00751, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">217 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arkansas City-Winfield MSA, Kansas, USA.html"><</a> <a class="button" href="Fairbanks MSA, Alaska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="32162, USA.html"><</a> <a class="button" href="63703, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1245/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">427 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Red Bluff MSA, California, USA.html"><</a> <a class="button" href="Ruston MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deming city, New Mexico, USA.html"><</a> <a class="button" href="32054, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">812/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">376 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Logansport MSA, Indiana, USA.html"><</a> <a class="button" href="Eau Claire MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Piedmont Heights Neighborhood, Duluth City, Minnesota, USA.html"><</a> <a class="button" href="15342, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">442/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">342 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stevens Point MSA, Wisconsin, USA.html"><</a> <a class="button" href="Panama City MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vernon CCD, Wilbarger County, Texas, USA.html"><</a> <a class="button" href="27801, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">262/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">352 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jamestown-Dunkirk-Fredonia MSA, New York, USA.html"><</a> <a class="button" href="Decatur MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Lincoln CCD, Logan County, Illinois, USA.html"><</a> <a class="button" href="45638, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Minnesota, USA.html">Minnesota</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Iowa, USA.html">Iowa</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Rochester-Austin CSA, Minnesota, USA.html">Rochester-Austin CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cerro Gordo County, Iowa, USA.html">Cerro Gordo County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Austin MSA, Minnesota, USA.html">Austin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mower County, Minnesota, USA.html">Mower County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albert Lea MSA, Minnesota, USA.html">Albert Lea MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Freeborn County, Minnesota, USA.html">Freeborn County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mason City CCD, Cerro Gordo County, Iowa, USA.html">Mason City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mason City city, Iowa, USA.html">Mason City city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Floyd County, Iowa, USA.html">Floyd County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Butler County, Iowa, USA.html">Butler County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wright County, Iowa, USA.html">Wright County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hancock County, Iowa, USA.html">Hancock County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Winnebago County, Iowa, USA.html">Winnebago County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mitchell County, Iowa, USA.html">Mitchell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Iowa, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clear Lake city, Iowa, USA.html">Clear Lake city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Worth County, Iowa, USA.html">Worth County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Concord CCD, Hancock County, Iowa, USA.html">Concord CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant CCD, Wright County, Iowa, USA.html">Pleasant CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Center CCD, Winnebago County, Iowa, USA.html">Center CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grove CCD, Worth County, Iowa, USA.html">Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northwood city, Iowa, USA.html">Northwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rock Grove CCD, Floyd County, Iowa, USA.html">Rock Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Worth County, Iowa, USA.html">Lincoln CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clear Lake CCD, Cerro Gordo County, Iowa, USA.html">Clear Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nora Springs city, Iowa, USA.html">Nora Springs city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Geneseo CCD, Cerro Gordo County, Iowa, USA.html">Geneseo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manly city, Iowa, USA.html">Manly city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockford CCD, Floyd County, Iowa, USA.html">Rockford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sheffield city, Iowa, USA.html">Sheffield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sheffield CCD, Franklin County, Iowa, USA.html">Sheffield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockwell city, Iowa, USA.html">Rockwell city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Falls CCD, Cerro Gordo County, Iowa, USA.html">Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grimes CCD, Cerro Gordo County, Iowa, USA.html">Grimes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fertile CCD, Worth County, Iowa, USA.html">Fertile CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ventura city, Iowa, USA.html">Ventura city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ell CCD, Hancock County, Iowa, USA.html">Ell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar CCD, Mitchell County, Iowa, USA.html">Cedar CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Valley CCD, Winnebago County, Iowa, USA.html">Mount Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Worth County, Iowa, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lime Creek CCD, Cerro Gordo County, Iowa, USA.html">Lime Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kensett CCD, Worth County, Iowa, USA.html">Kensett CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ellington CCD, Hancock County, Iowa, USA.html">Ellington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bristol CCD, Worth County, Iowa, USA.html">Bristol CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Thornton city, Iowa, USA.html">Thornton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shell Rock CCD, Freeborn County, Minnesota, USA.html">Shell Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Valley CCD, Cerro Gordo County, Iowa, USA.html">Pleasant Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Danville CCD, Worth County, Iowa, USA.html">Danville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plymouth city, Iowa, USA.html">Plymouth city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newburg CCD, Mitchell County, Iowa, USA.html">Newburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mason CCD, Cerro Gordo County, Iowa, USA.html">Mason CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portland CCD, Cerro Gordo County, Iowa, USA.html">Portland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Avery CCD, Hancock County, Iowa, USA.html">Avery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake CCD, Cerro Gordo County, Iowa, USA.html">Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fertile city, Iowa, USA.html">Fertile city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grant CCD, Cerro Gordo County, Iowa, USA.html">Grant CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otranto CCD, Mitchell County, Iowa, USA.html">Otranto CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rock CCD, Mitchell County, Iowa, USA.html">Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norway CCD, Winnebago County, Iowa, USA.html">Norway CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bath CCD, Cerro Gordo County, Iowa, USA.html">Bath CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Vernon CCD, Cerro Gordo County, Iowa, USA.html">Mount Vernon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Owen CCD, Cerro Gordo County, Iowa, USA.html">Owen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Cerro Gordo County, Iowa, USA.html">Lincoln CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kensett city, Iowa, USA.html">Kensett city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ross CCD, Franklin County, Iowa, USA.html">Ross CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartland CCD, Worth County, Iowa, USA.html">Hartland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, Worth County, Iowa, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bennezette CCD, Butler County, Iowa, USA.html">Bennezette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meservey city, Iowa, USA.html">Meservey city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dougherty CCD, Cerro Gordo County, Iowa, USA.html">Dougherty CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grafton city, Iowa, USA.html">Grafton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Joice city, Iowa, USA.html">Joice city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hanlontown city, Iowa, USA.html">Hanlontown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barton CCD, Worth County, Iowa, USA.html">Barton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Franklin County, Iowa, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Silver Lake CCD, Worth County, Iowa, USA.html">Silver Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scott CCD, Floyd County, Iowa, USA.html">Scott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deer Creek CCD, Worth County, Iowa, USA.html">Deer Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Cerro Gordo County, Iowa, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rock Falls city, Iowa, USA.html">Rock Falls city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Swaledale city, Iowa, USA.html">Swaledale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wisner CCD, Franklin County, Iowa, USA.html">Wisner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Fork CCD, Franklin County, Iowa, USA.html">West Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dougherty city, Iowa, USA.html">Dougherty city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burchinal CDP, Iowa, USA.html">Burchinal CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bolan CDP, Iowa, USA.html">Bolan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Portland CDP, Iowa, USA.html">Portland CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Mason City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,932 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>York County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">York County</div>
+    <div class="text longname">York County, Pennsylvania, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">456.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">158 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Baton Rouge County, Louisiana, USA.html"><</a> <a class="button" href="Solano County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Baton Rouge County, Louisiana, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">929/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">350 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harford County, Maryland, USA.html"><</a> <a class="button" href="Deschutes County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="46825, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">194/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">264 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Manatee County, Florida, USA.html"><</a> <a class="button" href="James City County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Niobrara village, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">80.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1616 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tooele County, Utah, USA.html"><</a> <a class="button" href="West Carroll County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alliance CCD, Stark County, Ohio, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.62%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">944 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chase County, Kansas, USA.html"><</a> <a class="button" href="Piute County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Piute County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1044 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Davie County, North Carolina, USA.html"><</a> <a class="button" href="Pasco County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="17408, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">683 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Johnson County, Nebraska, USA.html"><</a> <a class="button" href="Inyo County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Rough and Ready CDP, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2683 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wyoming County, West Virginia, USA.html"><</a> <a class="button" href="Blaine County, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="19142, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1702 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stark County, Ohio, USA.html"><</a> <a class="button" href="Mahoning County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Jasper CCD, Crittenden County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.08%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1334 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weakley County, Tennessee, USA.html"><</a> <a class="button" href="Caldwell County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Barnwell city, South Carolina, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.525</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2696 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Augusta County, Virginia, USA.html"><</a> <a class="button" href="Providence County, Rhode Island, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="25420, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3005 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sherburne County, Minnesota, USA.html"><</a> <a class="button" href="El Paso County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Wallburg town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1742/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">532 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fremont County, Colorado, USA.html"><</a> <a class="button" href="Hawaii County, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greer city, South Carolina, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1180/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">362 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Arkansas, USA.html"><</a> <a class="button" href="Dorchester County, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="31901, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">741/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">334 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Petersburg County, Virginia, USA.html"><</a> <a class="button" href="Shawnee County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Shawnee County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">541/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">355 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blue Earth County, Minnesota, USA.html"><</a> <a class="button" href="Kings County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Top-O-Hollow Neighborhood, Ames City, Iowa, USA.html"><</a> <a class="button" href="York-Hanover MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Maryland, USA.html">Maryland</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Baltimore-Columbia-Towson MSA, Maryland, USA.html">Baltimore-Columbia-Towson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Harrisburg-York-Lebanon CSA, Pennsylvania, USA.html">Harrisburg-York-Lebanon CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Harrisburg-Carlisle MSA, Pennsylvania, USA.html">Harrisburg-Carlisle MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Baltimore County, Maryland, USA.html">Baltimore County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lancaster County, Pennsylvania, USA.html">Lancaster County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lancaster MSA, Pennsylvania, USA.html">Lancaster MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="York-Hanover MSA, Pennsylvania, USA.html">York-Hanover MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dauphin County, Pennsylvania, USA.html">Dauphin County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harford County, Maryland, USA.html">Harford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cumberland County, Pennsylvania, USA.html">Cumberland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Carroll County, Maryland, USA.html">Carroll County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Gettysburg MSA, Pennsylvania, USA.html">Gettysburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Adams County, Pennsylvania, USA.html">Adams County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="York city, Pennsylvania, USA.html">York city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York CCD, York County, Pennsylvania, USA.html">York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Swatara CCD, Dauphin County, Pennsylvania, USA.html">Swatara CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springettsbury CCD, York County, Pennsylvania, USA.html">Springettsbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper Allen CCD, Cumberland County, Pennsylvania, USA.html">Upper Allen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manor CCD, Lancaster County, Pennsylvania, USA.html">Manor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4, Marshall CCD, Harford County, Maryland, USA.html">4, Marshall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Allen CCD, Cumberland County, Pennsylvania, USA.html">Lower Allen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Manchester CCD, York County, Pennsylvania, USA.html">West Manchester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Penn CCD, York County, Pennsylvania, USA.html">Penn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairview CCD, York County, Pennsylvania, USA.html">Fairview CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Hempfield CCD, Lancaster County, Pennsylvania, USA.html">West Hempfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hanover borough, Pennsylvania, USA.html">Hanover borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hanover CCD, York County, Pennsylvania, USA.html">Hanover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Middleton CCD, Cumberland County, Pennsylvania, USA.html">South Middleton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newberry CCD, York County, Pennsylvania, USA.html">Newberry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6, Manchester CCD, Carroll County, Maryland, USA.html">6, Manchester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Weigelstown CDP, Pennsylvania, USA.html">Weigelstown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Garden CCD, York County, Pennsylvania, USA.html">Spring Garden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5, Dublin CCD, Harford County, Maryland, USA.html">5, Dublin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shiloh CDP, Pennsylvania, USA.html">Shiloh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Swatara CCD, Dauphin County, Pennsylvania, USA.html">Lower Swatara CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East York CDP, Pennsylvania, USA.html">East York CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Codorus CCD, York County, Pennsylvania, USA.html">North Codorus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Manheim CCD, York County, Pennsylvania, USA.html">West Manheim CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Baltimore County, Maryland, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, York County, Pennsylvania, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Donegal CCD, Lancaster County, Pennsylvania, USA.html">East Donegal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conewago CCD, York County, Pennsylvania, USA.html">Conewago CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Manchester CCD, York County, Pennsylvania, USA.html">East Manchester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parkville CDP, Pennsylvania, USA.html">Parkville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conewago CCD, Adams County, Pennsylvania, USA.html">Conewago CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Windsor CCD, York County, Pennsylvania, USA.html">Lower Windsor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Cumberland borough, Pennsylvania, USA.html">New Cumberland borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Cumberland CCD, Cumberland County, Pennsylvania, USA.html">New Cumberland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lower Allen CDP, Pennsylvania, USA.html">Lower Allen CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carroll CCD, York County, Pennsylvania, USA.html">Carroll CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Red Lion borough, Pennsylvania, USA.html">Red Lion borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Red Lion CCD, York County, Pennsylvania, USA.html">Red Lion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Cumberland County, Pennsylvania, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield CCD, York County, Pennsylvania, USA.html">Springfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hellam CCD, York County, Pennsylvania, USA.html">Hellam CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chanceford CCD, York County, Pennsylvania, USA.html">Chanceford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Baltimore County, Maryland, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reading CCD, Adams County, Pennsylvania, USA.html">Reading CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3, Myers CCD, Carroll County, Maryland, USA.html">3, Myers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopewell CCD, York County, Pennsylvania, USA.html">Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spry CDP, Pennsylvania, USA.html">Spry CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Martic CCD, Lancaster County, Pennsylvania, USA.html">Martic CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West York CCD, York County, Pennsylvania, USA.html">West York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West York borough, Pennsylvania, USA.html">West York borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, York County, Pennsylvania, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peach Bottom CCD, York County, Pennsylvania, USA.html">Peach Bottom CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Londonderry CCD, Dauphin County, Pennsylvania, USA.html">Londonderry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Freedom CCD, York County, Pennsylvania, USA.html">New Freedom CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Freedom borough, Pennsylvania, USA.html">New Freedom borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Warrington CCD, York County, Pennsylvania, USA.html">Warrington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dallastown borough, Pennsylvania, USA.html">Dallastown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dallastown CCD, York County, Pennsylvania, USA.html">Dallastown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paradise CCD, York County, Pennsylvania, USA.html">Paradise CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Codorus CCD, York County, Pennsylvania, USA.html">Codorus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conestoga CCD, Lancaster County, Pennsylvania, USA.html">Conestoga CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shrewsbury borough, Pennsylvania, USA.html">Shrewsbury borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shrewsbury CCD, York County, Pennsylvania, USA.html">Shrewsbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grantley CDP, Pennsylvania, USA.html">Grantley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manheim CCD, York County, Pennsylvania, USA.html">Manheim CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valley Green CDP, Pennsylvania, USA.html">Valley Green CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conoy CCD, Lancaster County, Pennsylvania, USA.html">Conoy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fulton CCD, Lancaster County, Pennsylvania, USA.html">Fulton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Adams County, Pennsylvania, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Heidelberg CCD, York County, Pennsylvania, USA.html">Heidelberg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Chanceford CCD, York County, Pennsylvania, USA.html">Lower Chanceford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fawn CCD, York County, Pennsylvania, USA.html">Fawn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emigsville CDP, Pennsylvania, USA.html">Emigsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stonybrook CDP, Pennsylvania, USA.html">Stonybrook CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Messiah College CDP, Pennsylvania, USA.html">Messiah College CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manchester CCD, York County, Pennsylvania, USA.html">Manchester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manchester borough, Pennsylvania, USA.html">Manchester borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hallam borough, Pennsylvania, USA.html">Hallam borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hallam CCD, York County, Pennsylvania, USA.html">Hallam CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Latimore CCD, Adams County, Pennsylvania, USA.html">Latimore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Hopewell CCD, York County, Pennsylvania, USA.html">North Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton CCD, Adams County, Pennsylvania, USA.html">Hamilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monaghan CCD, York County, Pennsylvania, USA.html">Monaghan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dillsburg borough, Pennsylvania, USA.html">Dillsburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dillsburg CCD, York County, Pennsylvania, USA.html">Dillsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, York County, Pennsylvania, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Drumore CCD, Lancaster County, Pennsylvania, USA.html">Drumore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Hopewell CCD, York County, Pennsylvania, USA.html">East Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berwick CCD, Adams County, Pennsylvania, USA.html">Berwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Grove borough, Pennsylvania, USA.html">Spring Grove borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Grove CCD, York County, Pennsylvania, USA.html">Spring Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pennville CDP, Pennsylvania, USA.html">Pennville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wrightsville borough, Pennsylvania, USA.html">Wrightsville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wrightsville CCD, York County, Pennsylvania, USA.html">Wrightsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North York CCD, York County, Pennsylvania, USA.html">North York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Susquehanna Trails CDP, Pennsylvania, USA.html">Susquehanna Trails CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North York borough, Pennsylvania, USA.html">North York borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stewartstown borough, Pennsylvania, USA.html">Stewartstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stewartstown CCD, York County, Pennsylvania, USA.html">Stewartstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Rock borough, Pennsylvania, USA.html">Glen Rock borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glen Rock CCD, York County, Pennsylvania, USA.html">Glen Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Midway CDP, Pennsylvania, USA.html">Midway CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dover borough, Pennsylvania, USA.html">Dover borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dover CCD, York County, Pennsylvania, USA.html">Dover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tyler Run CDP, Pennsylvania, USA.html">Tyler Run CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jacobus CCD, York County, Pennsylvania, USA.html">Jacobus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jacobus borough, Pennsylvania, USA.html">Jacobus borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yorklyn CDP, Pennsylvania, USA.html">Yorklyn CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valley View CDP, Pennsylvania, USA.html">Valley View CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Berlin borough, Pennsylvania, USA.html">East Berlin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Berlin CCD, Adams County, Pennsylvania, USA.html">East Berlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Queens Gate CDP, Pennsylvania, USA.html">Queens Gate CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loganville borough, Pennsylvania, USA.html">Loganville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Loganville CCD, York County, Pennsylvania, USA.html">Loganville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Wolf borough, Pennsylvania, USA.html">Mount Wolf borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Wolf CCD, York County, Pennsylvania, USA.html">Mount Wolf CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Windsor borough, Pennsylvania, USA.html">Windsor borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Windsor CCD, York County, Pennsylvania, USA.html">Windsor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yoe borough, Pennsylvania, USA.html">Yoe borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yoe CCD, York County, Pennsylvania, USA.html">Yoe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Abbottstown borough, Pennsylvania, USA.html">Abbottstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Abbottstown CCD, Adams County, Pennsylvania, USA.html">Abbottstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Prospect borough, Pennsylvania, USA.html">East Prospect borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Goldsboro CCD, York County, Pennsylvania, USA.html">Goldsboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Goldsboro borough, Pennsylvania, USA.html">Goldsboro borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Prospect CCD, York County, Pennsylvania, USA.html">East Prospect CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Salem CCD, York County, Pennsylvania, USA.html">New Salem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Salem borough, Pennsylvania, USA.html">New Salem borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Delta borough, Pennsylvania, USA.html">Delta borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Delta CCD, York County, Pennsylvania, USA.html">Delta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Market CDP, Pennsylvania, USA.html">New Market CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York Haven CCD, York County, Pennsylvania, USA.html">York Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="York Haven borough, Pennsylvania, USA.html">York Haven borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, York County, Pennsylvania, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Winterstown borough, Pennsylvania, USA.html">Winterstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winterstown CCD, York County, Pennsylvania, USA.html">Winterstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cross Roads CCD, York County, Pennsylvania, USA.html">Cross Roads CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cross Roads borough, Pennsylvania, USA.html">Cross Roads borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Franklintown borough, Pennsylvania, USA.html">Franklintown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklintown CCD, York County, Pennsylvania, USA.html">Franklintown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Felton CCD, York County, Pennsylvania, USA.html">Felton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Felton borough, Pennsylvania, USA.html">Felton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fawn Grove CCD, York County, Pennsylvania, USA.html">Fawn Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seven Valleys borough, Pennsylvania, USA.html">Seven Valleys borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seven Valleys CCD, York County, Pennsylvania, USA.html">Seven Valleys CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fawn Grove borough, Pennsylvania, USA.html">Fawn Grove borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lewisberry CCD, York County, Pennsylvania, USA.html">Lewisberry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lewisberry borough, Pennsylvania, USA.html">Lewisberry borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wellsville borough, Pennsylvania, USA.html">Wellsville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wellsville CCD, York County, Pennsylvania, USA.html">Wellsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Railroad CCD, York County, Pennsylvania, USA.html">Railroad CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Railroad borough, Pennsylvania, USA.html">Railroad borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jefferson borough, Pennsylvania, USA.html">Jefferson borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yorkana borough, Pennsylvania, USA.html">Yorkana borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yorkana CCD, York County, Pennsylvania, USA.html">Yorkana CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for York County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

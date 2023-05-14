@@ -1,0 +1,431 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Moody city</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Moody city</div>
+    <div class="text longname">Moody city, Texas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">13034 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgandale CDP, Ohio, USA.html"><</a> <a class="button" href="Saranac village, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43432, USA.html"><</a> <a class="button" href="North Beach Neighborhood, New Smyrna Beach City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">285/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12530 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portland borough, Pennsylvania, USA.html"><</a> <a class="button" href="Somers village, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Locust Grove CCD, Henry County, Georgia, USA.html"><</a> <a class="button" href="Somers village, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">553/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7629 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="June Park CDP, Florida, USA.html"><</a> <a class="button" href="Haworth borough, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="June Park CDP, Florida, USA.html"><</a> <a class="button" href="Mahtomedi CCD, Washington County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">62.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">22096 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Metairie CDP, Louisiana, USA.html"><</a> <a class="button" href="Perryman CDP, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Concord CCD, Louisa County, Iowa, USA.html"><</a> <a class="button" href="Mohawk Neighborhood, Eight Mile City, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">25.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3246 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Battlement Mesa CDP, Colorado, USA.html"><</a> <a class="button" href="Lincoln Park city, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bixby Knolls Neighborhood, Long Beach City, California, USA.html"><</a> <a class="button" href="Arizona Skyline Neighborhood, Mesa City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6212 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watauga city, Texas, USA.html"><</a> <a class="button" href="Tracy city, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watauga city, Texas, USA.html"><</a> <a class="button" href="33635, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">19038 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fuller Acres CDP, California, USA.html"><</a> <a class="button" href="Cherokee city, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fuller Acres CDP, California, USA.html"><</a> <a class="button" href="Cumberland City CCD, Clinton County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">17180 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redington Beach town, Florida, USA.html"><</a> <a class="button" href="Riceville CDP, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="29911, USA.html"><</a> <a class="button" href="Cumberland City CCD, Clinton County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">19868 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bethlehem CDP, North Carolina, USA.html"><</a> <a class="button" href="Huntsville city, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Glen Dean-Vanzant CCD, Breckinridge County, Kentucky, USA.html"><</a> <a class="button" href="Provincetowne Neighborhood, Fort Collins City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.60%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7058 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Timberlane CDP, Louisiana, USA.html"><</a> <a class="button" href="Gilmer city, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Poultney CCD, Rutland County, Vermont, USA.html"><</a> <a class="button" href="28901, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.567</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">17702 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Uniondale town, Indiana, USA.html"><</a> <a class="button" href="Hurlock town, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Ziebach CCD, Ziebach County, South Dakota, USA.html"><</a> <a class="button" href="98266, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">11154 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Peoria city, Illinois, USA.html"><</a> <a class="button" href="Marengo town, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73104, USA.html"><</a> <a class="button" href="Lake City-Scranton CCD, Florence County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">674/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14811 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Whitecone CDP, Arizona, USA.html"><</a> <a class="button" href="Blue Ridge Summit CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Whitecone CDP, Arizona, USA.html"><</a> <a class="button" href="Blue Ridge Summit CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">464/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12779 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Waldron city, Arkansas, USA.html"><</a> <a class="button" href="Stanton city, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Waldron city, Arkansas, USA.html"><</a> <a class="button" href="53004, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">122/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">13919 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vian town, Oklahoma, USA.html"><</a> <a class="button" href="Stanton city, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Page County, Virginia, USA.html"><</a> <a class="button" href="52068, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">41/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16427 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sheldahl city, Iowa, USA.html"><</a> <a class="button" href="Greenleaf city, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sheldahl city, Iowa, USA.html"><</a> <a class="button" href="56278, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Texas, USA.html">Texas</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Waco MSA, Texas, USA.html">Waco MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McLennan County, Texas, USA.html">McLennan County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moody-Lorena CCD, McLennan County, Texas, USA.html">Moody-Lorena CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Moody city's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

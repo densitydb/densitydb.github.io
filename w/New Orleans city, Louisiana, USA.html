@@ -1,0 +1,740 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New Orleans city</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">New Orleans city</div>
+    <div class="text longname">New Orleans city, Louisiana, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">384.0k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">53 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tampa city, Florida, USA.html"><</a> <a class="button" href="Cleveland city, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, Louisiana, USA.html"><</a> <a class="button" href="Lake County, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2414/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">734 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Waipio Acres CDP, Hawaii, USA.html"><</a> <a class="button" href="Manassas Park city, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Temple Crest Neighborhood, Tampa City, Florida, USA.html"><</a> <a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">424/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10251 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Del Rey CDP, California, USA.html"><</a> <a class="button" href="Ravenna village, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Del Rey CDP, California, USA.html"><</a> <a class="button" href="Indian Head Neighborhood, Marlborough City, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">31.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">26215 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southern Shops CDP, South Carolina, USA.html"><</a> <a class="button" href="Sonora city, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html"><</a> <a class="button" href="Little Saigon Neighborhood, Seattle City, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.08%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9246 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reliez Valley CDP, California, USA.html"><</a> <a class="button" href="Ocean Gate borough, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html"><</a> <a class="button" href="11725, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">941 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Butlertown CDP, Maryland, USA.html"><</a> <a class="button" href="Elm City town, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eastside Neighborhood, Savannah City, Georgia, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.75%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4221 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Goodview city, Minnesota, USA.html"><</a> <a class="button" href="Oneonta city, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">15145 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plandome Heights village, New York, USA.html"><</a> <a class="button" href="West Covina city, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elkland CCD, Tuscola County, Michigan, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8118 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baldwyn city, Mississippi, USA.html"><</a> <a class="button" href="Washoe Valley CDP, Nevada, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, Louisiana, USA.html"><</a> <a class="button" href="Windham CCD, Cumberland County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.71%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16713 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cheney city, Kansas, USA.html"><</a> <a class="button" href="Silas town, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html"><</a> <a class="button" href="76653, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.633</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8865 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bridgeport city, Nebraska, USA.html"><</a> <a class="button" href="Ashton city, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beatrice CCD, Gage County, Nebraska, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.81%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8869 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wymore city, Nebraska, USA.html"><</a> <a class="button" href="Mount Union borough, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wymore city, Nebraska, USA.html"><</a> <a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3490/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1172 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oxford city, Ohio, USA.html"><</a> <a class="button" href="Tukwila city, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lansingburgh Neighborhood, Troy City, New York, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2829/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">755 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Four Corners CDP, Oregon, USA.html"><</a> <a class="button" href="Avenel CDP, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, Louisiana, USA.html"><</a> <a class="button" href="Southside Slopes Neighborhood, Pittsburgh City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2057/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">734 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fresno city, California, USA.html"><</a> <a class="button" href="Princeton CDP, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html"><</a> <a class="button" href="Wellauer Heights Neighborhood, Wauwatosa City, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1698/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">867 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dunellen borough, New Jersey, USA.html"><</a> <a class="button" href="Madison Heights city, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Country Club Neighborhood, Stockton City, California, USA.html"><</a> <a class="button" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Louisiana, USA.html">Louisiana</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="New Orleans-Metairie MSA, Louisiana, USA.html">New Orleans-Metairie MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Louisiana, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orleans County, Louisiana, USA.html">Orleans County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Orleans CCD, Orleans Parish, Louisiana, USA.html">New Orleans CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Tammany County, Louisiana, USA.html">St. Tammany County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Metairie CDP, Louisiana, USA.html">Metairie CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Jefferson Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Jefferson Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Jefferson Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Bernard County, Louisiana, USA.html">St. Bernard County</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Little Woods Neighborhood, New Orleans City, Louisiana, USA.html">Little Woods, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marrero CDP, Louisiana, USA.html">Marrero CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Terrytown CDP, Louisiana, USA.html">Terrytown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Plaquemines County, Louisiana, USA.html">Plaquemines County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harvey CDP, Louisiana, USA.html">Harvey CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chalmette CDP, Louisiana, USA.html">Chalmette CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, St. Tammany Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, St. Tammany Parish, Louisiana, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, St. Tammany Parish, Louisiana, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gretna city, Louisiana, USA.html">Gretna city</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Audubon Neighborhood, New Orleans City, Louisiana, USA.html">Audubon, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, St. Tammany Parish, Louisiana, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Old Aurora Neighborhood, New Orleans City, Louisiana, USA.html">Old Aurora, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Mid-City Neighborhood, New Orleans City, Louisiana, USA.html">Mid-City, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belle Chasse CDP, Louisiana, USA.html">Belle Chasse CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Central City Neighborhood, New Orleans City, Louisiana, USA.html">Central City, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Tall Timbers-Brechtel Neighborhood, New Orleans City, Louisiana, USA.html">Tall Timbers-Brechtel, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Seventh Ward Neighborhood, New Orleans City, Louisiana, USA.html">Seventh Ward, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jefferson CDP, Louisiana, USA.html">Jefferson CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Village De L'Est Neighborhood, New Orleans City, Louisiana, USA.html">Village De L'Est, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lakeview Neighborhood, New Orleans City, Louisiana, USA.html">Lakeview, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="A CCD, St. Bernard Parish, Louisiana, USA.html">A CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="D CCD, St. Bernard Parish, Louisiana, USA.html">D CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Gentilly Terrace Neighborhood, New Orleans City, Louisiana, USA.html">Gentilly Terrace, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westwego city, Louisiana, USA.html">Westwego city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="B CCD, St. Bernard Parish, Louisiana, USA.html">B CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="C CCD, St. Bernard Parish, Louisiana, USA.html">C CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="E CCD, St. Bernard Parish, Louisiana, USA.html">E CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Behrman Neighborhood, New Orleans City, Louisiana, USA.html">Behrman, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Read Blvd. East Neighborhood, New Orleans City, Louisiana, USA.html">Read Blvd. East, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="St. Roch Neighborhood, New Orleans City, Louisiana, USA.html">St. Roch, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridge City CDP, Louisiana, USA.html">Bridge City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Leonidas Neighborhood, New Orleans City, Louisiana, USA.html">Leonidas, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meraux CDP, Louisiana, USA.html">Meraux CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="St. Claude Neighborhood, New Orleans City, Louisiana, USA.html">St. Claude, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Marlyville-Fontainebleau Neighborhood, New Orleans City, Louisiana, USA.html">Marlyville-Fontainebleau, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Broadmoor Neighborhood, New Orleans City, Louisiana, USA.html">Broadmoor, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Fillmore Neighborhood, New Orleans City, Louisiana, USA.html">Fillmore, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Uptown Neighborhood, New Orleans City, Louisiana, USA.html">Uptown, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Violet CDP, Louisiana, USA.html">Violet CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Treme' Lafitte Neighborhood, New Orleans City, Louisiana, USA.html">Treme' Lafitte, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Milan Neighborhood, New Orleans City, Louisiana, USA.html">Milan, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lower Garden District Neighborhood, New Orleans City, Louisiana, USA.html">Lower Garden District, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Dillard Neighborhood, New Orleans City, Louisiana, USA.html">Dillard, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Plum Orchard Neighborhood, New Orleans City, Louisiana, USA.html">Plum Orchard, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Fairgrounds Neighborhood, New Orleans City, Louisiana, USA.html">Fairgrounds, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="New Aurora-English Turn Neighborhood, New Orleans City, Louisiana, USA.html">New Aurora-English Turn, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Holly Grove Neighborhood, New Orleans City, Louisiana, USA.html">Holly Grove, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="West Lake Forest Neighborhood, New Orleans City, Louisiana, USA.html">West Lake Forest, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lower 9th Ward Neighborhood, New Orleans City, Louisiana, USA.html">Lower 9th Ward, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="West Riverside Neighborhood, New Orleans City, Louisiana, USA.html">West Riverside, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Read Blvd. West Neighborhood, New Orleans City, Louisiana, USA.html">Read Blvd. West, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="St. Anthony Neighborhood, New Orleans City, Louisiana, USA.html">St. Anthony, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="West End Neighborhood, New Orleans City, Louisiana, USA.html">West End, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arabi CDP, Louisiana, USA.html">Arabi CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Plaquemines Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Central Business District Neighborhood, New Orleans City, Louisiana, USA.html">Central Business District, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Pines Village Neighborhood, New Orleans City, Louisiana, USA.html">Pines Village, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Milneburg Neighborhood, New Orleans City, Louisiana, USA.html">Milneburg, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Gert Town Neighborhood, New Orleans City, Louisiana, USA.html">Gert Town, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="East Carollton Neighborhood, New Orleans City, Louisiana, USA.html">East Carollton, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Bywater Neighborhood, New Orleans City, Louisiana, USA.html">Bywater, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lake Shore-Lake Vista Neighborhood, New Orleans City, Louisiana, USA.html">Lake Shore-Lake Vista, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lake Terrace and Oaks Neighborhood, New Orleans City, Louisiana, USA.html">Lake Terrace and Oaks, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Tulane-Gravier Neighborhood, New Orleans City, Louisiana, USA.html">Tulane-Gravier, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Bayou St. John Neighborhood, New Orleans City, Louisiana, USA.html">Bayou St. John, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Irish Channel Neighborhood, New Orleans City, Louisiana, USA.html">Irish Channel, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="French Quarter Neighborhood, New Orleans City, Louisiana, USA.html">French Quarter, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Holy Cross Neighborhood, New Orleans City, Louisiana, USA.html">Holy Cross, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Garden District Neighborhood, New Orleans City, Louisiana, USA.html">Garden District, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Gentilly Woods Neighborhood, New Orleans City, Louisiana, USA.html">Gentilly Woods, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Marigny Neighborhood, New Orleans City, Louisiana, USA.html">Marigny, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Desire Neighborhood, New Orleans City, Louisiana, USA.html">Desire, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Navarre Neighborhood, New Orleans City, Louisiana, USA.html">Navarre, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="St. Bernard Area Neighborhood, New Orleans City, Louisiana, USA.html">St. Bernard Area, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="City Park Neighborhood, New Orleans City, Louisiana, USA.html">City Park, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="East Riverside Neighborhood, New Orleans City, Louisiana, USA.html">East Riverside, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Poydras CDP, Louisiana, USA.html">Poydras CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Touro Neighborhood, New Orleans City, Louisiana, USA.html">Touro, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="McDonogh Neighborhood, New Orleans City, Louisiana, USA.html">McDonogh, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Algeirs Point Neighborhood, New Orleans City, Louisiana, USA.html">Algeirs Point, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Pontchartrain Park Neighborhood, New Orleans City, Louisiana, USA.html">Pontchartrain Park, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="St. Thomas Neighborhood, New Orleans City, Louisiana, USA.html">St. Thomas, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="US Naval Base Neighborhood, New Orleans City, Louisiana, USA.html">US Naval Base, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Whitney Neighborhood, New Orleans City, Louisiana, USA.html">Whitney, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lakewood Neighborhood, New Orleans City, Louisiana, USA.html">Lakewood, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Plaquemines Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Black Pearl Neighborhood, New Orleans City, Louisiana, USA.html">Black Pearl, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Florida Neighborhood, New Orleans City, Louisiana, USA.html">Florida, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Freret Neighborhood, New Orleans City, Louisiana, USA.html">Freret, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="B.W. Cooper Neighborhood, New Orleans City, Louisiana, USA.html">B.W. Cooper, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Dixon Neighborhood, New Orleans City, Louisiana, USA.html">Dixon, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Iberville Neighborhood, New Orleans City, Louisiana, USA.html">Iberville, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Viavant-Venetian Isles Neighborhood, New Orleans City, Louisiana, USA.html">Viavant-Venetian Isles, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Fischer Dev Neighborhood, New Orleans City, Louisiana, USA.html">Fischer Dev, New Orleans</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lake Catherine Neighborhood, New Orleans City, Louisiana, USA.html">Lake Catherine, New Orleans</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for New Orleans city's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

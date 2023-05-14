@@ -1,0 +1,452 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Deephaven city</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Deephaven city</div>
+    <div class="text longname">Deephaven city, Minnesota, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7666 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lancaster city, Kentucky, USA.html"><</a> <a class="button" href="Level Green CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lancaster city, Kentucky, USA.html"><</a> <a class="button" href="Cane Creek CCD, Lincoln County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">564/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7623 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Trinidad city, Colorado, USA.html"><</a> <a class="button" href="Rocky Hill borough, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html"><</a> <a class="button" href="08553, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">635/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6410 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Joseph city, Michigan, USA.html"><</a> <a class="button" href="Atlantic Beach village, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Joseph city, Michigan, USA.html"><</a> <a class="button" href="Missionary Ridge Neighborhood, Chattanooga City, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">92.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5408 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Craigsville town, Virginia, USA.html"><</a> <a class="button" href="Max Meadows CDP, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04041, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20904 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Oaks city, Minnesota, USA.html"><</a> <a class="button" href="Kewanna town, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Oaks city, Minnesota, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">21236 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gage town, Oklahoma, USA.html"><</a> <a class="button" href="Bloomville village, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="40336, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7898 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cave Creek town, Arizona, USA.html"><</a> <a class="button" href="Ponce Inlet town, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html"><</a> <a class="button" href="Ponce Inlet town, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">21256 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pemberwick CDP, Connecticut, USA.html"><</a> <a class="button" href="Lancaster city, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html"><</a> <a class="button" href="Pemberwick CDP, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">19868 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alpine borough, New Jersey, USA.html"><</a> <a class="button" href="Pearl River CDP, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alton city, Texas, USA.html"><</a> <a class="button" href="28751, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">18571 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valencia CDP, New Mexico, USA.html"><</a> <a class="button" href="Piketon village, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benton CCD, Pike County, Ohio, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.534</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">21816 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Simpsonville city, Kentucky, USA.html"><</a> <a class="button" href="Norwood CDP, Massachusetts, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="47854, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.33%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">19361 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gloucester Courthouse CDP, Virginia, USA.html"><</a> <a class="button" href="Lafourche Crossing CDP, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Prague CCD, Le Sueur County, Minnesota, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1263/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8210 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Micco CDP, Florida, USA.html"><</a> <a class="button" href="Lake Cherokee CDP, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html"><</a> <a class="button" href="Saginaw-Midland-Bay City CSA, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">701/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8843 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portland city, Michigan, USA.html"><</a> <a class="button" href="Oakridge city, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portland city, Michigan, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">459/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6583 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hyde Park city, Utah, USA.html"><</a> <a class="button" href="Poquoson city, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html"><</a> <a class="button" href="38654, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">440/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5209 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madera Acres CDP, California, USA.html"><</a> <a class="button" href="Fruitland Park city, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newman-Buschman Neighborhood, Hattiesburg City, Mississippi, USA.html"><</a> <a class="button" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Minnesota, USA.html">Minnesota</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hennepin County, Minnesota, USA.html">Hennepin County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minnetonka city, Minnesota, USA.html">Minnetonka city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minnetonka CCD, Hennepin County, Minnesota, USA.html">Minnetonka CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shorewood city, Minnesota, USA.html">Shorewood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shorewood CCD, Hennepin County, Minnesota, USA.html">Shorewood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">Deephaven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwood CCD, Hennepin County, Minnesota, USA.html">Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenwood city, Minnesota, USA.html">Greenwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodland CCD, Hennepin County, Minnesota, USA.html">Woodland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodland city, Minnesota, USA.html">Woodland city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Deephaven city's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

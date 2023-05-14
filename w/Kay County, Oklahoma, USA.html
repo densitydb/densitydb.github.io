@@ -1,0 +1,548 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kay County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Kay County</div>
+    <div class="text longname">Kay County, Oklahoma, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">43.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1104 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kandiyohi County, Minnesota, USA.html"><</a> <a class="button" href="Brown County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48310, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">578/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">705 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nantucket County, Massachusetts, USA.html"><</a> <a class="button" href="Harvey County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nantucket County, Massachusetts, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">18/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1511 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alleghany County, North Carolina, USA.html"><</a> <a class="button" href="Susquehanna County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Pine Creek CCD, Jefferson County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">70.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2059 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Real County, Texas, USA.html"><</a> <a class="button" href="Grayson County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bryant city, Arkansas, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">968 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shelby County, Tennessee, USA.html"><</a> <a class="button" href="Pawnee County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Columbus West CCD, Muscogee County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1577 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pottawattamie County, Iowa, USA.html"><</a> <a class="button" href="Marshall County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78015, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1488 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clay County, Illinois, USA.html"><</a> <a class="button" href="Dyer County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="75058, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">132 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vilas County, Wisconsin, USA.html"><</a> <a class="button" href="Brule County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Brule County, South Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">74 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greene County, Arkansas, USA.html"><</a> <a class="button" href="Woodbury County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Mountain Gate Neighborhood, Palm Springs City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.72%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">81 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cotton County, Oklahoma, USA.html"><</a> <a class="button" href="Marshall County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="82050, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.628</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">830 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Vermont, USA.html"><</a> <a class="button" href="Mississippi County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15752, USA.html"><</a> <a class="button" href="Ponca City MSA, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1030 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lee County, Virginia, USA.html"><</a> <a class="button" href="Wayne County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Washington CCD, Ouachita County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1023/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1210 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Flathead County, Montana, USA.html"><</a> <a class="button" href="Chaffee County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="8 CCD, Livingston Parish, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">721/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">864 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montcalm County, Michigan, USA.html"><</a> <a class="button" href="Lincoln County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Lely Resort CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">436/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">661 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Buncombe County, North Carolina, USA.html"><</a> <a class="button" href="Bullitt County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Siler City town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">244/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">742 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lauderdale County, Alabama, USA.html"><</a> <a class="button" href="Hancock County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ponca City MSA, Oklahoma, USA.html"><</a> <a class="button" href="31062, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Oklahoma, USA.html">Oklahoma</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Kansas, USA.html">Kansas</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Tulsa-Muskogee-Bartlesville CSA, Oklahoma, USA.html">Tulsa-Muskogee-Bartlesville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tulsa MSA, Oklahoma, USA.html">Tulsa MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Wichita-Arkansas City-Winfield CSA, Kansas, USA.html">Wichita-Arkansas City-Winfield CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Wichita MSA, Kansas, USA.html">Wichita MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Enid MSA, Oklahoma, USA.html">Enid MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Garfield County, Oklahoma, USA.html">Garfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Osage County, Oklahoma, USA.html">Osage County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ponca City MSA, Oklahoma, USA.html">Ponca City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Arkansas City-Winfield MSA, Kansas, USA.html">Arkansas City-Winfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cowley County, Kansas, USA.html">Cowley County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ponca City CCD, Kay County, Oklahoma, USA.html">Ponca City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ponca City city, Oklahoma, USA.html">Ponca City city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sumner County, Kansas, USA.html">Sumner County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Noble County, Oklahoma, USA.html">Noble County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blackwell CCD, Kay County, Oklahoma, USA.html">Blackwell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blackwell city, Oklahoma, USA.html">Blackwell city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Oklahoma, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonkawa CCD, Kay County, Oklahoma, USA.html">Tonkawa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Garfield CCD, Garfield County, Oklahoma, USA.html">North Garfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newkirk CCD, Kay County, Oklahoma, USA.html">Newkirk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tonkawa city, Oklahoma, USA.html">Tonkawa city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Noble CCD, Noble County, Oklahoma, USA.html">East Noble CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McCord-Braden CCD, Osage County, Oklahoma, USA.html">McCord-Braden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newkirk city, Oklahoma, USA.html">Newkirk city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Medford CCD, Grant County, Oklahoma, USA.html">Medford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bolton CCD, Cowley County, Kansas, USA.html">Bolton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Osage CCD, Osage County, Oklahoma, USA.html">Northwest Osage CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kaw City CCD, Kay County, Oklahoma, USA.html">Kaw City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Billings CCD, Noble County, Oklahoma, USA.html">Billings CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lamont CCD, Grant County, Oklahoma, USA.html">Lamont CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Braman CCD, Kay County, Oklahoma, USA.html">Braman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Haven CCD, Sumner County, Kansas, USA.html">South Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Silverdale CCD, Cowley County, Kansas, USA.html">Silverdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kaw City city, Oklahoma, USA.html">Kaw City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walton CCD, Sumner County, Kansas, USA.html">Walton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Braman town, Oklahoma, USA.html">Braman town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Guelph CCD, Sumner County, Kansas, USA.html">Guelph CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kildare town, Oklahoma, USA.html">Kildare town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Creek CCD, Cowley County, Kansas, USA.html">Spring Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hunnewell city, Kansas, USA.html">Hunnewell city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nardin CDP, Oklahoma, USA.html">Nardin CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Kay County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

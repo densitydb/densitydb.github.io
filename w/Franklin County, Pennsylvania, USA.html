@@ -1,0 +1,656 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Franklin County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Franklin County</div>
+    <div class="text longname">Franklin County, Pennsylvania, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">155.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">434 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia County, Georgia, USA.html"><</a> <a class="button" href="Mesa County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Springfield city, Massachusetts, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">514/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">825 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Midland County, Michigan, USA.html"><</a> <a class="button" href="James City County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="71203, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">78/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">541 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ellis County, Texas, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Au Sable Forks CDP, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">85.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1277 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nicollet County, Minnesota, USA.html"><</a> <a class="button" href="Phelps County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Log Cabin Park Neighborhood, Fort Wayne City, Indiana, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1147 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Waushara County, Wisconsin, USA.html"><</a> <a class="button" href="Lyon County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Northside Neighborhood, Iowa City City, Iowa, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.21%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1355 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgan County, Colorado, USA.html"><</a> <a class="button" href="Kleberg County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Elder CCD, Oconee County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1040 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oglethorpe County, Georgia, USA.html"><</a> <a class="button" href="Roosevelt County, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Billings city, Montana, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2544 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upshur County, West Virginia, USA.html"><</a> <a class="button" href="Ripley County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48205, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1709 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clarendon County, South Carolina, USA.html"><</a> <a class="button" href="Wayne County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Watauga CCD, Watauga County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.79%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1603 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Red River County, Louisiana, USA.html"><</a> <a class="button" href="Dillon County, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Red River County, Louisiana, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.548</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2347 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ripley County, Indiana, USA.html"><</a> <a class="button" href="Guilford County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Wolf borough, Pennsylvania, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2817 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield County, Connecticut, USA.html"><</a> <a class="button" href="Portage County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bridgeport-Stamford-Norwalk MSA, Connecticut, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1149/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1033 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Davidson County, North Carolina, USA.html"><</a> <a class="button" href="St. Clair County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Richmond-Connersville CSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">704/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">889 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Routt County, Colorado, USA.html"><</a> <a class="button" href="Whitfield County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Bangor borough, Pennsylvania, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">359/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">806 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Ohio, USA.html"><</a> <a class="button" href="Berrien County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Cheyney University CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">232/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">769 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watauga County, North Carolina, USA.html"><</a> <a class="button" href="Leflore County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Saybrook CCD, Ashtabula County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Maryland, USA.html">Maryland</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Harrisburg-York-Lebanon CSA, Pennsylvania, USA.html">Harrisburg-York-Lebanon CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Harrisburg-Carlisle MSA, Pennsylvania, USA.html">Harrisburg-Carlisle MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Frederick County, Maryland, USA.html">Frederick County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cumberland County, Pennsylvania, USA.html">Cumberland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Chambersburg-Waynesboro MSA, Pennsylvania, USA.html">Chambersburg-Waynesboro MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Maryland, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Gettysburg MSA, Pennsylvania, USA.html">Gettysburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Adams County, Pennsylvania, USA.html">Adams County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Perry County, Pennsylvania, USA.html">Perry County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Huntingdon County, Pennsylvania, USA.html">Huntingdon County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Huntingdon MSA, Pennsylvania, USA.html">Huntingdon MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Juniata County, Pennsylvania, USA.html">Juniata County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chambersburg borough, Pennsylvania, USA.html">Chambersburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chambersburg CCD, Franklin County, Pennsylvania, USA.html">Chambersburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greene CCD, Franklin County, Pennsylvania, USA.html">Greene CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Antrim CCD, Franklin County, Pennsylvania, USA.html">Antrim CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Franklin County, Pennsylvania, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Guilford CCD, Franklin County, Pennsylvania, USA.html">Guilford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fulton County, Pennsylvania, USA.html">Fulton County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton CCD, Franklin County, Pennsylvania, USA.html">Hamilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waynesboro borough, Pennsylvania, USA.html">Waynesboro borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waynesboro CCD, Franklin County, Pennsylvania, USA.html">Waynesboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southampton CCD, Franklin County, Pennsylvania, USA.html">Southampton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="27, Fountain Head CCD, Washington County, Maryland, USA.html">27, Fountain Head CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southampton CCD, Cumberland County, Pennsylvania, USA.html">Southampton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13, Maugansville CCD, Washington County, Maryland, USA.html">13, Maugansville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Thomas CCD, Franklin County, Pennsylvania, USA.html">St. Thomas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montgomery CCD, Franklin County, Pennsylvania, USA.html">Montgomery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shippensburg borough, Pennsylvania, USA.html">Shippensburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Quincy CCD, Franklin County, Pennsylvania, USA.html">Quincy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="23, Wilsons CCD, Washington County, Maryland, USA.html">23, Wilsons CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, Adams County, Pennsylvania, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peters CCD, Franklin County, Pennsylvania, USA.html">Peters CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shippensburg CCD, Cumberland County, Pennsylvania, USA.html">Shippensburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greencastle borough, Pennsylvania, USA.html">Greencastle borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greencastle CCD, Franklin County, Pennsylvania, USA.html">Greencastle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maugansville CDP, Maryland, USA.html">Maugansville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5, Hancock CCD, Washington County, Maryland, USA.html">5, Hancock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fayetteville CDP, Pennsylvania, USA.html">Fayetteville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4, Clear Spring CCD, Washington County, Maryland, USA.html">4, Clear Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Guilford CDP, Pennsylvania, USA.html">Guilford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9, Leitersburg CCD, Washington County, Maryland, USA.html">9, Leitersburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="State Line CDP, Pennsylvania, USA.html">State Line CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wayne Heights CDP, Pennsylvania, USA.html">Wayne Heights CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fannett CCD, Franklin County, Pennsylvania, USA.html">Fannett CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Letterkenny CCD, Franklin County, Pennsylvania, USA.html">Letterkenny CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopewell CCD, Cumberland County, Pennsylvania, USA.html">Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="14, Ringgold CCD, Washington County, Maryland, USA.html">14, Ringgold CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10, Hauvers CCD, Frederick County, Maryland, USA.html">10, Hauvers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamiltonban CCD, Adams County, Pennsylvania, USA.html">Hamiltonban CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lurgan CCD, Franklin County, Pennsylvania, USA.html">Lurgan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="15, Indian Spring CCD, Washington County, Maryland, USA.html">15, Indian Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ayr CCD, Fulton County, Pennsylvania, USA.html">Ayr CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Metal CCD, Franklin County, Pennsylvania, USA.html">Metal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Todd CCD, Fulton County, Pennsylvania, USA.html">Todd CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mont Alto CCD, Franklin County, Pennsylvania, USA.html">Mont Alto CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mont Alto borough, Pennsylvania, USA.html">Mont Alto borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mercersburg borough, Pennsylvania, USA.html">Mercersburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mercersburg CCD, Franklin County, Pennsylvania, USA.html">Mercersburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scotland CDP, Pennsylvania, USA.html">Scotland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dublin CCD, Fulton County, Pennsylvania, USA.html">Dublin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dublin CCD, Huntingdon County, Pennsylvania, USA.html">Dublin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shippensburg CCD, Franklin County, Pennsylvania, USA.html">Shippensburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Highfield-Cascade CDP, Maryland, USA.html">Highfield-Cascade CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Thompson CCD, Fulton County, Pennsylvania, USA.html">Thompson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pen Mar CDP, Pennsylvania, USA.html">Pen Mar CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fort Loudon CDP, Pennsylvania, USA.html">Fort Loudon CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blue Ridge Summit CDP, Pennsylvania, USA.html">Blue Ridge Summit CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marion CDP, Pennsylvania, USA.html">Marion CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rouzerville CDP, Pennsylvania, USA.html">Rouzerville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lack CCD, Juniata County, Pennsylvania, USA.html">Lack CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tell CCD, Huntingdon County, Pennsylvania, USA.html">Tell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Toboyne CCD, Perry County, Pennsylvania, USA.html">Toboyne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Warren CCD, Franklin County, Pennsylvania, USA.html">Warren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Orrstown borough, Pennsylvania, USA.html">Orrstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orrstown CCD, Franklin County, Pennsylvania, USA.html">Orrstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Middleburg CDP, Maryland, USA.html">Middleburg CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Franklin County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

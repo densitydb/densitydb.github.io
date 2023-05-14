@@ -1,0 +1,476 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New City CDP</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">New City CDP</div>
+    <div class="text longname">New City CDP, New York, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">34.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1305 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eastpointe city, Michigan, USA.html"><</a> <a class="button" href="Westlake city, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="5 CCD, East Baton Rouge Parish, Louisiana, USA.html"><</a> <a class="button" href="Bloomfield CCD, Polk County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1156/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3307 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Enetai CDP, Washington, USA.html"><</a> <a class="button" href="Chesapeake city, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="53963, USA.html"><</a> <a class="button" href="08012, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">808/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4675 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winterville town, North Carolina, USA.html"><</a> <a class="button" href="Montvale borough, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Luna Heights Neighborhood, Nashville City, Tennessee, USA.html"><</a> <a class="button" href="Riverview Neighborhood, Sandy Springs City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">62.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">22016 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bremerton city, Washington, USA.html"><</a> <a class="button" href="Tipton town, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bremerton city, Washington, USA.html"><</a> <a class="button" href="Tipton town, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5501 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newberg city, Oregon, USA.html"><</a> <a class="button" href="Yorkville city, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Salem Neighborhood, Salem City, Oregon, USA.html"><</a> <a class="button" href="Chandler Crossing Neighborhood, Chandler City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.98%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5806 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bordelonville CDP, Louisiana, USA.html"><</a> <a class="button" href="Kellyton town, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakhurst Neighborhood, Fort Wayne City, Indiana, USA.html"><</a> <a class="button" href="51104, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">913 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakdale city, Minnesota, USA.html"><</a> <a class="button" href="Waianae CDP, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cobbelstone Estates Neighborhood, Springfield City, Illinois, USA.html"><</a> <a class="button" href="93611, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20327 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmington CDP, Massachusetts, USA.html"><</a> <a class="button" href="The Villages CDP, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15211, USA.html"><</a> <a class="button" href="48050, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9765 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oneonta city, Alabama, USA.html"><</a> <a class="button" href="North Bellmore CDP, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lockport CCD, Niagara County, New York, USA.html"><</a> <a class="button" href="Lancaster County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">19325 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Foley city, Minnesota, USA.html"><</a> <a class="button" href="Lindsey village, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bay Colony Neighborhood, Virginia Beach City, Virginia, USA.html"><</a> <a class="button" href="Harbor Beach Neighborhood, Fort Lauderdale City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.431</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27992 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Round Lake Heights village, Illinois, USA.html"><</a> <a class="button" href="Seabrook CDP, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lakeview South Neighborhood, Provo City, Utah, USA.html"><</a> <a class="button" href="Seabrook CDP, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27148 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Climax village, Michigan, USA.html"><</a> <a class="button" href="Dauberville CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92703, USA.html"><</a> <a class="button" href="Dauberville CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1458/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6924 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport city, Oregon, USA.html"><</a> <a class="button" href="Boswell borough, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Downtown Neighborhood, Garner City, North Carolina, USA.html"><</a> <a class="button" href="Boswell borough, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1188/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4686 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Applewood CDP, Colorado, USA.html"><</a> <a class="button" href="Granville village, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="12 CCD, Montgomery County, Tennessee, USA.html"><</a> <a class="button" href="29579, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1160/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2424 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gardere CDP, Louisiana, USA.html"><</a> <a class="button" href="Bellefontaine Neighbors city, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadows West Neighborhood, Fort Worth City, Texas, USA.html"><</a> <a class="button" href="Chandler Creek Neighborhood, Round Rock City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1212/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1750 of 29291 Cities</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mehlville CDP, Missouri, USA.html"><</a> <a class="button" href="Converse city, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fern Bluff Neighborhood, Round Rock City, Texas, USA.html"><</a> <a class="button" href="53143, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockland County, New York, USA.html">Rockland County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ramapo CCD, Rockland County, New York, USA.html">Ramapo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clarkstown CCD, Rockland County, New York, USA.html">Clarkstown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haverstraw CCD, Rockland County, New York, USA.html">Haverstraw CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="New City Neighborhood, Clarkstown City, New York, USA.html">New City, Clarkstown</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Nanuet Neighborhood, Clarkstown City, New York, USA.html">Nanuet, Clarkstown</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nanuet CDP, New York, USA.html">Nanuet CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Haverstraw village, New York, USA.html">Haverstraw village</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Valley Cottage Neighborhood, Clarkstown City, New York, USA.html">Valley Cottage, Clarkstown</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Square village, New York, USA.html">New Square village</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="New Square Neighborhood, Ramapo City, New York, USA.html">New Square, Ramapo</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Congers CDP, New York, USA.html">Congers CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillcrest CDP, New York, USA.html">Hillcrest CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Hillcrest Neighborhood, Ramapo City, New York, USA.html">Hillcrest, Ramapo</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Ivy CDP, New York, USA.html">Mount Ivy CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Congers Neighborhood, Clarkstown City, New York, USA.html">Congers, Clarkstown</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="West Nyack Neighborhood, Clarkstown City, New York, USA.html">West Nyack, Clarkstown</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bardonia CDP, New York, USA.html">Bardonia CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for New City CDP's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

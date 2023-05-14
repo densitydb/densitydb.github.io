@@ -1,0 +1,785 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Crawford County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Crawford County</div>
+    <div class="text longname">Crawford County, Pennsylvania, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">685 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chemung County, New York, USA.html"><</a> <a class="button" href="Rockingham County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington Hills city, Michigan, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">325/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1350 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall County, Indiana, USA.html"><</a> <a class="button" href="Caldwell County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Caldwell County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">31/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1028 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Aransas County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="14516, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">92.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">531 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newton County, Arkansas, USA.html"><</a> <a class="button" href="Langlade County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cushman city, Arkansas, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2843 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Boyd County, Kentucky, USA.html"><</a> <a class="button" href="Westmoreland County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="42048, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.78%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1627 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lebanon County, Pennsylvania, USA.html"><</a> <a class="button" href="Pueblo County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="80124, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.43%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1922 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Real County, Texas, USA.html"><</a> <a class="button" href="Orleans County, Vermont, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chicot West I-30 So. Neighborhood, Little Rock City, Arkansas, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2776 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hampshire County, West Virginia, USA.html"><</a> <a class="button" href="Williamsburg County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36854, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1489 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oneida County, New York, USA.html"><</a> <a class="button" href="Wayne County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="5 CCD, Greene County, Tennessee, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1426 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benton County, Tennessee, USA.html"><</a> <a class="button" href="Randolph County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Chevak city, Alaska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.627</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">836 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montgomery County, Missouri, USA.html"><</a> <a class="button" href="Guernsey County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ravenna city, Kentucky, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19.17%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">723 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Logan County, Ohio, USA.html"><</a> <a class="button" href="White County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="56121, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">736/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1705 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saunders County, Nebraska, USA.html"><</a> <a class="button" href="Defiance County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Brownsville North CCD, Edmonson County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">461/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1481 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pemiscot County, Missouri, USA.html"><</a> <a class="button" href="Acadia County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55321, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">206/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1332 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrison County, Texas, USA.html"><</a> <a class="button" href="Gordon County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Rickenbacker Neighborhood, Columbus City, Ohio, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">109/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1301 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lassen County, California, USA.html"><</a> <a class="button" href="Marshall County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meadville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Pana city, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Cleveland-Akron-Canton CSA, Ohio, USA.html">Cleveland-Akron-Canton CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Erie-Meadville CSA, Pennsylvania, USA.html">Erie-Meadville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Erie MSA, Pennsylvania, USA.html">Erie MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Erie County, Pennsylvania, USA.html">Erie County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Trumbull County, Ohio, USA.html">Trumbull County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mercer County, Pennsylvania, USA.html">Mercer County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ashtabula MSA, Ohio, USA.html">Ashtabula MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ashtabula County, Ohio, USA.html">Ashtabula County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Meadville MSA, Pennsylvania, USA.html">Meadville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Venango County, Pennsylvania, USA.html">Venango County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Oil City MSA, Pennsylvania, USA.html">Oil City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Warren MSA, Pennsylvania, USA.html">Warren MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Warren County, Pennsylvania, USA.html">Warren County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meadville city, Pennsylvania, USA.html">Meadville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meadville CCD, Crawford County, Pennsylvania, USA.html">Meadville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vernon CCD, Crawford County, Pennsylvania, USA.html">Vernon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Titusville CCD, Crawford County, Pennsylvania, USA.html">Titusville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Titusville city, Pennsylvania, USA.html">Titusville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Mead CCD, Crawford County, Pennsylvania, USA.html">West Mead CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Erie County, Pennsylvania, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conneaut CCD, Erie County, Pennsylvania, USA.html">Conneaut CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hayfield CCD, Crawford County, Pennsylvania, USA.html">Hayfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sadsbury CCD, Crawford County, Pennsylvania, USA.html">Sadsbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cambridge Springs borough, Pennsylvania, USA.html">Cambridge Springs borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Andover CCD, Ashtabula County, Ohio, USA.html">Andover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cambridge Springs CCD, Crawford County, Pennsylvania, USA.html">Cambridge Springs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Conneaut Lakeshore CDP, Pennsylvania, USA.html">Conneaut Lakeshore CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Ashtabula County, Ohio, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pymatuning Central CDP, Pennsylvania, USA.html">Pymatuning Central CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rome CCD, Crawford County, Pennsylvania, USA.html">Rome CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sparta CCD, Crawford County, Pennsylvania, USA.html">Sparta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Summit CCD, Crawford County, Pennsylvania, USA.html">Summit CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloomfield CCD, Crawford County, Pennsylvania, USA.html">Bloomfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Shenango CCD, Crawford County, Pennsylvania, USA.html">South Shenango CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elk Creek CCD, Erie County, Pennsylvania, USA.html">Elk Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kinsman CCD, Trumbull County, Ohio, USA.html">Kinsman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Randolph CCD, Crawford County, Pennsylvania, USA.html">Randolph CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oil Creek CCD, Crawford County, Pennsylvania, USA.html">Oil Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="LeBoeuf CCD, Erie County, Pennsylvania, USA.html">LeBoeuf CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Fallowfield CCD, Crawford County, Pennsylvania, USA.html">East Fallowfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cambridge CCD, Crawford County, Pennsylvania, USA.html">Cambridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williamsfield CCD, Ashtabula County, Ohio, USA.html">Williamsfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cussewago CCD, Crawford County, Pennsylvania, USA.html">Cussewago CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwood CCD, Crawford County, Pennsylvania, USA.html">Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Crawford County, Pennsylvania, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring CCD, Crawford County, Pennsylvania, USA.html">Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockdale CCD, Crawford County, Pennsylvania, USA.html">Rockdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richmond CCD, Crawford County, Pennsylvania, USA.html">Richmond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conneaut CCD, Crawford County, Pennsylvania, USA.html">Conneaut CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Mead CCD, Crawford County, Pennsylvania, USA.html">East Mead CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cherrytree CCD, Venango County, Pennsylvania, USA.html">Cherrytree CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Concord CCD, Erie County, Pennsylvania, USA.html">Concord CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Shenango CCD, Crawford County, Pennsylvania, USA.html">North Shenango CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Summerhill CCD, Crawford County, Pennsylvania, USA.html">Summerhill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pierpont CCD, Ashtabula County, Ohio, USA.html">Pierpont CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cochranton CCD, Crawford County, Pennsylvania, USA.html">Cochranton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cochranton borough, Pennsylvania, USA.html">Cochranton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troy CCD, Crawford County, Pennsylvania, USA.html">Troy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greene CCD, Mercer County, Pennsylvania, USA.html">Greene CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield CCD, Crawford County, Pennsylvania, USA.html">Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richmond CCD, Ashtabula County, Ohio, USA.html">Richmond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linesville CCD, Crawford County, Pennsylvania, USA.html">Linesville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Linesville borough, Pennsylvania, USA.html">Linesville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sugar Grove CCD, Mercer County, Pennsylvania, USA.html">Sugar Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canal CCD, Venango County, Pennsylvania, USA.html">Canal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Venango County, Pennsylvania, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plum CCD, Venango County, Pennsylvania, USA.html">Plum CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saegertown CCD, Crawford County, Pennsylvania, USA.html">Saegertown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saegertown borough, Pennsylvania, USA.html">Saegertown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Crawford County, Pennsylvania, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Fairfield CCD, Crawford County, Pennsylvania, USA.html">East Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandy Creek CCD, Mercer County, Pennsylvania, USA.html">Sandy Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beaver CCD, Crawford County, Pennsylvania, USA.html">Beaver CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Steuben CCD, Crawford County, Pennsylvania, USA.html">Steuben CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Creek CCD, Warren County, Pennsylvania, USA.html">Spring Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oil Creek CCD, Venango County, Pennsylvania, USA.html">Oil Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salem CCD, Mercer County, Pennsylvania, USA.html">Salem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Conneautville borough, Pennsylvania, USA.html">Conneautville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conneautville CCD, Crawford County, Pennsylvania, USA.html">Conneautville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fredericksburg CDP, Pennsylvania, USA.html">Fredericksburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="French Creek CCD, Mercer County, Pennsylvania, USA.html">French Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Athens CCD, Crawford County, Pennsylvania, USA.html">Athens CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conneaut Lake CCD, Crawford County, Pennsylvania, USA.html">Conneaut Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Conneaut Lake borough, Pennsylvania, USA.html">Conneaut Lake borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eldred CCD, Warren County, Pennsylvania, USA.html">Eldred CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jamestown CCD, Mercer County, Pennsylvania, USA.html">Jamestown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jamestown borough, Pennsylvania, USA.html">Jamestown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Fallowfield CCD, Crawford County, Pennsylvania, USA.html">West Fallowfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hydetown CCD, Crawford County, Pennsylvania, USA.html">Hydetown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hydetown borough, Pennsylvania, USA.html">Hydetown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Canadohta Lake CDP, Pennsylvania, USA.html">Canadohta Lake CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deer Creek CCD, Mercer County, Pennsylvania, USA.html">Deer Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Shenango CCD, Crawford County, Pennsylvania, USA.html">West Shenango CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pine CCD, Crawford County, Pennsylvania, USA.html">Pine CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southwest CCD, Warren County, Pennsylvania, USA.html">Southwest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pymatuning South CDP, Pennsylvania, USA.html">Pymatuning South CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springboro CCD, Crawford County, Pennsylvania, USA.html">Springboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Springboro borough, Pennsylvania, USA.html">Springboro borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blooming Valley borough, Pennsylvania, USA.html">Blooming Valley borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blooming Valley CCD, Crawford County, Pennsylvania, USA.html">Blooming Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Townville borough, Pennsylvania, USA.html">Townville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Townville CCD, Crawford County, Pennsylvania, USA.html">Townville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harmonsburg CDP, Pennsylvania, USA.html">Harmonsburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pymatuning North CDP, Pennsylvania, USA.html">Pymatuning North CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spartansburg CCD, Crawford County, Pennsylvania, USA.html">Spartansburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spartansburg borough, Pennsylvania, USA.html">Spartansburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kerrtown CDP, Pennsylvania, USA.html">Kerrtown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Venango CCD, Crawford County, Pennsylvania, USA.html">Venango CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Venango borough, Pennsylvania, USA.html">Venango borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Centerville CCD, Crawford County, Pennsylvania, USA.html">Centerville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Centerville borough, Pennsylvania, USA.html">Centerville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hartstown CDP, Pennsylvania, USA.html">Hartstown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodcock CCD, Crawford County, Pennsylvania, USA.html">Woodcock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodcock borough, Pennsylvania, USA.html">Woodcock borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Guys Mills CDP, Pennsylvania, USA.html">Guys Mills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Geneva CDP, Pennsylvania, USA.html">Geneva CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lincolnville CDP, Pennsylvania, USA.html">Lincolnville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Atlantic CDP, Pennsylvania, USA.html">Atlantic CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Riceville CDP, Pennsylvania, USA.html">Riceville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Adamsville CDP, Pennsylvania, USA.html">Adamsville CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Crawford County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

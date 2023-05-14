@@ -1,0 +1,755 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Springfield MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Springfield MSA</div>
+    <div class="text longname">Springfield MSA, Massachusetts, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">628.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">74 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wichita MSA, Kansas, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Memphis city, Tennessee, USA.html"><</a> <a class="button" href="Tulsa CCD, Tulsa County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1315/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">68 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orlando-Kissimmee-Sanford MSA, Florida, USA.html"><</a> <a class="button" href="Tucson MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wesleyan Hill Neighborhood, Dayton City, Ohio, USA.html"><</a> <a class="button" href="Dimon Circle Neighborhood, Columbus City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">206/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">36 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Austin-Round Rock MSA, Texas, USA.html"><</a> <a class="button" href="Ann Arbor MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77355, USA.html"><</a> <a class="button" href="93638, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">64.64%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">593 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sebring MSA, Florida, USA.html"><</a> <a class="button" href="Cape Coral-Fort Myers MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="46360, USA.html"><</a> <a class="button" href="Austin CCD, Mower County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">154 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Twin Falls MSA, Idaho, USA.html"><</a> <a class="button" href="Montrose MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Beach Neighborhood, Santa Barbara City, California, USA.html"><</a> <a class="button" href="Verplanck Neighborhood, Manchester City, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">304 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charleston MSA, West Virginia, USA.html"><</a> <a class="button" href="The Villages MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crocker Highland Neighborhood, Oakland City, California, USA.html"><</a> <a class="button" href="Stonewall town, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.64%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">108 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albert Lea MSA, Minnesota, USA.html"><</a> <a class="button" href="Manhattan MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Larkfield-Wikiup CDP, California, USA.html"><</a> <a class="button" href="96132, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">788 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blacksburg-Christiansburg-Radford MSA, Virginia, USA.html"><</a> <a class="button" href="Big Stone Gap MSA, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="24656, USA.html"><</a> <a class="button" href="Adair County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">433 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="Jacksonville MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stephentown CCD, Rensselaer County, New York, USA.html"><</a> <a class="button" href="Blue Hill CCD, Hancock County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">484 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palatka MSA, Florida, USA.html"><</a> <a class="button" href="Alpena MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bluewater CDP, Arizona, USA.html"><</a> <a class="button" href="Fabius CCD, St. Joseph County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.520</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">773 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ithaca MSA, New York, USA.html"><</a> <a class="button" href="Dover MSA, Delaware, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plover CCD, Portage County, Wisconsin, USA.html"><</a> <a class="button" href="East Lampeter CCD, Lancaster County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">807 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">8th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Maria-Santa Barbara MSA, California, USA.html"><</a> <a class="button" href="Sidney MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92614, USA.html"><</a> <a class="button" href="Oakland Hills Neighborhood, Oakland Park City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2528/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">75 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crescent City MSA, California, USA.html"><</a> <a class="button" href="Lubbock MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Unity Ridge Neighborhood, Kansas City City, Missouri, USA.html"><</a> <a class="button" href="Northbrook CDP, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1669/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">71 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tampa-St. Petersburg-Clearwater MSA, Florida, USA.html"><</a> <a class="button" href="Yuba City MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Isetts Neighborhood, Kenosha City, Wisconsin, USA.html"><</a> <a class="button" href="Zoo Neighborhood, Apple Valley City, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1077/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">62 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lubbock MSA, Texas, USA.html"><</a> <a class="button" href="Ann Arbor MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36107, USA.html"><</a> <a class="button" href="Northwest Neighborhood, Reno City, Nevada, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">860/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">53 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington-Fayette MSA, Kentucky, USA.html"><</a> <a class="button" href="Napa MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="35816, USA.html"><</a> <a class="button" href="Enetai CDP, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Massachusetts, USA.html">Massachusetts</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Connecticut, USA.html">Connecticut</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Hartford-West Hartford CSA, Connecticut, USA.html">Hartford-West Hartford CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hartford-West Hartford-East Hartford MSA, Connecticut, USA.html">Hartford-West Hartford-East Hartford MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hartford County, Connecticut, USA.html">Hartford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Worcester County, Massachusetts, USA.html">Worcester County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Springfield-Greenfield Town CSA, Massachusetts, USA.html">Springfield-Greenfield Town CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hampden County, Massachusetts, USA.html">Hampden County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Torrington MSA, Connecticut, USA.html">Torrington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Litchfield County, Connecticut, USA.html">Litchfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hampshire County, Massachusetts, USA.html">Hampshire County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Springfield city, Massachusetts, USA.html">Springfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield CCD, Hampden County, Massachusetts, USA.html">Springfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tolland County, Connecticut, USA.html">Tolland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Berkshire County, Massachusetts, USA.html">Berkshire County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pittsfield MSA, Massachusetts, USA.html">Pittsfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Greenfield Town MSA, Massachusetts, USA.html">Greenfield Town MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Massachusetts, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chicopee CCD, Hampden County, Massachusetts, USA.html">Chicopee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chicopee city, Massachusetts, USA.html">Chicopee city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Enfield CCD, Capitol Planning Region, Connecticut, USA.html">Enfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westfield CCD, Hampden County, Massachusetts, USA.html">Westfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westfield city, Massachusetts, USA.html">Westfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Amherst Town CCD, Hampshire County, Massachusetts, USA.html">Amherst Town CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Holyoke CCD, Hampden County, Massachusetts, USA.html">Holyoke CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Holyoke city, Massachusetts, USA.html">Holyoke city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northampton CCD, Hampshire County, Massachusetts, USA.html">Northampton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northampton city, Massachusetts, USA.html">Northampton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Springfield Town CCD, Hampden County, Massachusetts, USA.html">West Springfield Town CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Springfield Town city, Massachusetts, USA.html">West Springfield Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Agawam Town CCD, Hampden County, Massachusetts, USA.html">Agawam Town CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Agawam Town city, Massachusetts, USA.html">Agawam Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Amherst Center CDP, Massachusetts, USA.html">Amherst Center CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ludlow CCD, Hampden County, Massachusetts, USA.html">Ludlow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Hadley CCD, Hampshire County, Massachusetts, USA.html">South Hadley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Longmeadow CCD, Hampden County, Massachusetts, USA.html">East Longmeadow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Easthampton Town CCD, Hampshire County, Massachusetts, USA.html">Easthampton Town CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Easthampton Town city, Massachusetts, USA.html">Easthampton Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Longmeadow CDP, Massachusetts, USA.html">Longmeadow CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Longmeadow CCD, Hampden County, Massachusetts, USA.html">Longmeadow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Suffield CCD, Capitol Planning Region, Connecticut, USA.html">Suffield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Belchertown CCD, Hampshire County, Massachusetts, USA.html">Belchertown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilbraham CCD, Hampden County, Massachusetts, USA.html">Wilbraham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palmer Town CCD, Hampden County, Massachusetts, USA.html">Palmer Town CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palmer Town city, Massachusetts, USA.html">Palmer Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stafford CCD, Capitol Planning Region, Connecticut, USA.html">Stafford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granby CCD, Capitol Planning Region, Connecticut, USA.html">Granby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Somers CCD, Capitol Planning Region, Connecticut, USA.html">Somers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ware CCD, Hampshire County, Massachusetts, USA.html">Ware CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sturbridge CCD, Worcester County, Massachusetts, USA.html">Sturbridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southwick CCD, Hampden County, Massachusetts, USA.html">Southwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monson CCD, Hampden County, Massachusetts, USA.html">Monson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Amherst CDP, Massachusetts, USA.html">North Amherst CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ware CDP, Massachusetts, USA.html">Ware CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southampton CCD, Hampshire County, Massachusetts, USA.html">Southampton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granby CCD, Hampshire County, Massachusetts, USA.html">Granby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hadley CCD, Hampshire County, Massachusetts, USA.html">Hadley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Warren CCD, Worcester County, Massachusetts, USA.html">Warren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hampden CCD, Hampden County, Massachusetts, USA.html">Hampden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Amherst CDP, Massachusetts, USA.html">South Amherst CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wilbraham CDP, Massachusetts, USA.html">Wilbraham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Brookfield CCD, Worcester County, Massachusetts, USA.html">West Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brimfield CCD, Hampden County, Massachusetts, USA.html">Brimfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sunderland CCD, Franklin County, Massachusetts, USA.html">Sunderland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, Worcester County, Massachusetts, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hatfield CCD, Hampshire County, Massachusetts, USA.html">Hatfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belchertown CDP, Massachusetts, USA.html">Belchertown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hardwick CCD, Worcester County, Massachusetts, USA.html">Hardwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Holland CCD, Hampden County, Massachusetts, USA.html">Holland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williamsburg CCD, Hampshire County, Massachusetts, USA.html">Williamsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Huntington CCD, Hampshire County, Massachusetts, USA.html">Huntington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monson Center CDP, Massachusetts, USA.html">Monson Center CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Becket CCD, Berkshire County, Massachusetts, USA.html">Becket CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartland CCD, Northwest Hills Planning Region, Connecticut, USA.html">Hartland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leverett CCD, Franklin County, Massachusetts, USA.html">Leverett CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Granby CDP, Connecticut, USA.html">North Granby CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wales CCD, Hampden County, Massachusetts, USA.html">Wales CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conway CCD, Franklin County, Massachusetts, USA.html">Conway CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shutesbury CCD, Franklin County, Massachusetts, USA.html">Shutesbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ashfield CCD, Franklin County, Massachusetts, USA.html">Ashfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Russell CCD, Hampden County, Massachusetts, USA.html">Russell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otis CCD, Berkshire County, Massachusetts, USA.html">Otis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westhampton CCD, Hampshire County, Massachusetts, USA.html">Westhampton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Whately CCD, Franklin County, Massachusetts, USA.html">Whately CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Holland CDP, Massachusetts, USA.html">Holland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granville CCD, Hampden County, Massachusetts, USA.html">Granville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hatfield CDP, Massachusetts, USA.html">Hatfield CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Colebrook CCD, Northwest Hills Planning Region, Connecticut, USA.html">Colebrook CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Granby CDP, Massachusetts, USA.html">Granby CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pelham CCD, Hampshire County, Massachusetts, USA.html">Pelham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester CCD, Hampden County, Massachusetts, USA.html">Chester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blandford CCD, Hampden County, Massachusetts, USA.html">Blandford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Petersham CCD, Worcester County, Massachusetts, USA.html">Petersham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Worthington CCD, Hampshire County, Massachusetts, USA.html">Worthington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chesterfield CCD, Hampshire County, Massachusetts, USA.html">Chesterfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandisfield CCD, Berkshire County, Massachusetts, USA.html">Sandisfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Salem CCD, Franklin County, Massachusetts, USA.html">New Salem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Goshen CCD, Hampshire County, Massachusetts, USA.html">Goshen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Huntington CDP, Massachusetts, USA.html">Huntington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Windsor CCD, Berkshire County, Massachusetts, USA.html">Windsor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cummington CCD, Hampshire County, Massachusetts, USA.html">Cummington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montgomery CCD, Hampden County, Massachusetts, USA.html">Montgomery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peru CCD, Berkshire County, Massachusetts, USA.html">Peru CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Northeastern Connecticut Planning Region, Connecticut, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Russell CDP, Massachusetts, USA.html">Russell CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plainfield CCD, Hampshire County, Massachusetts, USA.html">Plainfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chester CDP, Massachusetts, USA.html">Chester CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Berkshire County, Massachusetts, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tolland CCD, Hampden County, Massachusetts, USA.html">Tolland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middlefield CCD, Hampshire County, Massachusetts, USA.html">Middlefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blandford CDP, Massachusetts, USA.html">Blandford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hawley CCD, Franklin County, Massachusetts, USA.html">Hawley CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Springfield MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

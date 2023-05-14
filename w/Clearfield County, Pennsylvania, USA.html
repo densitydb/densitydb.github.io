@@ -1,0 +1,812 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Clearfield County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Clearfield County</div>
+    <div class="text longname">Clearfield County, Pennsylvania, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">80.6k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">708 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Caldwell County, North Carolina, USA.html"><</a> <a class="button" href="Floyd County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Ahwatukee Foothills Neighborhood, Phoenix City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">342/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1283 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dickinson County, Kansas, USA.html"><</a> <a class="button" href="Perry County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15656, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">27/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1153 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dyer County, Tennessee, USA.html"><</a> <a class="button" href="Bourbon County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="West Howellsville CCD, Robeson County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">91.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">687 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Garrard County, Kentucky, USA.html"><</a> <a class="button" href="Knox County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Edgewood CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1958 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware County, Ohio, USA.html"><</a> <a class="button" href="Stokes County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Abingdon CCD, Gloucester County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1525 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Independence County, Arkansas, USA.html"><</a> <a class="button" href="Montgomery County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Montgomery County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1537 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Logan County, Nebraska, USA.html"><</a> <a class="button" href="Adams County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="28469, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2968 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Mississippi, USA.html"><</a> <a class="button" href="Essex County, Massachusetts, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington CCD, Brown County, Indiana, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2852 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baca County, Colorado, USA.html"><</a> <a class="button" href="Ripley County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brookfield CCD, Waukesha County, Wisconsin, USA.html"><</a> <a class="button" href="Harrisburg city, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.85%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2481 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall County, Minnesota, USA.html"><</a> <a class="button" href="Tift County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Norfolk MSA, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.572</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1848 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tioga County, New York, USA.html"><</a> <a class="button" href="Goshen County, Wyoming, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="North Mankato CCD, Nicollet County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.52%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1275 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Luna County, New Mexico, USA.html"><</a> <a class="button" href="Schuyler County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deming MSA, New Mexico, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1336/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">835 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Putnam County, Indiana, USA.html"><</a> <a class="button" href="Boone County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Lowell Neighborhood, Everett City, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">604/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1076 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ionia County, Michigan, USA.html"><</a> <a class="button" href="Polk County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DuBois MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Hillcrest village, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">213/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1305 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chippewa County, Wisconsin, USA.html"><</a> <a class="button" href="Ashland County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04347, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">111/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1283 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Martin County, Louisiana, USA.html"><</a> <a class="button" href="Washington County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albion CCD, Erie County, Pennsylvania, USA.html"><</a> <a class="button" href="DuBois MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="State College-DuBois CSA, Pennsylvania, USA.html">State College-DuBois CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Johnstown-Somerset CSA, Pennsylvania, USA.html">Johnstown-Somerset CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Centre County, Pennsylvania, USA.html">Centre County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="State College MSA, Pennsylvania, USA.html">State College MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Williamsport-Lock Haven CSA, Pennsylvania, USA.html">Williamsport-Lock Haven CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Johnstown MSA, Pennsylvania, USA.html">Johnstown MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cambria County, Pennsylvania, USA.html">Cambria County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Altoona MSA, Pennsylvania, USA.html">Altoona MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Blair County, Pennsylvania, USA.html">Blair County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Indiana MSA, Pennsylvania, USA.html">Indiana MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Indiana County, Pennsylvania, USA.html">Indiana County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="DuBois MSA, Pennsylvania, USA.html">DuBois MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Pennsylvania, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clinton County, Pennsylvania, USA.html">Clinton County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lock Haven MSA, Pennsylvania, USA.html">Lock Haven MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Elk County, Pennsylvania, USA.html">Elk County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. Marys MSA, Pennsylvania, USA.html">St. Marys MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandy CCD, Clearfield County, Pennsylvania, USA.html">Sandy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lawrence CCD, Clearfield County, Pennsylvania, USA.html">Lawrence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="DuBois CCD, Clearfield County, Pennsylvania, USA.html">DuBois CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="DuBois city, Pennsylvania, USA.html">DuBois city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clearfield borough, Pennsylvania, USA.html">Clearfield borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clearfield CCD, Clearfield County, Pennsylvania, USA.html">Clearfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Treasure Lake CDP, Pennsylvania, USA.html">Treasure Lake CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Decatur CCD, Clearfield County, Pennsylvania, USA.html">Decatur CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cameron County, Pennsylvania, USA.html">Cameron County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodward CCD, Clearfield County, Pennsylvania, USA.html">Woodward CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rush CCD, Centre County, Pennsylvania, USA.html">Rush CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fox CCD, Elk County, Pennsylvania, USA.html">Fox CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Snyder CCD, Blair County, Pennsylvania, USA.html">Snyder CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bradford CCD, Clearfield County, Pennsylvania, USA.html">Bradford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Philipsburg CCD, Centre County, Pennsylvania, USA.html">Philipsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Philipsburg borough, Pennsylvania, USA.html">Philipsburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morris CCD, Clearfield County, Pennsylvania, USA.html">Morris CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cooper CCD, Clearfield County, Pennsylvania, USA.html">Cooper CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Curwensville CCD, Clearfield County, Pennsylvania, USA.html">Curwensville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Curwensville borough, Pennsylvania, USA.html">Curwensville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winslow CCD, Jefferson County, Pennsylvania, USA.html">Winslow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Snyder CCD, Jefferson County, Pennsylvania, USA.html">Snyder CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pike CCD, Clearfield County, Pennsylvania, USA.html">Pike CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jay CCD, Elk County, Pennsylvania, USA.html">Jay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Henderson CCD, Jefferson County, Pennsylvania, USA.html">Henderson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brady CCD, Clearfield County, Pennsylvania, USA.html">Brady CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Susquehanna CCD, Cambria County, Pennsylvania, USA.html">Susquehanna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Jefferson County, Pennsylvania, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beccaria CCD, Clearfield County, Pennsylvania, USA.html">Beccaria CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boggs CCD, Clearfield County, Pennsylvania, USA.html">Boggs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reade CCD, Cambria County, Pennsylvania, USA.html">Reade CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montgomery CCD, Indiana County, Pennsylvania, USA.html">Montgomery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sandy CDP, Pennsylvania, USA.html">Sandy CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Horton CCD, Elk County, Pennsylvania, USA.html">Horton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Graham CCD, Clearfield County, Pennsylvania, USA.html">Graham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hyde CDP, Pennsylvania, USA.html">Hyde CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Huston CCD, Clearfield County, Pennsylvania, USA.html">Huston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bigler CCD, Clearfield County, Pennsylvania, USA.html">Bigler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Penn CCD, Clearfield County, Pennsylvania, USA.html">Penn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gulich CCD, Clearfield County, Pennsylvania, USA.html">Gulich CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sykesville borough, Pennsylvania, USA.html">Sykesville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sykesville CCD, Jefferson County, Pennsylvania, USA.html">Sykesville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Osceola Mills borough, Pennsylvania, USA.html">Osceola Mills borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osceola Mills CCD, Clearfield County, Pennsylvania, USA.html">Osceola Mills CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Falls Creek borough, Pennsylvania, USA.html">Falls Creek borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elder CCD, Cambria County, Pennsylvania, USA.html">Elder CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Falls Creek CCD, Jefferson County, Pennsylvania, USA.html">Falls Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plymptonville CDP, Pennsylvania, USA.html">Plymptonville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White CCD, Cambria County, Pennsylvania, USA.html">White CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Banks CCD, Indiana County, Pennsylvania, USA.html">Banks CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Clearfield County, Pennsylvania, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Karthaus CCD, Clearfield County, Pennsylvania, USA.html">Karthaus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chester Hill borough, Pennsylvania, USA.html">Chester Hill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester Hill CCD, Clearfield County, Pennsylvania, USA.html">Chester Hill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Houtzdale CCD, Clearfield County, Pennsylvania, USA.html">Houtzdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Houtzdale borough, Pennsylvania, USA.html">Houtzdale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oklahoma CDP, Pennsylvania, USA.html">Oklahoma CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bell CCD, Clearfield County, Pennsylvania, USA.html">Bell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morrisdale CDP, Pennsylvania, USA.html">Morrisdale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gaskill CCD, Jefferson County, Pennsylvania, USA.html">Gaskill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Snow Shoe CCD, Centre County, Pennsylvania, USA.html">Snow Shoe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Philipsburg CDP, Pennsylvania, USA.html">North Philipsburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Knox CCD, Clearfield County, Pennsylvania, USA.html">Knox CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Girard CCD, Clearfield County, Pennsylvania, USA.html">Girard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Irvona borough, Pennsylvania, USA.html">Irvona borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Irvona CCD, Clearfield County, Pennsylvania, USA.html">Irvona CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ferguson CCD, Clearfield County, Pennsylvania, USA.html">Ferguson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chest CCD, Clearfield County, Pennsylvania, USA.html">Chest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Covington CCD, Clearfield County, Pennsylvania, USA.html">Covington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grassflat CDP, Pennsylvania, USA.html">Grassflat CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jordan CCD, Clearfield County, Pennsylvania, USA.html">Jordan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hawk Run CDP, Pennsylvania, USA.html">Hawk Run CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chest CCD, Cambria County, Pennsylvania, USA.html">Chest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Decatur CDP, Pennsylvania, USA.html">West Decatur CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ramey CCD, Clearfield County, Pennsylvania, USA.html">Ramey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ramey borough, Pennsylvania, USA.html">Ramey borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coalport borough, Pennsylvania, USA.html">Coalport borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Coalport CCD, Clearfield County, Pennsylvania, USA.html">Coalport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brisbin CCD, Clearfield County, Pennsylvania, USA.html">Brisbin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brisbin borough, Pennsylvania, USA.html">Brisbin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnside CCD, Centre County, Pennsylvania, USA.html">Burnside CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Goshen CCD, Clearfield County, Pennsylvania, USA.html">Goshen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Philipsburg CDP, Pennsylvania, USA.html">South Philipsburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloom CCD, Clearfield County, Pennsylvania, USA.html">Bloom CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwood CCD, Clearfield County, Pennsylvania, USA.html">Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westover borough, Pennsylvania, USA.html">Westover borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grampian borough, Pennsylvania, USA.html">Grampian borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westover CCD, Clearfield County, Pennsylvania, USA.html">Westover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bigler CDP, Pennsylvania, USA.html">Bigler CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grampian CCD, Clearfield County, Pennsylvania, USA.html">Grampian CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kylertown CDP, Pennsylvania, USA.html">Kylertown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mahaffey borough, Pennsylvania, USA.html">Mahaffey borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mahaffey CCD, Clearfield County, Pennsylvania, USA.html">Mahaffey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wallaceton borough, Pennsylvania, USA.html">Wallaceton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wallaceton CCD, Clearfield County, Pennsylvania, USA.html">Wallaceton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cherry Tree borough, Pennsylvania, USA.html">Cherry Tree borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cherry Tree CCD, Indiana County, Pennsylvania, USA.html">Cherry Tree CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Allport CDP, Pennsylvania, USA.html">Allport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Troutville borough, Pennsylvania, USA.html">Troutville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troutville CCD, Clearfield County, Pennsylvania, USA.html">Troutville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benezette CCD, Elk County, Pennsylvania, USA.html">Benezette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnside CCD, Clearfield County, Pennsylvania, USA.html">Burnside CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burnside borough, Pennsylvania, USA.html">Burnside borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gibson CCD, Cameron County, Pennsylvania, USA.html">Gibson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Hope borough, Pennsylvania, USA.html">Glen Hope borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glen Hope CCD, Clearfield County, Pennsylvania, USA.html">Glen Hope CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newburg borough, Pennsylvania, USA.html">Newburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newburg CCD, Clearfield County, Pennsylvania, USA.html">Newburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pine CCD, Clearfield County, Pennsylvania, USA.html">Pine CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Washington borough, Pennsylvania, USA.html">New Washington borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Washington CCD, Clearfield County, Pennsylvania, USA.html">New Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Falls Creek CCD, Clearfield County, Pennsylvania, USA.html">Falls Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Keating CCD, Clinton County, Pennsylvania, USA.html">West Keating CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Clearfield County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

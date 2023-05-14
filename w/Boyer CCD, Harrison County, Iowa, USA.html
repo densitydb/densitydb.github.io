@@ -1,0 +1,449 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Boyer CCD</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Boyer CCD</div>
+    <div class="text longname">Boyer CCD, Harrison County, Iowa, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.0k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">15144 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southwest Washita CCD, Washita County, Oklahoma, USA.html"><</a> <a class="button" href="Winnebago CCD, Thurston County, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Johnson Village Neighborhood, Charlottesville City, Virginia, USA.html"><</a> <a class="button" href="Three Forks city, Montana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">344/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7303 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Baldy-Wrightwood CCD, San Bernardino County, California, USA.html"><</a> <a class="button" href="South Bethlehem CCD, Armstrong County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bainbridge Neighborhood, Chagrin Falls City, Ohio, USA.html"><</a> <a class="button" href="05850, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">15356 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Benton CCD, Ottawa County, Ohio, USA.html"><</a> <a class="button" href="Mapleton CCD, Aroostook County, Maine, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fish Camp CDP, California, USA.html"><</a> <a class="button" href="Harviell CDP, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">95.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7086 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Adams CCD, Defiance County, Ohio, USA.html"><</a> <a class="button" href="Danby CCD, Ionia County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Adams CCD, Defiance County, Ohio, USA.html"><</a> <a class="button" href="Ramsey village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20546 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crate CCD, Chippewa County, Minnesota, USA.html"><</a> <a class="button" href="2 CCD, Halifax County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Okolona town, Arkansas, USA.html"><</a> <a class="button" href="2 CCD, Halifax County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">23526 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Romine CCD, Marion County, Illinois, USA.html"><</a> <a class="button" href="Arlington CCD, Hancock County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yachats city, Oregon, USA.html"><</a> <a class="button" href="Myrtle Creek city, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16930 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weare CCD, Hillsborough County, New Hampshire, USA.html"><</a> <a class="button" href="Bristol CCD, Pierce County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="03281, USA.html"><</a> <a class="button" href="17921, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">25143 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plainville CCD, Norfolk County, Massachusetts, USA.html"><</a> <a class="button" href="Washington CCD, Henry County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salem CCD, Delaware County, Indiana, USA.html"><</a> <a class="button" href="78570, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">23510 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="7 CCD, Loudon County, Tennessee, USA.html"><</a> <a class="button" href="Southwest Washita CCD, Washita County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southwest Washita CCD, Washita County, Oklahoma, USA.html"><</a> <a class="button" href="Johnson Village Neighborhood, Charlottesville City, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27476 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hanover CCD, Columbiana County, Ohio, USA.html"><</a> <a class="button" href="Victoria CCD, Victoria County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Quail Hollow Neighborhood, Fort Collins City, Colorado, USA.html"><</a> <a class="button" href="Victoria CCD, Victoria County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.593</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14204 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="4 CCD, Union County, Mississippi, USA.html"><</a> <a class="button" href="Coulterville CCD, Randolph County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="21835, USA.html"><</a> <a class="button" href="Jewell Junction city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20430 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Johannisburg CCD, Washington County, Illinois, USA.html"><</a> <a class="button" href="Clay CCD, Grundy County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hillsboro town, Indiana, USA.html"><</a> <a class="button" href="Johannisburg CCD, Washington County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">787/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9451 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield CCD, Columbiana County, Ohio, USA.html"><</a> <a class="button" href="South Bell CCD, Bell County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield CCD, Columbiana County, Ohio, USA.html"><</a> <a class="button" href="97390, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">611/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6489 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pikeville CCD, Pike County, Kentucky, USA.html"><</a> <a class="button" href="Attica CCD, Sedgwick County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sulphur city, Oklahoma, USA.html"><</a> <a class="button" href="Attica CCD, Sedgwick County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">108/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10614 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield CCD, Lycoming County, Pennsylvania, USA.html"><</a> <a class="button" href="Burbank CCD, Walla Walla County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chauvin CDP, Louisiana, USA.html"><</a> <a class="button" href="70523, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">34/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">15002 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portersville CCD, Butler County, Pennsylvania, USA.html"><</a> <a class="button" href="Montville CCD, Geauga County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portersville CCD, Butler County, Pennsylvania, USA.html"><</a> <a class="button" href="Wheeler city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Iowa, USA.html">Iowa</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harrison County, Iowa, USA.html">Harrison County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Harrison County, Iowa, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodbine city, Iowa, USA.html">Woodbine city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Harrison County, Iowa, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Magnolia CCD, Harrison County, Iowa, USA.html">Magnolia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cass CCD, Harrison County, Iowa, USA.html">Cass CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Douglas CCD, Harrison County, Iowa, USA.html">Douglas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allen CCD, Harrison County, Iowa, USA.html">Allen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Harrison County, Iowa, USA.html">Lincoln CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Boyer CCD's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

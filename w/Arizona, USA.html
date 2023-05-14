@@ -1,0 +1,590 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arizona</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Arizona</div>
+    <div class="text longname">Arizona, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.2m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington, USA.html"><</a> <a class="button" href="Massachusetts, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Houston-The Woodlands CSA, Texas, USA.html"><</a> <a class="button" href="Houston-The Woodlands-Sugar Land MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1570/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Colorado, USA.html"><</a> <a class="button" href="Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Idylwood Neighborhood, Redmond City, Washington, USA.html"><</a> <a class="button" href="98310, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">24/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">33 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vermont, USA.html"><</a> <a class="button" href="Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dick Johnson CCD, Clay County, Indiana, USA.html"><</a> <a class="button" href="61230, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53.37%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">40 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mississippi, USA.html"><</a> <a class="button" href="New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southaven city, Mississippi, USA.html"><</a> <a class="button" href="Baton Rouge MSA, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">30.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Texas, USA.html"><</a> <a class="button" href="Nevada, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92262, USA.html"><</a> <a class="button" href="Point Arena city, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.43%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">34 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nebraska, USA.html"><</a> <a class="button" href="Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palmer Square Neighborhood, Chicago City, Illinois, USA.html"><</a> <a class="button" href="20181, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">21 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rhode Island, USA.html"><</a> <a class="button" href="Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Berkeley Neighborhood, Cumberland City, Rhode Island, USA.html"><</a> <a class="button" href="99702, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Dakota, USA.html"><</a> <a class="button" href="Wyoming, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73072, USA.html"><</a> <a class="button" href="53936, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma, USA.html"><</a> <a class="button" href="Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="75038, USA.html"><</a> <a class="button" href="76687, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.17%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">35 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kentucky, USA.html"><</a> <a class="button" href="Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Harbor CDP, Florida, USA.html"><</a> <a class="button" href="Des Moines-Ames-West Des Moines CSA, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.555</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">32 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indiana, USA.html"><</a> <a class="button" href="Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lower Belvidere Neighborhood, Lowell City, Massachusetts, USA.html"><</a> <a class="button" href="52755, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mississippi, USA.html"><</a> <a class="button" href="Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="2 CCD, Calcasieu Parish, Louisiana, USA.html"><</a> <a class="button" href="Butte CDP, Alaska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2618/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Texas, USA.html"><</a> <a class="button" href="Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Whitehall CCD, Lehigh County, Pennsylvania, USA.html"><</a> <a class="button" href="Maricopa city, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1897/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">14 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Colorado, USA.html"><</a> <a class="button" href="Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Carlos Neighborhood, San Diego City, California, USA.html"><</a> <a class="button" href="Regis Neighborhood, Denver City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1325/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">13 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Colorado, USA.html"><</a> <a class="button" href="Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redan CDP, Georgia, USA.html"><</a> <a class="button" href="20705, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1127/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pennsylvania, USA.html"><</a> <a class="button" href="Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dean Highland Neighborhood, Waco City, Texas, USA.html"><</a> <a class="button" href="McClellan Heights Neighborhood, Davenport City, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="California, USA.html">California</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Los Angeles-Long Beach CSA, California, USA.html">Los Angeles-Long Beach CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Colorado, USA.html">Colorado</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Phoenix-Mesa-Scottsdale MSA, Arizona, USA.html">Phoenix-Mesa-Scottsdale MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Riverside-San Bernardino-Ontario MSA, California, USA.html">Riverside-San Bernardino-Ontario MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Maricopa County, Arizona, USA.html">Maricopa County</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Utah, USA.html">Utah</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nevada, USA.html">Nevada</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Riverside County, California, USA.html">Riverside County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clark County, Nevada, USA.html">Clark County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Las Vegas-Henderson-Paradise MSA, Nevada, USA.html">Las Vegas-Henderson-Paradise MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Bernardino County, California, USA.html">San Bernardino County</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Mexico, USA.html">New Mexico</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albuquerque-Santa Fe-Las Vegas CSA, New Mexico, USA.html">Albuquerque-Santa Fe-Las Vegas CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Tucson-Nogales CSA, Arizona, USA.html">Tucson-Nogales CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pima County, Arizona, USA.html">Pima County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tucson MSA, Arizona, USA.html">Tucson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pinal County, Arizona, USA.html">Pinal County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Prescott MSA, Arizona, USA.html">Prescott MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yavapai County, Arizona, USA.html">Yavapai County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mohave County, Arizona, USA.html">Mohave County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">Lake Havasu City-Kingman MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yuma County, Arizona, USA.html">Yuma County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Yuma MSA, Arizona, USA.html">Yuma MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Utah, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. George MSA, Utah, USA.html">St. George MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="El Centro MSA, California, USA.html">El Centro MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Imperial County, California, USA.html">Imperial County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Flagstaff MSA, Arizona, USA.html">Flagstaff MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coconino County, Arizona, USA.html">Coconino County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sierra Vista-Douglas MSA, Arizona, USA.html">Sierra Vista-Douglas MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cochise County, Arizona, USA.html">Cochise County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Farmington MSA, New Mexico, USA.html">Farmington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Juan County, New Mexico, USA.html">San Juan County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Show Low MSA, Arizona, USA.html">Show Low MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Navajo County, Arizona, USA.html">Navajo County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McKinley County, New Mexico, USA.html">McKinley County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Gallup MSA, New Mexico, USA.html">Gallup MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Apache County, Arizona, USA.html">Apache County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Payson MSA, Arizona, USA.html">Payson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gila County, Arizona, USA.html">Gila County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Nogales MSA, Arizona, USA.html">Nogales MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Santa Cruz County, Arizona, USA.html">Santa Cruz County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Safford MSA, Arizona, USA.html">Safford MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Graham County, Arizona, USA.html">Graham County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Silver City MSA, New Mexico, USA.html">Silver City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, New Mexico, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cibola County, New Mexico, USA.html">Cibola County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Grants MSA, New Mexico, USA.html">Grants MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montezuma County, Colorado, USA.html">Montezuma County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="La Paz County, Arizona, USA.html">La Paz County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Juan County, Utah, USA.html">San Juan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greenlee County, Arizona, USA.html">Greenlee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kane County, Utah, USA.html">Kane County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Nevada, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hidalgo County, New Mexico, USA.html">Hidalgo County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Catron County, New Mexico, USA.html">Catron County</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Arizona's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

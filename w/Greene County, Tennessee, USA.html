@@ -1,0 +1,533 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Greene County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Greene County</div>
+    <div class="text longname">Greene County, Tennessee, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">70.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">770 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portage County, Wisconsin, USA.html"><</a> <a class="button" href="York County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="20002, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">186/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2019 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kane County, Utah, USA.html"><</a> <a class="button" href="Ottawa County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenleaf CDP, Wisconsin, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">43/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">807 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Franklin County, Missouri, USA.html"><</a> <a class="button" href="Oktibbeha County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="Seneca CCD, Campbell County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">90.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">831 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grant County, Arkansas, USA.html"><</a> <a class="button" href="Clermont County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bay CCD, Ottawa County, Ohio, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1830 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wells County, Indiana, USA.html"><</a> <a class="button" href="Bond County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="37934, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1599 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stephens County, Oklahoma, USA.html"><</a> <a class="button" href="Lyon County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="18643, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.43%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1942 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Copiah County, Mississippi, USA.html"><</a> <a class="button" href="Doniphan County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="05143, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2132 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sherman County, Kansas, USA.html"><</a> <a class="button" href="Sibley County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ardenwald Neighborhood, Portland City, Oregon, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1951 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Luzerne County, Pennsylvania, USA.html"><</a> <a class="button" href="Kosciusko County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="East Rutherford borough, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1526 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stanly County, North Carolina, USA.html"><</a> <a class="button" href="Webster County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="West Bernalillo CCD, Bernalillo County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.569</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1900 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sedgwick County, Kansas, USA.html"><</a> <a class="button" href="Kiowa County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="17922, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.59%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2031 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamsburg County, Virginia, USA.html"><</a> <a class="button" href="Perry County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="27341, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">589/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2057 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Socorro County, New Mexico, USA.html"><</a> <a class="button" href="Pierce County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="71251, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">260/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2289 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tyler County, Texas, USA.html"><</a> <a class="button" href="Monroe County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodbine city, Georgia, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">150/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1631 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taos County, New Mexico, USA.html"><</a> <a class="button" href="Manistee County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bell Acres borough, Pennsylvania, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">114/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1261 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carroll County, Iowa, USA.html"><</a> <a class="button" href="Goodhue County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May CCD, Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Greeneville MSA, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="North Carolina, USA.html">North Carolina</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Tennessee, USA.html">Tennessee</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Knoxville-Morristown-Sevierville CSA, Tennessee, USA.html">Knoxville-Morristown-Sevierville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Asheville-Brevard CSA, North Carolina, USA.html">Asheville-Brevard CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Asheville MSA, North Carolina, USA.html">Asheville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Johnson City MSA, Tennessee, USA.html">Johnson City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Tennessee, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Morristown MSA, Tennessee, USA.html">Morristown MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Greeneville MSA, Tennessee, USA.html">Greeneville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hamblen County, Tennessee, USA.html">Hamblen County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hawkins County, Tennessee, USA.html">Hawkins County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Newport MSA, Tennessee, USA.html">Newport MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cocke County, Tennessee, USA.html">Cocke County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, North Carolina, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Unicoi County, Tennessee, USA.html">Unicoi County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greeneville town, Tennessee, USA.html">Greeneville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Greene County, Tennessee, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Greene County, Tennessee, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Greene County, Tennessee, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Greene County, Tennessee, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Greene County, Tennessee, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Washington County, Tennessee, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Greene County, Tennessee, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Greene County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Washington County, Tennessee, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Hawkins County, Tennessee, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Hawkins County, Tennessee, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Unicoi County, Tennessee, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Cocke County, Tennessee, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Cocke County, Tennessee, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Hamblen County, Tennessee, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Hamblen County, Tennessee, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tusculum city, Tennessee, USA.html">Tusculum city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mosheim town, Tennessee, USA.html">Mosheim town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fall Branch CDP, Tennessee, USA.html">Fall Branch CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2, Laurel CCD, Madison County, North Carolina, USA.html">2, Laurel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6, Hot Springs CCD, Madison County, North Carolina, USA.html">6, Hot Springs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baileyton town, Tennessee, USA.html">Baileyton town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Greene County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,620 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pope County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Pope County</div>
+    <div class="text longname">Pope County, Minnesota, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2330 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Okfuskee County, Oklahoma, USA.html"><</a> <a class="button" href="Martin County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Okfuskee County, Oklahoma, USA.html"><</a> <a class="button" href="5 CCD, Loudon County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">168/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2136 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodruff County, Arkansas, USA.html"><</a> <a class="button" href="Gentry County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="29842, USA.html"><</a> <a class="button" href="70577, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.1/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2361 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bienville County, Louisiana, USA.html"><</a> <a class="button" href="Uvalde County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="51036, USA.html"><</a> <a class="button" href="40840, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">95.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">97 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elk County, Pennsylvania, USA.html"><</a> <a class="button" href="Armstrong County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson CCD, Knox County, Ohio, USA.html"><</a> <a class="button" href="14030, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2722 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlton County, Minnesota, USA.html"><</a> <a class="button" href="Forest County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="62338, USA.html"><</a> <a class="button" href="Warrensburg CCD, Warren County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2685 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Edmunds County, South Dakota, USA.html"><</a> <a class="button" href="Moody County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Liberty CCD, St. Francois County, Missouri, USA.html"><</a> <a class="button" href="Barnet CCD, Caledonia County, Vermont, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1892 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rusk County, Texas, USA.html"><</a> <a class="button" href="Kingman County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hialeah Gardens city, Florida, USA.html"><</a> <a class="button" href="South Marion Neighborhood, Marion City, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1847 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crittenden County, Arkansas, USA.html"><</a> <a class="button" href="Knox County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crittenden County, Arkansas, USA.html"><</a> <a class="button" href="61701, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2852 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watonwan County, Minnesota, USA.html"><</a> <a class="button" href="Okfuskee County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="54814, USA.html"><</a> <a class="button" href="35072, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2871 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Emmet County, Iowa, USA.html"><</a> <a class="button" href="Miami-Dade County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lakeview Neighborhood, Paterson City, New Jersey, USA.html"><</a> <a class="button" href="54562, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.714</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">303 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Thomas County, Nebraska, USA.html"><</a> <a class="button" href="Conejos County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="56278, USA.html"><</a> <a class="button" href="East Carbon-Sunnyside city, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">23.74%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">436 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kinney County, Texas, USA.html"><</a> <a class="button" href="Lake County, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Northville CDP, New York, USA.html"><</a> <a class="button" href="Breckenridge North CCD, Stephens County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">412/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2618 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bacon County, Georgia, USA.html"><</a> <a class="button" href="Republic County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="79096, USA.html"><</a> <a class="button" href="Batesburg-Leesville CCD, Lexington County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">272/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2216 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dillon County, South Carolina, USA.html"><</a> <a class="button" href="Kane County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lisbon CCD, Waukesha County, Wisconsin, USA.html"><</a> <a class="button" href="Port William village, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">71/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2370 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Michigan, USA.html"><</a> <a class="button" href="Spink County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Holly town, Colorado, USA.html"><</a> <a class="button" href="Manitou Beach-Devils Lake CDP, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">28/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2490 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Concho County, Texas, USA.html"><</a> <a class="button" href="Madison County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Prescott city, Oregon, USA.html"><</a> <a class="button" href="Troutville CCD, Clearfield County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Minnesota, USA.html">Minnesota</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. Cloud MSA, Minnesota, USA.html">St. Cloud MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stearns County, Minnesota, USA.html">Stearns County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Willmar MSA, Minnesota, USA.html">Willmar MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kandiyohi County, Minnesota, USA.html">Kandiyohi County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Alexandria MSA, Minnesota, USA.html">Alexandria MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Douglas County, Minnesota, USA.html">Douglas County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Swift County, Minnesota, USA.html">Swift County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stevens County, Minnesota, USA.html">Stevens County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Minnesota, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenwood city, Minnesota, USA.html">Glenwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Starbuck CCD, Pope County, Minnesota, USA.html">Starbuck CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Starbuck city, Minnesota, USA.html">Starbuck city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glenwood CCD, Pope County, Minnesota, USA.html">Glenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake Mary CCD, Douglas County, Minnesota, USA.html">Lake Mary CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hudson CCD, Douglas County, Minnesota, USA.html">Hudson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Holmes City CCD, Douglas County, Minnesota, USA.html">Holmes City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brooten CCD, Stearns County, Minnesota, USA.html">Brooten CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brooten city, Minnesota, USA.html">Brooten city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leven CCD, Pope County, Minnesota, USA.html">Leven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minnewaska CCD, Pope County, Minnesota, USA.html">Minnewaska CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White Bear Lake CCD, Pope County, Minnesota, USA.html">White Bear Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reno CCD, Pope County, Minnesota, USA.html">Reno CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orange CCD, Douglas County, Minnesota, USA.html">Orange CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crow Lake CCD, Stearns County, Minnesota, USA.html">Crow Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Framnas CCD, Stevens County, Minnesota, USA.html">Framnas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Long Beach city, Minnesota, USA.html">Long Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Long Beach CCD, Pope County, Minnesota, USA.html">Long Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lowry city, Minnesota, USA.html">Lowry city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lowry CCD, Pope County, Minnesota, USA.html">Lowry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benson CCD, Swift County, Minnesota, USA.html">Benson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cyrus city, Minnesota, USA.html">Cyrus city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cyrus CCD, Pope County, Minnesota, USA.html">Cyrus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hodges CCD, Stevens County, Minnesota, USA.html">Hodges CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moore CCD, Stevens County, Minnesota, USA.html">Moore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norway Lake CCD, Kandiyohi County, Minnesota, USA.html">Norway Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Fork CCD, Stearns County, Minnesota, USA.html">North Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grove Lake CCD, Pope County, Minnesota, USA.html">Grove Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ben Wade CCD, Pope County, Minnesota, USA.html">Ben Wade CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ashley CCD, Stearns County, Minnesota, USA.html">Ashley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Solem CCD, Douglas County, Minnesota, USA.html">Solem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Raymond CCD, Stearns County, Minnesota, USA.html">Raymond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kerkhoven CCD, Swift County, Minnesota, USA.html">Kerkhoven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Villard CCD, Pope County, Minnesota, USA.html">Villard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Villard city, Minnesota, USA.html">Villard city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chippewa Falls CCD, Pope County, Minnesota, USA.html">Chippewa Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gilchrist CCD, Pope County, Minnesota, USA.html">Gilchrist CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nora CCD, Pope County, Minnesota, USA.html">Nora CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Swan Lake CCD, Stevens County, Minnesota, USA.html">Swan Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walden CCD, Pope County, Minnesota, USA.html">Walden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Prairie CCD, Pope County, Minnesota, USA.html">New Prairie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blue Mounds CCD, Pope County, Minnesota, USA.html">Blue Mounds CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Langhei CCD, Pope County, Minnesota, USA.html">Langhei CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bangor CCD, Pope County, Minnesota, USA.html">Bangor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camp Lake CCD, Swift County, Minnesota, USA.html">Camp Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hoff CCD, Pope County, Minnesota, USA.html">Hoff CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barsness CCD, Pope County, Minnesota, USA.html">Barsness CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake Johanna CCD, Pope County, Minnesota, USA.html">Lake Johanna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rolling Forks CCD, Pope County, Minnesota, USA.html">Rolling Forks CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tara CCD, Swift County, Minnesota, USA.html">Tara CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clontarf CCD, Swift County, Minnesota, USA.html">Clontarf CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Farwell city, Minnesota, USA.html">Farwell city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Farwell CCD, Pope County, Minnesota, USA.html">Farwell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westport CCD, Pope County, Minnesota, USA.html">Westport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westport city, Minnesota, USA.html">Westport city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sedan CCD, Pope County, Minnesota, USA.html">Sedan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sedan city, Minnesota, USA.html">Sedan city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Pope County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

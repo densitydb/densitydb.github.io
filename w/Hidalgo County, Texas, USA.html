@@ -1,0 +1,680 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hidalgo County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Hidalgo County</div>
+    <div class="text longname">Hidalgo County, Texas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">870.8k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">67 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Francisco County, California, USA.html"><</a> <a class="button" href="El Paso County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlotte city, North Carolina, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1115/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">248 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cache County, Utah, USA.html"><</a> <a class="button" href="Erie County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77651, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">212/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">237 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York County, Virginia, USA.html"><</a> <a class="button" href="Winnebago County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe CCD, Union County, North Carolina, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3135 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">0th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Todd County, South Dakota, USA.html"><</a> <a class="button" href="Zavala County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="Stone Park village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">91.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Zavala County, Texas, USA.html"><</a> <a class="button" href="Cameron County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Westchester CDP, Florida, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.39%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2538 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Itasca County, Minnesota, USA.html"><</a> <a class="button" href="Summit County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="50233, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.99%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">967 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winkler County, Texas, USA.html"><</a> <a class="button" href="Josephine County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="69361, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3050 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sunflower County, Mississippi, USA.html"><</a> <a class="button" href="Putnam County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hanover CCD, Cook County, Illinois, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2377 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lapeer County, Michigan, USA.html"><</a> <a class="button" href="Botetourt County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="24084, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3136 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">0th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cameron County, Texas, USA.html"><</a> <a class="button" href="Zavala County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="Scott CCD, Floyd County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.485</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3000 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">5th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kane County, Illinois, USA.html"><</a> <a class="button" href="Fairfax County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="52411, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1658 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, New York, USA.html"><</a> <a class="button" href="Pasco County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="38342, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2429/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">244 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Frederick County, Maryland, USA.html"><</a> <a class="button" href="Athens County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="Athens County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1399/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">263 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Galveston County, Texas, USA.html"><</a> <a class="button" href="Benton County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html"><</a> <a class="button" href="Mt. Airy Neighborhood, Cincinnati City, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">931/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">235 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Randall County, Texas, USA.html"><</a> <a class="button" href="Madera County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chatham Village Neighborhood, Flint City, Michigan, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">791/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">200 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Will County, Illinois, USA.html"><</a> <a class="button" href="Larimer County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="5 CCD, East Baton Rouge Parish, Louisiana, USA.html"><</a> <a class="button" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Texas, USA.html">Texas</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="McAllen-Edinburg CSA, Texas, USA.html">McAllen-Edinburg CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="McAllen-Edinburg-Mission MSA, Texas, USA.html">McAllen-Edinburg-Mission MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Corpus Christi-Kingsville-Alice CSA, Texas, USA.html">Corpus Christi-Kingsville-Alice CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Brownsville-Harlingen-Raymondville CSA, Texas, USA.html">Brownsville-Harlingen-Raymondville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cameron County, Texas, USA.html">Cameron County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Brownsville-Harlingen MSA, Texas, USA.html">Brownsville-Harlingen MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McAllen-Pharr CCD, Hidalgo County, Texas, USA.html">McAllen-Pharr CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edinburg CCD, Hidalgo County, Texas, USA.html">Edinburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mission CCD, Hidalgo County, Texas, USA.html">Mission CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harlingen-San Benito CCD, Cameron County, Texas, USA.html">Harlingen-San Benito CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McAllen city, Texas, USA.html">McAllen city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southeast Hidalgo CCD, Hidalgo County, Texas, USA.html">Southeast Hidalgo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edinburg city, Texas, USA.html">Edinburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mission city, Texas, USA.html">Mission city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pharr city, Texas, USA.html">Pharr city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Starr County, Texas, USA.html">Starr County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Rio Grande City MSA, Texas, USA.html">Rio Grande City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Weslaco city, Texas, USA.html">Weslaco city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sullivan City CCD, Hidalgo County, Texas, USA.html">Sullivan City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Juan city, Texas, USA.html">San Juan city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rio Grande City CCD, Starr County, Texas, USA.html">Rio Grande City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edcouch-Elsa CCD, Hidalgo County, Texas, USA.html">Edcouch-Elsa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Kingsville MSA, Texas, USA.html">Kingsville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Raymondville MSA, Texas, USA.html">Raymondville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Willacy County, Texas, USA.html">Willacy County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alamo city, Texas, USA.html">Alamo city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alton city, Texas, USA.html">Alton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Donna city, Texas, USA.html">Donna city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mercedes city, Texas, USA.html">Mercedes city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hidalgo city, Texas, USA.html">Hidalgo city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Homa CDP, Texas, USA.html">La Homa CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="La Grulla CCD, Starr County, Texas, USA.html">La Grulla CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Murillo CDP, Texas, USA.html">Murillo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Brooks County, Texas, USA.html">Brooks County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mila Doce CDP, Texas, USA.html">Mila Doce CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palmview city, Texas, USA.html">Palmview city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elsa city, Texas, USA.html">Elsa city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Doffing CDP, Texas, USA.html">Doffing CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Perezville CDP, Texas, USA.html">Perezville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palmview South CDP, Texas, USA.html">Palmview South CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Progreso city, Texas, USA.html">Progreso city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Penitas city, Texas, USA.html">Penitas city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Joya city, Texas, USA.html">La Joya city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Midway North CDP, Texas, USA.html">Midway North CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Olivarez CDP, Texas, USA.html">Olivarez CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Doolittle CDP, Texas, USA.html">Doolittle CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sullivan City city, Texas, USA.html">Sullivan City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scissors CDP, Texas, USA.html">Scissors CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Alamo CDP, Texas, USA.html">North Alamo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lopezville CDP, Texas, USA.html">Lopezville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Alamo CDP, Texas, USA.html">South Alamo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Citrus City CDP, Texas, USA.html">Citrus City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyford CCD, Willacy County, Texas, USA.html">Lyford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Carlos CDP, Texas, USA.html">San Carlos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Llano Grande CDP, Texas, USA.html">Llano Grande CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Villa city, Texas, USA.html">La Villa city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edcouch city, Texas, USA.html">Edcouch city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Indian Hills CDP, Texas, USA.html">Indian Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palmhurst city, Texas, USA.html">Palmhurst city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hargill CCD, Hidalgo County, Texas, USA.html">Hargill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sebastian CCD, Willacy County, Texas, USA.html">Sebastian CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Midway South CDP, Texas, USA.html">Midway South CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Blanca CDP, Texas, USA.html">La Blanca CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Abram CDP, Texas, USA.html">Abram CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Sharyland CDP, Texas, USA.html">West Sharyland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monte Alto CDP, Texas, USA.html">Monte Alto CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="César Chávez CDP, Texas, USA.html">César Chávez CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Puerto Rico-San Manuel CCD, Hidalgo County, Texas, USA.html">Puerto Rico-San Manuel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Muniz CDP, Texas, USA.html">Muniz CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Heidelberg CDP, Texas, USA.html">Heidelberg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lasara CCD, Willacy County, Texas, USA.html">Lasara CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Villa Verde CDP, Texas, USA.html">Villa Verde CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hargill CDP, Texas, USA.html">Hargill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Linn CDP, Texas, USA.html">Linn CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Faysville CDP, Texas, USA.html">Faysville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Encino CCD, Brooks County, Texas, USA.html">Encino CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Havana CDP, Texas, USA.html">Havana CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bixby CDP, Texas, USA.html">Bixby CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kenedy County, Texas, USA.html">Kenedy County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sarita CCD, Kenedy County, Texas, USA.html">Sarita CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Granjeno city, Texas, USA.html">Granjeno city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Progreso Lakes city, Texas, USA.html">Progreso Lakes city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Los Ebanos CDP, Texas, USA.html">Los Ebanos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laguna Seca CDP, Texas, USA.html">Laguna Seca CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Relampago CDP, Texas, USA.html">Relampago CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cuevitas CDP, Texas, USA.html">Cuevitas CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Hidalgo County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

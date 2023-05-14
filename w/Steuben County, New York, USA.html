@@ -1,0 +1,716 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Steuben County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Steuben County</div>
+    <div class="text longname">Steuben County, New York, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">93.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">639 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Suffolk County, Virginia, USA.html"><</a> <a class="button" href="Pottawattamie County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deltona city, Florida, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">376/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1153 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woods County, Oklahoma, USA.html"><</a> <a class="button" href="Belmont County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe city, Texas, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">26/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1185 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bell County, Kentucky, USA.html"><</a> <a class="button" href="Union County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="Kinderhook CCD, Branch County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">90.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">819 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dodge County, Minnesota, USA.html"><</a> <a class="button" href="Sevier County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="West Calhoun CCD, Calhoun County, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2644 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe County, Missouri, USA.html"><</a> <a class="button" href="McHenry County, North Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clarksburg MSA, West Virginia, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.51%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1720 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Floyd County, Virginia, USA.html"><</a> <a class="button" href="Rowan County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamsburg Neighborhood, Arlington City, Virginia, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.73%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">582 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weld County, Colorado, USA.html"><</a> <a class="button" href="St. Lucie County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Earlewood Neighborhood, Columbia City, South Carolina, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2002 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Illinois, USA.html"><</a> <a class="button" href="Durham County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="Upper Hill Neighborhood, Springfield City, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2236 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Franklin County, Georgia, USA.html"><</a> <a class="button" href="Mercer County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Clair CCD, Columbiana County, Ohio, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">929 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grundy County, Tennessee, USA.html"><</a> <a class="button" href="Umatilla County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodhaven Neighborhood, Richmond City, Virginia, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.641</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">689 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Roane County, West Virginia, USA.html"><</a> <a class="button" href="Pender County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="Winding Wood 2 Neighborhood, Clearwater City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.91%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1057 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dallam County, Texas, USA.html"><</a> <a class="button" href="Ouachita County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yanceyville CCD, Caswell County, North Carolina, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">834/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1502 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McKenzie County, North Dakota, USA.html"><</a> <a class="button" href="Brooks County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="Corydon town, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">550/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1205 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washakie County, Wyoming, USA.html"><</a> <a class="button" href="Lamb County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cordova city, Alaska, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">222/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1270 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Minidoka County, Idaho, USA.html"><</a> <a class="button" href="Socorro County, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hillsboro CCD, Marion County, Kansas, USA.html"><</a> <a class="button" href="Corning MSA, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">107/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1308 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson County, Washington, USA.html"><</a> <a class="button" href="Dawson County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Corning MSA, New York, USA.html"><</a> <a class="button" href="Nina CDP, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Rochester-Batavia-Seneca Falls CSA, New York, USA.html">Rochester-Batavia-Seneca Falls CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Rochester MSA, New York, USA.html">Rochester MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Elmira-Corning CSA, New York, USA.html">Elmira-Corning CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ontario County, New York, USA.html">Ontario County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Corning MSA, New York, USA.html">Corning MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chemung County, New York, USA.html">Chemung County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Elmira MSA, New York, USA.html">Elmira MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Livingston County, New York, USA.html">Livingston County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Allegany County, New York, USA.html">Allegany County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tioga County, Pennsylvania, USA.html">Tioga County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yates County, New York, USA.html">Yates County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schuyler County, New York, USA.html">Schuyler County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Potter County, Pennsylvania, USA.html">Potter County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bath CCD, Steuben County, New York, USA.html">Bath CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corning city, New York, USA.html">Corning city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southport CCD, Chemung County, New York, USA.html">Southport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hornell CCD, Steuben County, New York, USA.html">Hornell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hornell city, New York, USA.html">Hornell city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Erwin CCD, Steuben County, New York, USA.html">Erwin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Flats CCD, Chemung County, New York, USA.html">Big Flats CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corning CCD, Steuben County, New York, USA.html">Corning CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bath village, New York, USA.html">Bath village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Big Flats CDP, New York, USA.html">Big Flats CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Dansville CCD, Livingston County, New York, USA.html">North Dansville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alfred CCD, Allegany County, New York, USA.html">Alfred CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jerusalem CCD, Yates County, New York, USA.html">Jerusalem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gang Mills CDP, New York, USA.html">Gang Mills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hornellsville CCD, Steuben County, New York, USA.html">Hornellsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayland CCD, Steuben County, New York, USA.html">Wayland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canisteo CCD, Steuben County, New York, USA.html">Canisteo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Campbell CCD, Steuben County, New York, USA.html">Campbell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Catlin CCD, Chemung County, New York, USA.html">Catlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Naples CCD, Ontario County, New York, USA.html">Naples CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Addison CCD, Steuben County, New York, USA.html">Addison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springwater CCD, Livingston County, New York, USA.html">Springwater CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cohocton CCD, Steuben County, New York, USA.html">Cohocton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Canisteo village, New York, USA.html">Canisteo village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Urbana CCD, Steuben County, New York, USA.html">Urbana CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caton CCD, Steuben County, New York, USA.html">Caton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Avoca CCD, Steuben County, New York, USA.html">Avoca CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prattsburgh CCD, Steuben County, New York, USA.html">Prattsburgh CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lindley CCD, Steuben County, New York, USA.html">Lindley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Tioga County, Pennsylvania, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dansville CCD, Steuben County, New York, USA.html">Dansville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elkland CCD, Tioga County, Pennsylvania, USA.html">Elkland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elkland borough, Pennsylvania, USA.html">Elkland borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Painted Post village, New York, USA.html">Painted Post village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hornby CCD, Steuben County, New York, USA.html">Hornby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wayland village, New York, USA.html">Wayland village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodhull CCD, Steuben County, New York, USA.html">Woodhull CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tyrone CCD, Schuyler County, New York, USA.html">Tyrone CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Andover CCD, Allegany County, New York, USA.html">Andover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lawrence CCD, Tioga County, Pennsylvania, USA.html">Lawrence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sparta CCD, Livingston County, New York, USA.html">Sparta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Addison village, New York, USA.html">Addison village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barrington CCD, Yates County, New York, USA.html">Barrington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Almond CCD, Allegany County, New York, USA.html">Almond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jasper CCD, Steuben County, New York, USA.html">Jasper CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orange CCD, Schuyler County, New York, USA.html">Orange CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tuscarora CCD, Steuben County, New York, USA.html">Tuscarora CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Howard CCD, Steuben County, New York, USA.html">Howard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pulteney CCD, Steuben County, New York, USA.html">Pulteney CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Thurston CCD, Steuben County, New York, USA.html">Thurston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheeler CCD, Steuben County, New York, USA.html">Wheeler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Corning village, New York, USA.html">South Corning village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Italy CCD, Yates County, New York, USA.html">Italy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rathbone CCD, Steuben County, New York, USA.html">Rathbone CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Independence CCD, Allegany County, New York, USA.html">Independence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burns CCD, Allegany County, New York, USA.html">Burns CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Potter County, Pennsylvania, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troupsburg CCD, Steuben County, New York, USA.html">Troupsburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Steuben County, New York, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cameron CCD, Steuben County, New York, USA.html">Cameron CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fremont CCD, Steuben County, New York, USA.html">Fremont CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Avoca village, New York, USA.html">Avoca village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bradford CCD, Steuben County, New York, USA.html">Bradford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwood CCD, Steuben County, New York, USA.html">Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arkport village, New York, USA.html">Arkport village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Hornell village, New York, USA.html">North Hornell village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ossian CCD, Livingston County, New York, USA.html">Ossian CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cohocton village, New York, USA.html">Cohocton village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Savona village, New York, USA.html">Savona village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Campbell CDP, New York, USA.html">Campbell CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bingham CCD, Potter County, Pennsylvania, USA.html">Bingham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coopers Plains CDP, New York, USA.html">Coopers Plains CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lawrenceville borough, Pennsylvania, USA.html">Lawrenceville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lawrenceville CCD, Tioga County, Pennsylvania, USA.html">Lawrenceville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osceola CCD, Tioga County, Pennsylvania, USA.html">Osceola CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Prattsburgh CDP, New York, USA.html">Prattsburgh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hammondsport village, New York, USA.html">Hammondsport village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartsville CCD, Steuben County, New York, USA.html">Hartsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nelson CCD, Tioga County, Pennsylvania, USA.html">Nelson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deerfield CCD, Tioga County, Pennsylvania, USA.html">Deerfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Riverside village, New York, USA.html">Riverside village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Almond village, New York, USA.html">Almond village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, Tioga County, Pennsylvania, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Union CCD, Steuben County, New York, USA.html">West Union CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Steuben County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

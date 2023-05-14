@@ -1,0 +1,833 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lafayette MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Lafayette MSA</div>
+    <div class="text longname">Lafayette MSA, Louisiana, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">478.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">91 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Port St. Lucie MSA, Florida, USA.html"><</a> <a class="button" href="Springfield MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="South Gate-East Los Angeles CCD, Los Angeles County, California, USA.html"><</a> <a class="button" href="Onondaga County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">576/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">382 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Macomb MSA, Illinois, USA.html"><</a> <a class="button" href="Watertown-Fort Atkinson MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dallam County, Texas, USA.html"><</a> <a class="button" href="04011, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">50/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">272 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coeur d'Alene MSA, Idaho, USA.html"><</a> <a class="button" href="Adrian MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="30733, USA.html"><</a> <a class="button" href="43804, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">64.82%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">589 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weatherford MSA, Oklahoma, USA.html"><</a> <a class="button" href="Wichita Falls MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mansion park Neighborhood, Chico City, California, USA.html"><</a> <a class="button" href="Jackson County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.33%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">522 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elizabethtown-Fort Knox MSA, Kentucky, USA.html"><</a> <a class="button" href="Yankton MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="68928, USA.html"><</a> <a class="button" href="Rutherfordton town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">24.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">98 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Charles MSA, Louisiana, USA.html"><</a> <a class="button" href="Durham-Chapel Hill MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southwest Neighborhood, Columbus City, Ohio, USA.html"><</a> <a class="button" href="Lake Butler city, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.88%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">240 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ukiah MSA, California, USA.html"><</a> <a class="button" href="Winona MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="25801, USA.html"><</a> <a class="button" href="Summer Place Village Neighborhood, Mesa City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">425 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plainview MSA, Texas, USA.html"><</a> <a class="button" href="Dayton MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plainview MSA, Texas, USA.html"><</a> <a class="button" href="23323, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">692 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sheboygan MSA, Wisconsin, USA.html"><</a> <a class="button" href="Shawano MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="20816, USA.html"><</a> <a class="button" href="23233, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">645 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huntington MSA, Indiana, USA.html"><</a> <a class="button" href="Talladega-Sylacauga MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jonesboro town, Louisiana, USA.html"><</a> <a class="button" href="Farmers Branch city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.588</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">291 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley MSA, Alabama, USA.html"><</a> <a class="button" href="Kingsville MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Independence CCD, Jasper County, Iowa, USA.html"><</a> <a class="button" href="New Germany CCD, Carver County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">395 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Airy MSA, North Carolina, USA.html"><</a> <a class="button" href="Cullman MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Surry County, North Carolina, USA.html"><</a> <a class="button" href="50591, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1309/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">396 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marquette MSA, Michigan, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mesa del Caballo CDP, Arizona, USA.html"><</a> <a class="button" href="South Lebanon CCD, Lebanon County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">746/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">423 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, Missouri, USA.html"><</a> <a class="button" href="Hilo MSA, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Milan village, Illinois, USA.html"><</a> <a class="button" href="44707, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">473/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">316 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jamestown-Dunkirk-Fredonia MSA, New York, USA.html"><</a> <a class="button" href="Plainview MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73521, USA.html"><</a> <a class="button" href="Denison CCD, Crawford County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">381/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">257 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elmira MSA, New York, USA.html"><</a> <a class="button" href="Del Rio MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="30726, USA.html"><</a> <a class="button" href="Carbondale city, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Louisiana, USA.html">Louisiana</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Baton Rouge MSA, Louisiana, USA.html">Baton Rouge MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lafayette-Opelousas-Morgan City CSA, Louisiana, USA.html">Lafayette-Opelousas-Morgan City CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lake Charles-Jennings CSA, Louisiana, USA.html">Lake Charles-Jennings CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lafayette County, Louisiana, USA.html">Lafayette County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lake Charles MSA, Louisiana, USA.html">Lake Charles MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lafayette city, Louisiana, USA.html">Lafayette city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Opelousas MSA, Louisiana, USA.html">Opelousas MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Landry County, Louisiana, USA.html">St. Landry County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="G CCD, Lafayette Parish, Louisiana, USA.html">G CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iberia County, Louisiana, USA.html">Iberia County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Acadia County, Louisiana, USA.html">Acadia County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Vermilion County, Louisiana, USA.html">Vermilion County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="B CCD, Lafayette Parish, Louisiana, USA.html">B CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Martin County, Louisiana, USA.html">St. Martin County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Morgan City MSA, Louisiana, USA.html">Morgan City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Mary County, Louisiana, USA.html">St. Mary County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="F CCD, Lafayette Parish, Louisiana, USA.html">F CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Evangeline County, Louisiana, USA.html">Evangeline County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Jennings MSA, Louisiana, USA.html">Jennings MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson Davis County, Louisiana, USA.html">Jefferson Davis County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="A CCD, Lafayette Parish, Louisiana, USA.html">A CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iberville County, Louisiana, USA.html">Iberville County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Iberia city, Louisiana, USA.html">New Iberia city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Assumption County, Louisiana, USA.html">Assumption County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pointe Coupee County, Louisiana, USA.html">Pointe Coupee County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="E CCD, Lafayette Parish, Louisiana, USA.html">E CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="C CCD, Lafayette Parish, Louisiana, USA.html">C CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Youngsville city, Louisiana, USA.html">Youngsville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="D CCD, Lafayette Parish, Louisiana, USA.html">D CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Broussard city, Louisiana, USA.html">Broussard city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crowley city, Louisiana, USA.html">Crowley city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morgan City city, Louisiana, USA.html">Morgan City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Abbeville city, Louisiana, USA.html">Abbeville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jennings city, Louisiana, USA.html">Jennings city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eunice city, Louisiana, USA.html">Eunice city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, St. Landry Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carencro city, Louisiana, USA.html">Carencro city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, St. Mary Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Acadia Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Acadia Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, St. Landry Parish, Louisiana, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scott city, Louisiana, USA.html">Scott city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Acadia Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, St. Landry Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Breaux Bridge city, Louisiana, USA.html">Breaux Bridge city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Acadia Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rayne city, Louisiana, USA.html">Rayne city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Acadia Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Acadia Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, St. Martin Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, St. Landry Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Acadia Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, St. Martin Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, St. Mary Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, St. Landry Parish, Louisiana, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, St. Martin Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, St. Martin Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, St. Martin Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Iberia Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cameron County, Louisiana, USA.html">Cameron County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, St. Martin Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Vermilion Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Iberia Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, St. Martin Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Acadia Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Iberia Parish, Louisiana, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Martinville city, Louisiana, USA.html">St. Martinville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Iberia Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, Iberia Parish, Louisiana, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Iberia Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, St. Mary Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, St. Martin Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Iberia Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="14 CCD, Iberia Parish, Louisiana, USA.html">14 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Vermilion Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, Iberia Parish, Louisiana, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, St. Landry Parish, Louisiana, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Iberia Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jeanerette city, Louisiana, USA.html">Jeanerette city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Iberia Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, St. Martin Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, St. Mary Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, Iberia Parish, Louisiana, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Vermilion Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Vermilion Parish, Louisiana, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kaplan city, Louisiana, USA.html">Kaplan city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Iberia Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Church Point town, Louisiana, USA.html">Church Point town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Iberia Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Vermilion Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, Vermilion Parish, Louisiana, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, Vermilion Parish, Louisiana, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Vermilion Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Vermilion Parish, Louisiana, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Vermilion Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Vermilion Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Vermilion Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="14 CCD, Vermilion Parish, Louisiana, USA.html">14 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, Vermilion Parish, Louisiana, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Jefferson Davis Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Jefferson Davis Parish, Louisiana, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Evangeline Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Arthur town, Louisiana, USA.html">Lake Arthur town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milton CDP, Louisiana, USA.html">Milton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Assumption Parish, Louisiana, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Assumption Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Jefferson Davis Parish, Louisiana, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Jefferson Davis Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Jefferson Davis Parish, Louisiana, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Jefferson Davis Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Assumption Parish, Louisiana, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ossun CDP, Louisiana, USA.html">Ossun CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maurice village, Louisiana, USA.html">Maurice village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Assumption Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Erath town, Louisiana, USA.html">Erath town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Iberville Parish, Louisiana, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cade CDP, Louisiana, USA.html">Cade CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Jefferson Davis Parish, Louisiana, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cecilia CDP, Louisiana, USA.html">Cecilia CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Delcambre town, Louisiana, USA.html">Delcambre town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, Iberville Parish, Louisiana, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Henderson town, Louisiana, USA.html">Henderson town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Duson town, Louisiana, USA.html">Duson town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Iota town, Louisiana, USA.html">Iota town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Basile town, Louisiana, USA.html">Basile town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gueydan town, Louisiana, USA.html">Gueydan town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arnaudville town, Louisiana, USA.html">Arnaudville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Catahoula CDP, Louisiana, USA.html">Catahoula CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lydia CDP, Louisiana, USA.html">Lydia CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Estherwood village, Louisiana, USA.html">Estherwood village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loreauville village, Louisiana, USA.html">Loreauville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Cameron Parish, Louisiana, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Egan CDP, Louisiana, USA.html">Egan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parks village, Louisiana, USA.html">Parks village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morse village, Louisiana, USA.html">Morse village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mermentau village, Louisiana, USA.html">Mermentau village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Branch CDP, Louisiana, USA.html">Branch CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Lafayette MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

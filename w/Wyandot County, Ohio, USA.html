@@ -1,0 +1,572 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Wyandot County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Wyandot County</div>
+    <div class="text longname">Wyandot County, Ohio, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1718 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Henry County, Missouri, USA.html"><</a> <a class="button" href="Scott County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sixteen Acres Neighborhood, Springfield City, Massachusetts, USA.html"><</a> <a class="button" href="Vincennes CCD, Knox County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">299/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1459 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cherokee County, Iowa, USA.html"><</a> <a class="button" href="Osceola County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Payne village, Ohio, USA.html"><</a> <a class="button" href="Skyline CCD, Santa Rosa County, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1364 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Henry County, Kentucky, USA.html"><</a> <a class="button" href="Anderson County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Trumbull CCD, Ashtabula County, Ohio, USA.html"><</a> <a class="button" href="Prathersville village, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">93.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">268 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grayson County, Kentucky, USA.html"><</a> <a class="button" href="Carroll County, New Hampshire, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="38485, USA.html"><</a> <a class="button" href="04768, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2090 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Audrain County, Missouri, USA.html"><</a> <a class="button" href="Gage County, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chickasaw city, Alabama, USA.html"><</a> <a class="button" href="Walnut Lake CCD, Faribault County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2594 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kane County, Utah, USA.html"><</a> <a class="button" href="Archer County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oglesby city, Illinois, USA.html"><</a> <a class="button" href="Washington CCD, Henry County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.39%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2093 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alpena County, Michigan, USA.html"><</a> <a class="button" href="Guernsey County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="20020, USA.html"><</a> <a class="button" href="Gary city, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2973 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">5th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, New Jersey, USA.html"><</a> <a class="button" href="Rockingham County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="96706, USA.html"><</a> <a class="button" href="Santa Barbara Estates Neighborhood, Pompano Beach City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2197 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Bernard County, Louisiana, USA.html"><</a> <a class="button" href="Bergen County, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Julington Creek Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="75956, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.53%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2695 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Decatur County, Tennessee, USA.html"><</a> <a class="button" href="Fillmore County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="80701, USA.html"><</a> <a class="button" href="15559, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.577</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1728 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Acadia County, Louisiana, USA.html"><</a> <a class="button" href="Cumberland County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tunkhannock CCD, Wyoming County, Pennsylvania, USA.html"><</a> <a class="button" href="Cumberland County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2613 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport News County, Virginia, USA.html"><</a> <a class="button" href="Staunton County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43209, USA.html"><</a> <a class="button" href="10924, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">614/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1974 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbus County, North Carolina, USA.html"><</a> <a class="button" href="Randolph County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="54963, USA.html"><</a> <a class="button" href="Chincoteague town, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">447/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1525 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson County, Iowa, USA.html"><</a> <a class="button" href="Fannin County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Black River village, New York, USA.html"><</a> <a class="button" href="Porter CCD, Porter County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">161/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1571 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stanly County, North Carolina, USA.html"><</a> <a class="button" href="Sullivan County, New Hampshire, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Matheny CDP, California, USA.html"><</a> <a class="button" href="63873, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">64/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1754 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Klickitat County, Washington, USA.html"><</a> <a class="button" href="Elbert County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="17058, USA.html"><</a> <a class="button" href="95982, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Columbus-Marion-Zanesville CSA, Ohio, USA.html">Columbus-Marion-Zanesville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Mansfield-Ashland-Bucyrus CSA, Ohio, USA.html">Mansfield-Ashland-Bucyrus CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Findlay-Tiffin CSA, Ohio, USA.html">Findlay-Tiffin CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hancock County, Ohio, USA.html">Hancock County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Findlay MSA, Ohio, USA.html">Findlay MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Marion MSA, Ohio, USA.html">Marion MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Marion County, Ohio, USA.html">Marion County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tiffin MSA, Ohio, USA.html">Tiffin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Seneca County, Ohio, USA.html">Seneca County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bucyrus MSA, Ohio, USA.html">Bucyrus MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Crawford County, Ohio, USA.html">Crawford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hardin County, Ohio, USA.html">Hardin County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crane CCD, Wyandot County, Ohio, USA.html">Crane CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Upper Sandusky city, Ohio, USA.html">Upper Sandusky city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crawford CCD, Wyandot County, Ohio, USA.html">Crawford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carey village, Ohio, USA.html">Carey village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden CCD, Seneca County, Ohio, USA.html">Eden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Hardin County, Ohio, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Spring CCD, Seneca County, Ohio, USA.html">Big Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand Prairie CCD, Marion County, Ohio, USA.html">Grand Prairie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sycamore CCD, Wyandot County, Ohio, USA.html">Sycamore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seneca CCD, Seneca County, Ohio, USA.html">Seneca CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Forest village, Ohio, USA.html">Forest village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Delaware CCD, Hancock County, Ohio, USA.html">Delaware CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Biglick CCD, Hancock County, Ohio, USA.html">Biglick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Antrim CCD, Wyandot County, Ohio, USA.html">Antrim CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tymochtee CCD, Wyandot County, Ohio, USA.html">Tymochtee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden CCD, Wyandot County, Ohio, USA.html">Eden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Amanda CCD, Hancock County, Ohio, USA.html">Amanda CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salem CCD, Wyandot County, Ohio, USA.html">Salem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pitt CCD, Wyandot County, Ohio, USA.html">Pitt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Wyandot County, Ohio, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sycamore village, Ohio, USA.html">Sycamore village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mifflin CCD, Wyandot County, Ohio, USA.html">Mifflin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nevada village, Ohio, USA.html">Nevada village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tod CCD, Crawford County, Ohio, USA.html">Tod CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt Rock CCD, Marion County, Ohio, USA.html">Salt Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Wyandot County, Ohio, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ridge CCD, Wyandot County, Ohio, USA.html">Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Goshen CCD, Hardin County, Ohio, USA.html">Goshen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dallas CCD, Crawford County, Ohio, USA.html">Dallas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marseilles CCD, Wyandot County, Ohio, USA.html">Marseilles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand CCD, Marion County, Ohio, USA.html">Grand CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morral village, Ohio, USA.html">Morral village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McCutchenville CDP, Ohio, USA.html">McCutchenville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Texas CCD, Crawford County, Ohio, USA.html">Texas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wharton village, Ohio, USA.html">Wharton village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harpster village, Ohio, USA.html">Harpster village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kirby village, Ohio, USA.html">Kirby village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marseilles village, Ohio, USA.html">Marseilles village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Wyandot County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

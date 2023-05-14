@@ -1,0 +1,620 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Waco MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Waco MSA</div>
+    <div class="text longname">Waco MSA, Texas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">277.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">143 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Merced MSA, California, USA.html"><</a> <a class="button" href="Sioux Falls MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lakeland CCD, Polk County, Florida, USA.html"><</a> <a class="button" href="Eugene-Springfield CCD, Lane County, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">899/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">172 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wenatchee MSA, Washington, USA.html"><</a> <a class="button" href="Charleston-North Charleston MSA, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="3 CCD, Shelby County, Tennessee, USA.html"><</a> <a class="button" href="76701, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">227 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tifton MSA, Georgia, USA.html"><</a> <a class="button" href="Port Clinton MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Preston Neighborhood, Issaquah City, Washington, USA.html"><</a> <a class="button" href="Wilton CCD, Hillsborough County, New Hampshire, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">717 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley MSA, Alabama, USA.html"><</a> <a class="button" href="Baton Rouge MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bladen County, North Carolina, USA.html"><</a> <a class="button" href="Scraper CDP, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">26.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">117 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="College Station-Bryan MSA, Texas, USA.html"><</a> <a class="button" href="Ukiah MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="1 CCD, Hamblen County, Tennessee, USA.html"><</a> <a class="button" href="North Lauderdale city, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">170 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orlando-Kissimmee-Sanford MSA, Florida, USA.html"><</a> <a class="button" href="Kankakee MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="2 CCD, Evangeline Parish, Louisiana, USA.html"><</a> <a class="button" href="South End Neighborhood, Boston City, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">261 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Flagstaff MSA, Arizona, USA.html"><</a> <a class="button" href="Tyler MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="University Hills Neighborhood, Austin City, Texas, USA.html"><</a> <a class="button" href="Concord CCD, Iredell County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.34%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">371 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Menomonie MSA, Wisconsin, USA.html"><</a> <a class="button" href="Adrian MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55369, USA.html"><</a> <a class="button" href="77444, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">302 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bonham MSA, Texas, USA.html"><</a> <a class="button" href="Greenville MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="College Gardens Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="87004, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">515 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeneville MSA, Tennessee, USA.html"><</a> <a class="button" href="Vineland-Bridgeton MSA, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake CCD, Luzerne County, Pennsylvania, USA.html"><</a> <a class="button" href="Westmoreland County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.536</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">709 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Las Cruces MSA, New Mexico, USA.html"><</a> <a class="button" href="Fort Morgan MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sandhill-Texas Alley Neighborhood, Covington City, Georgia, USA.html"><</a> <a class="button" href="Webster CCD, Harrison County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">559 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pontiac MSA, Illinois, USA.html"><</a> <a class="button" href="Bedford MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dobson CCD, Surry County, North Carolina, USA.html"><</a> <a class="button" href="Fremont CCD, Tuscola County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1887/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">175 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lewiston-Auburn MSA, Maine, USA.html"><</a> <a class="button" href="Cape Coral-Fort Myers MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brook Haven Neighborhood, Valdosta City, Georgia, USA.html"><</a> <a class="button" href="Monongahela CCD, Washington County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1172/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">167 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Savannah MSA, Georgia, USA.html"><</a> <a class="button" href="Great Falls MSA, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Galesburg City CCD, Knox County, Illinois, USA.html"><</a> <a class="button" href="49442, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">684/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">175 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albany MSA, Oregon, USA.html"><</a> <a class="button" href="Green Bay MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reminderville village, Ohio, USA.html"><</a> <a class="button" href="77904, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">515/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">157 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Springfield MSA, Illinois, USA.html"><</a> <a class="button" href="Dubuque MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="John Weaver Neighborhood, Elkhart City, Indiana, USA.html"><</a> <a class="button" href="Daviess County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Texas, USA.html">Texas</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Killeen-Temple MSA, Texas, USA.html">Killeen-Temple MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bell County, Texas, USA.html">Bell County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="College Station-Bryan MSA, Texas, USA.html">College Station-Bryan MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McLennan County, Texas, USA.html">McLennan County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waco CCD, McLennan County, Texas, USA.html">Waco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waco city, Texas, USA.html">Waco city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coryell County, Texas, USA.html">Coryell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hill County, Texas, USA.html">Hill County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Milam County, Texas, USA.html">Milam County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Limestone County, Texas, USA.html">Limestone County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bosque County, Texas, USA.html">Bosque County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Falls County, Texas, USA.html">Falls County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Robertson County, Texas, USA.html">Robertson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Bell CCD, Bell County, Texas, USA.html">Northwest Bell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hewitt city, Texas, USA.html">Hewitt city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hillsboro CCD, Hill County, Texas, USA.html">Hillsboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moody-Lorena CCD, McLennan County, Texas, USA.html">Moody-Lorena CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robinson city, Texas, USA.html">Robinson city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellmead city, Texas, USA.html">Bellmead city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McGregor CCD, McLennan County, Texas, USA.html">McGregor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Whitney CCD, Hill County, Texas, USA.html">Whitney CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodway city, Texas, USA.html">Woodway city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West CCD, McLennan County, Texas, USA.html">West CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marlin CCD, Falls County, Texas, USA.html">Marlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clifton CCD, Bosque County, Texas, USA.html">Clifton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Bell CCD, Bell County, Texas, USA.html">East Bell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lacy-Lakeview city, Texas, USA.html">Lacy-Lakeview city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elm Mott CCD, McLennan County, Texas, USA.html">Elm Mott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="China Spring CCD, McLennan County, Texas, USA.html">China Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mart CCD, McLennan County, Texas, USA.html">Mart CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Groesbeck CCD, Limestone County, Texas, USA.html">Groesbeck CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crawford CCD, McLennan County, Texas, USA.html">Crawford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marlin city, Texas, USA.html">Marlin city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McGregor city, Texas, USA.html">McGregor city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Axtell CCD, McLennan County, Texas, USA.html">Axtell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chilton CCD, Falls County, Texas, USA.html">Chilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hubbard-Mount Calm CCD, Hill County, Texas, USA.html">Hubbard-Mount Calm CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rosebud CCD, Falls County, Texas, USA.html">Rosebud CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West city, Texas, USA.html">West city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Valley Mills CCD, Bosque County, Texas, USA.html">Valley Mills CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oglesby CCD, Coryell County, Texas, USA.html">Oglesby CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lott CCD, Falls County, Texas, USA.html">Lott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bremond CCD, Robertson County, Texas, USA.html">Bremond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beverly Hills city, Texas, USA.html">Beverly Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lorena city, Texas, USA.html">Lorena city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mart city, Texas, USA.html">Mart city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="China Spring CDP, Texas, USA.html">China Spring CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Moody city, Texas, USA.html">Moody city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rosebud city, Texas, USA.html">Rosebud city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Malone-Penelope CCD, Hill County, Texas, USA.html">Malone-Penelope CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bruceville-Eddy city, Texas, USA.html">Bruceville-Eddy city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gholson city, Texas, USA.html">Gholson city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valley Mills city, Texas, USA.html">Valley Mills city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burlington CCD, Milam County, Texas, USA.html">Burlington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Riesel city, Texas, USA.html">Riesel city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reagan CCD, Falls County, Texas, USA.html">Reagan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kosse CCD, Limestone County, Texas, USA.html">Kosse CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prairie Hill CCD, Limestone County, Texas, USA.html">Prairie Hill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chilton CDP, Texas, USA.html">Chilton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry CCD, Falls County, Texas, USA.html">Perry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crawford town, Texas, USA.html">Crawford town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lott city, Texas, USA.html">Lott city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Golinda city, Texas, USA.html">Golinda city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hallsburg city, Texas, USA.html">Hallsburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leroy city, Texas, USA.html">Leroy city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ross city, Texas, USA.html">Ross city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Waco MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

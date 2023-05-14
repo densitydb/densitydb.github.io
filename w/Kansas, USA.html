@@ -1,0 +1,971 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kansas</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Kansas</div>
+    <div class="text longname">Kansas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.9m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">35 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mississippi, USA.html"><</a> <a class="button" href="New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mississippi, USA.html"><</a> <a class="button" href="Baltimore-Columbia-Towson MSA, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">879/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">29 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Idaho, USA.html"><</a> <a class="button" href="Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Freehold CDP, New Jersey, USA.html"><</a> <a class="button" href="Heathrow CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">42 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Utah, USA.html"><</a> <a class="button" href="Nevada, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ben Lomond town, Arkansas, USA.html"><</a> <a class="button" href="Berlin CCD, Green Lake County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">72.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">21 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Michigan, USA.html"><</a> <a class="button" href="Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="24060, USA.html"><</a> <a class="button" href="Cleveland city, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington, USA.html"><</a> <a class="button" href="Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia CDP, New Jersey, USA.html"><</a> <a class="button" href="21077, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">30 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wisconsin, USA.html"><</a> <a class="button" href="California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Storrs Mansfield Neighborhood, Town of Mansfield City, Connecticut, USA.html"><</a> <a class="button" href="Rivanna CCD, Fluvanna County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Florida, USA.html"><</a> <a class="button" href="Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hopewell Junction CDP, New York, USA.html"><</a> <a class="button" href="Summerhill Neighborhood, Atlanta City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.75%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">18 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nevada, USA.html"><</a> <a class="button" href="Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York CCD, Switzerland County, Indiana, USA.html"><</a> <a class="button" href="70634, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Dakota, USA.html"><</a> <a class="button" href="Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dallas-Fort Worth-Arlington MSA, Texas, USA.html"><</a> <a class="button" href="Pratt CCD, Pratt County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montana, USA.html"><</a> <a class="button" href="Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="33702, USA.html"><</a> <a class="button" href="80210, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.566</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">27 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Hampshire, USA.html"><</a> <a class="button" href="Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Juniata County, Pennsylvania, USA.html"><</a> <a class="button" href="70375, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.62%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">28 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Idaho, USA.html"><</a> <a class="button" href="Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Conneaut CCD, Erie County, Pennsylvania, USA.html"><</a> <a class="button" href="80211, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1527/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">40 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma, USA.html"><</a> <a class="button" href="Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pleasant CCD, Hardin County, Ohio, USA.html"><</a> <a class="button" href="Congers Neighborhood, Clarkstown City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1085/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">31 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Louisiana, USA.html"><</a> <a class="button" href="Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Luzerne CCD, Fayette County, Pennsylvania, USA.html"><</a> <a class="button" href="Glen Allen CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">712/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">30 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Missouri, USA.html"><</a> <a class="button" href="Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Berlin CCD, Waukesha County, Wisconsin, USA.html"><</a> <a class="button" href="30291, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">554/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">32 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Idaho, USA.html"><</a> <a class="button" href="Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mars Hill Neighborhood, Indianapolis City, Indiana, USA.html"><</a> <a class="button" href="Cumberland County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Missouri, USA.html">Missouri</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Colorado, USA.html">Colorado</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Oklahoma, USA.html">Oklahoma</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nebraska, USA.html">Nebraska</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Tulsa-Muskogee-Bartlesville CSA, Oklahoma, USA.html">Tulsa-Muskogee-Bartlesville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tulsa MSA, Oklahoma, USA.html">Tulsa MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jackson County, Missouri, USA.html">Jackson County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Wichita-Arkansas City-Winfield CSA, Kansas, USA.html">Wichita-Arkansas City-Winfield CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Wichita MSA, Kansas, USA.html">Wichita MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Johnson County, Kansas, USA.html">Johnson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sedgwick County, Kansas, USA.html">Sedgwick County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lincoln-Beatrice CSA, Nebraska, USA.html">Lincoln-Beatrice CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clay County, Missouri, USA.html">Clay County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Topeka MSA, Kansas, USA.html">Topeka MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Joplin MSA, Missouri, USA.html">Joplin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Shawnee County, Kansas, USA.html">Shawnee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wyandotte County, Kansas, USA.html">Wyandotte County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Manhattan-Junction City CSA, Kansas, USA.html">Manhattan-Junction City CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jasper County, Missouri, USA.html">Jasper County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Douglas County, Kansas, USA.html">Douglas County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lawrence MSA, Kansas, USA.html">Lawrence MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cass County, Missouri, USA.html">Cass County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Platte County, Missouri, USA.html">Platte County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Manhattan MSA, Kansas, USA.html">Manhattan MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Buchanan County, Missouri, USA.html">Buchanan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Leavenworth County, Kansas, USA.html">Leavenworth County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Riley County, Kansas, USA.html">Riley County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Butler County, Kansas, USA.html">Butler County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hutchinson MSA, Kansas, USA.html">Hutchinson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Reno County, Kansas, USA.html">Reno County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Salina MSA, Kansas, USA.html">Salina MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Newton County, Missouri, USA.html">Newton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Saline County, Kansas, USA.html">Saline County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bartlesville MSA, Oklahoma, USA.html">Bartlesville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Oklahoma, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Osage County, Oklahoma, USA.html">Osage County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ponca City MSA, Oklahoma, USA.html">Ponca City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kay County, Oklahoma, USA.html">Kay County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Garden City MSA, Kansas, USA.html">Garden City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Crawford County, Kansas, USA.html">Crawford County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pittsburg MSA, Kansas, USA.html">Pittsburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Finney County, Kansas, USA.html">Finney County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Junction City MSA, Kansas, USA.html">Junction City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Geary County, Kansas, USA.html">Geary County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Arkansas City-Winfield MSA, Kansas, USA.html">Arkansas City-Winfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cowley County, Kansas, USA.html">Cowley County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ford County, Kansas, USA.html">Ford County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Dodge City MSA, Kansas, USA.html">Dodge City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Miami County, Kansas, USA.html">Miami County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harvey County, Kansas, USA.html">Harvey County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Emporia MSA, Kansas, USA.html">Emporia MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lyon County, Kansas, USA.html">Lyon County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Coffeyville MSA, Kansas, USA.html">Coffeyville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montgomery County, Kansas, USA.html">Montgomery County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ottawa County, Oklahoma, USA.html">Ottawa County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Miami MSA, Oklahoma, USA.html">Miami MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="McPherson MSA, Kansas, USA.html">McPherson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McPherson County, Kansas, USA.html">McPherson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ellis County, Kansas, USA.html">Ellis County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hays MSA, Kansas, USA.html">Hays MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ottawa MSA, Kansas, USA.html">Ottawa MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Kansas, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barton County, Kansas, USA.html">Barton County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Great Bend MSA, Kansas, USA.html">Great Bend MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pottawatomie County, Kansas, USA.html">Pottawatomie County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sumner County, Kansas, USA.html">Sumner County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Seward County, Kansas, USA.html">Seward County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Liberal MSA, Kansas, USA.html">Liberal MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gage County, Nebraska, USA.html">Gage County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Beatrice MSA, Nebraska, USA.html">Beatrice MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Texas County, Oklahoma, USA.html">Texas County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Guymon MSA, Oklahoma, USA.html">Guymon MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Parsons MSA, Kansas, USA.html">Parsons MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Labette County, Kansas, USA.html">Labette County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Vernon County, Missouri, USA.html">Vernon County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cherokee County, Kansas, USA.html">Cherokee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dickinson County, Kansas, USA.html">Dickinson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Kansas, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Andrew County, Missouri, USA.html">Andrew County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Atchison County, Kansas, USA.html">Atchison County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Atchison MSA, Kansas, USA.html">Atchison MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bates County, Missouri, USA.html">Bates County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Neosho County, Kansas, USA.html">Neosho County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Osage County, Kansas, USA.html">Osage County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bourbon County, Kansas, USA.html">Bourbon County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Craig County, Oklahoma, USA.html">Craig County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jackson County, Kansas, USA.html">Jackson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Allen County, Kansas, USA.html">Allen County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Prowers County, Colorado, USA.html">Prowers County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Marion County, Kansas, USA.html">Marion County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barton County, Missouri, USA.html">Barton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Red Willow County, Nebraska, USA.html">Red Willow County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nemaha County, Kansas, USA.html">Nemaha County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Marshall County, Kansas, USA.html">Marshall County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yuma County, Colorado, USA.html">Yuma County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Linn County, Kansas, USA.html">Linn County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Brown County, Kansas, USA.html">Brown County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rice County, Kansas, USA.html">Rice County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nowata County, Oklahoma, USA.html">Nowata County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pratt County, Kansas, USA.html">Pratt County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cloud County, Kansas, USA.html">Cloud County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wilson County, Kansas, USA.html">Wilson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Woods County, Oklahoma, USA.html">Woods County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coffey County, Kansas, USA.html">Coffey County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clay County, Kansas, USA.html">Clay County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Thomas County, Kansas, USA.html">Thomas County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Richardson County, Nebraska, USA.html">Richardson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Anderson County, Kansas, USA.html">Anderson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Doniphan County, Kansas, USA.html">Doniphan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kingman County, Kansas, USA.html">Kingman County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Kansas, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Nebraska, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kit Carson County, Colorado, USA.html">Kit Carson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wabaunsee County, Kansas, USA.html">Wabaunsee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Russell County, Kansas, USA.html">Russell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ellsworth County, Kansas, USA.html">Ellsworth County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pawnee County, Kansas, USA.html">Pawnee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greenwood County, Kansas, USA.html">Greenwood County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sherman County, Kansas, USA.html">Sherman County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mitchell County, Kansas, USA.html">Mitchell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ottawa County, Kansas, USA.html">Ottawa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Alfalfa County, Oklahoma, USA.html">Alfalfa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gray County, Kansas, USA.html">Gray County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Kansas, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harper County, Kansas, USA.html">Harper County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Norton County, Kansas, USA.html">Norton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Morris County, Kansas, USA.html">Morris County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stevens County, Kansas, USA.html">Stevens County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Scott County, Kansas, USA.html">Scott County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Beaver County, Oklahoma, USA.html">Beaver County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Thayer County, Nebraska, USA.html">Thayer County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Phillips County, Kansas, USA.html">Phillips County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rooks County, Kansas, USA.html">Rooks County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Republic County, Kansas, USA.html">Republic County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Furnas County, Nebraska, USA.html">Furnas County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barber County, Kansas, USA.html">Barber County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Holt County, Missouri, USA.html">Holt County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Oklahoma, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nuckolls County, Nebraska, USA.html">Nuckolls County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stafford County, Kansas, USA.html">Stafford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Meade County, Kansas, USA.html">Meade County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kearny County, Kansas, USA.html">Kearny County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Haskell County, Kansas, USA.html">Haskell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Smith County, Kansas, USA.html">Smith County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Baca County, Colorado, USA.html">Baca County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Osborne County, Kansas, USA.html">Osborne County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Webster County, Nebraska, USA.html">Webster County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chautauqua County, Kansas, USA.html">Chautauqua County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harper County, Oklahoma, USA.html">Harper County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Woodson County, Kansas, USA.html">Woodson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harlan County, Nebraska, USA.html">Harlan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rush County, Kansas, USA.html">Rush County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Kansas, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jewell County, Kansas, USA.html">Jewell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Edwards County, Kansas, USA.html">Edwards County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Nebraska, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Trego County, Kansas, USA.html">Trego County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Decatur County, Kansas, USA.html">Decatur County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Logan County, Kansas, USA.html">Logan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gove County, Kansas, USA.html">Gove County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Morton County, Kansas, USA.html">Morton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ness County, Kansas, USA.html">Ness County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hitchcock County, Nebraska, USA.html">Hitchcock County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cheyenne County, Kansas, USA.html">Cheyenne County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chase County, Kansas, USA.html">Chase County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rawlins County, Kansas, USA.html">Rawlins County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pawnee County, Nebraska, USA.html">Pawnee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hamilton County, Kansas, USA.html">Hamilton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Elk County, Kansas, USA.html">Elk County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kiowa County, Kansas, USA.html">Kiowa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sheridan County, Kansas, USA.html">Sheridan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Graham County, Kansas, USA.html">Graham County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cimarron County, Oklahoma, USA.html">Cimarron County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wichita County, Kansas, USA.html">Wichita County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stanton County, Kansas, USA.html">Stanton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clark County, Kansas, USA.html">Clark County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cheyenne County, Colorado, USA.html">Cheyenne County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hodgeman County, Kansas, USA.html">Hodgeman County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Comanche County, Kansas, USA.html">Comanche County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dundy County, Nebraska, USA.html">Dundy County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lane County, Kansas, USA.html">Lane County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wallace County, Kansas, USA.html">Wallace County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kiowa County, Colorado, USA.html">Kiowa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greeley County, Kansas, USA.html">Greeley County</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Kansas's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

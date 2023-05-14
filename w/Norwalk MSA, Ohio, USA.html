@@ -1,0 +1,650 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Norwalk MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Norwalk MSA</div>
+    <div class="text longname">Norwalk MSA, Ohio, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58.6k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">489 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carson City MSA, Nevada, USA.html"><</a> <a class="button" href="Oneonta MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Ohio, USA.html"><</a> <a class="button" href="Abington CCD, Montgomery County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">483/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">473 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Batavia MSA, New York, USA.html"><</a> <a class="button" href="Johnstown MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Ohio, USA.html"><</a> <a class="button" href="West Goldwire Neighborhood, Birmingham City, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">46/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">309 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon MSA, Ohio, USA.html"><</a> <a class="button" href="Monroe MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hartwell CCD, Hart County, Georgia, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">87.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">158 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tiffin MSA, Ohio, USA.html"><</a> <a class="button" href="Bay City MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lewiston city, Idaho, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.97%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">437 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lawrence MSA, Kansas, USA.html"><</a> <a class="button" href="Rocky Mount MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ledroit Park Neighborhood, Washington City, District of Columbia, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">701 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Collins MSA, Colorado, USA.html"><</a> <a class="button" href="Boulder MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Ohio, USA.html"><</a> <a class="button" href="66748, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.37%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">824 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shawano MSA, Wisconsin, USA.html"><</a> <a class="button" href="Washington MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="28684, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">529 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison MSA, Wisconsin, USA.html"><</a> <a class="button" href="Paris MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Ohio, USA.html"><</a> <a class="button" href="Mountain View Neighborhood, Claremont City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">652 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bloomsburg-Berwick MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Huntingdon MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stoughton CCD, Norfolk County, Massachusetts, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.94%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">491 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winston-Salem MSA, North Carolina, USA.html"><</a> <a class="button" href="Valdosta MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Solon city, Ohio, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.569</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">439 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Athens MSA, Tennessee, USA.html"><</a> <a class="button" href="Cedar Rapids MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Allendale Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">655 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Auburn-Opelika MSA, Alabama, USA.html"><</a> <a class="button" href="Juneau MSA, Alaska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Anderson West CCD, McDonald County, Missouri, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1002/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">581 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Henderson MSA, North Carolina, USA.html"><</a> <a class="button" href="Danville MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="7 CCD, Carter County, Tennessee, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">639/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">512 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jacksonville MSA, Illinois, USA.html"><</a> <a class="button" href="Alice MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="6 CCD, Giles County, Tennessee, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">326/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">497 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tifton MSA, Georgia, USA.html"><</a> <a class="button" href="Elko MSA, Nevada, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron County, Ohio, USA.html"><</a> <a class="button" href="Okmulgee CCD, Okmulgee County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">168/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">540 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indiana MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Calhoun MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="34434, USA.html"><</a> <a class="button" href="Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Cleveland-Akron-Canton CSA, Ohio, USA.html">Cleveland-Akron-Canton CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cleveland-Elyria MSA, Ohio, USA.html">Cleveland-Elyria MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lorain County, Ohio, USA.html">Lorain County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Mansfield-Ashland-Bucyrus CSA, Ohio, USA.html">Mansfield-Ashland-Bucyrus CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Findlay-Tiffin CSA, Ohio, USA.html">Findlay-Tiffin CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Mansfield MSA, Ohio, USA.html">Mansfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Richland County, Ohio, USA.html">Richland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sandusky MSA, Ohio, USA.html">Sandusky MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Erie County, Ohio, USA.html">Erie County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sandusky County, Ohio, USA.html">Sandusky County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Fremont MSA, Ohio, USA.html">Fremont MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Huron County, Ohio, USA.html">Huron County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Seneca County, Ohio, USA.html">Seneca County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tiffin MSA, Ohio, USA.html">Tiffin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ashland MSA, Ohio, USA.html">Ashland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ashland County, Ohio, USA.html">Ashland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bucyrus MSA, Ohio, USA.html">Bucyrus MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Crawford County, Ohio, USA.html">Crawford County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norwalk city, Ohio, USA.html">Norwalk city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellevue city, Ohio, USA.html">Bellevue city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Willard CCD, Huron County, Ohio, USA.html">Willard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Willard city, Ohio, USA.html">Willard city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bellevue CCD, Sandusky County, Ohio, USA.html">Bellevue CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bellevue CCD, Huron County, Ohio, USA.html">Bellevue CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milan CCD, Erie County, Ohio, USA.html">Milan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berlin CCD, Erie County, Ohio, USA.html">Berlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norwalk CCD, Huron County, Ohio, USA.html">Norwalk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New London CCD, Huron County, Ohio, USA.html">New London CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wakeman CCD, Huron County, Ohio, USA.html">Wakeman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Florence CCD, Erie County, Ohio, USA.html">Florence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York CCD, Sandusky County, Ohio, USA.html">York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New London village, Ohio, USA.html">New London village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Haven CCD, Huron County, Ohio, USA.html">New Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ridgefield CCD, Huron County, Ohio, USA.html">Ridgefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plymouth CCD, Richland County, Ohio, USA.html">Plymouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bronson CCD, Huron County, Ohio, USA.html">Bronson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Henrietta CCD, Lorain County, Ohio, USA.html">Henrietta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plymouth village, Ohio, USA.html">Plymouth village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Venice CCD, Seneca County, Ohio, USA.html">Venice CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cass CCD, Richland County, Ohio, USA.html">Cass CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clarksfield CCD, Huron County, Ohio, USA.html">Clarksfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Townsend CCD, Huron County, Ohio, USA.html">Townsend CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camden CCD, Lorain County, Ohio, USA.html">Camden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cranberry CCD, Crawford County, Ohio, USA.html">Cranberry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenwich village, Ohio, USA.html">Greenwich village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Groton CCD, Erie County, Ohio, USA.html">Groton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milan village, Ohio, USA.html">Milan village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Thompson CCD, Seneca County, Ohio, USA.html">Thompson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenfield CCD, Huron County, Ohio, USA.html">Greenfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monroeville village, Ohio, USA.html">Monroeville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloominggrove CCD, Richland County, Ohio, USA.html">Bloominggrove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butler CCD, Richland County, Ohio, USA.html">Butler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oxford CCD, Erie County, Ohio, USA.html">Oxford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield CCD, Huron County, Ohio, USA.html">Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ripley CCD, Huron County, Ohio, USA.html">Ripley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troy CCD, Ashland County, Ohio, USA.html">Troy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartland CCD, Huron County, Ohio, USA.html">Hartland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peru CCD, Huron County, Ohio, USA.html">Peru CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fitchville CCD, Huron County, Ohio, USA.html">Fitchville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norwich CCD, Huron County, Ohio, USA.html">Norwich CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwich CCD, Huron County, Ohio, USA.html">Greenwich CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wakeman village, Ohio, USA.html">Wakeman village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richmond CCD, Huron County, Ohio, USA.html">Richmond CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ruggles CCD, Ashland County, Ohio, USA.html">Ruggles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brighton CCD, Lorain County, Ohio, USA.html">Brighton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyme CCD, Huron County, Ohio, USA.html">Lyme CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Holiday Lakes CDP, Ohio, USA.html">Holiday Lakes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rochester CCD, Lorain County, Ohio, USA.html">Rochester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Auburn CCD, Crawford County, Ohio, USA.html">Auburn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reed CCD, Seneca County, Ohio, USA.html">Reed CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Collins CDP, Ohio, USA.html">Collins CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherman CCD, Huron County, Ohio, USA.html">Sherman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Fairfield village, Ohio, USA.html">North Fairfield village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Haven CDP, Ohio, USA.html">New Haven CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Celeryville CDP, Ohio, USA.html">Celeryville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bellevue CCD, Erie County, Ohio, USA.html">Bellevue CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Norwalk MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

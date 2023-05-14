@@ -1,0 +1,593 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Knox County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Knox County</div>
+    <div class="text longname">Knox County, Indiana, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">36.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1272 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexander County, North Carolina, USA.html"><</a> <a class="button" href="Matagorda County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="37312, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">558/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">745 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crawford County, Kansas, USA.html"><</a> <a class="button" href="Iberia County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="36305, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">27/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1160 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Van Zandt County, Texas, USA.html"><</a> <a class="button" href="Upshur County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="Plattsmouth CCD, Cass County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">91.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">688 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clearfield County, Pennsylvania, USA.html"><</a> <a class="button" href="Hancock County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nectar town, Alabama, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2152 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sherman County, Nebraska, USA.html"><</a> <a class="button" href="Tallapoosa County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Buena Vista CCD, Richland County, Wisconsin, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.92%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1588 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Mateo County, California, USA.html"><</a> <a class="button" href="Winnebago County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="48837, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.78%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1151 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dunn County, North Dakota, USA.html"><</a> <a class="button" href="Cass County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Florence city, Missouri, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2273 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Haywood County, Tennessee, USA.html"><</a> <a class="button" href="Dawson County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Inglewood city, California, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1332 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beaufort County, North Carolina, USA.html"><</a> <a class="button" href="Wagoner County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="Kulpmont borough, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2074 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lincoln County, Arkansas, USA.html"><</a> <a class="button" href="Ottawa County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="Bay Colony Neighborhood, Virginia Beach City, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.595</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1341 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hawkins County, Tennessee, USA.html"><</a> <a class="button" href="Pike County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vass town, North Carolina, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1603 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Edgefield County, South Carolina, USA.html"><</a> <a class="button" href="Wilkes County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="24963, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1016/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1218 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Garland County, Arkansas, USA.html"><</a> <a class="button" href="Kandiyohi County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Houston Lake city, Missouri, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">717/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">870 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Livingston County, Illinois, USA.html"><</a> <a class="button" href="Washington County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrisburg CCD, Saline County, Illinois, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">381/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">755 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sandusky County, Ohio, USA.html"><</a> <a class="button" href="Winkler County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="96716, USA.html"><</a> <a class="button" href="Vincennes MSA, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">194/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">887 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Uintah County, Utah, USA.html"><</a> <a class="button" href="Ross County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="West Kern CCD, Kern County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Illinois, USA.html">Illinois</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Indiana, USA.html">Indiana</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Terre Haute MSA, Indiana, USA.html">Terre Haute MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Jasper MSA, Indiana, USA.html">Jasper MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Vincennes MSA, Indiana, USA.html">Vincennes MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Washington MSA, Indiana, USA.html">Washington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Daviess County, Indiana, USA.html">Daviess County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gibson County, Indiana, USA.html">Gibson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greene County, Indiana, USA.html">Greene County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vincennes CCD, Knox County, Indiana, USA.html">Vincennes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sullivan County, Indiana, USA.html">Sullivan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Crawford County, Illinois, USA.html">Crawford County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vincennes city, Indiana, USA.html">Vincennes city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Daviess County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lawrence County, Illinois, USA.html">Lawrence County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pike County, Indiana, USA.html">Pike County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wabash County, Illinois, USA.html">Wabash County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Carmel CCD, Wabash County, Illinois, USA.html">Mount Carmel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Pike County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vigo CCD, Knox County, Indiana, USA.html">Vigo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haddon CCD, Sullivan County, Indiana, USA.html">Haddon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bicknell city, Indiana, USA.html">Bicknell city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Knox County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Knox County, Indiana, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palmyra CCD, Knox County, Indiana, USA.html">Palmyra CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White River CCD, Gibson County, Indiana, USA.html">White River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Denison CCD, Lawrence County, Illinois, USA.html">Denison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Busseron CCD, Knox County, Indiana, USA.html">Busseron CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johnson CCD, Knox County, Indiana, USA.html">Johnson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Veale CCD, Daviess County, Indiana, USA.html">Veale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elmore CCD, Daviess County, Indiana, USA.html">Elmore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Widner CCD, Knox County, Indiana, USA.html">Widner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wabash CCD, Wabash County, Illinois, USA.html">Wabash CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Greene County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Steele CCD, Daviess County, Indiana, USA.html">Steele CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Steen CCD, Knox County, Indiana, USA.html">Steen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Gibson County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montgomery CCD, Crawford County, Illinois, USA.html">Montgomery CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Freelandville CDP, Indiana, USA.html">Freelandville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oaktown town, Indiana, USA.html">Oaktown town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Francisville city, Illinois, USA.html">St. Francisville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monroe City town, Indiana, USA.html">Monroe City town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bruceville town, Indiana, USA.html">Bruceville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stafford CCD, Greene County, Indiana, USA.html">Stafford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Russell CCD, Lawrence County, Illinois, USA.html">Russell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wheatland town, Indiana, USA.html">Wheatland town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Pike County, Indiana, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sandborn town, Indiana, USA.html">Sandborn town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Sullivan County, Indiana, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay CCD, Pike County, Indiana, USA.html">Clay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cass CCD, Greene County, Indiana, USA.html">Cass CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edwardsport town, Indiana, USA.html">Edwardsport town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allison CCD, Lawrence County, Illinois, USA.html">Allison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Decker CCD, Knox County, Indiana, USA.html">Decker CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Decker town, Indiana, USA.html">Decker town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westphalia CDP, Indiana, USA.html">Westphalia CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emison CDP, Indiana, USA.html">Emison CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ragsdale CDP, Indiana, USA.html">Ragsdale CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Knox County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

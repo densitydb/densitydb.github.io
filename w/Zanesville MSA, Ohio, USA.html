@@ -1,0 +1,638 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zanesville MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Zanesville MSA</div>
+    <div class="text longname">Zanesville MSA, Ohio, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">86.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">376 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grand Island MSA, Nebraska, USA.html"><</a> <a class="button" href="Lufkin MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="1 CCD, Anne Arundel County, Maryland, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">426/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">546 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cleveland MSA, Tennessee, USA.html"><</a> <a class="button" href="Astoria MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48062, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">50/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">280 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wichita MSA, Kansas, USA.html"><</a> <a class="button" href="Beaumont-Port Arthur MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salem CCD, Westmoreland County, Pennsylvania, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">89.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">123 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hannibal MSA, Missouri, USA.html"><</a> <a class="button" href="Spearfish MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="Monroe County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">858 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenville MSA, Mississippi, USA.html"><</a> <a class="button" href="Marietta MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="Fitzgerald Neighborhood, Detroit City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">444 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Athens MSA, Tennessee, USA.html"><</a> <a class="button" href="Plattsburgh MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="Centerville town, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">781 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Celina MSA, Ohio, USA.html"><</a> <a class="button" href="Natchitoches MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Celina MSA, Ohio, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">738 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairmont MSA, Minnesota, USA.html"><</a> <a class="button" href="Summit Park MSA, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="11 CCD, Putnam County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">787 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laredo MSA, Texas, USA.html"><</a> <a class="button" href="Grenada MSA, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond Heights CCD, Cuyahoga County, Ohio, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.66%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">125 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Missoula MSA, Montana, USA.html"><</a> <a class="button" href="Searcy MSA, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="13748, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.572</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">411 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lawton MSA, Oklahoma, USA.html"><</a> <a class="button" href="Cheyenne MSA, Wyoming, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Americus CCD, Lyon County, Kansas, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">630 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Vernon MSA, Indiana, USA.html"><</a> <a class="button" href="Lawrenceburg MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskingum County, Ohio, USA.html"><</a> <a class="button" href="45130, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">993/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">586 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gallup MSA, New Mexico, USA.html"><</a> <a class="button" href="Huntington MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montgomery County, Illinois, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">594/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">563 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairmont MSA, West Virginia, USA.html"><</a> <a class="button" href="Breckenridge MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Branchburg CCD, Somerset County, New Jersey, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">309/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">522 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Murray MSA, Kentucky, USA.html"><</a> <a class="button" href="Red Bluff MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36571, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">218/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">417 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yankton MSA, South Dakota, USA.html"><</a> <a class="button" href="Huron MSA, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yankton County, South Dakota, USA.html"><</a> <a class="button" href="Muskingum County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Columbus-Marion-Zanesville CSA, Ohio, USA.html">Columbus-Marion-Zanesville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Columbus MSA, Ohio, USA.html">Columbus MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Licking County, Ohio, USA.html">Licking County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Muskingum County, Ohio, USA.html">Muskingum County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cambridge MSA, Ohio, USA.html">Cambridge MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Guernsey County, Ohio, USA.html">Guernsey County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Coshocton MSA, Ohio, USA.html">Coshocton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coshocton County, Ohio, USA.html">Coshocton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Perry County, Ohio, USA.html">Perry County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Zanesville CCD, Muskingum County, Ohio, USA.html">Zanesville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Zanesville city, Ohio, USA.html">Zanesville city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Noble County, Ohio, USA.html">Noble County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Morgan County, Ohio, USA.html">Morgan County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Falls CCD, Muskingum County, Ohio, USA.html">Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield CCD, Muskingum County, Ohio, USA.html">Springfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newton CCD, Muskingum County, Ohio, USA.html">Newton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Perry County, Ohio, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Muskingum County, Ohio, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Muskingum CCD, Muskingum County, Ohio, USA.html">Muskingum CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Muskingum County, Ohio, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Muskingum County, Ohio, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopewell CCD, Muskingum County, Ohio, USA.html">Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Zanesville CDP, Ohio, USA.html">North Zanesville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hanover CCD, Licking County, Ohio, USA.html">Hanover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry CCD, Muskingum County, Ohio, USA.html">Perry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Muskingum County, Ohio, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Concord village, Ohio, USA.html">New Concord village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Licking CCD, Muskingum County, Ohio, USA.html">Licking CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westland CCD, Guernsey County, Ohio, USA.html">Westland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Zanesville village, Ohio, USA.html">South Zanesville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams CCD, Guernsey County, Ohio, USA.html">Adams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Muskingum County, Ohio, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cass CCD, Muskingum County, Ohio, USA.html">Cass CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bowling Green CCD, Licking County, Ohio, USA.html">Bowling Green CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pleasant Grove CDP, Ohio, USA.html">Pleasant Grove CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roseville village, Ohio, USA.html">Roseville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry CCD, Licking County, Ohio, USA.html">Perry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dresden village, Ohio, USA.html">Dresden village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clayton CCD, Perry County, Ohio, USA.html">Clayton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Muskingum County, Ohio, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopewell CCD, Licking County, Ohio, USA.html">Hopewell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Perry County, Ohio, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Frazeysburg village, Ohio, USA.html">Frazeysburg village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brush Creek CCD, Muskingum County, Ohio, USA.html">Brush Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, Coshocton County, Ohio, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt Creek CCD, Muskingum County, Ohio, USA.html">Salt Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spencer CCD, Guernsey County, Ohio, USA.html">Spencer CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay CCD, Muskingum County, Ohio, USA.html">Clay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salem CCD, Muskingum County, Ohio, USA.html">Salem CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Highland CCD, Muskingum County, Ohio, USA.html">Highland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Duncan Falls CDP, Ohio, USA.html">Duncan Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York CCD, Morgan County, Ohio, USA.html">York CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Coshocton County, Ohio, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pike CCD, Coshocton County, Ohio, USA.html">Pike CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Philo village, Ohio, USA.html">Philo village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linton CCD, Coshocton County, Ohio, USA.html">Linton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blue Rock CCD, Muskingum County, Ohio, USA.html">Blue Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams CCD, Muskingum County, Ohio, USA.html">Adams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Virginia CCD, Coshocton County, Ohio, USA.html">Virginia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Knox CCD, Guernsey County, Ohio, USA.html">Knox CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Muskingum County, Ohio, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Muskingum County, Ohio, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rich Hill CCD, Muskingum County, Ohio, USA.html">Rich Hill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Trinway CDP, Ohio, USA.html">Trinway CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Fultonham CDP, Ohio, USA.html">East Fultonham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meigs CCD, Muskingum County, Ohio, USA.html">Meigs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gratiot village, Ohio, USA.html">Gratiot village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bristol CCD, Morgan County, Ohio, USA.html">Bristol CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Adamsville village, Ohio, USA.html">Adamsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fultonham village, Ohio, USA.html">Fultonham village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield CCD, Noble County, Ohio, USA.html">Brookfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norwich village, Ohio, USA.html">Norwich village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Zanesville MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

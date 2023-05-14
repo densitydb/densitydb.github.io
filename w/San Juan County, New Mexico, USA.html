@@ -1,0 +1,614 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>San Juan County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">San Juan County</div>
+    <div class="text longname">San Juan County, New Mexico, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">121.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">520 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Berkeley County, West Virginia, USA.html"><</a> <a class="button" href="Comanche County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Owensboro MSA, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">469/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">909 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shelby County, Kentucky, USA.html"><</a> <a class="button" href="Miller County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Brevard CCD, Brevard County, Florida, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.5/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2154 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sussex County, Virginia, USA.html"><</a> <a class="button" href="Langlade County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="62992, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">35.82%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2960 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Henry County, Georgia, USA.html"><</a> <a class="button" href="Cochran County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="95953, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">425 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Okanogan County, Washington, USA.html"><</a> <a class="button" href="Lavaca County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Willits CCD, Mendocino County, California, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.46%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2417 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brown County, Minnesota, USA.html"><</a> <a class="button" href="Custer County, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Lower Frankford CCD, Cumberland County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.72%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1234 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Clair County, Alabama, USA.html"><</a> <a class="button" href="Knox County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="South Cleveland CDP, Tennessee, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">39.79%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">36 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mahnomen County, Minnesota, USA.html"><</a> <a class="button" href="Roberts County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Hanna CCD, McIntosh County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">926 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Garfield County, Colorado, USA.html"><</a> <a class="button" href="Berrien County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="68135, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.73%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1658 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake County, Illinois, USA.html"><</a> <a class="button" href="Orange County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Barnesville city, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.530</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2623 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dewey County, South Dakota, USA.html"><</a> <a class="button" href="Owyhee County, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Northeast Jefferson CCD, Jefferson County, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.84%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1979 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mercer County, Kentucky, USA.html"><</a> <a class="button" href="Whitman County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15201, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1141/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1047 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Scioto County, Ohio, USA.html"><</a> <a class="button" href="Houston County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="Petersburg CDP, Alaska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">659/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">974 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gunnison County, Colorado, USA.html"><</a> <a class="button" href="Midland County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="4 CCD, West Baton Rouge Parish, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">335/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">867 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lyon County, Nevada, USA.html"><</a> <a class="button" href="Hancock County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington MSA, New Mexico, USA.html"><</a> <a class="button" href="01432, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">223/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">793 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskogee County, Oklahoma, USA.html"><</a> <a class="button" href="Allegany County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="08015, USA.html"><</a> <a class="button" href="Farmington MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Arizona, USA.html">Arizona</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Colorado, USA.html">Colorado</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Utah, USA.html">Utah</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Mexico, USA.html">New Mexico</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albuquerque-Santa Fe-Las Vegas CSA, New Mexico, USA.html">Albuquerque-Santa Fe-Las Vegas CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albuquerque MSA, New Mexico, USA.html">Albuquerque MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sandoval County, New Mexico, USA.html">Sandoval County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Farmington MSA, New Mexico, USA.html">Farmington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McKinley County, New Mexico, USA.html">McKinley County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Gallup MSA, New Mexico, USA.html">Gallup MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Apache County, Arizona, USA.html">Apache County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="La Plata County, Colorado, USA.html">La Plata County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Durango MSA, Colorado, USA.html">Durango MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Farmington CCD, San Juan County, New Mexico, USA.html">Farmington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Farmington city, New Mexico, USA.html">Farmington city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Española MSA, New Mexico, USA.html">Española MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rio Arriba County, New Mexico, USA.html">Rio Arriba County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montezuma County, Colorado, USA.html">Montezuma County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Aztec CCD, San Juan County, New Mexico, USA.html">Aztec CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fort Defiance CCD, Apache County, Arizona, USA.html">Fort Defiance CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chinle CCD, Apache County, Arizona, USA.html">Chinle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloomfield CCD, San Juan County, New Mexico, USA.html">Bloomfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shiprock-Sanostee CCD, San Juan County, New Mexico, USA.html">Shiprock-Sanostee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Juan County, Utah, USA.html">San Juan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Archuleta County, Colorado, USA.html">Archuleta County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Navajo Nation CCD, McKinley County, New Mexico, USA.html">Navajo Nation CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shiprock CDP, New Mexico, USA.html">Shiprock CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bloomfield city, New Mexico, USA.html">Bloomfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Napi Headquarters CCD, San Juan County, New Mexico, USA.html">Napi Headquarters CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Aztec city, New Mexico, USA.html">Aztec city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crownpoint CCD, McKinley County, New Mexico, USA.html">Crownpoint CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Durango Southwest CCD, La Plata County, Colorado, USA.html">Durango Southwest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ignacio CCD, La Plata County, Colorado, USA.html">Ignacio CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lee Acres CDP, New Mexico, USA.html">Lee Acres CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sweetwater CCD, Apache County, Arizona, USA.html">Sweetwater CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nenahnezad-Burnham CCD, San Juan County, New Mexico, USA.html">Nenahnezad-Burnham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cuba CCD, Sandoval County, New Mexico, USA.html">Cuba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Hammond CDP, New Mexico, USA.html">West Hammond CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Flora Vista CDP, New Mexico, USA.html">Flora Vista CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Naschitti CCD, San Juan County, New Mexico, USA.html">Naschitti CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arboles CCD, Archuleta County, Colorado, USA.html">Arboles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Upper Fruitland CDP, New Mexico, USA.html">Upper Fruitland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ute Mountain CCD, Montezuma County, Colorado, USA.html">Ute Mountain CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waterflow CDP, New Mexico, USA.html">Waterflow CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spencerville CDP, New Mexico, USA.html">Spencerville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar Hill CDP, New Mexico, USA.html">Cedar Hill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Napi Headquarters CDP, New Mexico, USA.html">Napi Headquarters CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ojo Amarillo CDP, New Mexico, USA.html">Ojo Amarillo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Plata CDP, New Mexico, USA.html">La Plata CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kirtland town, New Mexico, USA.html">Kirtland town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nenahnezad CDP, New Mexico, USA.html">Nenahnezad CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Teec Nos Pos CDP, Arizona, USA.html">Teec Nos Pos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Light Plant CDP, New Mexico, USA.html">North Light Plant CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newcomb CDP, New Mexico, USA.html">Newcomb CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sanostee CDP, New Mexico, USA.html">Sanostee CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crystal CDP, New Mexico, USA.html">Crystal CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nageezi CDP, New Mexico, USA.html">Nageezi CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Naschitti CDP, New Mexico, USA.html">Naschitti CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beclabito CDP, New Mexico, USA.html">Beclabito CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sheep Springs CDP, New Mexico, USA.html">Sheep Springs CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blanco CDP, New Mexico, USA.html">Blanco CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Rio Arriba CCD, Rio Arriba County, New Mexico, USA.html">West Rio Arriba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Navajo Dam CDP, New Mexico, USA.html">Navajo Dam CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Young Place CDP, New Mexico, USA.html">Young Place CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Valley CDP, New Mexico, USA.html">Lake Valley CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for San Juan County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

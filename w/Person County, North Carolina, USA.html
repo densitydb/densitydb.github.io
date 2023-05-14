@@ -1,0 +1,512 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Person County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Person County</div>
+    <div class="text longname">Person County, North Carolina, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">39.1k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1196 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fremont County, Wyoming, USA.html"><</a> <a class="button" href="Webster County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="84045, USA.html"><</a> <a class="button" href="11561, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">140/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2346 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lincoln County, Washington, USA.html"><</a> <a class="button" href="Gallatin County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="30828, USA.html"><</a> <a class="button" href="St. George CCD, Dorchester County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">37/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">894 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Autauga County, Alabama, USA.html"><</a> <a class="button" href="Livingston County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Goshen CCD, Champaign County, Ohio, USA.html"><</a> <a class="button" href="96073, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">64.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2288 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crawford County, Iowa, USA.html"><</a> <a class="button" href="McCulloch County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ames CDP, Nebraska, USA.html"><</a> <a class="button" href="10548, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1356 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oconee County, Georgia, USA.html"><</a> <a class="button" href="Hancock County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Bosworth CDP, Washington, USA.html"><</a> <a class="button" href="North River CCD, Warren County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">25.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">373 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Worth County, Georgia, USA.html"><</a> <a class="button" href="Kent County, Delaware, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kempsville Neighborhood, Virginia Beach City, Virginia, USA.html"><</a> <a class="button" href="19015, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2364 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Murray County, Georgia, USA.html"><</a> <a class="button" href="Dade County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="61547, USA.html"><</a> <a class="button" href="Lake Arrowhead CDP, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">768 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montrose County, Colorado, USA.html"><</a> <a class="button" href="Renville County, North Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montrose MSA, Colorado, USA.html"><</a> <a class="button" href="55444, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1927 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Wisconsin, USA.html"><</a> <a class="button" href="Ontario County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lovelady CCD, Houston County, Texas, USA.html"><</a> <a class="button" href="Timmerman West Neighborhood, Milwaukee City, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1511 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dixie County, Florida, USA.html"><</a> <a class="button" href="Carroll County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mills River town, North Carolina, USA.html"><</a> <a class="button" href="Saulston CCD, Wayne County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.590</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1447 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Adams County, Illinois, USA.html"><</a> <a class="button" href="Izard County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="16150, USA.html"><</a> <a class="button" href="Clinton CCD, Texas County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.53%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1818 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nance County, Nebraska, USA.html"><</a> <a class="button" href="Logan County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wellsboro CCD, Tioga County, Pennsylvania, USA.html"><</a> <a class="button" href="Lineville city, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">592/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2043 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taylor County, West Virginia, USA.html"><</a> <a class="button" href="Alcorn County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="16833, USA.html"><</a> <a class="button" href="Corinth MSA, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">229/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2455 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlevoix County, Michigan, USA.html"><</a> <a class="button" href="Mitchell County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="71435, USA.html"><</a> <a class="button" href="Joppa village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">109/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1944 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Klickitat County, Washington, USA.html"><</a> <a class="button" href="Anderson County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="65066, USA.html"><</a> <a class="button" href="Lake CCD, Wright County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">81/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1564 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Massac County, Illinois, USA.html"><</a> <a class="button" href="Wise County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Dublin CCD, Laurens County, Georgia, USA.html"><</a> <a class="button" href="Williamsburg town, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="North Carolina, USA.html">North Carolina</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Virginia, USA.html">Virginia</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Raleigh-Durham-Chapel Hill CSA, North Carolina, USA.html">Raleigh-Durham-Chapel Hill CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Durham-Chapel Hill MSA, North Carolina, USA.html">Durham-Chapel Hill MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Durham County, North Carolina, USA.html">Durham County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orange County, North Carolina, USA.html">Orange County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Granville County, North Carolina, USA.html">Granville County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Oxford MSA, North Carolina, USA.html">Oxford MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Halifax County, Virginia, USA.html">Halifax County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Caswell County, North Carolina, USA.html">Caswell County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Roxboro CCD, Person County, North Carolina, USA.html">Roxboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mangum CCD, Durham County, North Carolina, USA.html">Mangum CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roxboro city, North Carolina, USA.html">Roxboro city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flat River CCD, Person County, North Carolina, USA.html">Flat River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tally Ho CCD, Granville County, North Carolina, USA.html">Tally Ho CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar Grove CCD, Orange County, North Carolina, USA.html">Cedar Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Halifax County, Virginia, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Halifax County, Virginia, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little River CCD, Orange County, North Carolina, USA.html">Little River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Tirzah CCD, Person County, North Carolina, USA.html">Mount Tirzah CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allensville CCD, Person County, North Carolina, USA.html">Allensville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bushy Fork CCD, Person County, North Carolina, USA.html">Bushy Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Olive Hill CCD, Person County, North Carolina, USA.html">Olive Hill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Holloway CCD, Person County, North Carolina, USA.html">Holloway CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walnut Grove CCD, Granville County, North Carolina, USA.html">Walnut Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milton CCD, Caswell County, North Carolina, USA.html">Milton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hightowers CCD, Caswell County, North Carolina, USA.html">Hightowers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oak Hill CCD, Granville County, North Carolina, USA.html">Oak Hill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cunningham CCD, Person County, North Carolina, USA.html">Cunningham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodsdale CCD, Person County, North Carolina, USA.html">Woodsdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rougemont CDP, North Carolina, USA.html">Rougemont CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Person County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Columbus MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Columbus MSA</div>
+    <div class="text longname">Columbus MSA, Mississippi, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">486 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fremont MSA, Ohio, USA.html"><</a> <a class="button" href="Dublin MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="07302, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">357/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">644 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Stroudsburg MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Mineral Wells MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Winnsboro city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">44/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">325 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carbondale-Marion MSA, Illinois, USA.html"><</a> <a class="button" href="Terre Haute MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="St. Thomas CCD, Franklin County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">49.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">743 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Natchitoches MSA, Louisiana, USA.html"><</a> <a class="button" href="Napa MSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Green Oaks Neighborhood, Lansing City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">784 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Plains MSA, Missouri, USA.html"><</a> <a class="button" href="Pittsburgh MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chisago City CCD, Chisago County, Minnesota, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">43.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">26 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Macon-Bibb County MSA, Georgia, USA.html"><</a> <a class="button" href="Cordele MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oak Forest Neighborhood, Charlotte City, North Carolina, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">501 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison MSA, Indiana, USA.html"><</a> <a class="button" href="Marion MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Litchfield CCD, Hillsborough County, New Hampshire, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">650 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Peoria MSA, Illinois, USA.html"><</a> <a class="button" href="Frankfort MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Princeton CCD, Caldwell County, Kentucky, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">549 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lebanon MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Mount Vernon MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Brooks CCD, Newaygo County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">759 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jamestown MSA, North Dakota, USA.html"><</a> <a class="button" href="Albany MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Beverly Hills Neighborhood, Concord City, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.588</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">287 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Murray MSA, Kentucky, USA.html"><</a> <a class="button" href="Scottsboro MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="58466, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.88%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">332 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Picayune MSA, Mississippi, USA.html"><</a> <a class="button" href="Lufkin MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Downtown Neighborhood, Green Bay City, Wisconsin, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1016/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">567 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Willmar MSA, Minnesota, USA.html"><</a> <a class="button" href="Lewistown MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Circleville CCD, Pickaway County, Ohio, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">531/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">631 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Red Wing MSA, Minnesota, USA.html"><</a> <a class="button" href="Newport MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hahira CCD, Lowndes County, Georgia, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">259/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">615 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Campbellsville MSA, Kentucky, USA.html"><</a> <a class="button" href="Lufkin MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="06019, USA.html"><</a> <a class="button" href="Lowndes County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">169/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">537 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brownwood MSA, Texas, USA.html"><</a> <a class="button" href="Henderson MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lowndes County, Mississippi, USA.html"><</a> <a class="button" href="Lafayette CCD, Floyd County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Alabama, USA.html">Alabama</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Mississippi, USA.html">Mississippi</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Tuscaloosa MSA, Alabama, USA.html">Tuscaloosa MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Columbus-West Point CSA, Mississippi, USA.html">Columbus-West Point CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lowndes County, Mississippi, USA.html">Lowndes County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Starkville MSA, Mississippi, USA.html">Starkville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oktibbeha County, Mississippi, USA.html">Oktibbeha County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Monroe County, Mississippi, USA.html">Monroe County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbus city, Mississippi, USA.html">Columbus city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pickens County, Alabama, USA.html">Pickens County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clay County, Mississippi, USA.html">Clay County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="West Point MSA, Mississippi, USA.html">West Point MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Lowndes County, Mississippi, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lamar County, Alabama, USA.html">Lamar County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Lowndes County, Mississippi, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Lowndes County, Mississippi, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Oktibbeha County, Mississippi, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Lowndes County, Mississippi, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Noxubee County, Mississippi, USA.html">Noxubee County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Lowndes County, Mississippi, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Monroe County, Mississippi, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vernon CCD, Lamar County, Alabama, USA.html">Vernon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carrollton CCD, Pickens County, Alabama, USA.html">Carrollton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Aliceville CCD, Pickens County, Alabama, USA.html">Aliceville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Millport CCD, Lamar County, Alabama, USA.html">Millport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Clay County, Mississippi, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Clay County, Mississippi, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Hope CDP, Mississippi, USA.html">New Hope CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Noxubee County, Mississippi, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Noxubee County, Mississippi, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ethelsville CCD, Pickens County, Alabama, USA.html">Ethelsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbus AFB CDP, Mississippi, USA.html">Columbus AFB CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Caledonia town, Mississippi, USA.html">Caledonia town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crawford town, Mississippi, USA.html">Crawford town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Artesia town, Mississippi, USA.html">Artesia town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Columbus MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

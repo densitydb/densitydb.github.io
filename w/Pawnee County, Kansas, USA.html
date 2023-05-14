@@ -1,0 +1,581 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pawnee County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Pawnee County</div>
+    <div class="text longname">Pawnee County, Kansas, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2717 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodruff County, Arkansas, USA.html"><</a> <a class="button" href="Edwards County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="13142, USA.html"><</a> <a class="button" href="American Falls CCD, Power County, Idaho, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">371/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1173 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Iowa, USA.html"><</a> <a class="button" href="Childress County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77434, USA.html"><</a> <a class="button" href="Farley CDP, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.2/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2624 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Graham County, Arizona, USA.html"><</a> <a class="button" href="Crook County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cedar Creek CCD, Taney County, Missouri, USA.html"><</a> <a class="button" href="Franklin CCD, Grant County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">82.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1475 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chase County, Nebraska, USA.html"><</a> <a class="button" href="Greene County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wasena Neighborhood, Roanoke City, Virginia, USA.html"><</a> <a class="button" href="Wallingford city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">969 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kay County, Oklahoma, USA.html"><</a> <a class="button" href="Jefferson County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Frances Slocum Neighborhood, Marion City, Indiana, USA.html"><</a> <a class="button" href="Meade Center CCD, Meade County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1236 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cumberland County, Maine, USA.html"><</a> <a class="button" href="Gray County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43968, USA.html"><</a> <a class="button" href="Litaker CCD, Rowan County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1873 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cheatham County, Tennessee, USA.html"><</a> <a class="button" href="Valencia County, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="62326, USA.html"><</a> <a class="button" href="Virgin town, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.38%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1188 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Suwannee County, Florida, USA.html"><</a> <a class="button" href="Ottawa County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="South of Market Neighborhood, San Francisco City, California, USA.html"><</a> <a class="button" href="13142, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2852 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Duval County, Texas, USA.html"><</a> <a class="button" href="Parmer County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="4 CCD, Grant Parish, Louisiana, USA.html"><</a> <a class="button" href="53515, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.46%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1014 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chaffee County, Colorado, USA.html"><</a> <a class="button" href="Butte County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chaffee County, Colorado, USA.html"><</a> <a class="button" href="36301, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.586</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1545 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iowa County, Wisconsin, USA.html"><</a> <a class="button" href="Wasatch County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="47872, USA.html"><</a> <a class="button" href="Pleasant CCD, Grant County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">684 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Goliad County, Texas, USA.html"><</a> <a class="button" href="Beaver County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Goliad County, Texas, USA.html"><</a> <a class="button" href="58269, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">810/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1551 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Menard County, Illinois, USA.html"><</a> <a class="button" href="Gem County, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dauphin CCD, Dauphin County, Pennsylvania, USA.html"><</a> <a class="button" href="Madison CCD, Sandusky County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">516/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1296 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nash County, North Carolina, USA.html"><</a> <a class="button" href="Ashland County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kaaawa CDP, Hawaii, USA.html"><</a> <a class="button" href="Brighton town, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">184/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1429 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upshur County, West Virginia, USA.html"><</a> <a class="button" href="Gaines County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upshur County, West Virginia, USA.html"><</a> <a class="button" href="18912, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">59/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1812 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlton County, Georgia, USA.html"><</a> <a class="button" href="Jackson County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="16112, USA.html"><</a> <a class="button" href="Dasher town, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Kansas, USA.html">Kansas</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barton County, Kansas, USA.html">Barton County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Great Bend MSA, Kansas, USA.html">Great Bend MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stafford County, Kansas, USA.html">Stafford County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Larned city, Kansas, USA.html">Larned city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rush County, Kansas, USA.html">Rush County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Edwards County, Kansas, USA.html">Edwards County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ness County, Kansas, USA.html">Ness County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hodgeman County, Kansas, USA.html">Hodgeman County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pawnee CCD, Pawnee County, Kansas, USA.html">Pawnee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Farmington CCD, Stafford County, Kansas, USA.html">Farmington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Edwards County, Kansas, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marena CCD, Hodgeman County, Kansas, USA.html">Marena CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pawnee Rock CCD, Barton County, Kansas, USA.html">Pawnee Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Browns Grove CCD, Pawnee County, Kansas, USA.html">Browns Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Larned CCD, Pawnee County, Kansas, USA.html">Larned CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty CCD, Barton County, Kansas, USA.html">Liberty CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burdett city, Kansas, USA.html">Burdett city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Center CCD, Rush County, Kansas, USA.html">Center CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pawnee Rock city, Kansas, USA.html">Pawnee Rock city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Fe CCD, Pawnee County, Kansas, USA.html">Santa Fe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garfield CCD, Pawnee County, Kansas, USA.html">Garfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Belpre CCD, Edwards County, Kansas, USA.html">Belpre CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Grove CCD, Pawnee County, Kansas, USA.html">Pleasant Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garfield city, Kansas, USA.html">Garfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grant CCD, Pawnee County, Kansas, USA.html">Grant CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clarence CCD, Barton County, Kansas, USA.html">Clarence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Douglas CCD, Stafford County, Kansas, USA.html">Douglas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kinsley CCD, Edwards County, Kansas, USA.html">Kinsley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garfield CCD, Rush County, Kansas, USA.html">Garfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Banner CCD, Rush County, Kansas, USA.html">Banner CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rozel city, Kansas, USA.html">Rozel city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Stafford County, Kansas, USA.html">Lincoln CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Valley CCD, Pawnee County, Kansas, USA.html">Pleasant Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alexander-Belle Prairie CCD, Rush County, Kansas, USA.html">Alexander-Belle Prairie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walnut CCD, Pawnee County, Kansas, USA.html">Walnut CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ash Valley CCD, Pawnee County, Kansas, USA.html">Ash Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orange CCD, Pawnee County, Kansas, USA.html">Orange CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cleveland CCD, Stafford County, Kansas, USA.html">Cleveland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Stafford County, Kansas, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="River CCD, Pawnee County, Kansas, USA.html">River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Highpoint CCD, Ness County, Kansas, USA.html">Highpoint CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Rush County, Kansas, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Edwards County, Kansas, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan CCD, Pawnee County, Kansas, USA.html">Logan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Ridge CCD, Pawnee County, Kansas, USA.html">Pleasant Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Keysville CCD, Pawnee County, Kansas, USA.html">Keysville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shiley CCD, Pawnee County, Kansas, USA.html">Shiley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morton CCD, Pawnee County, Kansas, USA.html">Morton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan CCD, Edwards County, Kansas, USA.html">Logan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Valley Center CCD, Pawnee County, Kansas, USA.html">Valley Center CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sawmill CCD, Pawnee County, Kansas, USA.html">Sawmill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conkling CCD, Pawnee County, Kansas, USA.html">Conkling CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln CCD, Pawnee County, Kansas, USA.html">Lincoln CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Pawnee County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

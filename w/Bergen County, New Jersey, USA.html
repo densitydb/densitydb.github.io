@@ -1,0 +1,938 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bergen County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Bergen County</div>
+    <div class="text longname">Bergen County, New Jersey, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">955.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">56 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gwinnett County, Georgia, USA.html"><</a> <a class="button" href="Erie County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gwinnett County, Georgia, USA.html"><</a> <a class="button" href="Erie County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3098/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">26 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, California, USA.html"><</a> <a class="button" href="Denver County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="89104, USA.html"><</a> <a class="button" href="Fruitridge Manor Neighborhood, Sacramento City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1498/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">25 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, California, USA.html"><</a> <a class="button" href="Milwaukee County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fleetwood CCD, Berks County, Pennsylvania, USA.html"><</a> <a class="button" href="93721, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2659 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otero County, Colorado, USA.html"><</a> <a class="button" href="Chambers County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Gibson town, Oklahoma, USA.html"><</a> <a class="button" href="Prairie Oaks Neighborhood, Folsom City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">382 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Edwards County, Kansas, USA.html"><</a> <a class="button" href="Cass County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Patagonia CCD, Santa Cruz County, Arizona, USA.html"><</a> <a class="button" href="Wood River city, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1090 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Audrain County, Missouri, USA.html"><</a> <a class="button" href="Ross County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baldwin CCD, Allegheny County, Pennsylvania, USA.html"><</a> <a class="button" href="44718, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">29 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hudson County, New Jersey, USA.html"><</a> <a class="button" href="Solano County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Secluded Valley Neighborhood, Lafayette City, California, USA.html"><</a> <a class="button" href="15220, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.08%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3013 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albemarle County, Virginia, USA.html"><</a> <a class="button" href="Tipton County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fallon Neighborhood, Roanoke City, Virginia, USA.html"><</a> <a class="button" href="Newmarket CCD, Rockingham County, New Hampshire, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2198 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wyandot County, Ohio, USA.html"><</a> <a class="button" href="Nolan County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="33160, USA.html"><</a> <a class="button" href="71019, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2132 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Quitman County, Georgia, USA.html"><</a> <a class="button" href="Whitley County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Annetta South town, Texas, USA.html"><</a> <a class="button" href="60955, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.486</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2992 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">5th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rockwall County, Texas, USA.html"><</a> <a class="button" href="Canyon County, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shell Ridge CDP, California, USA.html"><</a> <a class="button" href="P.O.E.T Neighborhood, Fort Collins City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3068 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Snohomish County, Washington, USA.html"><</a> <a class="button" href="Union County, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="44904, USA.html"><</a> <a class="button" href="Jefferies Neighborhood, Detroit City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4101/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">45 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Anderson County, Texas, USA.html"><</a> <a class="button" href="Wheeler County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington Park Neighborhood, North Miami Beach City, Florida, USA.html"><</a> <a class="button" href="Hyde Park Neighborhood, Boston City, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3517/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">28 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denver County, Colorado, USA.html"><</a> <a class="button" href="Providence County, Rhode Island, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hendrick Ranch Neighborhood, Moreno Valley City, California, USA.html"><</a> <a class="button" href="Russell Gardens Neighborhood, Great Neck City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2777/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">23 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, California, USA.html"><</a> <a class="button" href="Westchester County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Downtown Neighborhood, Easton City, Pennsylvania, USA.html"><</a> <a class="button" href="Fuller Avenue Neighborhood, Grand Rapids City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2964/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">16 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexandria County, Virginia, USA.html"><</a> <a class="button" href="Baltimore County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="95008, USA.html"><</a> <a class="button" href="07070, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Jersey, USA.html">New Jersey</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New York city, New York, USA.html">New York city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="New York County, New York, USA.html">New York County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Manhattan CCD, New York County, New York, USA.html">Manhattan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bronx CCD, Bronx County, New York, USA.html">Bronx CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bronx County, New York, USA.html">Bronx County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Westchester County, New York, USA.html">Westchester County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Essex County, New Jersey, USA.html">Essex County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hudson County, New Jersey, USA.html">Hudson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Passaic County, New Jersey, USA.html">Passaic County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockland County, New York, USA.html">Rockland County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yonkers city, New York, USA.html">Yonkers city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yonkers CCD, Westchester County, New York, USA.html">Yonkers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paterson CCD, Passaic County, New Jersey, USA.html">Paterson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paterson city, New Jersey, USA.html">Paterson city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ramapo CCD, Rockland County, New York, USA.html">Ramapo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenburgh CCD, Westchester County, New York, USA.html">Greenburgh CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clifton CCD, Passaic County, New Jersey, USA.html">Clifton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clifton city, New Jersey, USA.html">Clifton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Passaic city, New Jersey, USA.html">Passaic city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Passaic CCD, Passaic County, New Jersey, USA.html">Passaic CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Bergen CCD, Hudson County, New Jersey, USA.html">North Bergen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Passaic County, New Jersey, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orangetown CCD, Rockland County, New York, USA.html">Orangetown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hackensack CCD, Bergen County, New Jersey, USA.html">Hackensack CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hackensack city, New Jersey, USA.html">Hackensack city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kearny town, New Jersey, USA.html">Kearny town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kearny CCD, Hudson County, New Jersey, USA.html">Kearny CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Teaneck CCD, Bergen County, New Jersey, USA.html">Teaneck CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fort Lee CCD, Bergen County, New Jersey, USA.html">Fort Lee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fort Lee borough, New Jersey, USA.html">Fort Lee borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Belleville CCD, Essex County, New Jersey, USA.html">Belleville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fair Lawn CCD, Bergen County, New Jersey, USA.html">Fair Lawn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fair Lawn borough, New Jersey, USA.html">Fair Lawn borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garfield city, New Jersey, USA.html">Garfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garfield CCD, Bergen County, New Jersey, USA.html">Garfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nutley CCD, Essex County, New Jersey, USA.html">Nutley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Englewood city, New Jersey, USA.html">Englewood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Englewood CCD, Bergen County, New Jersey, USA.html">Englewood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bergenfield CCD, Bergen County, New Jersey, USA.html">Bergenfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bergenfield borough, New Jersey, USA.html">Bergenfield borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paramus CCD, Bergen County, New Jersey, USA.html">Paramus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paramus borough, New Jersey, USA.html">Paramus borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lodi borough, New Jersey, USA.html">Lodi borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ridgewood CCD, Bergen County, New Jersey, USA.html">Ridgewood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ridgewood village, New Jersey, USA.html">Ridgewood village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cliffside Park CCD, Bergen County, New Jersey, USA.html">Cliffside Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lodi CCD, Bergen County, New Jersey, USA.html">Lodi CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cliffside Park borough, New Jersey, USA.html">Cliffside Park borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mahwah CCD, Bergen County, New Jersey, USA.html">Mahwah CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyndhurst CCD, Bergen County, New Jersey, USA.html">Lyndhurst CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Secaucus CCD, Hudson County, New Jersey, USA.html">Secaucus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Secaucus town, New Jersey, USA.html">Secaucus town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elmwood Park borough, New Jersey, USA.html">Elmwood Park borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elmwood Park CCD, Bergen County, New Jersey, USA.html">Elmwood Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palisades Park borough, New Jersey, USA.html">Palisades Park borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palisades Park CCD, Bergen County, New Jersey, USA.html">Palisades Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hawthorne borough, New Jersey, USA.html">Hawthorne borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hawthorne CCD, Passaic County, New Jersey, USA.html">Hawthorne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rutherford borough, New Jersey, USA.html">Rutherford borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rutherford CCD, Bergen County, New Jersey, USA.html">Rutherford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dumont CCD, Bergen County, New Jersey, USA.html">Dumont CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dumont borough, New Jersey, USA.html">Dumont borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Milford borough, New Jersey, USA.html">New Milford borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Milford CCD, Bergen County, New Jersey, USA.html">New Milford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyckoff CCD, Bergen County, New Jersey, USA.html">Wyckoff CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Arlington borough, New Jersey, USA.html">North Arlington borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Arlington CCD, Bergen County, New Jersey, USA.html">North Arlington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tenafly borough, New Jersey, USA.html">Tenafly borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tenafly CCD, Bergen County, New Jersey, USA.html">Tenafly CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairview borough, New Jersey, USA.html">Fairview borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairview CCD, Bergen County, New Jersey, USA.html">Fairview CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ramsey borough, New Jersey, USA.html">Ramsey borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ramsey CCD, Bergen County, New Jersey, USA.html">Ramsey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edgewater borough, New Jersey, USA.html">Edgewater borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edgewater CCD, Bergen County, New Jersey, USA.html">Edgewater CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saddle Brook CCD, Bergen County, New Jersey, USA.html">Saddle Brook CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ridgefield Park village, New Jersey, USA.html">Ridgefield Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ridgefield Park CCD, Bergen County, New Jersey, USA.html">Ridgefield Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oakland borough, New Jersey, USA.html">Oakland borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oakland CCD, Bergen County, New Jersey, USA.html">Oakland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hasbrouck Heights CCD, Bergen County, New Jersey, USA.html">Hasbrouck Heights CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glen Rock CCD, Bergen County, New Jersey, USA.html">Glen Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Rock borough, New Jersey, USA.html">Glen Rock borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hasbrouck Heights borough, New Jersey, USA.html">Hasbrouck Heights borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="River Edge borough, New Jersey, USA.html">River Edge borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="River Edge CCD, Bergen County, New Jersey, USA.html">River Edge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wallington CCD, Bergen County, New Jersey, USA.html">Wallington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wallington borough, New Jersey, USA.html">Wallington borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ringwood borough, New Jersey, USA.html">Ringwood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ringwood CCD, Passaic County, New Jersey, USA.html">Ringwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ridgefield borough, New Jersey, USA.html">Ridgefield borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ridgefield CCD, Bergen County, New Jersey, USA.html">Ridgefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wanaque borough, New Jersey, USA.html">Wanaque borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westwood CCD, Bergen County, New Jersey, USA.html">Westwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westwood borough, New Jersey, USA.html">Westwood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pompton Lakes CCD, Passaic County, New Jersey, USA.html">Pompton Lakes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pompton Lakes borough, New Jersey, USA.html">Pompton Lakes borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin Lakes CCD, Bergen County, New Jersey, USA.html">Franklin Lakes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Franklin Lakes borough, New Jersey, USA.html">Franklin Lakes borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Little Ferry borough, New Jersey, USA.html">Little Ferry borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little Ferry CCD, Bergen County, New Jersey, USA.html">Little Ferry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillsdale borough, New Jersey, USA.html">Hillsdale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hillsdale CCD, Bergen County, New Jersey, USA.html">Hillsdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wood-Ridge CCD, Bergen County, New Jersey, USA.html">Wood-Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wood-Ridge borough, New Jersey, USA.html">Wood-Ridge borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maywood borough, New Jersey, USA.html">Maywood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maywood CCD, Bergen County, New Jersey, USA.html">Maywood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waldwick CCD, Bergen County, New Jersey, USA.html">Waldwick CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waldwick borough, New Jersey, USA.html">Waldwick borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Rutherford borough, New Jersey, USA.html">East Rutherford borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Rutherford CCD, Bergen County, New Jersey, USA.html">East Rutherford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="River Vale CCD, Bergen County, New Jersey, USA.html">River Vale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leonia CCD, Bergen County, New Jersey, USA.html">Leonia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leonia borough, New Jersey, USA.html">Leonia borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Bergen County, New Jersey, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cresskill borough, New Jersey, USA.html">Cresskill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cresskill CCD, Bergen County, New Jersey, USA.html">Cresskill CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Haledon borough, New Jersey, USA.html">North Haledon borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Haledon CCD, Passaic County, New Jersey, USA.html">North Haledon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Park Ridge borough, New Jersey, USA.html">Park Ridge borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Park Ridge CCD, Bergen County, New Jersey, USA.html">Park Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bogota CCD, Bergen County, New Jersey, USA.html">Bogota CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bogota borough, New Jersey, USA.html">Bogota borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Closter borough, New Jersey, USA.html">Closter borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Closter CCD, Bergen County, New Jersey, USA.html">Closter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hastings-on-Hudson village, New York, USA.html">Hastings-on-Hudson village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Montvale borough, New Jersey, USA.html">Montvale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montvale CCD, Bergen County, New Jersey, USA.html">Montvale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper Saddle River CCD, Bergen County, New Jersey, USA.html">Upper Saddle River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Upper Saddle River borough, New Jersey, USA.html">Upper Saddle River borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oradell CCD, Bergen County, New Jersey, USA.html">Oradell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oradell borough, New Jersey, USA.html">Oradell borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Emerson CCD, Bergen County, New Jersey, USA.html">Emerson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emerson borough, New Jersey, USA.html">Emerson borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Midland Park borough, New Jersey, USA.html">Midland Park borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Midland Park CCD, Bergen County, New Jersey, USA.html">Midland Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allendale CCD, Bergen County, New Jersey, USA.html">Allendale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Allendale borough, New Jersey, USA.html">Allendale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carlstadt CCD, Bergen County, New Jersey, USA.html">Carlstadt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carlstadt borough, New Jersey, USA.html">Carlstadt borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodcliff Lake CCD, Bergen County, New Jersey, USA.html">Woodcliff Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodcliff Lake borough, New Jersey, USA.html">Woodcliff Lake borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Tappan borough, New Jersey, USA.html">Old Tappan borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Old Tappan CCD, Bergen County, New Jersey, USA.html">Old Tappan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rochelle Park CCD, Bergen County, New Jersey, USA.html">Rochelle Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norwood borough, New Jersey, USA.html">Norwood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norwood CCD, Bergen County, New Jersey, USA.html">Norwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Englewood Cliffs CCD, Bergen County, New Jersey, USA.html">Englewood Cliffs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Englewood Cliffs borough, New Jersey, USA.html">Englewood Cliffs borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Demarest borough, New Jersey, USA.html">Demarest borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Demarest CCD, Bergen County, New Jersey, USA.html">Demarest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northvale CCD, Bergen County, New Jersey, USA.html">Northvale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northvale borough, New Jersey, USA.html">Northvale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrington Park CCD, Bergen County, New Jersey, USA.html">Harrington Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harrington Park borough, New Jersey, USA.html">Harrington Park borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ho-Ho-Kus borough, New Jersey, USA.html">Ho-Ho-Kus borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ho-Ho-Kus CCD, Bergen County, New Jersey, USA.html">Ho-Ho-Kus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saddle River CCD, Bergen County, New Jersey, USA.html">Saddle River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saddle River borough, New Jersey, USA.html">Saddle River borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haworth CCD, Bergen County, New Jersey, USA.html">Haworth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Haworth borough, New Jersey, USA.html">Haworth borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moonachie CCD, Bergen County, New Jersey, USA.html">Moonachie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Moonachie borough, New Jersey, USA.html">Moonachie borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Hackensack CCD, Bergen County, New Jersey, USA.html">South Hackensack CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alpine CCD, Bergen County, New Jersey, USA.html">Alpine CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alpine borough, New Jersey, USA.html">Alpine borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillburn village, New York, USA.html">Hillburn village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockleigh borough, New Jersey, USA.html">Rockleigh borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockleigh CCD, Bergen County, New Jersey, USA.html">Rockleigh CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Teterboro CCD, Bergen County, New Jersey, USA.html">Teterboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Teterboro borough, New Jersey, USA.html">Teterboro borough</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Bergen County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

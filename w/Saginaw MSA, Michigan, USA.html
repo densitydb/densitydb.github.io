@@ -1,0 +1,671 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Saginaw MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Saginaw MSA</div>
+    <div class="text longname">Saginaw MSA, Michigan, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">190.1k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">194 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Racine MSA, Wisconsin, USA.html"><</a> <a class="button" href="Panama City MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southeast Los Angeles Neighborhood, Los Angeles City, California, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">650/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">315 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia MSA, South Carolina, USA.html"><</a> <a class="button" href="Clinton MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73047, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">90/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">135 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">85th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Altoona MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Homosassa Springs MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Homosassa Springs MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">67.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">552 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ann Arbor MSA, Michigan, USA.html"><</a> <a class="button" href="Ocala MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Yadkinville town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">354 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sturgis MSA, Michigan, USA.html"><</a> <a class="button" href="Steamboat Springs MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="9 CCD, East Baton Rouge Parish, Louisiana, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">17.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">137 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Athens-Clarke County MSA, Georgia, USA.html"><</a> <a class="button" href="Gainesville MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Martin city, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">368 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="El Centro MSA, California, USA.html"><</a> <a class="button" href="Lake City MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Centreville town, Maryland, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">512 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kinston MSA, North Carolina, USA.html"><</a> <a class="button" href="Kahului-Wailuku-Lahaina MSA, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Leon Valley city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">365 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rolla MSA, Missouri, USA.html"><</a> <a class="button" href="Tahlequah MSA, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Jackson city, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">406 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laconia MSA, New Hampshire, USA.html"><</a> <a class="button" href="Sumter MSA, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Algonquin Neighborhood, Louisville City, Kentucky, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.578</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">354 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pottsville MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Batesville MSA, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43128, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.73%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">616 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burlington-South Burlington MSA, Vermont, USA.html"><</a> <a class="button" href="Flint MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="61841, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1306/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">398 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Minot MSA, North Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bunker Hill CDP, Oregon, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">819/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">368 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwich-New London MSA, Connecticut, USA.html"><</a> <a class="button" href="Hutchinson MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="Prairie du Chien city, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">548/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">261 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron MSA, South Dakota, USA.html"><</a> <a class="button" href="Decatur MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saginaw County, Michigan, USA.html"><</a> <a class="button" href="36611, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">442/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">204 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgantown MSA, West Virginia, USA.html"><</a> <a class="button" href="Owensboro MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Maple Grove Neighborhood, Birmingham City, Alabama, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Michigan, USA.html">Michigan</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Detroit-Warren-Ann Arbor CSA, Michigan, USA.html">Detroit-Warren-Ann Arbor CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lansing-East Lansing-Owosso CSA, Michigan, USA.html">Lansing-East Lansing-Owosso CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Flint MSA, Michigan, USA.html">Flint MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Genesee County, Michigan, USA.html">Genesee County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Saginaw-Midland-Bay City CSA, Michigan, USA.html">Saginaw-Midland-Bay City CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Saginaw County, Michigan, USA.html">Saginaw County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Mount Pleasant-Alma CSA, Michigan, USA.html">Mount Pleasant-Alma CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bay County, Michigan, USA.html">Bay County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bay City MSA, Michigan, USA.html">Bay City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Midland MSA, Michigan, USA.html">Midland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Midland County, Michigan, USA.html">Midland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Shiawassee County, Michigan, USA.html">Shiawassee County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Owosso MSA, Michigan, USA.html">Owosso MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tuscola County, Michigan, USA.html">Tuscola County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saginaw city, Michigan, USA.html">Saginaw city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Midland city, Michigan, USA.html">Midland city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Alma MSA, Michigan, USA.html">Alma MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gratiot County, Michigan, USA.html">Gratiot County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Saginaw CCD, Saginaw County, Michigan, USA.html">Saginaw CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vienna CCD, Genesee County, Michigan, USA.html">Vienna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Thomas CCD, Saginaw County, Michigan, USA.html">Thomas CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monitor CCD, Bay County, Michigan, USA.html">Monitor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tittabawassee CCD, Saginaw County, Michigan, USA.html">Tittabawassee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridgeport CCD, Saginaw County, Michigan, USA.html">Bridgeport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flushing CCD, Genesee County, Michigan, USA.html">Flushing CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buena Vista CCD, Saginaw County, Michigan, USA.html">Buena Vista CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Freeland CDP, Michigan, USA.html">Freeland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgeport CDP, Michigan, USA.html">Bridgeport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shields CDP, Michigan, USA.html">Shields CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Buena Vista CDP, Michigan, USA.html">Buena Vista CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Birch Run CCD, Saginaw County, Michigan, USA.html">Birch Run CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carrollton CCD, Saginaw County, Michigan, USA.html">Carrollton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williams CCD, Bay County, Michigan, USA.html">Williams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Frankenmuth city, Michigan, USA.html">Frankenmuth city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kochville CCD, Saginaw County, Michigan, USA.html">Kochville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chesaning CCD, Saginaw County, Michigan, USA.html">Chesaning CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Taymouth CCD, Saginaw County, Michigan, USA.html">Taymouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Saginaw County, Michigan, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Frankenlust CCD, Bay County, Michigan, USA.html">Frankenlust CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portsmouth CCD, Bay County, Michigan, USA.html">Portsmouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Charles CCD, Saginaw County, Michigan, USA.html">St. Charles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arbela CCD, Tuscola County, Michigan, USA.html">Arbela CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ingersoll CCD, Midland County, Michigan, USA.html">Ingersoll CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Denmark CCD, Tuscola County, Michigan, USA.html">Denmark CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maple Grove CCD, Saginaw County, Michigan, USA.html">Maple Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheeler CCD, Gratiot County, Michigan, USA.html">Wheeler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chesaning village, Michigan, USA.html">Chesaning village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Swan Creek CCD, Saginaw County, Michigan, USA.html">Swan Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brady CCD, Saginaw County, Michigan, USA.html">Brady CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hazelton CCD, Shiawassee County, Michigan, USA.html">Hazelton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Albee CCD, Saginaw County, Michigan, USA.html">Albee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fremont CCD, Saginaw County, Michigan, USA.html">Fremont CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Charles village, Michigan, USA.html">St. Charles village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tuscola CCD, Tuscola County, Michigan, USA.html">Tuscola CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spaulding CCD, Saginaw County, Michigan, USA.html">Spaulding CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Frankenmuth CCD, Saginaw County, Michigan, USA.html">Frankenmuth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blumfield CCD, Saginaw County, Michigan, USA.html">Blumfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brant CCD, Saginaw County, Michigan, USA.html">Brant CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="James CCD, Saginaw County, Michigan, USA.html">James CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montrose CCD, Genesee County, Michigan, USA.html">Montrose CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jonesfield CCD, Saginaw County, Michigan, USA.html">Jonesfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Haley CCD, Midland County, Michigan, USA.html">Mount Haley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Zilwaukee city, Michigan, USA.html">Zilwaukee city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Birch Run village, Michigan, USA.html">Birch Run village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hemlock CDP, Michigan, USA.html">Hemlock CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Merritt CCD, Bay County, Michigan, USA.html">Merritt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elba CCD, Gratiot County, Michigan, USA.html">Elba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Porter CCD, Midland County, Michigan, USA.html">Porter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rush CCD, Shiawassee County, Michigan, USA.html">Rush CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Reese village, Michigan, USA.html">Reese village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Haven CCD, Shiawassee County, Michigan, USA.html">New Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burt CDP, Michigan, USA.html">Burt CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chapin CCD, Saginaw County, Michigan, USA.html">Chapin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lakefield CCD, Saginaw County, Michigan, USA.html">Lakefield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion CCD, Saginaw County, Michigan, USA.html">Marion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gilford CCD, Tuscola County, Michigan, USA.html">Gilford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Merrill village, Michigan, USA.html">Merrill village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robin Glen-Indiantown CDP, Michigan, USA.html">Robin Glen-Indiantown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield CCD, Shiawassee County, Michigan, USA.html">Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lafayette CCD, Gratiot County, Michigan, USA.html">Lafayette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton CCD, Gratiot County, Michigan, USA.html">Hamilton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oakley village, Michigan, USA.html">Oakley village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Zilwaukee CCD, Saginaw County, Michigan, USA.html">Zilwaukee CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Saginaw MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

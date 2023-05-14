@@ -1,0 +1,761 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Montgomery County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Montgomery County</div>
+    <div class="text longname">Montgomery County, Maryland, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.1m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">44 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Collin County, Texas, USA.html"><</a> <a class="button" href="Pima County, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Collin County, Texas, USA.html"><</a> <a class="button" href="North Port-Sarasota CSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2390/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">45 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Essex County, Massachusetts, USA.html"><</a> <a class="button" href="Monterey County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mountain House CDP, California, USA.html"><</a> <a class="button" href="Olde Sawmill Neighborhood, Columbus City, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">809/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">63 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Westchester County, New York, USA.html"><</a> <a class="button" href="Clayton County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Perrysburg CCD, Wood County, Ohio, USA.html"><</a> <a class="button" href="Walpole CDP, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">40.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2885 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">8th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield County, South Carolina, USA.html"><</a> <a class="button" href="Cook County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Floral Park Neighborhood, Santa Ana City, California, USA.html"><</a> <a class="button" href="Lincoln CCD, Grant County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">20.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">398 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kendall County, Illinois, USA.html"><</a> <a class="button" href="Cooke County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="99703, USA.html"><</a> <a class="button" href="Cabana Colony CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">18.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">516 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Macon County, Illinois, USA.html"><</a> <a class="button" href="Wake County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="12788, USA.html"><</a> <a class="button" href="Towngate Neighborhood, Moreno Valley City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">32 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ramsey County, Minnesota, USA.html"><</a> <a class="button" href="Los Angeles County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="02458, USA.html"><</a> <a class="button" href="Serra Mesa Neighborhood, San Diego City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2779 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rowan County, Kentucky, USA.html"><</a> <a class="button" href="Hartford County, Connecticut, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="90023, USA.html"><</a> <a class="button" href="North Decatur CDP, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1178 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrison County, Ohio, USA.html"><</a> <a class="button" href="Tuscaloosa County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrison County, Ohio, USA.html"><</a> <a class="button" href="19950, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.34%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">489 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Poquoson County, Virginia, USA.html"><</a> <a class="button" href="Macon County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beech Grove city, Indiana, USA.html"><</a> <a class="button" href="Mount Pleasant Neighborhood, Washington City, District of Columbia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.494</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2955 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mercer County, New Jersey, USA.html"><</a> <a class="button" href="Graham County, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rocky Ridge Neighborhood, Aurora City, Colorado, USA.html"><</a> <a class="button" href="Pleasant Run Farm CDP, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3086 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson County, Colorado, USA.html"><</a> <a class="button" href="Union County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77407, USA.html"><</a> <a class="button" href="Elvira Neighborhood, Tucson City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4196/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">40 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Walker County, Texas, USA.html"><</a> <a class="button" href="Lassen County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Victoriano Neighborhood, Moreno Valley City, California, USA.html"><</a> <a class="button" href="Lower Lawrenceville Neighborhood, Pittsburgh City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2897/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">44 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Manassas Park County, Virginia, USA.html"><</a> <a class="button" href="Orleans County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Del Rey R Neighborhood, Albuquerque City, New Mexico, USA.html"><</a> <a class="button" href="Dana Ranch Villas Neighborhood, Mesa City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2032/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">41 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, Louisiana, USA.html"><</a> <a class="button" href="Sacramento County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="RMMA Neighborhood, Austin City, Texas, USA.html"><</a> <a class="button" href="Dearborn Hills Neighborhood, Dearborn City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1786/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">38 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Diego County, California, USA.html"><</a> <a class="button" href="King County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="South Louisville Neighborhood, Louisville City, Kentucky, USA.html"><</a> <a class="button" href="Prospect Gardens Neighborhood, Oakland Park City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Virginia, USA.html">Virginia</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Maryland, USA.html">Maryland</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Baltimore-Columbia-Towson MSA, Maryland, USA.html">Baltimore-Columbia-Towson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Prince George's County, Maryland, USA.html">Prince George's County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Washington city, District of Columbia, USA.html">Washington city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="District of Columbia County, District of Columbia, USA.html">District of Columbia County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, District of Columbia, District of Columbia, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="District of Columbia, USA.html">District of Columbia</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Loudoun County, Virginia, USA.html">Loudoun County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Howard County, Maryland, USA.html">Howard County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Frederick County, Maryland, USA.html">Frederick County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="13 CCD, Montgomery County, Maryland, USA.html">13 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arlington CDP, Virginia, USA.html">Arlington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arlington CCD, Arlington County, Virginia, USA.html">Arlington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Arlington County, Virginia, USA.html">Arlington County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Montgomery County, Maryland, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Montgomery County, Maryland, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dranesville CCD, Fairfax County, Virginia, USA.html">Dranesville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Montgomery County, Maryland, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Montgomery County, Maryland, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6, Savage CCD, Howard County, Maryland, USA.html">6, Savage CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Germantown CDP, Maryland, USA.html">Germantown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="17, Chillum CCD, Prince George's County, Maryland, USA.html">17, Chillum CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Silver Spring CDP, Maryland, USA.html">Silver Spring CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="21, Berwyn CCD, Prince George's County, Maryland, USA.html">21, Berwyn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5, Clarksville CCD, Howard County, Maryland, USA.html">5, Clarksville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gaithersburg city, Maryland, USA.html">Gaithersburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bethesda CDP, Maryland, USA.html">Bethesda CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10, Laurel CCD, Prince George's County, Maryland, USA.html">10, Laurel CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockville city, Maryland, USA.html">Rockville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Montgomery County, Maryland, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wheaton CDP, Maryland, USA.html">Wheaton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Aspen Hill CDP, Maryland, USA.html">Aspen Hill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Montgomery County, Maryland, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McLean CDP, Virginia, USA.html">McLean CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Bethesda CDP, Maryland, USA.html">North Bethesda CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="8 CCD, Montgomery County, Maryland, USA.html">8 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Potomac CDP, Maryland, USA.html">Potomac CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Catoctin CCD, Loudoun County, Virginia, USA.html">Catoctin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leesburg CCD, Loudoun County, Virginia, USA.html">Leesburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ashburn CCD, Loudoun County, Virginia, USA.html">Ashburn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Algonkian CCD, Loudoun County, Virginia, USA.html">Algonkian CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="10 CCD, Montgomery County, Maryland, USA.html">10 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chillum CDP, Maryland, USA.html">Chillum CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Olney CDP, Maryland, USA.html">Olney CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Montgomery Village CDP, Maryland, USA.html">Montgomery Village CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9, New Market CCD, Frederick County, Maryland, USA.html">9, New Market CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1, Vansville CCD, Prince George's County, Maryland, USA.html">1, Vansville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clarksburg CDP, Maryland, USA.html">Clarksburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairland CDP, Maryland, USA.html">Fairland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fairfax County, Virginia, USA.html">Fairfax County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Potomac CDP, Maryland, USA.html">North Potomac CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Montgomery County, Maryland, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="12 CCD, Montgomery County, Maryland, USA.html">12 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beltsville CDP, Maryland, USA.html">Beltsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Langley Park CDP, Maryland, USA.html">Langley Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7, Urbana CCD, Frederick County, Maryland, USA.html">7, Urbana CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="White Oak CDP, Maryland, USA.html">White Oak CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Redland CDP, Maryland, USA.html">Redland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Takoma Park city, Maryland, USA.html">Takoma Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Calverton CDP, Maryland, USA.html">Calverton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Adelphi CDP, Maryland, USA.html">Adelphi CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenmont CDP, Maryland, USA.html">Glenmont CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Great Falls CDP, Virginia, USA.html">Great Falls CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Damascus CDP, Maryland, USA.html">Damascus CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Colesville CDP, Maryland, USA.html">Colesville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cloverly CDP, Maryland, USA.html">Cloverly CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4, Lisbon CCD, Howard County, Maryland, USA.html">4, Lisbon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1, Buckeystown CCD, Frederick County, Maryland, USA.html">1, Buckeystown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kemp Mill CDP, Maryland, USA.html">Kemp Mill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lansdowne CDP, Virginia, USA.html">Lansdowne CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cascades CDP, Virginia, USA.html">Cascades CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Travilah CDP, Maryland, USA.html">Travilah CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lowes Island CDP, Virginia, USA.html">Lowes Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Countryside CDP, Virginia, USA.html">Countryside CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase CDP, Maryland, USA.html">Chevy Chase CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Kensington CDP, Maryland, USA.html">North Kensington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="18, Woodville CCD, Frederick County, Maryland, USA.html">18, Woodville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burtonsville CDP, Maryland, USA.html">Burtonsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scaggsville CDP, Maryland, USA.html">Scaggsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Kensington CDP, Maryland, USA.html">South Kensington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leisure World CDP, Maryland, USA.html">Leisure World CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Four Corners CDP, Maryland, USA.html">Four Corners CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Montgomery County, Maryland, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Forest Glen CDP, Maryland, USA.html">Forest Glen CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Darnestown CDP, Maryland, USA.html">Darnestown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillandale CDP, Maryland, USA.html">Hillandale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Layhill CDP, Maryland, USA.html">Layhill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ashton-Sandy Spring CDP, Maryland, USA.html">Ashton-Sandy Spring CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Poolesville town, Maryland, USA.html">Poolesville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Friendship Heights Village CDP, Maryland, USA.html">Friendship Heights Village CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Laurel CDP, Maryland, USA.html">West Laurel CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="University Center CDP, Virginia, USA.html">University Center CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brookmont CDP, Maryland, USA.html">Brookmont CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Konterra CDP, Maryland, USA.html">Konterra CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase town, Maryland, USA.html">Chevy Chase town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Derwood CDP, Maryland, USA.html">Derwood CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cabin John CDP, Maryland, USA.html">Cabin John CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="11 CCD, Montgomery County, Maryland, USA.html">11 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase Village town, Maryland, USA.html">Chevy Chase Village town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kensington town, Maryland, USA.html">Kensington town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spencerville CDP, Maryland, USA.html">Spencerville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Somerset town, Maryland, USA.html">Somerset town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase View town, Maryland, USA.html">Chevy Chase View town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garrett Park town, Maryland, USA.html">Garrett Park town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Martin's Additions village, Maryland, USA.html">Martin's Additions village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase Section Three village, Maryland, USA.html">Chevy Chase Section Three village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Chevy Chase village, Maryland, USA.html">North Chevy Chase village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chevy Chase Section Five village, Maryland, USA.html">Chevy Chase Section Five village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laytonsville town, Maryland, USA.html">Laytonsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Washington Grove town, Maryland, USA.html">Washington Grove town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Echo town, Maryland, USA.html">Glen Echo town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brookeville town, Maryland, USA.html">Brookeville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Barnesville town, Maryland, USA.html">Barnesville town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Montgomery County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

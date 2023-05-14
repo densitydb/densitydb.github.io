@@ -1,0 +1,854 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hennepin County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Hennepin County</div>
+    <div class="text longname">Hennepin County, Minnesota, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.3m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">33 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Travis County, Texas, USA.html"><</a> <a class="button" href="Oakland County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Travis County, Texas, USA.html"><</a> <a class="button" href="Oakland County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2088/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">62 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salt Lake County, Utah, USA.html"><</a> <a class="button" href="Prince George's County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coronado Ranch Neighborhood, Gilbert City, Arizona, USA.html"><</a> <a class="button" href="Garfield Heights CCD, Cuyahoga County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">816/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">61 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hopewell County, Virginia, USA.html"><</a> <a class="button" href="Westchester County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Voorhees CDP, New Jersey, USA.html"><</a> <a class="button" href="Palisade town, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">65.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2235 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wichita County, Kansas, USA.html"><</a> <a class="button" href="Benton County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kachina Hills Neighborhood, Albuquerque City, New Mexico, USA.html"><</a> <a class="button" href="19963, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.67%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1046 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montgomery County, Kansas, USA.html"><</a> <a class="button" href="Henry County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greasy CDP, Oklahoma, USA.html"><</a> <a class="button" href="Normangee CCD, Leon County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">646 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakland County, Michigan, USA.html"><</a> <a class="button" href="Radford County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Peachtree Dunwoody North Neighborhood, Sandy Springs City, Georgia, USA.html"><</a> <a class="button" href="Crystal Creek Neighborhood, Ypsilanti City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.60%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">83 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Napa County, California, USA.html"><</a> <a class="button" href="Fulton County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78641, USA.html"><</a> <a class="button" href="Fitler Square Neighborhood, Philadelphia City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">751 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Island County, Washington, USA.html"><</a> <a class="button" href="Sonoma County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Island County, Washington, USA.html"><</a> <a class="button" href="Wenatchee city, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1517 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Concho County, Texas, USA.html"><</a> <a class="button" href="Idaho County, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Avalon Park Neighborhood, Chicago City, Illinois, USA.html"><</a> <a class="button" href="Franklin city, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">534 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Allen County, Kansas, USA.html"><</a> <a class="button" href="Izard County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Attleboro CCD, Bristol County, Massachusetts, USA.html"><</a> <a class="button" href="Fort Johnson village, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.551</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2299 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hood River County, Oregon, USA.html"><</a> <a class="button" href="Meade County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nedrow CDP, New York, USA.html"><</a> <a class="button" href="25214, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3029 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Middlesex County, Massachusetts, USA.html"><</a> <a class="button" href="Frederick County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Machias CDP, Washington, USA.html"><</a> <a class="button" href="Pleasant Plains village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3245/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">102 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Prince George County, Virginia, USA.html"><</a> <a class="button" href="Dane County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="91344, USA.html"><</a> <a class="button" href="Lyons village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2435/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">67 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arapahoe County, Colorado, USA.html"><</a> <a class="button" href="Yolo County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Point Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="Dover Manor Neighborhood, Orlando City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1883/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">45 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arapahoe County, Colorado, USA.html"><</a> <a class="button" href="Salt Lake County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lafayette slash Winona Neighborhood, Norfolk City, Virginia, USA.html"><</a> <a class="button" href="Northwest Bellevue Neighborhood, Bellevue City, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1681/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">43 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orleans County, Louisiana, USA.html"><</a> <a class="button" href="Honolulu County, Hawaii, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="75230, USA.html"><</a> <a class="button" href="Highland Neighborhood, Saint Paul City, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Minnesota, USA.html">Minnesota</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ramsey County, Minnesota, USA.html">Ramsey County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dakota County, Minnesota, USA.html">Dakota County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minneapolis city, Minnesota, USA.html">Minneapolis city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minneapolis CCD, Hennepin County, Minnesota, USA.html">Minneapolis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Anoka County, Minnesota, USA.html">Anoka County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Paul city, Minnesota, USA.html">St. Paul city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Paul CCD, Ramsey County, Minnesota, USA.html">St. Paul CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Scott County, Minnesota, USA.html">Scott County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wright County, Minnesota, USA.html">Wright County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Carver County, Minnesota, USA.html">Carver County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sherburne County, Minnesota, USA.html">Sherburne County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bloomington city, Minnesota, USA.html">Bloomington city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloomington CCD, Hennepin County, Minnesota, USA.html">Bloomington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brooklyn Park CCD, Hennepin County, Minnesota, USA.html">Brooklyn Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brooklyn Park city, Minnesota, USA.html">Brooklyn Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plymouth CCD, Hennepin County, Minnesota, USA.html">Plymouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plymouth city, Minnesota, USA.html">Plymouth city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maple Grove city, Minnesota, USA.html">Maple Grove city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maple Grove CCD, Hennepin County, Minnesota, USA.html">Maple Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eagan CCD, Dakota County, Minnesota, USA.html">Eagan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eagan city, Minnesota, USA.html">Eagan city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burnsville city, Minnesota, USA.html">Burnsville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnsville CCD, Dakota County, Minnesota, USA.html">Burnsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden Prairie CCD, Hennepin County, Minnesota, USA.html">Eden Prairie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eden Prairie city, Minnesota, USA.html">Eden Prairie city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Coon Rapids CCD, Anoka County, Minnesota, USA.html">Coon Rapids CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coon Rapids city, Minnesota, USA.html">Coon Rapids city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minnetonka city, Minnesota, USA.html">Minnetonka city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minnetonka CCD, Hennepin County, Minnesota, USA.html">Minnetonka CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edina CCD, Hennepin County, Minnesota, USA.html">Edina CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edina city, Minnesota, USA.html">Edina city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Louis Park CCD, Hennepin County, Minnesota, USA.html">St. Louis Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Louis Park city, Minnesota, USA.html">St. Louis Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shakopee CCD, Scott County, Minnesota, USA.html">Shakopee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shakopee city, Minnesota, USA.html">Shakopee city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richfield CCD, Hennepin County, Minnesota, USA.html">Richfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Richfield city, Minnesota, USA.html">Richfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roseville city, Minnesota, USA.html">Roseville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Roseville CCD, Ramsey County, Minnesota, USA.html">Roseville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brooklyn Center city, Minnesota, USA.html">Brooklyn Center city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brooklyn Center CCD, Hennepin County, Minnesota, USA.html">Brooklyn Center CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Savage city, Minnesota, USA.html">Savage city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Savage CCD, Scott County, Minnesota, USA.html">Savage CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fridley city, Minnesota, USA.html">Fridley city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fridley CCD, Anoka County, Minnesota, USA.html">Fridley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ramsey city, Minnesota, USA.html">Ramsey city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ramsey CCD, Anoka County, Minnesota, USA.html">Ramsey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chanhassen city, Minnesota, USA.html">Chanhassen city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chanhassen CCD, Carver County, Minnesota, USA.html">Chanhassen CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elk River CCD, Sherburne County, Minnesota, USA.html">Elk River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elk River city, Minnesota, USA.html">Elk River city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Champlin city, Minnesota, USA.html">Champlin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Champlin CCD, Hennepin County, Minnesota, USA.html">Champlin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Brighton city, Minnesota, USA.html">New Brighton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Brighton CCD, Ramsey County, Minnesota, USA.html">New Brighton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crystal CCD, Hennepin County, Minnesota, USA.html">Crystal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crystal city, Minnesota, USA.html">Crystal city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Golden Valley city, Minnesota, USA.html">Golden Valley city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Golden Valley CCD, Hennepin County, Minnesota, USA.html">Golden Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Hope CCD, Hennepin County, Minnesota, USA.html">New Hope CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Hope city, Minnesota, USA.html">New Hope city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbia Heights CCD, Anoka County, Minnesota, USA.html">Columbia Heights CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbia Heights city, Minnesota, USA.html">Columbia Heights city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Otsego city, Minnesota, USA.html">Otsego city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otsego CCD, Wright County, Minnesota, USA.html">Otsego CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hopkins CCD, Hennepin County, Minnesota, USA.html">Hopkins CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hopkins city, Minnesota, USA.html">Hopkins city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Michael city, Minnesota, USA.html">St. Michael city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Michael CCD, Wright County, Minnesota, USA.html">St. Michael CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Anoka city, Minnesota, USA.html">Anoka city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Anoka CCD, Anoka County, Minnesota, USA.html">Anoka CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Robbinsdale CCD, Hennepin County, Minnesota, USA.html">Robbinsdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robbinsdale city, Minnesota, USA.html">Robbinsdale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rogers CCD, Hennepin County, Minnesota, USA.html">Rogers CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rogers city, Minnesota, USA.html">Rogers city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mendota Heights CCD, Dakota County, Minnesota, USA.html">Mendota Heights CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mendota Heights city, Minnesota, USA.html">Mendota Heights city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Victoria CCD, Carver County, Minnesota, USA.html">Victoria CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Victoria city, Minnesota, USA.html">Victoria city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mound CCD, Hennepin County, Minnesota, USA.html">Mound CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mound city, Minnesota, USA.html">Mound city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orono CCD, Hennepin County, Minnesota, USA.html">Orono CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Orono city, Minnesota, USA.html">Orono city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minnetrista CCD, Hennepin County, Minnesota, USA.html">Minnetrista CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minnetrista city, Minnesota, USA.html">Minnetrista city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shorewood city, Minnesota, USA.html">Shorewood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shorewood CCD, Hennepin County, Minnesota, USA.html">Shorewood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dayton city, Minnesota, USA.html">Dayton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton CCD, Hennepin County, Minnesota, USA.html">Dayton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Medina CCD, Hennepin County, Minnesota, USA.html">Medina CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Medina city, Minnesota, USA.html">Medina city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Delano CCD, Wright County, Minnesota, USA.html">Delano CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Delano city, Minnesota, USA.html">Delano city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corcoran CCD, Hennepin County, Minnesota, USA.html">Corcoran CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corcoran city, Minnesota, USA.html">Corcoran city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Anthony CCD, Hennepin County, Minnesota, USA.html">St. Anthony CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockford city, Minnesota, USA.html">Rockford city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wayzata city, Minnesota, USA.html">Wayzata city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayzata CCD, Hennepin County, Minnesota, USA.html">Wayzata CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deephaven CCD, Hennepin County, Minnesota, USA.html">Deephaven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Deephaven city, Minnesota, USA.html">Deephaven city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Independence CCD, Hennepin County, Minnesota, USA.html">Independence CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Independence city, Minnesota, USA.html">Independence city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Anthony CCD, Ramsey County, Minnesota, USA.html">St. Anthony CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hanover city, Minnesota, USA.html">Hanover city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockford CCD, Wright County, Minnesota, USA.html">Rockford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenfield CCD, Hennepin County, Minnesota, USA.html">Greenfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenfield city, Minnesota, USA.html">Greenfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hanover CCD, Wright County, Minnesota, USA.html">Hanover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, Wright County, Minnesota, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Osseo city, Minnesota, USA.html">Osseo city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Osseo CCD, Hennepin County, Minnesota, USA.html">Osseo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Excelsior city, Minnesota, USA.html">Excelsior city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Excelsior CCD, Hennepin County, Minnesota, USA.html">Excelsior CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Bonifacius CCD, Hennepin County, Minnesota, USA.html">St. Bonifacius CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Bonifacius city, Minnesota, USA.html">St. Bonifacius city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lauderdale city, Minnesota, USA.html">Lauderdale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lauderdale CCD, Ramsey County, Minnesota, USA.html">Lauderdale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Laketown CCD, Carver County, Minnesota, USA.html">Laketown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maple Plain CCD, Hennepin County, Minnesota, USA.html">Maple Plain CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maple Plain city, Minnesota, USA.html">Maple Plain city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Long Lake CCD, Hennepin County, Minnesota, USA.html">Long Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Long Lake city, Minnesota, USA.html">Long Lake city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Park city, Minnesota, USA.html">Spring Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Park CCD, Hennepin County, Minnesota, USA.html">Spring Park CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tonka Bay city, Minnesota, USA.html">Tonka Bay city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonka Bay CCD, Hennepin County, Minnesota, USA.html">Tonka Bay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Watertown CCD, Carver County, Minnesota, USA.html">Watertown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenwood CCD, Hennepin County, Minnesota, USA.html">Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenwood city, Minnesota, USA.html">Greenwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hanover CCD, Hennepin County, Minnesota, USA.html">Hanover CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loretto city, Minnesota, USA.html">Loretto city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Loretto CCD, Hennepin County, Minnesota, USA.html">Loretto CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minnetonka Beach CCD, Hennepin County, Minnesota, USA.html">Minnetonka Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Minnetonka Beach city, Minnesota, USA.html">Minnetonka Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockford CCD, Hennepin County, Minnesota, USA.html">Rockford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fort Snelling CCD, Hennepin County, Minnesota, USA.html">Fort Snelling CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodland city, Minnesota, USA.html">Woodland city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodland CCD, Hennepin County, Minnesota, USA.html">Woodland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Medicine Lake city, Minnesota, USA.html">Medicine Lake city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Medicine Lake CCD, Hennepin County, Minnesota, USA.html">Medicine Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Anthony city, Minnesota, USA.html">St. Anthony city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton CCD, Wright County, Minnesota, USA.html">Dayton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shorewood CCD, Carver County, Minnesota, USA.html">Shorewood CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Hennepin County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

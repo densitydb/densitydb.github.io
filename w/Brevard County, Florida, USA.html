@@ -1,0 +1,593 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Brevard County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Brevard County</div>
+    <div class="text longname">Brevard County, Florida, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">606.6k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">113 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamson County, Texas, USA.html"><</a> <a class="button" href="Washington County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamson County, Texas, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">909/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">369 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clay County, South Dakota, USA.html"><</a> <a class="button" href="Sandoval County, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harvel Homes Community Neighborhood, Atlanta City, Georgia, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">181/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">277 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cumberland County, Pennsylvania, USA.html"><</a> <a class="button" href="Delaware County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iowa Colony village, Texas, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">71.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2026 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington County, South Carolina, USA.html"><</a> <a class="button" href="DeKalb County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington County, South Carolina, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">735 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kiowa County, Oklahoma, USA.html"><</a> <a class="button" href="Ogle County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Thompson Springs CCD, Grand County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">801 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lee County, Texas, USA.html"><</a> <a class="button" href="Montgomery County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wheelock & Monterey Neighborhood, Lubbock City, Texas, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">395 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Roseau County, Minnesota, USA.html"><</a> <a class="button" href="Warrick County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="14814, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1726 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Surry County, Virginia, USA.html"><</a> <a class="button" href="Austin County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Dumbarton CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.08%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">611 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nueces County, Texas, USA.html"><</a> <a class="button" href="Caldwell County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport CCD, Pend Oreille County, Washington, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">384 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Buchanan County, Missouri, USA.html"><</a> <a class="button" href="Howell County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="White Oak Neighborhood, Kansas City City, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.581</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1657 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Owen County, Indiana, USA.html"><</a> <a class="button" href="Madison County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Star CCD, Montgomery County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1934 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richland County, Louisiana, USA.html"><</a> <a class="button" href="Hopkins County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="62951, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2147/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">331 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma County, Oklahoma, USA.html"><</a> <a class="button" href="Lackawanna County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elderberry Pond Neighborhood, Levittown City, Pennsylvania, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1196/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">351 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dubuque County, Iowa, USA.html"><</a> <a class="button" href="Moore County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lindenhurst village, Illinois, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">723/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">352 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake County, Ohio, USA.html"><</a> <a class="button" href="Yamhill County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Grand Chute CCD, Outagamie County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">549/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">341 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson County, Oregon, USA.html"><</a> <a class="button" href="Black Hawk County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Auburn-Opelika CCD, Lee County, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Florida, USA.html">Florida</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Miami-Fort Lauderdale-Port St. Lucie CSA, Florida, USA.html">Miami-Fort Lauderdale-Port St. Lucie CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Orlando-Deltona-Daytona Beach CSA, Florida, USA.html">Orlando-Deltona-Daytona Beach CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Orlando-Kissimmee-Sanford MSA, Florida, USA.html">Orlando-Kissimmee-Sanford MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orange County, Florida, USA.html">Orange County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Deltona-Daytona Beach-Ormond Beach MSA, Florida, USA.html">Deltona-Daytona Beach-Ormond Beach MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html">Palm Bay-Melbourne-Titusville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Volusia County, Florida, USA.html">Volusia County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Seminole County, Florida, USA.html">Seminole County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Osceola County, Florida, USA.html">Osceola County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Indian River County, Florida, USA.html">Indian River County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sebastian-Vero Beach MSA, Florida, USA.html">Sebastian-Vero Beach MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vero Beach CCD, Indian River County, Florida, USA.html">Vero Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Melbourne CCD, Brevard County, Florida, USA.html">Melbourne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cocoa-Rockledge CCD, Brevard County, Florida, USA.html">Cocoa-Rockledge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palm Bay CCD, Brevard County, Florida, USA.html">Palm Bay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palm Bay city, Florida, USA.html">Palm Bay city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oviedo CCD, Seminole County, Florida, USA.html">Oviedo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Melbourne city, Florida, USA.html">Melbourne city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Titusville CCD, Brevard County, Florida, USA.html">Titusville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Smyrna Beach CCD, Volusia County, Florida, USA.html">New Smyrna Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Orange CCD, Orange County, Florida, USA.html">East Orange CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Titusville city, Florida, USA.html">Titusville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Central Volusia CCD, Volusia County, Florida, USA.html">Central Volusia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Indialantic-Melbourne Beach CCD, Brevard County, Florida, USA.html">Indialantic-Melbourne Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Merritt Island CCD, Brevard County, Florida, USA.html">Merritt Island CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Merritt Island CDP, Florida, USA.html">Merritt Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockledge city, Florida, USA.html">Rockledge city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Melbourne city, Florida, USA.html">West Melbourne city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cocoa Beach-Cape Canaveral CCD, Brevard County, Florida, USA.html">Cocoa Beach-Cape Canaveral CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fellsmere CCD, Indian River County, Florida, USA.html">Fellsmere CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cocoa city, Florida, USA.html">Cocoa city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Malabar CCD, Brevard County, Florida, USA.html">Malabar CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Viera West CDP, Florida, USA.html">Viera West CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Port St. John CDP, Florida, USA.html">Port St. John CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Brevard CCD, Brevard County, Florida, USA.html">West Brevard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Viera East CDP, Florida, USA.html">Viera East CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cocoa Beach city, Florida, USA.html">Cocoa Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Satellite Beach city, Florida, USA.html">Satellite Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South and East Osceola CCD, Osceola County, Florida, USA.html">South and East Osceola CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cape Canaveral city, Florida, USA.html">Cape Canaveral city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Micco CDP, Florida, USA.html">Micco CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Indian Harbour Beach city, Florida, USA.html">Indian Harbour Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mims CDP, Florida, USA.html">Mims CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Melbourne Shores-Floridana Beach CCD, Brevard County, Florida, USA.html">Melbourne Shores-Floridana Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Patrick Shores CDP, Florida, USA.html">South Patrick Shores CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cocoa West CDP, Florida, USA.html">Cocoa West CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grant-Valkaria town, Florida, USA.html">Grant-Valkaria town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="June Park CDP, Florida, USA.html">June Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sharpes CDP, Florida, USA.html">Sharpes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Melbourne Beach town, Florida, USA.html">Melbourne Beach town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Indialantic town, Florida, USA.html">Indialantic town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Malabar town, Florida, USA.html">Malabar town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roseland CDP, Florida, USA.html">Roseland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Patrick AFB CDP, Florida, USA.html">Patrick AFB CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palm Shores town, Florida, USA.html">Palm Shores town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Melbourne Village town, Florida, USA.html">Melbourne Village town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Space Center CCD, Brevard County, Florida, USA.html">Space Center CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Brevard County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

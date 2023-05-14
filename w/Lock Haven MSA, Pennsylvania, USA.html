@@ -1,0 +1,650 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lock Haven MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Lock Haven MSA</div>
+    <div class="text longname">Lock Haven MSA, Pennsylvania, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">37.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">672 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Natchitoches MSA, Louisiana, USA.html"><</a> <a class="button" href="Owatonna MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cheltenham CCD, Montgomery County, Pennsylvania, USA.html"><</a> <a class="button" href="Clinton County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">417/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">560 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Asheville MSA, North Carolina, USA.html"><</a> <a class="button" href="Brownwood MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Spirit Lake city, Idaho, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">668 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hannibal MSA, Missouri, USA.html"><</a> <a class="button" href="Salina MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cleburne County, Arkansas, USA.html"><</a> <a class="button" href="Clinton County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">93.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">23 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ashland MSA, Ohio, USA.html"><</a> <a class="button" href="Elkins MSA, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lookout Mountain CCD, Walker County, Georgia, USA.html"><</a> <a class="button" href="Clinton County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">823 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indiana MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Houghton MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Little Sioux CCD, Woodbury County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">668 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taylorville MSA, Illinois, USA.html"><</a> <a class="button" href="Tahlequah MSA, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Farm Hill Neighborhood, Redwood City City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">692 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Taos MSA, New Mexico, USA.html"><</a> <a class="button" href="Mountain Home MSA, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Bostic town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">793 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plymouth MSA, Indiana, USA.html"><</a> <a class="button" href="Tifton MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="20148, USA.html"><</a> <a class="button" href="Clinton County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">676 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson MSA, Michigan, USA.html"><</a> <a class="button" href="Levelland MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Seaford CCD, Sussex County, Delaware, USA.html"><</a> <a class="button" href="11235, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">687 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lufkin MSA, Texas, USA.html"><</a> <a class="button" href="Ruston MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Smyth County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.604</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">192 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Polk South MSA, Louisiana, USA.html"><</a> <a class="button" href="Dothan MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Cherry Valley city, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">177 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Raymondville MSA, Texas, USA.html"><</a> <a class="button" href="Clewiston MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Manheim Park Neighborhood, Kansas City City, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">975/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">607 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison MSA, Indiana, USA.html"><</a> <a class="button" href="Port Lavaca MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Thornville village, Ohio, USA.html"><</a> <a class="button" href="Clinton County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">628/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">530 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Glens Falls MSA, New York, USA.html"><</a> <a class="button" href="Auburn MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Millcreek CCD, Lebanon County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">239/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">661 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Payson MSA, Arizona, USA.html"><</a> <a class="button" href="Alpena MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Oakdale borough, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">131/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">675 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Holland MSA, Michigan, USA.html"><</a> <a class="button" href="Valley MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clinton County, Pennsylvania, USA.html"><</a> <a class="button" href="Desert Hills CDP, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Bloomsburg-Berwick-Sunbury CSA, Pennsylvania, USA.html">Bloomsburg-Berwick-Sunbury CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="State College-DuBois CSA, Pennsylvania, USA.html">State College-DuBois CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Centre County, Pennsylvania, USA.html">Centre County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="State College MSA, Pennsylvania, USA.html">State College MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Williamsport-Lock Haven CSA, Pennsylvania, USA.html">Williamsport-Lock Haven CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lycoming County, Pennsylvania, USA.html">Lycoming County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Williamsport MSA, Pennsylvania, USA.html">Williamsport MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clearfield County, Pennsylvania, USA.html">Clearfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="DuBois MSA, Pennsylvania, USA.html">DuBois MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lewisburg MSA, Pennsylvania, USA.html">Lewisburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Union County, Pennsylvania, USA.html">Union County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clinton County, Pennsylvania, USA.html">Clinton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Potter County, Pennsylvania, USA.html">Potter County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lock Haven city, Pennsylvania, USA.html">Lock Haven city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lock Haven CCD, Clinton County, Pennsylvania, USA.html">Lock Haven CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walker CCD, Centre County, Pennsylvania, USA.html">Walker CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cameron County, Pennsylvania, USA.html">Cameron County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pine Creek CCD, Clinton County, Pennsylvania, USA.html">Pine Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lamar CCD, Clinton County, Pennsylvania, USA.html">Lamar CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodward CCD, Clinton County, Pennsylvania, USA.html">Woodward CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bald Eagle CCD, Clinton County, Pennsylvania, USA.html">Bald Eagle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Miles CCD, Centre County, Pennsylvania, USA.html">Miles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Limestone CCD, Lycoming County, Pennsylvania, USA.html">Limestone CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty CCD, Centre County, Pennsylvania, USA.html">Liberty CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Lycoming County, Pennsylvania, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greene CCD, Clinton County, Pennsylvania, USA.html">Greene CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Porter CCD, Lycoming County, Pennsylvania, USA.html">Porter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Porter CCD, Clinton County, Pennsylvania, USA.html">Porter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mill Hall CCD, Clinton County, Pennsylvania, USA.html">Mill Hall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mill Hall borough, Pennsylvania, USA.html">Mill Hall borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lewis CCD, Union County, Pennsylvania, USA.html">Lewis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Avis borough, Pennsylvania, USA.html">Avis borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dunnstown CDP, Pennsylvania, USA.html">Dunnstown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Avis CCD, Clinton County, Pennsylvania, USA.html">Avis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Clinton County, Pennsylvania, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flemington CCD, Clinton County, Pennsylvania, USA.html">Flemington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Flemington borough, Pennsylvania, USA.html">Flemington borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Castanea CCD, Clinton County, Pennsylvania, USA.html">Castanea CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Renovo borough, Pennsylvania, USA.html">Renovo borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Renovo CCD, Clinton County, Pennsylvania, USA.html">Renovo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Castanea CDP, Pennsylvania, USA.html">Castanea CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dunnstable CCD, Clinton County, Pennsylvania, USA.html">Dunnstable CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crawford CCD, Clinton County, Pennsylvania, USA.html">Crawford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chapman CCD, Clinton County, Pennsylvania, USA.html">Chapman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan CCD, Clinton County, Pennsylvania, USA.html">Logan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Karthaus CCD, Clearfield County, Pennsylvania, USA.html">Karthaus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beech Creek CCD, Clinton County, Pennsylvania, USA.html">Beech Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beech Creek borough, Pennsylvania, USA.html">Beech Creek borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rauchtown CDP, Pennsylvania, USA.html">Rauchtown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nippenose CCD, Lycoming County, Pennsylvania, USA.html">Nippenose CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nittany CDP, Pennsylvania, USA.html">Nittany CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lamar CDP, Pennsylvania, USA.html">Lamar CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Watson CCD, Lycoming County, Pennsylvania, USA.html">Watson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McElhattan CDP, Pennsylvania, USA.html">McElhattan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Curtin CCD, Centre County, Pennsylvania, USA.html">Curtin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rote CDP, Pennsylvania, USA.html">Rote CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Loganton CCD, Clinton County, Pennsylvania, USA.html">Loganton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loganton borough, Pennsylvania, USA.html">Loganton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Renovo borough, Pennsylvania, USA.html">South Renovo borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnside CCD, Centre County, Pennsylvania, USA.html">Burnside CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Renovo CCD, Clinton County, Pennsylvania, USA.html">South Renovo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gallagher CCD, Clinton County, Pennsylvania, USA.html">Gallagher CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Noyes CCD, Clinton County, Pennsylvania, USA.html">Noyes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cummings CCD, Lycoming County, Pennsylvania, USA.html">Cummings CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allison CCD, Clinton County, Pennsylvania, USA.html">Allison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Colebrook CCD, Clinton County, Pennsylvania, USA.html">Colebrook CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monument CDP, Pennsylvania, USA.html">Monument CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leidy CCD, Clinton County, Pennsylvania, USA.html">Leidy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McHenry CCD, Lycoming County, Pennsylvania, USA.html">McHenry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wharton CCD, Potter County, Pennsylvania, USA.html">Wharton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grove CCD, Cameron County, Pennsylvania, USA.html">Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brown CCD, Lycoming County, Pennsylvania, USA.html">Brown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stewardson CCD, Potter County, Pennsylvania, USA.html">Stewardson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grugan CCD, Clinton County, Pennsylvania, USA.html">Grugan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Keating CCD, Clinton County, Pennsylvania, USA.html">West Keating CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Keating CCD, Clinton County, Pennsylvania, USA.html">East Keating CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Lock Haven MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

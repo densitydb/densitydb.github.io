@@ -1,0 +1,503 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cedar City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Cedar City MSA</div>
+    <div class="text longname">Cedar City MSA, Utah, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">57.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">496 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charleston-Mattoon MSA, Illinois, USA.html"><</a> <a class="button" href="Kearney MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="70072, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">721/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">256 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="The Villages MSA, Florida, USA.html"><</a> <a class="button" href="Kalamazoo-Portage MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="44074, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.7/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">802 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">8th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hermiston-Pendleton MSA, Oregon, USA.html"><</a> <a class="button" href="Hobbs MSA, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gulf Port village, Illinois, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">277 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sturgis MSA, Michigan, USA.html"><</a> <a class="button" href="Jamestown-Dunkirk-Fredonia MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="White Rock CCD, Ogle County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">336 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kearney MSA, Nebraska, USA.html"><</a> <a class="button" href="Williston MSA, North Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="66502, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">758 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grand Junction MSA, Colorado, USA.html"><</a> <a class="button" href="Centralia MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="Hereford city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.08%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">420 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yakima MSA, Washington, USA.html"><</a> <a class="button" href="Elkhart-Goshen MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley Hill CDP, North Carolina, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">109 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Helena MSA, Montana, USA.html"><</a> <a class="button" href="Spokane-Spokane Valley MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="6, Hoopers Island CCD, Dorchester County, Maryland, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">52 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pahrump MSA, Nevada, USA.html"><</a> <a class="button" href="Fayetteville MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="47715, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">598 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Payson MSA, Arizona, USA.html"><</a> <a class="button" href="Birmingham-Hoover MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="57334, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.525</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">753 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Twin Falls MSA, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="Halesite CDP, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">256 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vidalia MSA, Georgia, USA.html"><</a> <a class="button" href="Levelland MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="26833, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1362/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">364 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burlington MSA, North Carolina, USA.html"><</a> <a class="button" href="Fairbanks MSA, Alaska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="Manderson-White Horse Creek CDP, South Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">986/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">251 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cortland MSA, New York, USA.html"><</a> <a class="button" href="Juneau MSA, Alaska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southside Neighborhood, Augusta City, Georgia, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">516/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">284 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rock Springs MSA, Wyoming, USA.html"><</a> <a class="button" href="Tuscaloosa MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Minersville borough, Pennsylvania, USA.html"><</a> <a class="button" href="Iron County, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">300/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">319 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Dodge MSA, Iowa, USA.html"><</a> <a class="button" href="Michigan City-La Porte MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iron County, Utah, USA.html"><</a> <a class="button" href="Deenwood CDP, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Utah, USA.html">Utah</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nevada, USA.html">Nevada</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Utah, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. George MSA, Utah, USA.html">St. George MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iron County, Utah, USA.html">Iron County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar City CCD, Iron County, Utah, USA.html">Cedar City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar City city, Utah, USA.html">Cedar City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hurricane CCD, Washington County, Utah, USA.html">Hurricane CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kane County, Utah, USA.html">Kane County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Enoch city, Utah, USA.html">Enoch city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Beaver County, Utah, USA.html">Beaver County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Garfield County, Utah, USA.html">Garfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Nevada, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parowan CCD, Iron County, Utah, USA.html">Parowan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beaver CCD, Beaver County, Utah, USA.html">Beaver CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parowan city, Utah, USA.html">Parowan city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Enterprise CCD, Washington County, Utah, USA.html">Enterprise CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford-Minersville CCD, Beaver County, Utah, USA.html">Milford-Minersville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pioche CCD, Lincoln County, Nevada, USA.html">Pioche CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Panguitch CCD, Garfield County, Utah, USA.html">Panguitch CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orderville CCD, Kane County, Utah, USA.html">Orderville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beryl-Newcastle CCD, Iron County, Utah, USA.html">Beryl-Newcastle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paragonah town, Utah, USA.html">Paragonah town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kanarraville town, Utah, USA.html">Kanarraville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newcastle CDP, Utah, USA.html">Newcastle CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Summit CDP, Utah, USA.html">Summit CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beryl Junction CDP, Utah, USA.html">Beryl Junction CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brian Head town, Utah, USA.html">Brian Head town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Cedar City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,806 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jefferson County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Jefferson County</div>
+    <div class="text longname">Jefferson County, Kentucky, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">783.0k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">83 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma County, Oklahoma, USA.html"><</a> <a class="button" href="San Joaquin County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hempstead CCD, Nassau County, New York, USA.html"><</a> <a class="button" href="San Joaquin County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1430/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">150 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Bend County, Texas, USA.html"><</a> <a class="button" href="El Paso County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="80525, USA.html"><</a> <a class="button" href="Beautiful View Block Neighborhood, Jackson City, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">760/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">68 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fulton County, Georgia, USA.html"><</a> <a class="button" href="Prince George's County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Milford CDP, Connecticut, USA.html"><</a> <a class="button" href="Retreat at Firewheel Neighborhood, Garland City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">62.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2356 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Garfield County, Colorado, USA.html"><</a> <a class="button" href="Weld County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mulberry city, Florida, USA.html"><</a> <a class="button" href="77879, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1067 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carter County, Oklahoma, USA.html"><</a> <a class="button" href="Charlotte County, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="28663, USA.html"><</a> <a class="button" href="Wilmont CCD, Nobles County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.34%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">451 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saluda County, South Carolina, USA.html"><</a> <a class="button" href="Waller County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Northside Neighborhood, Syracuse City, New York, USA.html"><</a> <a class="button" href="94804, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">293 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Petersburg County, Alaska, USA.html"><</a> <a class="button" href="Strafford County, New Hampshire, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Soudersburg CDP, Pennsylvania, USA.html"><</a> <a class="button" href="Davis Island Neighborhood, Tampa City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2278 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warren County, Illinois, USA.html"><</a> <a class="button" href="Warren County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="19801, USA.html"><</a> <a class="button" href="12758, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">693 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bon Homme County, South Dakota, USA.html"><</a> <a class="button" href="Lake County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bon Homme County, South Dakota, USA.html"><</a> <a class="button" href="Fair Lakes CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.81%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">755 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Napa County, California, USA.html"><</a> <a class="button" href="Grand Isle County, Vermont, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04330, USA.html"><</a> <a class="button" href="46208, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.581</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1660 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Turner County, South Dakota, USA.html"><</a> <a class="button" href="Lawrence County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Capitol View Manor Neighborhood, Atlanta City, Georgia, USA.html"><</a> <a class="button" href="16803, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2526 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Posey County, Indiana, USA.html"><</a> <a class="button" href="Washington County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="84115, USA.html"><</a> <a class="button" href="17257, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2315/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">282 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reeves County, Texas, USA.html"><</a> <a class="button" href="Charleston County, South Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55428, USA.html"><</a> <a class="button" href="85382, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1671/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">176 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hampton County, Virginia, USA.html"><</a> <a class="button" href="Fredericksburg County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="44320, USA.html"><</a> <a class="button" href="Laroche Park Neighborhood, Savannah City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1237/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">136 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Loudoun County, Virginia, USA.html"><</a> <a class="button" href="Davis County, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="80005, USA.html"><</a> <a class="button" href="80111, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1080/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">110 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Riverside County, California, USA.html"><</a> <a class="button" href="Lancaster County, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="08077, USA.html"><</a> <a class="button" href="Greeley CCD, Weld County, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Indiana, USA.html">Indiana</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Kentucky, USA.html">Kentucky</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Louisville slash Jefferson County metro government (balance), Kentucky, USA.html">Louisville/Jefferson County metro government (balance)</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Louisville city, Kentucky, USA.html">Louisville city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Elizabethtown-Fort Knox MSA, Kentucky, USA.html">Elizabethtown-Fort Knox MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southeast Jefferson CCD, Jefferson County, Kentucky, USA.html">Southeast Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clark County, Indiana, USA.html">Clark County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hardin County, Kentucky, USA.html">Hardin County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Central Jefferson CCD, Jefferson County, Kentucky, USA.html">Central Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Louisville East CCD, Jefferson County, Kentucky, USA.html">Louisville East CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bullitt County, Kentucky, USA.html">Bullitt County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Floyd County, Indiana, USA.html">Floyd County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Jefferson CCD, Jefferson County, Kentucky, USA.html">East Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Louisville South CCD, Jefferson County, Kentucky, USA.html">Louisville South CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oldham County, Kentucky, USA.html">Oldham County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jeffersonville CCD, Clark County, Indiana, USA.html">Jeffersonville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Louisville West CCD, Jefferson County, Kentucky, USA.html">Louisville West CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Albany CCD, Floyd County, Indiana, USA.html">New Albany CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northeast Jefferson CCD, Jefferson County, Kentucky, USA.html">Northeast Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jeffersonville city, Indiana, USA.html">Jeffersonville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Dixie CCD, Jefferson County, Kentucky, USA.html">North Dixie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Shelby County, Kentucky, USA.html">Shelby County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pond Creek CCD, Jefferson County, Kentucky, USA.html">Pond Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pewee Valley CCD, Oldham County, Kentucky, USA.html">Pewee Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Harrison County, Indiana, USA.html">Harrison County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Albany city, Indiana, USA.html">New Albany city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shepherdsville Northwest CCD, Bullitt County, Kentucky, USA.html">Shepherdsville Northwest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Jefferson CCD, Jefferson County, Kentucky, USA.html">South Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Louisville Central CCD, Jefferson County, Kentucky, USA.html">Louisville Central CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Washington CCD, Bullitt County, Kentucky, USA.html">Mount Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jeffersontown city, Kentucky, USA.html">Jeffersontown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Dixie CCD, Jefferson County, Kentucky, USA.html">South Dixie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clarksville town, Indiana, USA.html">Clarksville town</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Spencer County, Kentucky, USA.html">Spencer County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Matthews city, Kentucky, USA.html">St. Matthews city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Floyds Fork CCD, Jefferson County, Kentucky, USA.html">Floyds Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shively city, Kentucky, USA.html">Shively city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Spencer CCD, Spencer County, Kentucky, USA.html">West Spencer CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lyndon city, Kentucky, USA.html">Lyndon city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Middletown city, Kentucky, USA.html">Middletown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Simpsonville CCD, Shelby County, Kentucky, USA.html">Simpsonville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hillview city, Kentucky, USA.html">Hillview city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Utica CCD, Clark County, Indiana, USA.html">Utica CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Douglass Hills city, Kentucky, USA.html">Douglass Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hurstbourne city, Kentucky, USA.html">Hurstbourne city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Prospect city, Kentucky, USA.html">Prospect city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Indian Hills city, Kentucky, USA.html">Indian Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Graymoor-Devondale city, Kentucky, USA.html">Graymoor-Devondale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Posey CCD, Harrison County, Indiana, USA.html">Posey CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Anchorage city, Kentucky, USA.html">Anchorage city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brooks CDP, Kentucky, USA.html">Brooks CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Windy Hills city, Kentucky, USA.html">Windy Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hurstbourne Acres city, Kentucky, USA.html">Hurstbourne Acres city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pewee Valley city, Kentucky, USA.html">Pewee Valley city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Worthington Hills city, Kentucky, USA.html">Worthington Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin CCD, Floyd County, Indiana, USA.html">Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Regis Park city, Kentucky, USA.html">St. Regis Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Audubon Park city, Kentucky, USA.html">Audubon Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Buechel city, Kentucky, USA.html">West Buechel city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Louisville Airport CCD, Jefferson County, Kentucky, USA.html">Louisville Airport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coldstream city, Kentucky, USA.html">Coldstream city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beechwood Village city, Kentucky, USA.html">Beechwood Village city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Barbourmeade city, Kentucky, USA.html">Barbourmeade city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Heritage Creek city, Kentucky, USA.html">Heritage Creek city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Watterson Park city, Kentucky, USA.html">Watterson Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northfield city, Kentucky, USA.html">Northfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Point CCD, Hardin County, Kentucky, USA.html">West Point CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Langdon Place city, Kentucky, USA.html">Langdon Place city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Point city, Kentucky, USA.html">West Point city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodlawn Park city, Kentucky, USA.html">Woodlawn Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lynnview city, Kentucky, USA.html">Lynnview city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rolling Hills city, Kentucky, USA.html">Rolling Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellemeade city, Kentucky, USA.html">Bellemeade city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Utica town, Indiana, USA.html">Utica town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fincastle city, Kentucky, USA.html">Fincastle city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plantation city, Kentucky, USA.html">Plantation city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hollow Creek city, Kentucky, USA.html">Hollow Creek city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blue Ridge Manor city, Kentucky, USA.html">Blue Ridge Manor city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Taylor CCD, Harrison County, Indiana, USA.html">Taylor CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodland Hills city, Kentucky, USA.html">Woodland Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rolling Fields city, Kentucky, USA.html">Rolling Fields city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Green Spring city, Kentucky, USA.html">Green Spring city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meadow Vale city, Kentucky, USA.html">Meadow Vale city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Strathmoor Village city, Kentucky, USA.html">Strathmoor Village city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Valley city, Kentucky, USA.html">Spring Valley city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seneca Gardens city, Kentucky, USA.html">Seneca Gardens city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brownsboro Farm city, Kentucky, USA.html">Brownsboro Farm city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parkway Village city, Kentucky, USA.html">Parkway Village city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenview city, Kentucky, USA.html">Glenview city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westwood city, Kentucky, USA.html">Westwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Murray Hill city, Kentucky, USA.html">Murray Hill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wellington city, Kentucky, USA.html">Wellington city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hollyvilla city, Kentucky, USA.html">Hollyvilla city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bancroft city, Kentucky, USA.html">Bancroft city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Houston Acres city, Kentucky, USA.html">Houston Acres city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Riverwood city, Kentucky, USA.html">Riverwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Briarwood city, Kentucky, USA.html">Briarwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Forest Hills city, Kentucky, USA.html">Forest Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norbourne Estates city, Kentucky, USA.html">Norbourne Estates city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Moorland city, Kentucky, USA.html">Moorland city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Richlawn city, Kentucky, USA.html">Richlawn city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kingsley city, Kentucky, USA.html">Kingsley city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Poplar Hills city, Kentucky, USA.html">Poplar Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norwood city, Kentucky, USA.html">Norwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenview Hills city, Kentucky, USA.html">Glenview Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Brownsboro Place city, Kentucky, USA.html">Old Brownsboro Place city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Strathmoor Manor city, Kentucky, USA.html">Strathmoor Manor city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellewood city, Kentucky, USA.html">Bellewood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brownsboro Village city, Kentucky, USA.html">Brownsboro Village city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Creekside city, Kentucky, USA.html">Creekside city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Goose Creek city, Kentucky, USA.html">Goose Creek city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Druid Hills city, Kentucky, USA.html">Druid Hills city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Mill city, Kentucky, USA.html">Spring Mill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wildwood city, Kentucky, USA.html">Wildwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Broeck Pointe city, Kentucky, USA.html">Broeck Pointe city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manor Creek city, Kentucky, USA.html">Manor Creek city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crossgate city, Kentucky, USA.html">Crossgate city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenview Manor city, Kentucky, USA.html">Glenview Manor city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Thornhill city, Kentucky, USA.html">Thornhill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maryhill Estates city, Kentucky, USA.html">Maryhill Estates city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mockingbird Valley city, Kentucky, USA.html">Mockingbird Valley city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meadowview Estates city, Kentucky, USA.html">Meadowview Estates city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sycamore city, Kentucky, USA.html">Sycamore city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cambridge city, Kentucky, USA.html">Cambridge city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hills and Dales city, Kentucky, USA.html">Hills and Dales city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lincolnshire city, Kentucky, USA.html">Lincolnshire city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hickory Hill city, Kentucky, USA.html">Hickory Hill city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meadowbrook Farm city, Kentucky, USA.html">Meadowbrook Farm city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ten Broeck city, Kentucky, USA.html">Ten Broeck city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Jefferson County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

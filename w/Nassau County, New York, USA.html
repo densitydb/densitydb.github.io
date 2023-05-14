@@ -1,0 +1,881 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nassau County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Nassau County</div>
+    <div class="text longname">Nassau County, New York, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.4m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">30 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, Florida, USA.html"><</a> <a class="button" href="Franklin County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Birmingham-Hoover-Talladega CSA, Alabama, USA.html"><</a> <a class="button" href="San Diego city, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2985/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">28 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denver County, Colorado, USA.html"><</a> <a class="button" href="Falls Church County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55103, USA.html"><</a> <a class="button" href="Carol City North Neighborhood, Miami Gardens City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1710/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">22 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlottesville County, Virginia, USA.html"><</a> <a class="button" href="Manassas County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="11579, USA.html"><</a> <a class="button" href="45208, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">55.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2585 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Twiggs County, Georgia, USA.html"><</a> <a class="button" href="Colquitt County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watonga city, Oklahoma, USA.html"><</a> <a class="button" href="31909, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">18.38%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">449 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blanco County, Texas, USA.html"><</a> <a class="button" href="Skagit County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Carbon-Sunnyside city, Utah, USA.html"><</a> <a class="button" href="Lorton CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">741 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="LaPorte County, Indiana, USA.html"><</a> <a class="button" href="Fayette County, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Forest Hill Neighborhood, Richmond City, Virginia, USA.html"><</a> <a class="button" href="Rosebud CCD, Falls County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">47 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond County, New York, USA.html"><</a> <a class="button" href="Arlington County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="30068, USA.html"><</a> <a class="button" href="Kutzky Park Neighborhood, Rochester City, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2829 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wyoming County, Pennsylvania, USA.html"><</a> <a class="button" href="Cumberland County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="61415, USA.html"><</a> <a class="button" href="Jonesboro city, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1916 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McDowell County, West Virginia, USA.html"><</a> <a class="button" href="Gogebic County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="08619, USA.html"><</a> <a class="button" href="Tucker CCD, DeKalb County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1952 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upshur County, West Virginia, USA.html"><</a> <a class="button" href="Logan County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="91708, USA.html"><</a> <a class="button" href="Courtland town, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.434</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3114 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">1st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Utah County, Utah, USA.html"><</a> <a class="button" href="Reeves County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brentsville CCD, Prince William County, Virginia, USA.html"><</a> <a class="button" href="Babylon CCD, Suffolk County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.46%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3076 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Passaic County, New Jersey, USA.html"><</a> <a class="button" href="Boone County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Swann Estates Neighborhood, Tampa City, Florida, USA.html"><</a> <a class="button" href="Sunrise Oaks Neighborhood, Citrus Heights City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3777/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">58 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Middlesex County, New Jersey, USA.html"><</a> <a class="button" href="Essex County, Massachusetts, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Maywood CCD, Bergen County, New Jersey, USA.html"><</a> <a class="button" href="Six Mile Run CDP, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3289/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">30 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Providence County, Rhode Island, USA.html"><</a> <a class="button" href="King County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="El Cerrito city, California, USA.html"><</a> <a class="button" href="Parkville CDP, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2699/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">26 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Denver County, Colorado, USA.html"><</a> <a class="button" href="San Mateo County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="07646, USA.html"><</a> <a class="button" href="South Bank Neighborhood, Oxnard City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2430/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">23 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange County, California, USA.html"><</a> <a class="button" href="Falls Church County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="07094, USA.html"><</a> <a class="button" href="33322, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New York city, New York, USA.html">New York city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Queens County, New York, USA.html">Queens County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Queens CCD, Queens County, New York, USA.html">Queens CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Suffolk County, New York, USA.html">Suffolk County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hempstead CCD, Nassau County, New York, USA.html">Hempstead CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oyster Bay CCD, Nassau County, New York, USA.html">Oyster Bay CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Hempstead CCD, Nassau County, New York, USA.html">North Hempstead CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Babylon CCD, Suffolk County, New York, USA.html">Babylon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Huntington CCD, Suffolk County, New York, USA.html">Huntington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hempstead village, New York, USA.html">Hempstead village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Levittown CDP, New York, USA.html">Levittown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Freeport village, New York, USA.html">Freeport village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hicksville CDP, New York, USA.html">Hicksville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valley Stream village, New York, USA.html">Valley Stream village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Meadow CDP, New York, USA.html">East Meadow CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elmont CDP, New York, USA.html">Elmont CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Long Beach city, New York, USA.html">Long Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Long Beach CCD, Nassau County, New York, USA.html">Long Beach CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oceanside CDP, New York, USA.html">Oceanside CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Uniondale CDP, New York, USA.html">Uniondale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Franklin Square CDP, New York, USA.html">Franklin Square CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Cove city, New York, USA.html">Glen Cove city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glen Cove CCD, Nassau County, New York, USA.html">Glen Cove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plainview CDP, New York, USA.html">Plainview CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rockville Centre village, New York, USA.html">Rockville Centre village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baldwin CDP, New York, USA.html">Baldwin CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden City village, New York, USA.html">Garden City village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Merrick CDP, New York, USA.html">Merrick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Massapequa CDP, New York, USA.html">Massapequa CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mineola village, New York, USA.html">Mineola village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Bellmore CDP, New York, USA.html">North Bellmore CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lynbrook village, New York, USA.html">Lynbrook village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Massapequa CDP, New York, USA.html">East Massapequa CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Hempstead CDP, New York, USA.html">West Hempstead CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Melville CDP, New York, USA.html">Melville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Syosset CDP, New York, USA.html">Syosset CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodmere CDP, New York, USA.html">Woodmere CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wantagh CDP, New York, USA.html">Wantagh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Amityville CDP, New York, USA.html">North Amityville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Valley Stream CDP, New York, USA.html">North Valley Stream CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roosevelt CDP, New York, USA.html">Roosevelt CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Massapequa CDP, New York, USA.html">North Massapequa CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Massapequa Park village, New York, USA.html">Massapequa Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Port Washington CDP, New York, USA.html">Port Washington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bethpage CDP, New York, USA.html">Bethpage CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellmore CDP, New York, USA.html">Bellmore CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Floral Park village, New York, USA.html">Floral Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westbury village, New York, USA.html">Westbury village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North New Hyde Park CDP, New York, USA.html">North New Hyde Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seaford CDP, New York, USA.html">Seaford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jericho CDP, New York, USA.html">Jericho CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Farmingdale CDP, New York, USA.html">South Farmingdale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Cassel CDP, New York, USA.html">New Cassel CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Salisbury CDP, New York, USA.html">Salisbury CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Merrick CDP, New York, USA.html">North Merrick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Wantagh CDP, New York, USA.html">North Wantagh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Inwood CDP, New York, USA.html">Inwood CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Great Neck village, New York, USA.html">Great Neck village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Hyde Park village, New York, USA.html">New Hyde Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Rockaway village, New York, USA.html">East Rockaway village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plainedge CDP, New York, USA.html">Plainedge CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Amityville village, New York, USA.html">Amityville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodbury CDP, New York, USA.html">Woodbury CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Farmingdale village, New York, USA.html">Farmingdale village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Malverne village, New York, USA.html">Malverne village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baldwin Harbor CDP, New York, USA.html">Baldwin Harbor CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manhasset CDP, New York, USA.html">Manhasset CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden City Park CDP, New York, USA.html">Garden City Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Williston Park village, New York, USA.html">Williston Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Great Neck Plaza village, New York, USA.html">Great Neck Plaza village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedarhurst village, New York, USA.html">Cedarhurst village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Hills village, New York, USA.html">East Hills village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hewlett CDP, New York, USA.html">Hewlett CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oyster Bay CDP, New York, USA.html">Oyster Bay CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lawrence village, New York, USA.html">Lawrence village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bayville village, New York, USA.html">Bayville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roslyn Heights CDP, New York, USA.html">Roslyn Heights CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manorhaven village, New York, USA.html">Manorhaven village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Bethpage CDP, New York, USA.html">Old Bethpage CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Valley Stream CDP, New York, USA.html">South Valley Stream CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Farmingdale CDP, New York, USA.html">East Farmingdale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lakeview CDP, New York, USA.html">Lakeview CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kings Point village, New York, USA.html">Kings Point village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Hills village, New York, USA.html">North Hills village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Hills CDP, New York, USA.html">West Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Albertson CDP, New York, USA.html">Albertson CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sea Cliff village, New York, USA.html">Sea Cliff village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Searingtown CDP, New York, USA.html">Searingtown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carle Place CDP, New York, USA.html">Carle Place CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Island Park village, New York, USA.html">Island Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cold Spring Harbor CDP, New York, USA.html">Cold Spring Harbor CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Head CDP, New York, USA.html">Glen Head CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Flower Hill village, New York, USA.html">Flower Hill village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Herricks CDP, New York, USA.html">Herricks CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="University Gardens CDP, New York, USA.html">University Gardens CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Westbury village, New York, USA.html">Old Westbury village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden City South CDP, New York, USA.html">Garden City South CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenwood Landing CDP, New York, USA.html">Glenwood Landing CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Manhasset Hills CDP, New York, USA.html">Manhasset Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Locust Valley CDP, New York, USA.html">Locust Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lloyd Harbor village, New York, USA.html">Lloyd Harbor village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Muttontown village, New York, USA.html">Muttontown village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Hempstead CDP, New York, USA.html">South Hempstead CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Port Washington North village, New York, USA.html">Port Washington North village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Great Neck Estates village, New York, USA.html">Great Neck Estates village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roslyn village, New York, USA.html">Roslyn village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Thomaston village, New York, USA.html">Thomaston village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brookville village, New York, USA.html">Brookville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lido Beach CDP, New York, USA.html">Lido Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sands Point village, New York, USA.html">Sands Point village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Success village, New York, USA.html">Lake Success village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Munsey Park village, New York, USA.html">Munsey Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Norwich CDP, New York, USA.html">East Norwich CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Williston village, New York, USA.html">East Williston village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Barnum Island CDP, New York, USA.html">Barnum Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellerose Terrace CDP, New York, USA.html">Bellerose Terrace CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oyster Bay Cove village, New York, USA.html">Oyster Bay Cove village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bay Park CDP, New York, USA.html">Bay Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Atlantic Beach CDP, New York, USA.html">East Atlantic Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stewart Manor village, New York, USA.html">Stewart Manor village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Brookville village, New York, USA.html">Old Brookville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laurel Hollow village, New York, USA.html">Laurel Hollow village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lattingtown village, New York, USA.html">Lattingtown village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Upper Brookville village, New York, USA.html">Upper Brookville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Floral Park village, New York, USA.html">South Floral Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Atlantic Beach village, New York, USA.html">Atlantic Beach village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plandome village, New York, USA.html">Plandome village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harbor Isle CDP, New York, USA.html">Harbor Isle CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roslyn Estates village, New York, USA.html">Roslyn Estates village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Point Lookout CDP, New York, USA.html">Point Lookout CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hewlett Harbor village, New York, USA.html">Hewlett Harbor village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kensington village, New York, USA.html">Kensington village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bellerose village, New York, USA.html">Bellerose village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Great Neck Gardens CDP, New York, USA.html">Great Neck Gardens CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenvale CDP, New York, USA.html">Greenvale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Roslyn Harbor village, New York, USA.html">Roslyn Harbor village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mill Neck village, New York, USA.html">Mill Neck village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plandome Heights village, New York, USA.html">Plandome Heights village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baxter Estates village, New York, USA.html">Baxter Estates village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saddle Rock village, New York, USA.html">Saddle Rock village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Russell Gardens village, New York, USA.html">Russell Gardens village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodsburgh village, New York, USA.html">Woodsburgh village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Matinecock village, New York, USA.html">Matinecock village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plandome Manor village, New York, USA.html">Plandome Manor village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Lynbrook CDP, New York, USA.html">North Lynbrook CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hewlett Neck village, New York, USA.html">Hewlett Neck village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harbor Hills CDP, New York, USA.html">Harbor Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Malverne Park Oaks CDP, New York, USA.html">Malverne Park Oaks CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hewlett Bay Park village, New York, USA.html">Hewlett Bay Park village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saddle Rock Estates CDP, New York, USA.html">Saddle Rock Estates CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Centre Island village, New York, USA.html">Centre Island village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cove Neck village, New York, USA.html">Cove Neck village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gilgo CDP, New York, USA.html">Gilgo CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Nassau County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

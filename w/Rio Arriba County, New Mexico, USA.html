@@ -1,0 +1,662 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rio Arriba County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Rio Arriba County</div>
+    <div class="text longname">Rio Arriba County, New Mexico, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">40.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1178 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ottawa County, Ohio, USA.html"><</a> <a class="button" href="Orleans County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="85392, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">202/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1936 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sharkey County, Mississippi, USA.html"><</a> <a class="button" href="Stanly County, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="Albemarle MSA, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.6/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2689 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson County, Oklahoma, USA.html"><</a> <a class="button" href="Harper County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Meramec CCD, Dent County, Missouri, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.73%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3110 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">1st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Cruz County, Arizona, USA.html"><</a> <a class="button" href="Buffalo County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="35013, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">67.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">34 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reagan County, Texas, USA.html"><</a> <a class="button" href="Doña Ana County, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="South Wenatchee CDP, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2518 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deschutes County, Oregon, USA.html"><</a> <a class="button" href="Sheridan County, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Milaca city, Minnesota, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1496 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison County, Ohio, USA.html"><</a> <a class="button" href="Edmunds County, South Dakota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="35117, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">15.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">86 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chippewa County, Michigan, USA.html"><</a> <a class="button" href="Pondera County, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="59824, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2249 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson Davis County, Louisiana, USA.html"><</a> <a class="button" href="Bayfield County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="44321, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3048 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jim Wells County, Texas, USA.html"><</a> <a class="button" href="Leflore County, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="Wilkinson Heights CDP, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.607</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1106 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Howard County, Indiana, USA.html"><</a> <a class="button" href="Murray County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="23308, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16.91%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">944 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lafayette County, Florida, USA.html"><</a> <a class="button" href="Panola County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eagle Butte city, South Dakota, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">585/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2068 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall County, Oklahoma, USA.html"><</a> <a class="button" href="Tama County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Howards Creek CCD, Lincoln County, North Carolina, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">297/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2090 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lawrence County, Arkansas, USA.html"><</a> <a class="button" href="Stephens County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="Adams CCD, Houghton County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">143/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1675 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson County, Tennessee, USA.html"><</a> <a class="button" href="Jackson County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gold Beach city, Oregon, USA.html"><</a> <a class="button" href="Española MSA, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">96/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1420 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dale County, Alabama, USA.html"><</a> <a class="button" href="Wayne County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Española MSA, New Mexico, USA.html"><</a> <a class="button" href="Freeburg village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Colorado, USA.html">Colorado</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Mexico, USA.html">New Mexico</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albuquerque-Santa Fe-Las Vegas CSA, New Mexico, USA.html">Albuquerque-Santa Fe-Las Vegas CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albuquerque MSA, New Mexico, USA.html">Albuquerque MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Santa Fe MSA, New Mexico, USA.html">Santa Fe MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Santa Fe County, New Mexico, USA.html">Santa Fe County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sandoval County, New Mexico, USA.html">Sandoval County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Farmington MSA, New Mexico, USA.html">Farmington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Juan County, New Mexico, USA.html">San Juan County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Española MSA, New Mexico, USA.html">Española MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Taos MSA, New Mexico, USA.html">Taos MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Taos County, New Mexico, USA.html">Taos County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Los Alamos County, New Mexico, USA.html">Los Alamos County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Los Alamos MSA, New Mexico, USA.html">Los Alamos MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Fe North CCD, Santa Fe County, New Mexico, USA.html">Santa Fe North CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bloomfield CCD, San Juan County, New Mexico, USA.html">Bloomfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Los Alamos CCD, Los Alamos County, New Mexico, USA.html">Los Alamos CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Archuleta County, Colorado, USA.html">Archuleta County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pagosa Springs CCD, Archuleta County, Colorado, USA.html">Pagosa Springs CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Española city, New Mexico, USA.html">Española city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Rio Arriba CCD, Rio Arriba County, New Mexico, USA.html">South Rio Arriba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Clara Pueblo CCD, Rio Arriba County, New Mexico, USA.html">Santa Clara Pueblo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Conejos County, Colorado, USA.html">Conejos County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Napi Headquarters CCD, San Juan County, New Mexico, USA.html">Napi Headquarters CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ohkay Owingeh CCD, Rio Arriba County, New Mexico, USA.html">Ohkay Owingeh CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jemez-Zia CCD, Sandoval County, New Mexico, USA.html">Jemez-Zia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cuba CCD, Sandoval County, New Mexico, USA.html">Cuba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mora County, New Mexico, USA.html">Mora County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rio Chama CCD, Rio Arriba County, New Mexico, USA.html">Rio Chama CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jicarilla Apache CCD, Rio Arriba County, New Mexico, USA.html">Jicarilla Apache CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mora CCD, Mora County, New Mexico, USA.html">Mora CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chimayo CCD, Rio Arriba County, New Mexico, USA.html">Chimayo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chimayo CDP, New Mexico, USA.html">Chimayo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tierra Amarilla CCD, Rio Arriba County, New Mexico, USA.html">Tierra Amarilla CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dulce CDP, New Mexico, USA.html">Dulce CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Mesilla CDP, New Mexico, USA.html">La Mesilla CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Arboles CCD, Archuleta County, Colorado, USA.html">Arboles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ohkay Owingeh CDP, New Mexico, USA.html">Ohkay Owingeh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Antonito CCD, Conejos County, Colorado, USA.html">Antonito CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dixon CCD, Rio Arriba County, New Mexico, USA.html">Dixon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Coyote CCD, Rio Arriba County, New Mexico, USA.html">Coyote CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Peñasco CCD, Taos County, New Mexico, USA.html">Peñasco CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tres Piedras CCD, Taos County, New Mexico, USA.html">Tres Piedras CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Puebla CDP, New Mexico, USA.html">La Puebla CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chamita CDP, New Mexico, USA.html">Chamita CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Villita CDP, New Mexico, USA.html">La Villita CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dixon CDP, New Mexico, USA.html">Dixon CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Santa Clara Pueblo CDP, New Mexico, USA.html">Santa Clara Pueblo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chama village, New Mexico, USA.html">Chama village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Los Luceros CDP, New Mexico, USA.html">Los Luceros CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hernandez CDP, New Mexico, USA.html">Hernandez CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Rito CDP, New Mexico, USA.html">El Rito CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Conejos CCD, Conejos County, Colorado, USA.html">West Conejos CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vallecitos CCD, Rio Arriba County, New Mexico, USA.html">Vallecitos CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Duende CDP, New Mexico, USA.html">El Duende CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chili CDP, New Mexico, USA.html">Chili CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Velarde CDP, New Mexico, USA.html">Velarde CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Truchas CDP, New Mexico, USA.html">Truchas CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cuartelez CDP, New Mexico, USA.html">Cuartelez CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Santa Cruz CDP, New Mexico, USA.html">Santa Cruz CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cordova CDP, New Mexico, USA.html">Cordova CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alcalde CDP, New Mexico, USA.html">Alcalde CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tierra Amarilla CDP, New Mexico, USA.html">Tierra Amarilla CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gallina CDP, New Mexico, USA.html">Gallina CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lyden CDP, New Mexico, USA.html">Lyden CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Canjilon CDP, New Mexico, USA.html">Canjilon CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Rio Arriba CCD, Rio Arriba County, New Mexico, USA.html">West Rio Arriba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Abiquiu CDP, New Mexico, USA.html">Abiquiu CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Jara CDP, New Mexico, USA.html">La Jara CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Madera CDP, New Mexico, USA.html">La Madera CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coyote CDP, New Mexico, USA.html">Coyote CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ensenada CDP, New Mexico, USA.html">Ensenada CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Canova CDP, New Mexico, USA.html">Canova CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Los Ojos CDP, New Mexico, USA.html">Los Ojos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pueblito CDP, New Mexico, USA.html">Pueblito CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cañones CDP, New Mexico, USA.html">Cañones CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Regina CDP, New Mexico, USA.html">Regina CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lumberton CDP, New Mexico, USA.html">Lumberton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Jose CDP, New Mexico, USA.html">San Jose CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Youngsville CDP, New Mexico, USA.html">Youngsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brazos CDP, New Mexico, USA.html">Brazos CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Rio Arriba County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

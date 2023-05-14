@@ -1,0 +1,626 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Santa Fe MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Santa Fe MSA</div>
+    <div class="text longname">Santa Fe MSA, New Mexico, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">154.8k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">238 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elizabethtown-Fort Knox MSA, Kentucky, USA.html"><</a> <a class="button" href="Monroe MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Elizabethtown-Fort Knox MSA, Kentucky, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">769/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">237 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon-Anacortes MSA, Washington, USA.html"><</a> <a class="button" href="Wichita Falls MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kingstree Neighborhood, Winston-Salem City, North Carolina, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">31/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">452 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport MSA, Tennessee, USA.html"><</a> <a class="button" href="Meadville MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="12092, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">43.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">772 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sumter MSA, South Carolina, USA.html"><</a> <a class="button" href="Atlanta-Sandy Springs-Roswell MSA, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="78159, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">48.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">52 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Modesto MSA, California, USA.html"><</a> <a class="button" href="Albuquerque MSA, New Mexico, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="11232, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.79%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">732 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pocatello MSA, Idaho, USA.html"><</a> <a class="button" href="Sevierville MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sugarfork CCD, Macon County, North Carolina, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">315 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reading MSA, Pennsylvania, USA.html"><</a> <a class="button" href="Sherman-Denison MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="34287, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">81 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clearlake MSA, California, USA.html"><</a> <a class="button" href="Roanoke Rapids MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Concrete town, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">355 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gallup MSA, New Mexico, USA.html"><</a> <a class="button" href="Mansfield MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Nez Perce CCD, Idaho County, Idaho, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">631 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wausau MSA, Wisconsin, USA.html"><</a> <a class="button" href="North Platte MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="50047, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.601</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">202 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Florence-Muscle Shoals MSA, Alabama, USA.html"><</a> <a class="button" href="Corinth MSA, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pleasant Valley CCD, Webster County, Iowa, USA.html"><</a> <a class="button" href="Santa Fe County, New Mexico, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.51%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">373 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Torrington MSA, Connecticut, USA.html"><</a> <a class="button" href="Indiana MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Leetonia village, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1488/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">304 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Worthington MSA, Minnesota, USA.html"><</a> <a class="button" href="Kingsville MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Weston Lakes city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">970/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">266 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmington MSA, North Carolina, USA.html"><</a> <a class="button" href="Hermiston-Pendleton MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Parkwood Neighborhood, Durham City, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">637/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">200 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hobbs MSA, New Mexico, USA.html"><</a> <a class="button" href="Fond du Lac MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Woodlawn village, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">457/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">190 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kokomo MSA, Indiana, USA.html"><</a> <a class="button" href="Rochester MSA, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe County, New Mexico, USA.html"><</a> <a class="button" href="Lincoln Park Neighborhood, Danville City, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New Mexico, USA.html">New Mexico</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albuquerque-Santa Fe-Las Vegas CSA, New Mexico, USA.html">Albuquerque-Santa Fe-Las Vegas CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albuquerque MSA, New Mexico, USA.html">Albuquerque MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bernalillo County, New Mexico, USA.html">Bernalillo County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Santa Fe County, New Mexico, USA.html">Santa Fe County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sandoval County, New Mexico, USA.html">Sandoval County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rio Rancho CCD, Sandoval County, New Mexico, USA.html">Rio Rancho CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Fe CCD, Santa Fe County, New Mexico, USA.html">Santa Fe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Santa Fe city, New Mexico, USA.html">Santa Fe city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Fe South CCD, Santa Fe County, New Mexico, USA.html">Santa Fe South CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Española MSA, New Mexico, USA.html">Española MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rio Arriba County, New Mexico, USA.html">Rio Arriba County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Miguel County, New Mexico, USA.html">San Miguel County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Las Vegas MSA, New Mexico, USA.html">Las Vegas MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Los Alamos County, New Mexico, USA.html">Los Alamos County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Los Alamos MSA, New Mexico, USA.html">Los Alamos MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Fe North CCD, Santa Fe County, New Mexico, USA.html">Santa Fe North CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Bernalillo CCD, Bernalillo County, New Mexico, USA.html">East Bernalillo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Torrance County, New Mexico, USA.html">Torrance County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Los Alamos CCD, Los Alamos County, New Mexico, USA.html">Los Alamos CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Los Alamos CDP, New Mexico, USA.html">Los Alamos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Estancia CCD, Torrance County, New Mexico, USA.html">Estancia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Española city, New Mexico, USA.html">Española city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Rio Arriba CCD, Rio Arriba County, New Mexico, USA.html">South Rio Arriba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santa Clara Pueblo CCD, Rio Arriba County, New Mexico, USA.html">Santa Clara Pueblo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Santo Domingo-San Felipe CCD, Sandoval County, New Mexico, USA.html">Santo Domingo-San Felipe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eldorado at Santa Fe CDP, New Mexico, USA.html">Eldorado at Santa Fe CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pecos CCD, San Miguel County, New Mexico, USA.html">Pecos CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White Rock CCD, Los Alamos County, New Mexico, USA.html">White Rock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="White Rock CDP, New Mexico, USA.html">White Rock CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jemez-Zia CCD, Sandoval County, New Mexico, USA.html">Jemez-Zia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mora County, New Mexico, USA.html">Mora County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Cienega CDP, New Mexico, USA.html">La Cienega CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edgewood town, New Mexico, USA.html">Edgewood town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mora CCD, Mora County, New Mexico, USA.html">Mora CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chimayo CCD, Rio Arriba County, New Mexico, USA.html">Chimayo CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chimayo CDP, New Mexico, USA.html">Chimayo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Agua Fria CDP, New Mexico, USA.html">Agua Fria CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pojoaque CDP, New Mexico, USA.html">Pojoaque CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Villanueva CCD, San Miguel County, New Mexico, USA.html">Villanueva CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nambe CDP, New Mexico, USA.html">Nambe CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Mesilla CDP, New Mexico, USA.html">La Mesilla CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Valle de Arroyo Seco CDP, New Mexico, USA.html">El Valle de Arroyo Seco CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Puebla CDP, New Mexico, USA.html">La Puebla CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Rancho CDP, New Mexico, USA.html">El Rancho CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tesuque CDP, New Mexico, USA.html">Tesuque CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar Grove CDP, New Mexico, USA.html">Cedar Grove CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Ildefonso Pueblo CDP, New Mexico, USA.html">San Ildefonso Pueblo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peak Place CDP, New Mexico, USA.html">Peak Place CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cuyamungue CDP, New Mexico, USA.html">Cuyamungue CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glorieta CDP, New Mexico, USA.html">Glorieta CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cuartelez CDP, New Mexico, USA.html">Cuartelez CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Santa Cruz CDP, New Mexico, USA.html">Santa Cruz CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cañada de los Alamos CDP, New Mexico, USA.html">Cañada de los Alamos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jacona CDP, New Mexico, USA.html">Jacona CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cordova CDP, New Mexico, USA.html">Cordova CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chupadero CDP, New Mexico, USA.html">Chupadero CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sombrillo CDP, New Mexico, USA.html">Sombrillo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tesuque Pueblo CDP, New Mexico, USA.html">Tesuque Pueblo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jaconita CDP, New Mexico, USA.html">Jaconita CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Los Cerrillos CDP, New Mexico, USA.html">Los Cerrillos CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Madrid CDP, New Mexico, USA.html">Madrid CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Galisteo CDP, New Mexico, USA.html">Galisteo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lamy CDP, New Mexico, USA.html">Lamy CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="San Pedro CDP, New Mexico, USA.html">San Pedro CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cuyamungue Grant CDP, New Mexico, USA.html">Cuyamungue Grant CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rio en Medio CDP, New Mexico, USA.html">Rio en Medio CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cundiyo CDP, New Mexico, USA.html">Cundiyo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Golden CDP, New Mexico, USA.html">Golden CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Santa Fe MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

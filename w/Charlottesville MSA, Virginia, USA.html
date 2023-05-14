@@ -1,0 +1,722 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Charlottesville MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Charlottesville MSA</div>
+    <div class="text longname">Charlottesville MSA, Virginia, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">238.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">159 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Appleton MSA, Wisconsin, USA.html"><</a> <a class="button" href="Prescott MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arlington County, Virginia, USA.html"><</a> <a class="button" href="Union County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">806/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">219 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Canton-Massillon MSA, Ohio, USA.html"><</a> <a class="button" href="Lewiston-Auburn MSA, Maine, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="32506, USA.html"><</a> <a class="button" href="08091, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">41/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">348 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laurinburg MSA, North Carolina, USA.html"><</a> <a class="button" href="Shelbyville MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="62963, USA.html"><</a> <a class="button" href="Wakeman CCD, Huron County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">70.95%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">499 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palm Bay-Melbourne-Titusville MSA, Florida, USA.html"><</a> <a class="button" href="Grand Island MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hollywood Hills Neighborhood, Los Angeles City, California, USA.html"><</a> <a class="button" href="DeKalb County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.37%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">472 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baton Rouge MSA, Louisiana, USA.html"><</a> <a class="button" href="Washington MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="34957, USA.html"><</a> <a class="button" href="Tuscarora CCD, Berkeley County, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">198 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Las Vegas-Henderson-Paradise MSA, Nevada, USA.html"><</a> <a class="button" href="Wilmington MSA, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77532, USA.html"><</a> <a class="button" href="15906, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">56 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hartford-West Hartford-East Hartford MSA, Connecticut, USA.html"><</a> <a class="button" href="Madison MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Portland Park Neighborhood, Portland City, Oregon, USA.html"><</a> <a class="button" href="Downtown Neighborhood, Lake Mary City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">767 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Selma MSA, Alabama, USA.html"><</a> <a class="button" href="Jacksonville MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dallas County, Alabama, USA.html"><</a> <a class="button" href="98077, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">482 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley MSA, Alabama, USA.html"><</a> <a class="button" href="Farmington MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="44614, USA.html"><</a> <a class="button" href="76055, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">243 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Freeport MSA, Illinois, USA.html"><</a> <a class="button" href="Charleston MSA, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Struthers city, Ohio, USA.html"><</a> <a class="button" href="02666, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.548</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">638 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burlington MSA, North Carolina, USA.html"><</a> <a class="button" href="Lansing-East Lansing MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Belle Glade city, Florida, USA.html"><</a> <a class="button" href="74454, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.92%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">428 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Spencer MSA, Iowa, USA.html"><</a> <a class="button" href="Corinth MSA, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="5, Hancock CCD, Washington County, Maryland, USA.html"><</a> <a class="button" href="Waverly city, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2058/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">140 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burlington-South Burlington MSA, Vermont, USA.html"><</a> <a class="button" href="Fort Collins MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="60540, USA.html"><</a> <a class="button" href="Daybreak Neighborhood, Bartlett City, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1077/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">210 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baton Rouge MSA, Louisiana, USA.html"><</a> <a class="button" href="Janesville-Beloit MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairport Neighborhood, Perinton City, New York, USA.html"><</a> <a class="button" href="Glendale Neighborhood, Rochester City, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">644/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">196 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmington MSA, North Carolina, USA.html"><</a> <a class="button" href="Marion MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sebastian city, Florida, USA.html"><</a> <a class="button" href="Oak Grove CCD, Durham County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">452/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">194 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vineland-Bridgeton MSA, New Jersey, USA.html"><</a> <a class="button" href="Laramie MSA, Wyoming, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jacksonville city, North Carolina, USA.html"><</a> <a class="button" href="Blue Village Neighborhood, Independence City, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Virginia, USA.html">Virginia</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Richmond MSA, Virginia, USA.html">Richmond MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lynchburg MSA, Virginia, USA.html">Lynchburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Harrisonburg-Staunton-Waynesboro CSA, Virginia, USA.html">Harrisonburg-Staunton-Waynesboro CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Harrisonburg MSA, Virginia, USA.html">Harrisonburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Staunton-Waynesboro MSA, Virginia, USA.html">Staunton-Waynesboro MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Albemarle County, Virginia, USA.html">Albemarle County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockingham County, Virginia, USA.html">Rockingham County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Augusta County, Virginia, USA.html">Augusta County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Charlottesville city, Virginia, USA.html">Charlottesville city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Charlottesville County, Virginia, USA.html">Charlottesville County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Charlottesville CCD, Charlottesville city, Virginia, USA.html">Charlottesville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Louisa County, Virginia, USA.html">Louisa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orange County, Virginia, USA.html">Orange County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Amherst County, Virginia, USA.html">Amherst County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fluvanna County, Virginia, USA.html">Fluvanna County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Goochland County, Virginia, USA.html">Goochland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Page County, Virginia, USA.html">Page County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockbridge County, Virginia, USA.html">Rockbridge County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Prince Edward County, Virginia, USA.html">Prince Edward County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White Hall CCD, Albemarle County, Virginia, USA.html">White Hall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greene County, Virginia, USA.html">Greene County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rivanna CCD, Albemarle County, Virginia, USA.html">Rivanna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stonewall CCD, Rockingham County, Virginia, USA.html">Stonewall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scottsville CCD, Albemarle County, Virginia, USA.html">Scottsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rio CCD, Albemarle County, Virginia, USA.html">Rio CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Samuel Miller CCD, Albemarle County, Virginia, USA.html">Samuel Miller CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Buckingham County, Virginia, USA.html">Buckingham County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Appomattox County, Virginia, USA.html">Appomattox County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jack Jouett CCD, Albemarle County, Virginia, USA.html">Jack Jouett CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nelson County, Virginia, USA.html">Nelson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, Virginia, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Augusta County, Virginia, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South River CCD, Augusta County, Virginia, USA.html">South River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middle River CCD, Augusta County, Virginia, USA.html">Middle River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Riverheads CCD, Augusta County, Virginia, USA.html">Riverheads CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Monticello CDP, Virginia, USA.html">Lake Monticello CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cumberland County, Virginia, USA.html">Cumberland County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crozet CDP, Virginia, USA.html">Crozet CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hollymead CDP, Virginia, USA.html">Hollymead CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="University of Virginia CDP, Virginia, USA.html">University of Virginia CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Green Spring CCD, Louisa County, Virginia, USA.html">Green Spring CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palmyra CCD, Fluvanna County, Virginia, USA.html">Palmyra CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Amherst County, Virginia, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Amherst County, Virginia, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Locust Dale CCD, Madison County, Virginia, USA.html">Locust Dale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cunningham CCD, Fluvanna County, Virginia, USA.html">Cunningham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ruckersville CCD, Greene County, Virginia, USA.html">Ruckersville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Midway CCD, Greene County, Virginia, USA.html">Midway CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rivanna CCD, Fluvanna County, Virginia, USA.html">Rivanna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5, Shenandoah CCD, Page County, Virginia, USA.html">5, Shenandoah CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Patrick Henry CCD, Louisa County, Virginia, USA.html">Patrick Henry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Orange County, Virginia, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fork Union CCD, Fluvanna County, Virginia, USA.html">Fork Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Greene County, Virginia, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stanardsville CCD, Greene County, Virginia, USA.html">Stanardsville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South River CCD, Rockbridge County, Virginia, USA.html">South River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Goochland County, Virginia, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbia CCD, Fluvanna County, Virginia, USA.html">Columbia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pantops CDP, Virginia, USA.html">Pantops CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rapidan CCD, Madison County, Virginia, USA.html">Rapidan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Central CCD, Nelson County, Virginia, USA.html">Central CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Appomattox River CCD, Appomattox County, Virginia, USA.html">Appomattox River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Piney Mountain CCD, Appomattox County, Virginia, USA.html">Piney Mountain CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South CCD, Nelson County, Virginia, USA.html">South CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East CCD, Nelson County, Virginia, USA.html">East CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West CCD, Nelson County, Virginia, USA.html">West CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="6 CCD, Buckingham County, Virginia, USA.html">6 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North CCD, Nelson County, Virginia, USA.html">North CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="501 CCD, Prince Edward County, Virginia, USA.html">501 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Buckingham County, Virginia, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Buckingham County, Virginia, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="601 CCD, Prince Edward County, Virginia, USA.html">601 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="3 CCD, Buckingham County, Virginia, USA.html">3 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Buckingham County, Virginia, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rivanna CDP, Virginia, USA.html">Rivanna CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Buckingham County, Virginia, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="7 CCD, Buckingham County, Virginia, USA.html">7 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="2 CCD, Cumberland County, Virginia, USA.html">2 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="5 CCD, Cumberland County, Virginia, USA.html">5 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="1 CCD, Cumberland County, Virginia, USA.html">1 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="4 CCD, Cumberland County, Virginia, USA.html">4 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Piney Mountain CDP, Virginia, USA.html">Piney Mountain CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Twin Lakes CDP, Virginia, USA.html">Twin Lakes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ruckersville CDP, Virginia, USA.html">Ruckersville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nellysford CDP, Virginia, USA.html">Nellysford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ivy CDP, Virginia, USA.html">Ivy CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arrington CDP, Virginia, USA.html">Arrington CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scottsville town, Virginia, USA.html">Scottsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lovingston CDP, Virginia, USA.html">Lovingston CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shipman CDP, Virginia, USA.html">Shipman CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Esmont CDP, Virginia, USA.html">Esmont CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dillwyn town, Virginia, USA.html">Dillwyn town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wintergreen CDP, Virginia, USA.html">Wintergreen CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stanardsville town, Virginia, USA.html">Stanardsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Schuyler CDP, Virginia, USA.html">Schuyler CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yogaville CDP, Virginia, USA.html">Yogaville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Free Union CDP, Virginia, USA.html">Free Union CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Buckingham Courthouse CDP, Virginia, USA.html">Buckingham Courthouse CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palmyra CDP, Virginia, USA.html">Palmyra CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbia CDP, Virginia, USA.html">Columbia CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Charlottesville MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

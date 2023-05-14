@@ -1,0 +1,704 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Boise City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Boise City MSA</div>
+    <div class="text longname">Boise City MSA, Idaho, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">764.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">60 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greensboro-High Point MSA, North Carolina, USA.html"><</a> <a class="button" href="Cape Coral-Fort Myers MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cobb County, Georgia, USA.html"><</a> <a class="button" href="DeKalb County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1224/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">80 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chico MSA, California, USA.html"><</a> <a class="button" href="Fort Collins MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stadium District Neighborhood, Lansing City, Michigan, USA.html"><</a> <a class="button" href="North Orange Neighborhood, Orlando City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">25/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">541 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warrensburg MSA, Missouri, USA.html"><</a> <a class="button" href="Coshocton MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union County, Florida, USA.html"><</a> <a class="button" href="Walton CCD, Eaton County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">76.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">413 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Michigan City-La Porte MSA, Indiana, USA.html"><</a> <a class="button" href="Akron MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Joseph CCD, Berrien County, Michigan, USA.html"><</a> <a class="button" href="75452, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">222 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huron MSA, South Dakota, USA.html"><</a> <a class="button" href="Marshall MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="98408, USA.html"><</a> <a class="button" href="Crestwood village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.21%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">654 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rapid City MSA, South Dakota, USA.html"><</a> <a class="button" href="Holland MSA, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chillicothe CCD, Livingston County, Missouri, USA.html"><</a> <a class="button" href="Elizabeth Lake CDP, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">218 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gainesville MSA, Georgia, USA.html"><</a> <a class="button" href="Sierra Vista-Douglas MSA, Arizona, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="70734, USA.html"><</a> <a class="button" href="08095, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.52%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">257 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mountain Home MSA, Arkansas, USA.html"><</a> <a class="button" href="Colorado Springs MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alpena CCD, Alpena County, Michigan, USA.html"><</a> <a class="button" href="Kelly Creek Neighborhood, Gresham City, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">86 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eugene MSA, Oregon, USA.html"><</a> <a class="button" href="Morristown MSA, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="97063, USA.html"><</a> <a class="button" href="97229, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">181 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orlando-Kissimmee-Sanford MSA, Florida, USA.html"><</a> <a class="button" href="Carbondale-Marion MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Golden Valley Neighborhood, Reno City, Nevada, USA.html"><</a> <a class="button" href="Madison Grove Neighborhood, Bakersfield City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.514</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">795 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brownsville-Harlingen MSA, Texas, USA.html"><</a> <a class="button" href="Hermiston-Pendleton MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Libory CCD, Howard County, Nebraska, USA.html"><</a> <a class="button" href="89149, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">849 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salt Lake City MSA, Utah, USA.html"><</a> <a class="button" href="Seattle-Tacoma-Bellevue MSA, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="LaPlatte II CCD, Sarpy County, Nebraska, USA.html"><</a> <a class="button" href="Nevada-Lidgerwood Neighborhood, Spokane City, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2003/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">149 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia MSA, South Carolina, USA.html"><</a> <a class="button" href="Racine MSA, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Missoula CCD, Missoula County, Montana, USA.html"><</a> <a class="button" href="Springfield CCD, Hamilton County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1446/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">96 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greeley MSA, Colorado, USA.html"><</a> <a class="button" href="Palestine MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Menasha city, Wisconsin, USA.html"><</a> <a class="button" href="Haggard Neighborhood, Plano City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1049/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">65 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">93rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="El Centro MSA, California, USA.html"><</a> <a class="button" href="Lawrence MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sunny Ridge Neighborhood, Pensacola City, Florida, USA.html"><</a> <a class="button" href="Jeffersonville Neighborhood, Chattanooga City, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">854/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">55 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Napa MSA, California, USA.html"><</a> <a class="button" href="Corpus Christi MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Campbell County, Kentucky, USA.html"><</a> <a class="button" href="Wharton CCD, Morris County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Oregon, USA.html">Oregon</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nevada, USA.html">Nevada</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Idaho, USA.html">Idaho</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ada County, Idaho, USA.html">Ada County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boise City CCD, Ada County, Idaho, USA.html">Boise City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Boise City city, Idaho, USA.html">Boise City city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Canyon County, Idaho, USA.html">Canyon County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nampa CCD, Canyon County, Idaho, USA.html">Nampa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Twin Falls MSA, Idaho, USA.html">Twin Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meridian city, Idaho, USA.html">Meridian city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nampa city, Idaho, USA.html">Nampa city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Twin Falls County, Idaho, USA.html">Twin Falls County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Caldwell city, Idaho, USA.html">Caldwell city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Elko MSA, Nevada, USA.html">Elko MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Elko County, Nevada, USA.html">Elko County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eagle CCD, Ada County, Idaho, USA.html">Eagle CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caldwell CCD, Canyon County, Idaho, USA.html">Caldwell CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Malheur County, Oregon, USA.html">Malheur County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eagle city, Idaho, USA.html">Eagle city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Mountain Home MSA, Idaho, USA.html">Mountain Home MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Elmore County, Idaho, USA.html">Elmore County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kuna CCD, Ada County, Idaho, USA.html">Kuna CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mountain Home CCD, Elmore County, Idaho, USA.html">Mountain Home CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Payette County, Idaho, USA.html">Payette County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kuna city, Idaho, USA.html">Kuna city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orchard CCD, Ada County, Idaho, USA.html">Orchard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middleton CCD, Canyon County, Idaho, USA.html">Middleton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gem County, Idaho, USA.html">Gem County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Humboldt County, Nevada, USA.html">Humboldt County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Winnemucca MSA, Nevada, USA.html">Winnemucca MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Emmett Valley CCD, Gem County, Idaho, USA.html">Emmett Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden City city, Idaho, USA.html">Garden City city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Owyhee County, Idaho, USA.html">Owyhee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Valley County, Idaho, USA.html">Valley County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Star city, Idaho, USA.html">Star city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Payette CCD, Payette County, Idaho, USA.html">Payette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Idaho, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boise Hills CCD, Ada County, Idaho, USA.html">Boise Hills CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fruitland CCD, Payette County, Idaho, USA.html">Fruitland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Middleton city, Idaho, USA.html">Middleton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Emmett city, Idaho, USA.html">Emmett city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Boise County, Idaho, USA.html">Boise County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilder CCD, Canyon County, Idaho, USA.html">Wilder CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Plymouth CCD, Payette County, Idaho, USA.html">New Plymouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parma CCD, Canyon County, Idaho, USA.html">Parma CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Homedale CCD, Owyhee County, Idaho, USA.html">Homedale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nyssa CCD, Malheur County, Oregon, USA.html">Nyssa CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Adams County, Idaho, USA.html">Adams County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Custer County, Idaho, USA.html">Custer County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Huston CCD, Canyon County, Idaho, USA.html">Huston CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Notus CCD, Canyon County, Idaho, USA.html">Notus CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Idaho City CCD, Boise County, Idaho, USA.html">Idaho City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marsing CCD, Owyhee County, Idaho, USA.html">Marsing CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Emmett Bench CCD, Gem County, Idaho, USA.html">Emmett Bench CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hidden Springs CDP, Idaho, USA.html">Hidden Springs CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Homedale city, Idaho, USA.html">Homedale city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cascade CCD, Valley County, Idaho, USA.html">Cascade CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Melba CCD, Canyon County, Idaho, USA.html">Melba CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Council CCD, Adams County, Idaho, USA.html">Council CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glenns Ferry CCD, Elmore County, Idaho, USA.html">Glenns Ferry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garden Valley CCD, Boise County, Idaho, USA.html">Garden Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parma city, Idaho, USA.html">Parma city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Horseshoe Bend CCD, Boise County, Idaho, USA.html">Horseshoe Bend CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Murphy CCD, Owyhee County, Idaho, USA.html">Murphy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wilder city, Idaho, USA.html">Wilder city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sweet CCD, Gem County, Idaho, USA.html">Sweet CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mountain City CCD, Elko County, Nevada, USA.html">Mountain City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand View CCD, Owyhee County, Idaho, USA.html">Grand View CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marsing city, Idaho, USA.html">Marsing city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robie Creek CDP, Idaho, USA.html">Robie Creek CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Owyhee CDP, Nevada, USA.html">Owyhee CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adrian CCD, Malheur County, Oregon, USA.html">Adrian CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McDermitt CCD, Humboldt County, Nevada, USA.html">McDermitt CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenleaf city, Idaho, USA.html">Greenleaf city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Owyhee CCD, Malheur County, Oregon, USA.html">Owyhee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Midvale CCD, Washington County, Idaho, USA.html">Midvale CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Horseshoe Bend city, Idaho, USA.html">Horseshoe Bend city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jordan Valley CCD, Malheur County, Oregon, USA.html">Jordan Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Notus city, Idaho, USA.html">Notus city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Melba city, Idaho, USA.html">Melba city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stanley CCD, Custer County, Idaho, USA.html">Stanley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bruneau CCD, Owyhee County, Idaho, USA.html">Bruneau CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Idaho City city, Idaho, USA.html">Idaho City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grand View city, Idaho, USA.html">Grand View city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden Valley CDP, Idaho, USA.html">Garden Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Salmon Falls CCD, Twin Falls County, Idaho, USA.html">West Salmon Falls CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Atlanta CCD, Elmore County, Idaho, USA.html">Atlanta CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Duck Valley CCD, Owyhee County, Idaho, USA.html">Duck Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crouch city, Idaho, USA.html">Crouch city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Murphy CDP, Idaho, USA.html">Murphy CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jarbidge CCD, Elko County, Nevada, USA.html">Jarbidge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stibnite CCD, Valley County, Idaho, USA.html">Stibnite CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Placerville city, Idaho, USA.html">Placerville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lowman CDP, Idaho, USA.html">Lowman CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Banks CDP, Idaho, USA.html">Banks CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Boise City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

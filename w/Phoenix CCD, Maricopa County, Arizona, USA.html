@@ -1,0 +1,536 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Phoenix CCD</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Phoenix CCD</div>
+    <div class="text longname">Phoenix CCD, Maricopa County, Arizona, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.3m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Houston CCD, Harris County, Texas, USA.html"><</a> <a class="button" href="Chicago CCD, Cook County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Houston CCD, Harris County, Texas, USA.html"><</a> <a class="button" href="San Diego County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2145/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">434 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlottesville CCD, Charlottesville city, Virginia, USA.html"><</a> <a class="button" href="Tracy CCD, San Joaquin County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knollwood Neighborhood, Kalamazoo City, Michigan, USA.html"><</a> <a class="button" href="Lafayette Place Neighborhood, San Antonio City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1183/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1064 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Babylon CCD, Suffolk County, New York, USA.html"><</a> <a class="button" href="Winchester CCD, Winchester city, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nassau Bay city, Texas, USA.html"><</a> <a class="button" href="Wildhorse GC Neighborhood, Davis City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">49.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">32933 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lubbock CCD, Lubbock County, Texas, USA.html"><</a> <a class="button" href="11 CCD, Montgomery County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lubbock CCD, Lubbock County, Texas, USA.html"><</a> <a class="button" href="Nottingham Estates Neighborhood, Bakersfield City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">34.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">862 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodbridge CCD, Prince William County, Virginia, USA.html"><</a> <a class="button" href="Seminole CCD, Gaines County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73127, USA.html"><</a> <a class="button" href="Carrollwood CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.17%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5653 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Pleasant CCD, Isabella County, Michigan, USA.html"><</a> <a class="button" href="Sully CCD, Fairfax County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pleasant Hill Neighborhood, Atlanta City, Georgia, USA.html"><</a> <a class="button" href="Oak Road Meadows Neighborhood, Bartlett City, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.91%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1918 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington CCD, Anoka County, Minnesota, USA.html"><</a> <a class="button" href="North Haledon CCD, Passaic County, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="South Historic District Neighborhood, Savannah City, Georgia, USA.html"><</a> <a class="button" href="46278, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3024 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Howe CCD, Forest County, Pennsylvania, USA.html"><</a> <a class="button" href="El Paso North Central CCD, El Paso County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Maricopa County, Arizona, USA.html"><</a> <a class="button" href="28901, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1392 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Powhattan CCD, Brown County, Kansas, USA.html"><</a> <a class="button" href="Rock Hill CCD, Stafford County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marceline city, Missouri, USA.html"><</a> <a class="button" href="Rock Hill CCD, Stafford County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.21%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12304 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williams CCD, Bay County, Michigan, USA.html"><</a> <a class="button" href="Franklin CCD, Johnson County, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williams CCD, Bay County, Michigan, USA.html"><</a> <a class="button" href="Franklin CCD, Johnson County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.540</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">24146 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Holman CCD, Osceola County, Iowa, USA.html"><</a> <a class="button" href="Bourbon CCD, Boone County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lyons city, Oregon, USA.html"><</a> <a class="button" href="Bourbon CCD, Boone County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20433 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clay CCD, Grundy County, Iowa, USA.html"><</a> <a class="button" href="Lancaster CCD, Garrard County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="32904, USA.html"><</a> <a class="button" href="Lancaster CCD, Garrard County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3168/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">854 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sugar Land CCD, Fort Bend County, Texas, USA.html"><</a> <a class="button" href="Arvin-Lamont CCD, Kern County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hiawatha Neighborhood, Minneapolis City, Minnesota, USA.html"><</a> <a class="button" href="Geneva Heights Neighborhood, Orem City, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2497/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">503 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rutledge CCD, Delaware County, Pennsylvania, USA.html"><</a> <a class="button" href="Lower Chichester CCD, Delaware County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dearborn Hills Neighborhood, Dearborn City, Michigan, USA.html"><</a> <a class="button" href="Dana Point city, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1874/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">400 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwalk CCD, Western Connecticut Planning Region, Connecticut, USA.html"><</a> <a class="button" href="Bethlehem CCD, Northampton County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairways Forest Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="Madison Grove Neighborhood, Bakersfield City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1654/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">369 of 35407 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wyomissing CCD, Berks County, Pennsylvania, USA.html"><</a> <a class="button" href="Columbia Heights CCD, Anoka County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greater Fifth Ward Neighborhood, Houston City, Texas, USA.html"><</a> <a class="button" href="Commonwealth Neighborhood, Charlotte City, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Arizona, USA.html">Arizona</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Phoenix-Mesa-Scottsdale MSA, Arizona, USA.html">Phoenix-Mesa-Scottsdale MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Maricopa County, Arizona, USA.html">Maricopa County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Phoenix city, Arizona, USA.html">Phoenix city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chandler CCD, Maricopa County, Arizona, USA.html">Chandler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mesa city, Arizona, USA.html">Mesa city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pinal County, Arizona, USA.html">Pinal County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deer Valley CCD, Maricopa County, Arizona, USA.html">Deer Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chandler city, Arizona, USA.html">Chandler city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gilbert town, Arizona, USA.html">Gilbert town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glendale city, Arizona, USA.html">Glendale city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scottsdale city, Arizona, USA.html">Scottsdale city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peoria city, Arizona, USA.html">Peoria city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tempe city, Arizona, USA.html">Tempe city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Pinal CCD, Pinal County, Arizona, USA.html">North Pinal CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Surprise city, Arizona, USA.html">Surprise city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wickenburg CCD, Maricopa County, Arizona, USA.html">Wickenburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buckeye CCD, Maricopa County, Arizona, USA.html">Buckeye CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Goodyear city, Arizona, USA.html">Goodyear city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Buckeye city, Arizona, USA.html">Buckeye city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Avondale city, Arizona, USA.html">Avondale city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sun City CDP, Arizona, USA.html">Sun City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Apache Junction city, Arizona, USA.html">Apache Junction city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="El Mirage city, Arizona, USA.html">El Mirage city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gila Bend CCD, Maricopa County, Arizona, USA.html">Gila Bend CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sun City West CDP, Arizona, USA.html">Sun City West CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fountain Hills town, Arizona, USA.html">Fountain Hills town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paradise Valley town, Arizona, USA.html">Paradise Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonto National Forest CCD, Maricopa County, Arizona, USA.html">Tonto National Forest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt River CCD, Maricopa County, Arizona, USA.html">Salt River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tolleson city, Arizona, USA.html">Tolleson city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Youngtown town, Arizona, USA.html">Youngtown town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Litchfield Park city, Arizona, USA.html">Litchfield Park city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Guadalupe town, Arizona, USA.html">Guadalupe town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Citrus Park CDP, Arizona, USA.html">Citrus Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carefree town, Arizona, USA.html">Carefree town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Johns CCD, Maricopa County, Arizona, USA.html">St. Johns CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rio Verde CDP, Arizona, USA.html">Rio Verde CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maricopa Colony CDP, Arizona, USA.html">Maricopa Colony CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Phoenix CCD's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

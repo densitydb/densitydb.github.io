@@ -1,0 +1,812 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New York</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">New York</div>
+    <div class="text longname">New York, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">20.2m</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Florida, USA.html"><</a> <a class="button" href="Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Florida, USA.html"><</a> <a class="button" href="Los Angeles-Long Beach CSA, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9190/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="District of Columbia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Haddington Neighborhood, Philadelphia City, Pennsylvania, USA.html"><</a> <a class="button" href="Middle Village Neighborhood, New York City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">159/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware, USA.html"><</a> <a class="button" href="Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="99011, USA.html"><</a> <a class="button" href="Arkoe town, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">52.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">41 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arizona, USA.html"><</a> <a class="button" href="New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="39170, USA.html"><</a> <a class="button" href="Utica city, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Jersey, USA.html"><</a> <a class="button" href="Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Land O' Lakes CDP, Florida, USA.html"><</a> <a class="button" href="Smithfield CCD, Monroe County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.66%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">15 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Illinois, USA.html"><</a> <a class="button" href="Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ridgmar Neighborhood, Fort Worth City, Texas, USA.html"><</a> <a class="button" href="34981, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.49%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Jersey, USA.html"><</a> <a class="button" href="Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Encino Ranch Neighborhood, San Antonio City, Texas, USA.html"><</a> <a class="button" href="Franklin Lakes borough, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">33 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Iowa, USA.html"><</a> <a class="button" href="Delaware, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sylvan CCD, Washtenaw County, Michigan, USA.html"><</a> <a class="button" href="32324, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">40 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware, USA.html"><</a> <a class="button" href="Maine, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Durrs Homeowners Neighborhood, Fort Lauderdale City, Florida, USA.html"><</a> <a class="button" href="North Ponce de Leon Neighborhood, Coral Gables City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">24 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Connecticut, USA.html"><</a> <a class="button" href="Wyoming, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Perkins CCD, Erie County, Ohio, USA.html"><</a> <a class="button" href="Statham city, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.527</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">46 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Massachusetts, USA.html"><</a> <a class="button" href="Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arlington village, Wisconsin, USA.html"><</a> <a class="button" href="60070, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">34 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pennsylvania, USA.html"><</a> <a class="button" href="New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="40601, USA.html"><</a> <a class="button" href="Lone Grove CCD, Fayette County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12399/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="District of Columbia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hawthorne Neighborhood, Philadelphia City, Pennsylvania, USA.html"><</a> <a class="button" href="San Pablo Gateway Neighborhood, Oakland City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10749/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="District of Columbia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jordan Heights slash Old Fairgrounds Neighborhood, Allentown City, Pennsylvania, USA.html"><</a> <a class="button" href="Fulton River District Neighborhood, Chicago City, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7743/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="District of Columbia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenwood Neighborhood, East Orange City, New Jersey, USA.html"><</a> <a class="button" href="Lathrop Homes Neighborhood, Chicago City, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6578/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 51 States</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="District of Columbia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="60657, USA.html"><</a> <a class="button" href="10471, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="New Jersey, USA.html">New Jersey</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Massachusetts, USA.html">Massachusetts</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Connecticut, USA.html">Connecticut</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kings County, New York, USA.html">Kings County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Queens County, New York, USA.html">Queens County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="New York County, New York, USA.html">New York County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Suffolk County, New York, USA.html">Suffolk County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bronx County, New York, USA.html">Bronx County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nassau County, New York, USA.html">Nassau County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Buffalo-Cheektowaga CSA, New York, USA.html">Buffalo-Cheektowaga CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albany-Schenectady CSA, New York, USA.html">Albany-Schenectady CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Rochester-Batavia-Seneca Falls CSA, New York, USA.html">Rochester-Batavia-Seneca Falls CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Buffalo-Cheektowaga-Niagara Falls MSA, New York, USA.html">Buffalo-Cheektowaga-Niagara Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Rochester MSA, New York, USA.html">Rochester MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Westchester County, New York, USA.html">Westchester County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bridgeport-Stamford-Norwalk MSA, Connecticut, USA.html">Bridgeport-Stamford-Norwalk MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fairfield County, Connecticut, USA.html">Fairfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bergen County, New Jersey, USA.html">Bergen County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Erie County, New York, USA.html">Erie County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albany-Schenectady-Troy MSA, New York, USA.html">Albany-Schenectady-Troy MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Monroe County, New York, USA.html">Monroe County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Syracuse-Auburn CSA, New York, USA.html">Syracuse-Auburn CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hudson County, New Jersey, USA.html">Hudson County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Syracuse MSA, New York, USA.html">Syracuse MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Vermont, USA.html">Vermont</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Union County, New Jersey, USA.html">Union County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Passaic County, New Jersey, USA.html">Passaic County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Richmond County, New York, USA.html">Richmond County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Onondaga County, New York, USA.html">Onondaga County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orange County, New York, USA.html">Orange County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Erie-Meadville CSA, Pennsylvania, USA.html">Erie-Meadville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rockland County, New York, USA.html">Rockland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Albany County, New York, USA.html">Albany County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dutchess County, New York, USA.html">Dutchess County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Utica-Rome MSA, New York, USA.html">Utica-Rome MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Erie MSA, Pennsylvania, USA.html">Erie MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Erie County, Pennsylvania, USA.html">Erie County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Binghamton MSA, New York, USA.html">Binghamton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Saratoga County, New York, USA.html">Saratoga County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oneida County, New York, USA.html">Oneida County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Burlington-South Burlington MSA, Vermont, USA.html">Burlington-South Burlington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Niagara County, New York, USA.html">Niagara County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Broome County, New York, USA.html">Broome County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Torrington MSA, Connecticut, USA.html">Torrington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Litchfield County, Connecticut, USA.html">Litchfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Kingston MSA, New York, USA.html">Kingston MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ulster County, New York, USA.html">Ulster County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Elmira-Corning CSA, New York, USA.html">Elmira-Corning CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chittenden County, Vermont, USA.html">Chittenden County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rensselaer County, New York, USA.html">Rensselaer County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schenectady County, New York, USA.html">Schenectady County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Ithaca-Cortland CSA, New York, USA.html">Ithaca-Cortland CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sussex County, New Jersey, USA.html">Sussex County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Berkshire County, Massachusetts, USA.html">Berkshire County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pittsfield MSA, Massachusetts, USA.html">Pittsfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Jamestown-Dunkirk-Fredonia MSA, New York, USA.html">Jamestown-Dunkirk-Fredonia MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chautauqua County, New York, USA.html">Chautauqua County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Glens Falls MSA, New York, USA.html">Glens Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oswego County, New York, USA.html">Oswego County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, New York, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Watertown-Fort Drum MSA, New York, USA.html">Watertown-Fort Drum MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ontario County, New York, USA.html">Ontario County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ogdensburg-Massena MSA, New York, USA.html">Ogdensburg-Massena MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="St. Lawrence County, New York, USA.html">St. Lawrence County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ithaca MSA, New York, USA.html">Ithaca MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tompkins County, New York, USA.html">Tompkins County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Putnam County, New York, USA.html">Putnam County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Corning MSA, New York, USA.html">Corning MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Steuben County, New York, USA.html">Steuben County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wayne County, New York, USA.html">Wayne County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Elmira MSA, New York, USA.html">Elmira MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chemung County, New York, USA.html">Chemung County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Plattsburgh MSA, New York, USA.html">Plattsburgh MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clinton County, New York, USA.html">Clinton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sullivan County, New York, USA.html">Sullivan County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Olean MSA, New York, USA.html">Olean MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cattaraugus County, New York, USA.html">Cattaraugus County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cayuga County, New York, USA.html">Cayuga County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Auburn MSA, New York, USA.html">Auburn MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, New York, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Warren County, New York, USA.html">Warren County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Livingston County, New York, USA.html">Livingston County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hudson MSA, New York, USA.html">Hudson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Columbia County, New York, USA.html">Columbia County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, New York, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Rutland MSA, Vermont, USA.html">Rutland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rutland County, Vermont, USA.html">Rutland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Herkimer County, New York, USA.html">Herkimer County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Sayre MSA, Pennsylvania, USA.html">Sayre MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bradford County, Pennsylvania, USA.html">Bradford County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pike County, Pennsylvania, USA.html">Pike County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Oneonta MSA, New York, USA.html">Oneonta MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Otsego County, New York, USA.html">Otsego County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Genesee County, New York, USA.html">Genesee County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Batavia MSA, New York, USA.html">Batavia MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Gloversville MSA, New York, USA.html">Gloversville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fulton County, New York, USA.html">Fulton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wayne County, Pennsylvania, USA.html">Wayne County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Amsterdam MSA, New York, USA.html">Amsterdam MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montgomery County, New York, USA.html">Montgomery County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tioga County, New York, USA.html">Tioga County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Greene County, New York, USA.html">Greene County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Malone MSA, New York, USA.html">Malone MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, New York, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chenango County, New York, USA.html">Chenango County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cortland County, New York, USA.html">Cortland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cortland MSA, New York, USA.html">Cortland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Allegany County, New York, USA.html">Allegany County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Delaware County, New York, USA.html">Delaware County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tioga County, Pennsylvania, USA.html">Tioga County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wyoming County, New York, USA.html">Wyoming County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bradford MSA, Pennsylvania, USA.html">Bradford MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McKean County, Pennsylvania, USA.html">McKean County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orleans County, New York, USA.html">Orleans County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Warren MSA, Pennsylvania, USA.html">Warren MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Warren County, Pennsylvania, USA.html">Warren County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Susquehanna County, Pennsylvania, USA.html">Susquehanna County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Essex County, New York, USA.html">Essex County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Addison County, Vermont, USA.html">Addison County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bennington County, Vermont, USA.html">Bennington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bennington MSA, Vermont, USA.html">Bennington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Seneca County, New York, USA.html">Seneca County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Seneca Falls MSA, New York, USA.html">Seneca Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schoharie County, New York, USA.html">Schoharie County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lewis County, New York, USA.html">Lewis County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yates County, New York, USA.html">Yates County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schuyler County, New York, USA.html">Schuyler County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Potter County, Pennsylvania, USA.html">Potter County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grand Isle County, Vermont, USA.html">Grand Isle County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hamilton County, New York, USA.html">Hamilton County</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for New York's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

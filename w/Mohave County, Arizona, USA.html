@@ -1,0 +1,689 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mohave County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Mohave County</div>
+    <div class="text longname">Mohave County, Arizona, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">213.1k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">321 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware County, Ohio, USA.html"><</a> <a class="button" href="Niagara County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Morehead CCD, Guilford County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">656/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">600 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kittitas County, Washington, USA.html"><</a> <a class="button" href="Cape Girardeau County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="37934, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.1/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2357 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Maries County, Missouri, USA.html"><</a> <a class="button" href="Linn County, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="26137, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">75.09%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1864 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Whatcom County, Washington, USA.html"><</a> <a class="button" href="Young County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Donora borough, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">513 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall County, Alabama, USA.html"><</a> <a class="button" href="Moffat County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laguna-Pine Valley CCD, San Diego County, California, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.97%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1948 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bates County, Missouri, USA.html"><</a> <a class="button" href="Larimer County, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="07624, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">796 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deschutes County, Oregon, USA.html"><</a> <a class="button" href="Malheur County, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Libertytown CDP, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">345 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Arkansas, USA.html"><</a> <a class="button" href="Grant County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="96080, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.17%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">271 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hoonah-Angoon County, Alaska, USA.html"><</a> <a class="button" href="Plaquemines County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlsbad city, California, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.64%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">875 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York County, South Carolina, USA.html"><</a> <a class="button" href="Wexford County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Fennville city, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.658</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">563 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Linn County, Kansas, USA.html"><</a> <a class="button" href="Wheeler County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="24324, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">22.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">508 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ferry County, Washington, USA.html"><</a> <a class="button" href="West Feliciana County, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36871, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1307/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">862 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marquette County, Michigan, USA.html"><</a> <a class="button" href="Saginaw County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Robert city, Missouri, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">863/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">649 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stephenson County, Illinois, USA.html"><</a> <a class="button" href="Fulton County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morristown city, Tennessee, USA.html"><</a> <a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">496/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">582 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Davison County, South Dakota, USA.html"><</a> <a class="button" href="Webster County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="Norwalk city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">355/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">551 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Russell County, Alabama, USA.html"><</a> <a class="button" href="Radford County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, Arizona, USA.html"><</a> <a class="button" href="15701, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="California, USA.html">California</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Los Angeles-Long Beach CSA, California, USA.html">Los Angeles-Long Beach CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Arizona, USA.html">Arizona</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Riverside-San Bernardino-Ontario MSA, California, USA.html">Riverside-San Bernardino-Ontario MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Utah, USA.html">Utah</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Nevada, USA.html">Nevada</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Las Vegas-Henderson-Paradise MSA, Nevada, USA.html">Las Vegas-Henderson-Paradise MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clark County, Nevada, USA.html">Clark County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="San Bernardino County, California, USA.html">San Bernardino County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clark CCD, Clark County, Nevada, USA.html">Clark CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Prescott MSA, Arizona, USA.html">Prescott MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yavapai County, Arizona, USA.html">Yavapai County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">Lake Havasu City-Kingman MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Utah, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. George MSA, Utah, USA.html">St. George MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. George CCD, Washington County, Utah, USA.html">St. George CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coconino County, Arizona, USA.html">Coconino County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Flagstaff MSA, Arizona, USA.html">Flagstaff MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prescott CCD, Yavapai County, Arizona, USA.html">Prescott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. George city, Utah, USA.html">St. George city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kingman CCD, Mohave County, Arizona, USA.html">Kingman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bullhead City CCD, Mohave County, Arizona, USA.html">Bullhead City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake Havasu City CCD, Mohave County, Arizona, USA.html">Lake Havasu City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Havasu City city, Arizona, USA.html">Lake Havasu City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bullhead City city, Arizona, USA.html">Bullhead City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kingman city, Arizona, USA.html">Kingman city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hurricane CCD, Washington County, Utah, USA.html">Hurricane CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mesquite city, Nevada, USA.html">Mesquite city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="La Paz County, Arizona, USA.html">La Paz County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parker CCD, La Paz County, Arizona, USA.html">Parker CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fort Mohave CDP, Arizona, USA.html">Fort Mohave CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Kingman-Butler CDP, Arizona, USA.html">New Kingman-Butler CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williams CCD, Coconino County, Arizona, USA.html">Williams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Congress CCD, Yavapai County, Arizona, USA.html">Congress CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Golden Valley CDP, Arizona, USA.html">Golden Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laughlin CDP, Nevada, USA.html">Laughlin CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Mohave CCD, Mohave County, Arizona, USA.html">North Mohave CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kane County, Utah, USA.html">Kane County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Needles CCD, San Bernardino County, California, USA.html">Needles CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kanab CCD, Kane County, Utah, USA.html">Kanab CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Needles city, California, USA.html">Needles city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kanab city, Utah, USA.html">Kanab city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, Nevada, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Desert Hills CDP, Arizona, USA.html">Desert Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mohave Valley CDP, Arizona, USA.html">Mohave Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Colorado City town, Arizona, USA.html">Colorado City town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ash Fork CCD, Yavapai County, Arizona, USA.html">Ash Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kaibab Plateau CCD, Coconino County, Arizona, USA.html">Kaibab Plateau CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Golden Shores CDP, Arizona, USA.html">Golden Shores CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valle Vista CDP, Arizona, USA.html">Valle Vista CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dolan Springs CDP, Arizona, USA.html">Dolan Springs CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Centennial Park CDP, Arizona, USA.html">Centennial Park CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beaver Dam CDP, Arizona, USA.html">Beaver Dam CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Meadview CDP, Arizona, USA.html">Meadview CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fredonia town, Arizona, USA.html">Fredonia town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scenic CDP, Arizona, USA.html">Scenic CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hildale city, Utah, USA.html">Hildale city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peach Springs CDP, Arizona, USA.html">Peach Springs CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Willow Valley CDP, Arizona, USA.html">Willow Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Arizona Village CDP, Arizona, USA.html">Arizona Village CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caliente CCD, Lincoln County, Nevada, USA.html">Caliente CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parker Strip CDP, Arizona, USA.html">Parker Strip CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Walnut Creek CDP, Arizona, USA.html">Walnut Creek CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lazy Y U CDP, Arizona, USA.html">Lazy Y U CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cane Beds CDP, Arizona, USA.html">Cane Beds CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="So-Hi CDP, Arizona, USA.html">So-Hi CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mesquite Creek CDP, Arizona, USA.html">Mesquite Creek CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="White Hills CDP, Arizona, USA.html">White Hills CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Littlefield CDP, Arizona, USA.html">Littlefield CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crystal Beach CDP, Arizona, USA.html">Crystal Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chloride CDP, Arizona, USA.html">Chloride CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clacks Canyon CDP, Arizona, USA.html">Clacks Canyon CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pinion Pines CDP, Arizona, USA.html">Pinion Pines CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pine Lake CDP, Arizona, USA.html">Pine Lake CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kaibab CDP, Arizona, USA.html">Kaibab CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wikieup CDP, Arizona, USA.html">Wikieup CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Antares CDP, Arizona, USA.html">Antares CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Truxton CDP, Arizona, USA.html">Truxton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hackberry CDP, Arizona, USA.html">Hackberry CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oatman CDP, Arizona, USA.html">Oatman CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yucca CDP, Arizona, USA.html">Yucca CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Katherine CDP, Arizona, USA.html">Katherine CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="McConnico CDP, Arizona, USA.html">McConnico CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Moccasin CDP, Arizona, USA.html">Moccasin CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mojave Ranch Estates CDP, Arizona, USA.html">Mojave Ranch Estates CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valentine CDP, Arizona, USA.html">Valentine CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crozier CDP, Arizona, USA.html">Crozier CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hualapai CCD, Coconino County, Arizona, USA.html">Hualapai CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alamo Lake CDP, Arizona, USA.html">Alamo Lake CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Topock CDP, Arizona, USA.html">Topock CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Mohave County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

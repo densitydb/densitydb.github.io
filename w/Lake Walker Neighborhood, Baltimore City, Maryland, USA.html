@@ -1,0 +1,458 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lake Walker, Baltimore</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Lake Walker, Baltimore</div>
+    <div class="text longname">Lake Walker Neighborhood, Baltimore City, Maryland, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.0k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7960 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Parkside Neighborhood, Vancouver City, Washington, USA.html"><</a> <a class="button" href="Southwest Annex Neighborhood, Richmond City, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="49410, USA.html"><</a> <a class="button" href="Palmyra CCD, Lenawee County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3500/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2043 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Corner Neighborhood, Washington City, District of Columbia, USA.html"><</a> <a class="button" href="Corcoran Neighborhood, Minneapolis City, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Miami city, Florida, USA.html"><</a> <a class="button" href="Corcoran Neighborhood, Minneapolis City, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3904/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2189 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Joyland Neighborhood, Atlanta City, Georgia, USA.html"><</a> <a class="button" href="Pabst Park Neighborhood, Wauwatosa City, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Chester borough, Pennsylvania, USA.html"><</a> <a class="button" href="Pabst Park Neighborhood, Wauwatosa City, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">45.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9907 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tennessee Town Neighborhood, Topeka City, Kansas, USA.html"><</a> <a class="button" href="Nashboro Woods Neighborhood, Nashville City, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="99326, USA.html"><</a> <a class="button" href="Nashboro Woods Neighborhood, Nashville City, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.76%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">11996 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hunter Neighborhood, Reston City, Virginia, USA.html"><</a> <a class="button" href="South Valley Neighborhood, Syracuse City, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coldwater CCD, Comanche County, Kansas, USA.html"><</a> <a class="button" href="Reserve CDP, Louisiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">41.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2809 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brainerd Park Neighborhood, Chattanooga City, Tennessee, USA.html"><</a> <a class="button" href="Brookwood Neighborhood, Winston-Salem City, North Carolina, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="27957, USA.html"><</a> <a class="button" href="McCormick County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">6451 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wildwood Neighborhood, Charlotte City, North Carolina, USA.html"><</a> <a class="button" href="Hickory View Neighborhood, Nashville City, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alto CDP, California, USA.html"><</a> <a class="button" href="Indianapolis city (balance), Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.20%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">8436 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Northwest Manchester Neighborhood, Manchester City, New Hampshire, USA.html"><</a> <a class="button" href="Eiden Neighborhood, Brooklyn Park City, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="22520, USA.html"><</a> <a class="button" href="Mount Washington CCD, Bullitt County, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12539 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Newton Neighborhood, Indianapolis City, Indiana, USA.html"><</a> <a class="button" href="Eagle Ranch Neighborhood, Fort Worth City, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenfield city, Tennessee, USA.html"><</a> <a class="button" href="49410, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.59%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">11956 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stonegate Neighborhood, Bakersfield City, California, USA.html"><</a> <a class="button" href="Playland Neighborhood, Hollywood City, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="63775, USA.html"><</a> <a class="button" href="Playland Neighborhood, Hollywood City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.719</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1510 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Millenium Village Neighborhood, Detroit City, Michigan, USA.html"><</a> <a class="button" href="Downtown Neighborhood, Austin City, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shoshoni CCD, Fremont County, Wyoming, USA.html"><</a> <a class="button" href="Millenium Village Neighborhood, Detroit City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.53%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4457 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodsville Neighborhood, Haverhill City, New Hampshire, USA.html"><</a> <a class="button" href="Robinson's Addition Neighborhood, Jacksonville City, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilsonville CCD, Shelby County, Alabama, USA.html"><</a> <a class="button" href="Kenneth CCD, Sheridan County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3767/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">3717 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montecito slash Happy Valley Neighborhood, San Rafael City, California, USA.html"><</a> <a class="button" href="Westwood Neighborhood, Fort Collins City, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="32128, USA.html"><</a> <a class="button" href="95660, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3476/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2685 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tower Grove South Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="Bevo Mill Neighborhood, Saint Louis City, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tower Grove South Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="Bevo Mill Neighborhood, Saint Louis City, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3109/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2051 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rolando Park Neighborhood, San Diego City, Florida, USA.html"><</a> <a class="button" href="Upper B Street Neighborhood, Hayward City, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="89104, USA.html"><</a> <a class="button" href="80310, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2591/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2177 of 16511 Neighborhoods</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Missouri Botanical Garden Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="Marietta Street Artery Neighborhood, Atlanta City, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Missouri Botanical Garden Neighborhood, Saint Louis City, Missouri, USA.html"><</a> <a class="button" href="Marietta Street Artery Neighborhood, Atlanta City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Maryland, USA.html">Maryland</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Baltimore-Columbia-Towson MSA, Maryland, USA.html">Baltimore-Columbia-Towson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Baltimore CCD, Baltimore city, Maryland, USA.html">Baltimore CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Baltimore County, Maryland, USA.html">Baltimore County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baltimore city, Maryland, USA.html">Baltimore city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="9 CCD, Baltimore County, Maryland, USA.html">9 CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Towson CDP, Maryland, USA.html">Towson CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_zip" href="21212, USA.html">21212</a></li>
+
+
+<li class="linklistel"><a class="button b_zip" href="21239, USA.html">21239</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Glen Oaks Neighborhood, Baltimore City, Maryland, USA.html">Glen Oaks, Baltimore</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Chinquapin Park-Belvedere Neighborhood, Baltimore City, Maryland, USA.html">Chinquapin Park-Belvedere, Baltimore</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Cedarcroft Neighborhood, Baltimore City, Maryland, USA.html">Cedarcroft, Baltimore</a></li>
+
+
+<li class="linklistel"><a class="button b_neighborhood" href="Lake Evesham Neighborhood, Baltimore City, Maryland, USA.html">Lake Evesham, Baltimore</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Lake Walker, Baltimore's shape is Zillow. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

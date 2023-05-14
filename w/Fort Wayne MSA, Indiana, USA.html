@@ -1,0 +1,788 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fort Wayne MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Fort Wayne MSA</div>
+    <div class="text longname">Fort Wayne MSA, Indiana, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">447.8k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">100 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Maria-Santa Barbara MSA, California, USA.html"><</a> <a class="button" href="Corpus Christi MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Birmingham CCD, Jefferson County, Alabama, USA.html"><</a> <a class="button" href="Beaverton-Hillsboro CCD, Washington County, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">919/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">158 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. George MSA, Utah, USA.html"><</a> <a class="button" href="Utica-Rome MSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Old Town Neighborhood, Arlington City, Washington, USA.html"><</a> <a class="button" href="Bel-Nor village, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">126/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">83 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winston-Salem MSA, North Carolina, USA.html"><</a> <a class="button" href="Mobile MSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Des Lacs CCD, Ward County, North Dakota, USA.html"><</a> <a class="button" href="Miramiguoa Park village, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">73.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">474 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jonesboro MSA, Arkansas, USA.html"><</a> <a class="button" href="Mineral Wells MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wooded Area Neighborhood, San Diego City, California, USA.html"><</a> <a class="button" href="Missouri CCD, Boone County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">397 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington-Fayette MSA, Kentucky, USA.html"><</a> <a class="button" href="Lincoln MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Spring Ridge CDP, Maryland, USA.html"><</a> <a class="button" href="Highlands Neighborhood, Middletown City, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">233 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deltona-Daytona Beach-Ormond Beach MSA, Florida, USA.html"><</a> <a class="button" href="Freeport MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55402, USA.html"><</a> <a class="button" href="Colonial Village Neighborhood, Arlington City, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">92 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">89th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Buffalo-Cheektowaga-Niagara Falls MSA, New York, USA.html"><</a> <a class="button" href="Lincoln MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55057, USA.html"><</a> <a class="button" href="23112, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">550 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ames MSA, Iowa, USA.html"><</a> <a class="button" href="Wilmington MSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="93060, USA.html"><</a> <a class="button" href="Brooks CCD, Fayette County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">468 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sault Ste. Marie MSA, Michigan, USA.html"><</a> <a class="button" href="Sebastian-Vero Beach MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Emerson CCD, Bartow County, Georgia, USA.html"><</a> <a class="button" href="Chimney Rock CCD, Rutherford County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">265 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Midland MSA, Michigan, USA.html"><</a> <a class="button" href="Hannibal MSA, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wells CCD, Elko County, Nevada, USA.html"><</a> <a class="button" href="29634, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.565</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">477 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Austin MSA, Minnesota, USA.html"><</a> <a class="button" href="Coeur d'Alene MSA, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlisle CCD, Schoharie County, New York, USA.html"><</a> <a class="button" href="Winter Park city, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.62%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">782 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hartford-West Hartford-East Hartford MSA, Connecticut, USA.html"><</a> <a class="button" href="Cedar Rapids MSA, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Thalia Neighborhood, Virginia Beach City, Virginia, USA.html"><</a> <a class="button" href="Beloit city, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1710/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">225 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lynchburg MSA, Virginia, USA.html"><</a> <a class="button" href="Albany MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="11961, USA.html"><</a> <a class="button" href="11733, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1116/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">193 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hays MSA, Kansas, USA.html"><</a> <a class="button" href="Del Rio MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36066, USA.html"><</a> <a class="button" href="73096, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">778/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">127 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">85th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grand Junction MSA, Colorado, USA.html"><</a> <a class="button" href="Killeen-Temple MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="46368, USA.html"><</a> <a class="button" href="West End Neighborhood, Augusta City, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">634/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">107 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pueblo MSA, Colorado, USA.html"><</a> <a class="button" href="Bloomington MSA, Indiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pueblo MSA, Colorado, USA.html"><</a> <a class="button" href="Lake Tapawingo city, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Indiana, USA.html">Indiana</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Fort Wayne-Huntington-Auburn CSA, Indiana, USA.html">Fort Wayne-Huntington-Auburn CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Allen County, Indiana, USA.html">Allen County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fort Wayne city, Indiana, USA.html">Fort Wayne city</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Lima-Van Wert-Celina CSA, Ohio, USA.html">Lima-Van Wert-Celina CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne CCD, Allen County, Indiana, USA.html">Wayne CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kosciusko County, Indiana, USA.html">Kosciusko County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Warsaw MSA, Indiana, USA.html">Warsaw MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Joseph CCD, Allen County, Indiana, USA.html">St. Joseph CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Indiana, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Marion MSA, Indiana, USA.html">Marion MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Noble County, Indiana, USA.html">Noble County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Kendallville MSA, Indiana, USA.html">Kendallville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Auburn MSA, Indiana, USA.html">Auburn MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="DeKalb County, Indiana, USA.html">DeKalb County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Aboite CCD, Allen County, Indiana, USA.html">Aboite CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Allen County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Defiance County, Ohio, USA.html">Defiance County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Defiance MSA, Ohio, USA.html">Defiance MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry CCD, Allen County, Indiana, USA.html">Perry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Huntington MSA, Indiana, USA.html">Huntington MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Huntington County, Indiana, USA.html">Huntington County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Adams County, Indiana, USA.html">Adams County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Decatur MSA, Indiana, USA.html">Decatur MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams CCD, Allen County, Indiana, USA.html">Adams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Whitley County, Indiana, USA.html">Whitley County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Wabash MSA, Indiana, USA.html">Wabash MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wabash County, Indiana, USA.html">Wabash County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Van Wert MSA, Ohio, USA.html">Van Wert MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Van Wert County, Ohio, USA.html">Van Wert County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wells County, Indiana, USA.html">Wells County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jay County, Indiana, USA.html">Jay County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Paulding County, Ohio, USA.html">Paulding County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Haven city, Indiana, USA.html">New Haven city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar Creek CCD, Allen County, Indiana, USA.html">Cedar Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Blackford County, Indiana, USA.html">Blackford County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbia CCD, Whitley County, Indiana, USA.html">Columbia CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bluffton city, Indiana, USA.html">Bluffton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbia City city, Indiana, USA.html">Columbia City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Wells County, Indiana, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Huntertown town, Indiana, USA.html">Huntertown town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester CCD, Wabash County, Indiana, USA.html">Chester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tippecanoe CCD, Kosciusko County, Indiana, USA.html">Tippecanoe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lancaster CCD, Wells County, Indiana, USA.html">Lancaster CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Root CCD, Adams County, Indiana, USA.html">Root CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Wells County, Indiana, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smith CCD, Whitley County, Indiana, USA.html">Smith CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hicksville CCD, Defiance County, Ohio, USA.html">Hicksville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield CCD, Allen County, Indiana, USA.html">Springfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lafayette CCD, Allen County, Indiana, USA.html">Lafayette CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eel River CCD, Allen County, Indiana, USA.html">Eel River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Thorncreek CCD, Whitley County, Indiana, USA.html">Thorncreek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Huntington County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milan CCD, Allen County, Indiana, USA.html">Milan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion CCD, Allen County, Indiana, USA.html">Marion CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, DeKalb County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leo-Cedarville town, Indiana, USA.html">Leo-Cedarville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cleveland CCD, Whitley County, Indiana, USA.html">Cleveland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ossian town, Indiana, USA.html">Ossian town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Kosciusko County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Noble CCD, Noble County, Indiana, USA.html">Noble CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carryall CCD, Paulding County, Ohio, USA.html">Carryall CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant CCD, Allen County, Indiana, USA.html">Pleasant CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake CCD, Allen County, Indiana, USA.html">Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maumee CCD, Allen County, Indiana, USA.html">Maumee CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Whitley County, Indiana, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Blackford County, Indiana, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Swan CCD, Noble County, Indiana, USA.html">Swan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salamonie CCD, Huntington County, Indiana, USA.html">Salamonie CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Whitley County, Indiana, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Wells County, Indiana, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Allen County, Indiana, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Green CCD, Noble County, Indiana, USA.html">Green CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tully CCD, Van Wert County, Ohio, USA.html">Tully CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clear Creek CCD, Huntington County, Indiana, USA.html">Clear Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Allen County, Indiana, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Etna-Troy CCD, Whitley County, Indiana, USA.html">Etna-Troy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Churubusco town, Indiana, USA.html">Churubusco town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Van Buren CCD, Grant County, Indiana, USA.html">Van Buren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Whitley town, Indiana, USA.html">South Whitley town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland CCD, Whitley County, Indiana, USA.html">Richland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butler CCD, DeKalb County, Indiana, USA.html">Butler CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Allen County, Indiana, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Grant County, Indiana, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rockcreek CCD, Wells County, Indiana, USA.html">Rockcreek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Harlan CDP, Indiana, USA.html">Harlan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodburn city, Indiana, USA.html">Woodburn city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison CCD, Paulding County, Ohio, USA.html">Harrison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tri-Lakes CDP, Indiana, USA.html">Tri-Lakes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monroeville town, Indiana, USA.html">Monroeville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rock Creek CCD, Huntington County, Indiana, USA.html">Rock Creek CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Whitley County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="French CCD, Adams County, Indiana, USA.html">French CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Kosciusko County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Huntington County, Indiana, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spencer CCD, DeKalb County, Indiana, USA.html">Spencer CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Penn CCD, Jay County, Indiana, USA.html">Penn CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe CCD, Kosciusko County, Indiana, USA.html">Monroe CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grabill town, Indiana, USA.html">Grabill town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Noble County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Markle town, Indiana, USA.html">Markle town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty CCD, Wells County, Indiana, USA.html">Liberty CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Preble CCD, Adams County, Indiana, USA.html">Preble CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nottingham CCD, Wells County, Indiana, USA.html">Nottingham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Jay County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartford CCD, Adams County, Indiana, USA.html">Hartford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester CCD, Wells County, Indiana, USA.html">Chester CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kirkland CCD, Adams County, Indiana, USA.html">Kirkland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union CCD, Adams County, Indiana, USA.html">Union CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hoagland CDP, Indiana, USA.html">Hoagland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington CCD, Blackford County, Indiana, USA.html">Washington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Wells County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson CCD, Huntington County, Indiana, USA.html">Jefferson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Warren CCD, Huntington County, Indiana, USA.html">Warren CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Zanesville town, Indiana, USA.html">Zanesville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newville CCD, DeKalb County, Indiana, USA.html">Newville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson CCD, Allen County, Indiana, USA.html">Jackson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scipio CCD, Allen County, Indiana, USA.html">Scipio CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Uniondale town, Indiana, USA.html">Uniondale town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Larwill town, Indiana, USA.html">Larwill town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Poneto town, Indiana, USA.html">Poneto town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vera Cruz town, Indiana, USA.html">Vera Cruz town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Fort Wayne MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

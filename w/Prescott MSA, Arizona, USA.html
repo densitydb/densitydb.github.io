@@ -1,0 +1,584 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Prescott MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Prescott MSA</div>
+    <div class="text longname">Prescott MSA, Arizona, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">236.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">160 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Charlottesville MSA, Virginia, USA.html"><</a> <a class="button" href="Champaign-Urbana MSA, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="Champaign-Urbana MSA, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">556/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">404 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vincennes MSA, Indiana, USA.html"><</a> <a class="button" href="Hood River MSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lawyers Rd - Fox Mill Rd Neighborhood, Reston City, Virginia, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">746 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">15th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fernley MSA, Nevada, USA.html"><</a> <a class="button" href="Natchitoches MSA, Louisiana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="43728, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">77.60%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">393 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hickory-Lenoir-Morganton MSA, North Carolina, USA.html"><</a> <a class="button" href="Craig MSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Port St. John CDP, Florida, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.56%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">218 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Boulder MSA, Colorado, USA.html"><</a> <a class="button" href="Heber MSA, Utah, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="76432, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.60%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">770 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huntington MSA, Indiana, USA.html"><</a> <a class="button" href="Missoula MSA, Montana, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="02827, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">389 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hilton Head Island-Bluffton-Beaufort MSA, South Carolina, USA.html"><</a> <a class="button" href="Kearney MSA, Nebraska, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="Mars Hill town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">121 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sonora MSA, California, USA.html"><</a> <a class="button" href="Sherman-Denison MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="79544, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.11%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">165 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oklahoma City MSA, Oklahoma, USA.html"><</a> <a class="button" href="Coeur d'Alene MSA, Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="75165, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.54%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">319 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kennett MSA, Missouri, USA.html"><</a> <a class="button" href="Jonesboro MSA, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="University Park Neighborhood, Denver City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.607</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">178 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Casper MSA, Wyoming, USA.html"><</a> <a class="button" href="Greenville MSA, Mississippi, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="47847, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.72%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">234 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">73rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Toccoa MSA, Georgia, USA.html"><</a> <a class="button" href="Parsons MSA, Kansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="East Peralta Neighborhood, Oakland City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1318/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">392 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Austin MSA, Minnesota, USA.html"><</a> <a class="button" href="Frankfort MSA, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="79922, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">737/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">432 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">51st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pittsburg MSA, Kansas, USA.html"><</a> <a class="button" href="Panama City MSA, Florida, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="Punaluu CDP, Hawaii, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">416/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">371 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="La Grande MSA, Oregon, USA.html"><</a> <a class="button" href="New Castle MSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="53089, USA.html"><</a> <a class="button" href="Yavapai County, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">276/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">334 of 873 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sandusky MSA, Ohio, USA.html"><</a> <a class="button" href="Hereford MSA, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yavapai County, Arizona, USA.html"><</a> <a class="button" href="02675, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Arizona, USA.html">Arizona</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Phoenix-Mesa-Scottsdale MSA, Arizona, USA.html">Phoenix-Mesa-Scottsdale MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Maricopa County, Arizona, USA.html">Maricopa County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deer Valley CCD, Maricopa County, Arizona, USA.html">Deer Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yavapai County, Arizona, USA.html">Yavapai County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mohave County, Arizona, USA.html">Mohave County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Lake Havasu City-Kingman MSA, Arizona, USA.html">Lake Havasu City-Kingman MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peoria city, Arizona, USA.html">Peoria city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Flagstaff MSA, Arizona, USA.html">Flagstaff MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coconino County, Arizona, USA.html">Coconino County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prescott CCD, Yavapai County, Arizona, USA.html">Prescott CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wickenburg CCD, Maricopa County, Arizona, USA.html">Wickenburg CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flagstaff CCD, Coconino County, Arizona, USA.html">Flagstaff CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kingman CCD, Mohave County, Arizona, USA.html">Kingman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake Havasu City CCD, Mohave County, Arizona, USA.html">Lake Havasu City CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Payson MSA, Arizona, USA.html">Payson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gila County, Arizona, USA.html">Gila County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Prescott Valley town, Arizona, USA.html">Prescott Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Prescott city, Arizona, USA.html">Prescott city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mingus Mountain CCD, Yavapai County, Arizona, USA.html">Mingus Mountain CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camp Verde-Sedona CCD, Yavapai County, Arizona, USA.html">Camp Verde-Sedona CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Payson CCD, Gila County, Arizona, USA.html">Payson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parker CCD, La Paz County, Arizona, USA.html">Parker CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="La Paz County, Arizona, USA.html">La Paz County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chino Valley town, Arizona, USA.html">Chino Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonto National Forest CCD, Maricopa County, Arizona, USA.html">Tonto National Forest CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Camp Verde town, Arizona, USA.html">Camp Verde town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cottonwood city, Arizona, USA.html">Cottonwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Verde Village CDP, Arizona, USA.html">Verde Village CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Williams CCD, Coconino County, Arizona, USA.html">Williams CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Congress CCD, Yavapai County, Arizona, USA.html">Congress CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sedona city, Arizona, USA.html">Sedona city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wickenburg town, Arizona, USA.html">Wickenburg town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cordes Lakes-Mayer CCD, Yavapai County, Arizona, USA.html">Cordes Lakes-Mayer CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Williamson CDP, Arizona, USA.html">Williamson CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Village of Oak Creek (Big Park) CDP, Arizona, USA.html">Village of Oak Creek (Big Park) CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paulden CDP, Arizona, USA.html">Paulden CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Montezuma CDP, Arizona, USA.html">Lake Montezuma CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clarkdale town, Arizona, USA.html">Clarkdale town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dewey-Humboldt town, Arizona, USA.html">Dewey-Humboldt town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cornville CDP, Arizona, USA.html">Cornville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cordes Lakes CDP, Arizona, USA.html">Cordes Lakes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Black Canyon City CDP, Arizona, USA.html">Black Canyon City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ash Fork CCD, Yavapai County, Arizona, USA.html">Ash Fork CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bagdad CDP, Arizona, USA.html">Bagdad CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Congress CDP, Arizona, USA.html">Congress CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mayer CDP, Arizona, USA.html">Mayer CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Valley CDP, Arizona, USA.html">Spring Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wilhoit CDP, Arizona, USA.html">Wilhoit CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Yarnell CDP, Arizona, USA.html">Yarnell CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peeples Valley CDP, Arizona, USA.html">Peeples Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jerome town, Arizona, USA.html">Jerome town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seligman CDP, Arizona, USA.html">Seligman CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ash Fork CDP, Arizona, USA.html">Ash Fork CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hualapai CCD, Coconino County, Arizona, USA.html">Hualapai CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Prescott MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

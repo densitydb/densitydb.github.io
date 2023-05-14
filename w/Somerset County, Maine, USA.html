@@ -1,0 +1,674 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Somerset County</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Somerset County</div>
+    <div class="text longname">Somerset County, Maine, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">50.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">982 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbus County, North Carolina, USA.html"><</a> <a class="button" href="Venango County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eagle CCD, Ada County, Idaho, USA.html"><</a> <a class="button" href="93003, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">154/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2241 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cimarron County, Oklahoma, USA.html"><</a> <a class="button" href="Delaware County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hamersville village, Ohio, USA.html"><</a> <a class="button" href="62272, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.8/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2485 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clay County, Kansas, USA.html"><</a> <a class="button" href="Wayne County, Iowa, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Superior CCD, Chippewa County, Michigan, USA.html"><</a> <a class="button" href="Williamsburg CCD, Franklin County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">92.94%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">395 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jennings County, Indiana, USA.html"><</a> <a class="button" href="Lake of the Woods County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monmouth CCD, Kennebec County, Maine, USA.html"><</a> <a class="button" href="Moonshine CCD, Big Stone County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2927 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington County, Mississippi, USA.html"><</a> <a class="button" href="Fayette County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="03240, USA.html"><</a> <a class="button" href="5 CCD, Itawamba County, Mississippi, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.49%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2361 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">25th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Redwood County, Minnesota, USA.html"><</a> <a class="button" href="Menifee County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="99323, USA.html"><</a> <a class="button" href="Deerfield CCD, Isabella County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.52%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1654 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wright County, Iowa, USA.html"><</a> <a class="button" href="Camden County, Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="32656, USA.html"><</a> <a class="button" href="Ashton village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.42%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1083 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Saline County, Arkansas, USA.html"><</a> <a class="button" href="Lonoke County, Arkansas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="13212, USA.html"><</a> <a class="button" href="65810, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1614 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carroll County, Kentucky, USA.html"><</a> <a class="button" href="Windsor County, Vermont, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Jefferson CCD, Jefferson County, Kentucky, USA.html"><</a> <a class="button" href="31620, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.30%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1155 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrisonburg County, Virginia, USA.html"><</a> <a class="button" href="Wood County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pratt CCD, Pratt County, Kansas, USA.html"><</a> <a class="button" href="Franklin city, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.710</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">311 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Decatur County, Tennessee, USA.html"><</a> <a class="button" href="Douglas County, Minnesota, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="88401, USA.html"><</a> <a class="button" href="Niantic CDP, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">24.77%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">399 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pendleton County, West Virginia, USA.html"><</a> <a class="button" href="Seminole County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="37657, USA.html"><</a> <a class="button" href="Goshen CCD, Northwest Hills Planning Region, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">590/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2052 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sutton County, Texas, USA.html"><</a> <a class="button" href="Adair County, Kentucky, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Marshall CCD, Marshall County, Oklahoma, USA.html"><</a> <a class="button" href="Rock Lick CCD, Buchanan County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">265/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2254 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lincoln County, Idaho, USA.html"><</a> <a class="button" href="Lewis County, West Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="6 CCD, Hickman County, Tennessee, USA.html"><</a> <a class="button" href="Lockhart town, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">91/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2106 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe County, Arkansas, USA.html"><</a> <a class="button" href="Washita County, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="88043, USA.html"><</a> <a class="button" href="Chugach CCD, Chugach Census Area, Alaska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">52/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1936 of 3142 Counties</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dade County, Georgia, USA.html"><</a> <a class="button" href="Franklin County, Virginia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="74010, USA.html"><</a> <a class="button" href="San Augustine city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Maine, USA.html">Maine</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Penobscot County, Maine, USA.html">Penobscot County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Bangor MSA, Maine, USA.html">Bangor MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kennebec County, Maine, USA.html">Kennebec County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Augusta-Waterville MSA, Maine, USA.html">Augusta-Waterville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Aroostook County, Maine, USA.html">Aroostook County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Waldo County, Maine, USA.html">Waldo County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Franklin County, Maine, USA.html">Franklin County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Piscataquis County, Maine, USA.html">Piscataquis County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waterville CCD, Kennebec County, Maine, USA.html">Waterville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waterville city, Maine, USA.html">Waterville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Skowhegan CCD, Somerset County, Maine, USA.html">Skowhegan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Winslow CDP, Maine, USA.html">Winslow CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winslow CCD, Kennebec County, Maine, USA.html">Winslow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield CCD, Somerset County, Maine, USA.html">Fairfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Skowhegan CDP, Maine, USA.html">Skowhegan CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oakland CCD, Kennebec County, Maine, USA.html">Oakland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison CCD, Somerset County, Maine, USA.html">Madison CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pittsfield CCD, Somerset County, Maine, USA.html">Pittsfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dexter CCD, Penobscot County, Maine, USA.html">Dexter CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clinton CCD, Kennebec County, Maine, USA.html">Clinton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norridgewock CCD, Somerset County, Maine, USA.html">Norridgewock CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Belgrade CCD, Kennebec County, Maine, USA.html">Belgrade CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newport CCD, Penobscot County, Maine, USA.html">Newport CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pittsfield CDP, Maine, USA.html">Pittsfield CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton CCD, Kennebec County, Maine, USA.html">Benton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairfield CDP, Maine, USA.html">Fairfield CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Madison CDP, Maine, USA.html">Madison CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Anson CCD, Somerset County, Maine, USA.html">Anson CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canaan CCD, Somerset County, Maine, USA.html">Canaan CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Albans CCD, Somerset County, Maine, USA.html">St. Albans CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palmyra CCD, Somerset County, Maine, USA.html">Palmyra CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartland CCD, Somerset County, Maine, USA.html">Hartland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newport CDP, Maine, USA.html">Newport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Sharon CCD, Franklin County, Maine, USA.html">New Sharon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norridgewock CDP, Maine, USA.html">Norridgewock CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plymouth CCD, Penobscot County, Maine, USA.html">Plymouth CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cornville CCD, Somerset County, Maine, USA.html">Cornville CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rome CCD, Kennebec County, Maine, USA.html">Rome CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnham CCD, Waldo County, Maine, USA.html">Burnham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troy CCD, Waldo County, Maine, USA.html">Troy CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Solon CCD, Somerset County, Maine, USA.html">Solon CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kingfield CCD, Franklin County, Maine, USA.html">Kingfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Athens CCD, Somerset County, Maine, USA.html">Athens CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smithfield CCD, Somerset County, Maine, USA.html">Smithfield CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Embden CCD, Somerset County, Maine, USA.html">Embden CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Detroit CCD, Somerset County, Maine, USA.html">Detroit CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bingham CCD, Somerset County, Maine, USA.html">Bingham CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harmony CCD, Somerset County, Maine, USA.html">Harmony CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Central Franklin CCD, Franklin County, Maine, USA.html">East Central Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Industry CCD, Franklin County, Maine, USA.html">Industry CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackman CCD, Somerset County, Maine, USA.html">Jackman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Portland CCD, Somerset County, Maine, USA.html">New Portland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hartland CDP, Maine, USA.html">Hartland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Parkman CCD, Piscataquis County, Maine, USA.html">Parkman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Vineyard CCD, Franklin County, Maine, USA.html">New Vineyard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bingham CDP, Maine, USA.html">Bingham CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mercer CCD, Somerset County, Maine, USA.html">Mercer CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Anson CDP, Maine, USA.html">Anson CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carrabassett Valley CCD, Franklin County, Maine, USA.html">Carrabassett Valley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eustis CCD, Franklin County, Maine, USA.html">Eustis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Starks CCD, Somerset County, Maine, USA.html">Starks CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ripley CCD, Somerset County, Maine, USA.html">Ripley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moscow CCD, Somerset County, Maine, USA.html">Moscow CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cambridge CCD, Somerset County, Maine, USA.html">Cambridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northeast Somerset CCD, Somerset County, Maine, USA.html">Northeast Somerset CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Central Somerset CCD, Somerset County, Maine, USA.html">Central Somerset CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shirley CCD, Piscataquis County, Maine, USA.html">Shirley CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wellington CCD, Piscataquis County, Maine, USA.html">Wellington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moose River CCD, Somerset County, Maine, USA.html">Moose River CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Piscataquis CCD, Piscataquis County, Maine, USA.html">Northwest Piscataquis CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blanchard CCD, Piscataquis County, Maine, USA.html">Blanchard CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Ridge CCD, Somerset County, Maine, USA.html">Pleasant Ridge CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyman CCD, Franklin County, Maine, USA.html">Wyman CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caratunk CCD, Somerset County, Maine, USA.html">Caratunk CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brighton CCD, Somerset County, Maine, USA.html">Brighton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dennistown CCD, Somerset County, Maine, USA.html">Dennistown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Forks CCD, Somerset County, Maine, USA.html">West Forks CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Highland CCD, Somerset County, Maine, USA.html">Highland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="The Forks CCD, Somerset County, Maine, USA.html">The Forks CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Somerset CCD, Somerset County, Maine, USA.html">Northwest Somerset CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Franklin CCD, Franklin County, Maine, USA.html">North Franklin CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kingsbury CCD, Piscataquis County, Maine, USA.html">Kingsbury CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seboomook Lake CCD, Somerset County, Maine, USA.html">Seboomook Lake CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Aroostook CCD, Aroostook County, Maine, USA.html">Northwest Aroostook CCD</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Somerset County's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>
