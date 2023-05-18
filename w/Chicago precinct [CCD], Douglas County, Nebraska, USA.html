@@ -1,0 +1,452 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chicago precinct</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Chicago precinct</div>
+    <div class="text longname">Chicago precinct [CCD], Douglas County, Nebraska, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">37.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1522 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange township [CCD], Delaware County, Ohio, USA.html"><</a> <a class="button" href="East Point CCD [CCD], Fulton County, Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77571, USA.html"><</a> <a class="button" href="East Point CCD [CCD], Fulton County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1100/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1902 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Farmington city [CCD], Dakota County, Minnesota, USA.html"><</a> <a class="button" href="Grandville city [CCD], Kent County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92585, USA.html"><</a> <a class="button" href="Bradley Neighborhood, Columbia City, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">588/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2769 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Miami township [CCD], Montgomery County, Ohio, USA.html"><</a> <a class="button" href="Lower Pottsgrove township [CCD], Montgomery County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Emory Place Neighborhood, Fort Worth City, Texas, USA.html"><</a> <a class="button" href="80623, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">25197 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Greenbush town [CCD], Rensselaer County, New York, USA.html"><</a> <a class="button" href="Venice town [CCD], Cayuga County, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lakewood CDP, New Jersey, USA.html"><</a> <a class="button" href="Venice town [CCD], Cayuga County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.21%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">11014 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pottawatomie township [CCD], Pottawatomie County, Kansas, USA.html"><</a> <a class="button" href="Makanda township [CCD], Jackson County, Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Troy city, Missouri, USA.html"><</a> <a class="button" href="53531, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.64%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">9926 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Byram township [CCD], Sussex County, New Jersey, USA.html"><</a> <a class="button" href="Lueders CCD [CCD], Jones County, Texas, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="80241, USA.html"><</a> <a class="button" href="Wilton Center CDP, Connecticut, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.23%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1093 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cheshire town [CCD], Naugatuck Valley Planning Region, Connecticut, USA.html"><</a> <a class="button" href="Turlock CCD [CCD], Stanislaus County, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Granger CDP, Indiana, USA.html"><</a> <a class="button" href="Owens Park Neighborhood, Richardson City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">20354 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sharon township [CCD], Richland County, Ohio, USA.html"><</a> <a class="button" href="District 28 [CCD], Davidson County, Tennessee, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77477, USA.html"><</a> <a class="button" href="Orono city, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">7563 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williams district [CCD], Wood County, West Virginia, USA.html"><</a> <a class="button" href="Holmen village [CCD], La Crosse County, Wisconsin, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="30582, USA.html"><</a> <a class="button" href="Southside Neighborhood, Muncie City, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">12756 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 10 [CCD], Iberia Parish, Louisiana, USA.html"><</a> <a class="button" href="Seneca township [CCD], Lenawee County, Michigan, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="54914, USA.html"><</a> <a class="button" href="Shorter town, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.533</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">25409 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington precinct [CCD], Dawson County, Nebraska, USA.html"><</a> <a class="button" href="Wayne township [CCD], Adams County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="77080, USA.html"><</a> <a class="button" href="Wayne township [CCD], Adams County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">31923 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Linn township [CCD], Linn County, Iowa, USA.html"><</a> <a class="button" href="Issaquah Plateau CCD [CCD], King County, Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lucas city, Texas, USA.html"><</a> <a class="button" href="Issaquah Plateau CCD [CCD], King County, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1960/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2711 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tredyffrin township [CCD], Chester County, Pennsylvania, USA.html"><</a> <a class="button" href="Wooster city [CCD], Wayne County, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="68528, USA.html"><</a> <a class="button" href="Boulevard District Neighborhood, Aurora City, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1422/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1952 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">94th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palmerton borough [CCD], Carbon County, Pennsylvania, USA.html"><</a> <a class="button" href="District 10, Funkstown [CCD], Washington County, Maryland, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Palmerton borough [CCD], Carbon County, Pennsylvania, USA.html"><</a> <a class="button" href="District 10, Funkstown [CCD], Washington County, Maryland, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">918/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1767 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Deptford township [CCD], Gloucester County, New Jersey, USA.html"><</a> <a class="button" href="Red Lion borough [CCD], York County, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36617, USA.html"><</a> <a class="button" href="Historic Seaport Neighborhood, Key West City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">809/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1522 of 35405 CCDs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bellingham CCD [CCD], Whatcom County, Washington, USA.html"><</a> <a class="button" href="Raritan borough [CCD], Somerset County, New Jersey, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indian Hills Neighborhood, Edina City, Minnesota, USA.html"><</a> <a class="button" href="53130, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Nebraska, USA.html">Nebraska</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Douglas County, Nebraska, USA.html">Douglas County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Omaha city [CCD], Douglas County, Nebraska, USA.html">Omaha city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Omaha city, Nebraska, USA.html">Omaha city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sarpy County, Nebraska, USA.html">Sarpy County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson precinct [CCD], Douglas County, Nebraska, USA.html">Jefferson precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland VII precinct [CCD], Sarpy County, Nebraska, USA.html">Richland VII precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Melia-Forest City precinct [CCD], Sarpy County, Nebraska, USA.html">Melia-Forest City precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McArdle precinct [CCD], Douglas County, Nebraska, USA.html">McArdle precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waterloo precinct [CCD], Douglas County, Nebraska, USA.html">Waterloo precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elkhorn precinct [CCD], Douglas County, Nebraska, USA.html">Elkhorn precinct</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Chicago precinct's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>
