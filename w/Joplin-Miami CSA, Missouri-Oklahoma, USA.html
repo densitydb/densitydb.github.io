@@ -1,0 +1,839 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Joplin-Miami CSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Joplin-Miami CSA</div>
+    <div class="text longname">Joplin-Miami CSA, Missouri-Oklahoma, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">211.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">136 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenville-Washington CSA, North Carolina, USA.html"><</a> <a class="button" href="Johnstown-Somerset CSA, Pennsylvania, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York County, Maine, USA.html"><</a> <a class="button" href="Okaloosa County, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">506/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">143 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jackson-Vicksburg-Brookhaven CSA, Mississippi, USA.html"><</a> <a class="button" href="Edwards-Glenwood Springs CSA, Colorado, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baker County, Oregon, USA.html"><</a> <a class="button" href="Burnham borough [CCD], Mifflin County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">47/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">107 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia-Moberly-Mexico CSA, Missouri, USA.html"><</a> <a class="button" href="Findlay-Tiffin CSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Athens North No. 2 precinct [CCD], Menard County, Illinois, USA.html"><</a> <a class="button" href="Michie town, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">76.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">65 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ithaca-Cortland CSA, New York, USA.html"><</a> <a class="button" href="Davenport-Moline CSA, Iowa-Illinois, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte township [CCD], Dodge County, Nebraska, USA.html"><</a> <a class="button" href="Precinct 12 [CCD], Buffalo County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.88%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">79 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indianapolis-Carmel-Muncie CSA, Indiana, USA.html"><</a> <a class="button" href="Rochester-Batavia-Seneca Falls CSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blaine city, Washington, USA.html"><</a> <a class="button" href="North Beach Neighborhood, San Francisco City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.45%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">154 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pullman-Moscow CSA, Washington-Idaho, USA.html"><</a> <a class="button" href="Spokane-Spokane Valley-Coeur d'Alene CSA, Washington-Idaho, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="12033, USA.html"><</a> <a class="button" href="Royal Kunia CDP, Hawaii, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">137 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bloomsburg-Berwick-Sunbury CSA, Pennsylvania, USA.html"><</a> <a class="button" href="Bend-Redmond-Prineville CSA, Oregon, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Middlebury town, Indiana, USA.html"><</a> <a class="button" href="Colusa County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albuquerque-Santa Fe-Las Vegas CSA, New Mexico, USA.html"><</a> <a class="button" href="Oklahoma City-Shawnee CSA, Oklahoma, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Howard Neighborhood, Green Bay City, Wisconsin, USA.html"><</a> <a class="button" href="Raeford township [CCD], Hoke County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">5 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Las Vegas-Henderson CSA, Nevada-Arizona, USA.html"><</a> <a class="button" href="Portland-Vancouver-Salem CSA, Oregon-Washington, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eastridge Neighborhood, Mesa City, Arizona, USA.html"><</a> <a class="button" href="Montavilla Neighborhood, Portland City, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.76%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">4 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Seattle-Tacoma CSA, Washington, USA.html"><</a> <a class="button" href="Redding-Red Bluff CSA, California, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union Square Neighborhood, Somerville City, Massachusetts, USA.html"><</a> <a class="button" href="Westpark Neighborhood, Roseville City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.567</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">69 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wichita-Arkansas City-Winfield CSA, Kansas, USA.html"><</a> <a class="button" href="Syracuse-Auburn CSA, New York, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Belle Center village, Ohio, USA.html"><</a> <a class="button" href="Manning East CCD [CCD], Clarendon County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">80 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Las Vegas-Henderson CSA, Nevada-Arizona, USA.html"><</a> <a class="button" href="Jacksonville-St. Marys-Palatka CSA, Florida-Georgia, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Delaware Park Neighborhood, Buffalo City, New York, USA.html"><</a> <a class="button" href="Salem township [CCD], Granville County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">983/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">161 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rocky Mount-Wilson-Roanoke Rapids CSA, North Carolina, USA.html"><</a> <a class="button" href="Quincy-Hannibal CSA, Illinois-Missouri, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pike County, Kentucky, USA.html"><</a> <a class="button" href="94951, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">647/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">152 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe-Ruston-Bastrop CSA, Louisiana, USA.html"><</a> <a class="button" href="Huntsville-Decatur-Albertville CSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Baraboo village, Wisconsin, USA.html"><</a> <a class="button" href="Kilgore city, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">389/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">141 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lima-Van Wert-Celina CSA, Ohio, USA.html"><</a> <a class="button" href="Huntsville-Decatur-Albertville CSA, Alabama, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clarion borough [CCD], Clarion County, Pennsylvania, USA.html"><</a> <a class="button" href="Estacada city, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">270/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">140 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe-Ruston-Bastrop CSA, Louisiana, USA.html"><</a> <a class="button" href="Mansfield-Ashland-Bucyrus CSA, Ohio, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pelican Bay Neighborhood, Azle City, Texas, USA.html"><</a> <a class="button" href="Orosi-Cutler CCD [CCD], Tulare County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Missouri, USA.html">Missouri</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Oklahoma, USA.html">Oklahoma</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Kansas, USA.html">Kansas</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Fayetteville-Springdale-Rogers MSA, Arkansas-Missouri, USA.html">Fayetteville-Springdale-Rogers MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Joplin MSA, Missouri, USA.html">Joplin MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jasper County, Missouri, USA.html">Jasper County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Newton County, Missouri, USA.html">Newton County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Joplin city, Missouri, USA.html">Joplin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Joplin township [CCD], Jasper County, Missouri, USA.html">Joplin township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Delaware County, Oklahoma, USA.html">Delaware County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Crawford County, Kansas, USA.html">Crawford County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pittsburg MSA, Kansas, USA.html">Pittsburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lawrence County, Missouri, USA.html">Lawrence County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barry County, Missouri, USA.html">Barry County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Miami MSA, Oklahoma, USA.html">Miami MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ottawa County, Oklahoma, USA.html">Ottawa County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Galena township [CCD], Jasper County, Missouri, USA.html">Galena township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McDonald County, Missouri, USA.html">McDonald County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grove CCD [CCD], Delaware County, Oklahoma, USA.html">Grove CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cherokee County, Kansas, USA.html">Cherokee County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Miami CCD [CCD], Ottawa County, Oklahoma, USA.html">Miami CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Neosho township [CCD], Newton County, Missouri, USA.html">Neosho township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion township [CCD], Jasper County, Missouri, USA.html">Marion township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carthage city, Missouri, USA.html">Carthage city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Craig County, Oklahoma, USA.html">Craig County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shoal Creek township [CCD], Newton County, Missouri, USA.html">Shoal Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Webb City city, Missouri, USA.html">Webb City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Miami city, Oklahoma, USA.html">Miami city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Neosho city, Missouri, USA.html">Neosho city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Barton County, Missouri, USA.html">Barton County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mineral township [CCD], Jasper County, Missouri, USA.html">Mineral township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vinita East CCD [CCD], Craig County, Oklahoma, USA.html">Vinita East CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carl Junction city, Missouri, USA.html">Carl Junction city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dade County, Missouri, USA.html">Dade County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Twin Groves township [CCD], Jasper County, Missouri, USA.html">Twin Groves township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pierce township [CCD], Lawrence County, Missouri, USA.html">Pierce township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Jasper County, Missouri, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granby township [CCD], Newton County, Missouri, USA.html">Granby township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Five Mile township [CCD], Newton County, Missouri, USA.html">Five Mile township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Afton-Fairland CCD [CCD], Ottawa County, Oklahoma, USA.html">Afton-Fairland CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Baxter Springs city [CCD], Cherokee County, Kansas, USA.html">Baxter Springs city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Baxter Springs city, Kansas, USA.html">Baxter Springs city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Quapaw CCD [CCD], Ottawa County, Oklahoma, USA.html">Quapaw CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion township [CCD], Newton County, Missouri, USA.html">Marion township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Baker township [CCD], Crawford County, Kansas, USA.html">Baker township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyandotte CCD [CCD], Ottawa County, Oklahoma, USA.html">Wyandotte CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seneca township [CCD], Newton County, Missouri, USA.html">Seneca township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Craig CCD [CCD], Craig County, Oklahoma, USA.html">North Craig CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sarcoxie township [CCD], Jasper County, Missouri, USA.html">Sarcoxie township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Galena city, Kansas, USA.html">Galena city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Galena city [CCD], Cherokee County, Kansas, USA.html">Galena city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garden township [CCD], Cherokee County, Kansas, USA.html">Garden township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Benton township [CCD], Newton County, Missouri, USA.html">West Benton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison township [CCD], Jasper County, Missouri, USA.html">Madison township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oronogo city, Missouri, USA.html">Oronogo city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Jasper County, Missouri, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seneca city, Missouri, USA.html">Seneca city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buffalo township [CCD], Newton County, Missouri, USA.html">Buffalo township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Commerce city, Oklahoma, USA.html">Commerce city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Erie Goodman township [CCD], McDonald County, Missouri, USA.html">Erie Goodman township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Granby city, Missouri, USA.html">Granby city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Duquesne village, Missouri, USA.html">Duquesne village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carterville city, Missouri, USA.html">Carterville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin township [CCD], Newton County, Missouri, USA.html">Franklin township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Copeland CDP, Oklahoma, USA.html">Copeland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Duenweg city, Missouri, USA.html">Duenweg city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Preston township [CCD], Jasper County, Missouri, USA.html">Preston township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton township [CCD], Newton County, Missouri, USA.html">Dayton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elk Horn township [CCD], McDonald County, Missouri, USA.html">Elk Horn township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sarcoxie city, Missouri, USA.html">Sarcoxie city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Van Buren township [CCD], Newton County, Missouri, USA.html">Van Buren township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairland town, Oklahoma, USA.html">Fairland town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheaton township [CCD], Barry County, Missouri, USA.html">Wheaton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Valley township [CCD], Cherokee County, Kansas, USA.html">Spring Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vineyard township [CCD], Lawrence County, Missouri, USA.html">Vineyard township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Golden City township [CCD], Barton County, Missouri, USA.html">Golden City township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loma Linda town, Missouri, USA.html">Loma Linda town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Duval township [CCD], Jasper County, Missouri, USA.html">Duval township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jasper city, Missouri, USA.html">Jasper city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Pleasant township [CCD], Lawrence County, Missouri, USA.html">Mount Pleasant township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Diamond town, Missouri, USA.html">Diamond town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Quapaw town, Oklahoma, USA.html">Quapaw town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McDonald township [CCD], Jasper County, Missouri, USA.html">McDonald township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Airport Drive village, Missouri, USA.html">Airport Drive village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newtonia township [CCD], Newton County, Missouri, USA.html">Newtonia township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Afton town, Oklahoma, USA.html">Afton town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wheaton city, Missouri, USA.html">Wheaton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lowell township [CCD], Cherokee County, Kansas, USA.html">Lowell township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton township [CCD], Newton County, Missouri, USA.html">Benton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richwood township [CCD], McDonald County, Missouri, USA.html">Richwood township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Leawood village, Missouri, USA.html">Leawood village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant View township [CCD], Cherokee County, Kansas, USA.html">Pleasant View township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Capps Creek township [CCD], Barry County, Missouri, USA.html">Capps Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jasper township [CCD], Jasper County, Missouri, USA.html">Jasper township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South West township [CCD], Barton County, Missouri, USA.html">South West township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shawnee township [CCD], Cherokee County, Kansas, USA.html">Shawnee township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alba city, Missouri, USA.html">Alba city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buffalo May township [CCD], McDonald County, Missouri, USA.html">Buffalo May township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Barton County, Missouri, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="McMillen Tiff township [CCD], McDonald County, Missouri, USA.html">McMillen Tiff township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Erie McNatt township [CCD], McDonald County, Missouri, USA.html">Erie McNatt township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairview town, Missouri, USA.html">Fairview town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sheridan township [CCD], Jasper County, Missouri, USA.html">Sheridan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Red Oak township [CCD], Lawrence County, Missouri, USA.html">Red Oak township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berwick township [CCD], Newton County, Missouri, USA.html">Berwick township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buffalo Hart township [CCD], McDonald County, Missouri, USA.html">Buffalo Hart township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nashville township [CCD], Barton County, Missouri, USA.html">Nashville township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shoal Creek Drive village, Missouri, USA.html">Shoal Creek Drive village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyon township [CCD], Cherokee County, Kansas, USA.html">Lyon township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Purcell city, Missouri, USA.html">Purcell city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northfork township [CCD], Barton County, Missouri, USA.html">Northfork township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wyandotte town, Oklahoma, USA.html">Wyandotte town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Saginaw village, Missouri, USA.html">Saginaw village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carytown city, Missouri, USA.html">Carytown city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Miami town, Oklahoma, USA.html">North Miami town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln township [CCD], Jasper County, Missouri, USA.html">Lincoln township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Neck City city, Missouri, USA.html">Neck City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fidelity town, Missouri, USA.html">Fidelity town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Neosho township [CCD], Cherokee County, Kansas, USA.html">Neosho township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newtonia town, Missouri, USA.html">Newtonia town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grant township [CCD], Dade County, Missouri, USA.html">Grant township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Asbury city, Missouri, USA.html">Asbury city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pioneer township [CCD], Barry County, Missouri, USA.html">Pioneer township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stella town, Missouri, USA.html">Stella town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Redings Mill village, Missouri, USA.html">Redings Mill village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Russell city, Missouri, USA.html">La Russell city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Peoria town, Oklahoma, USA.html">Peoria town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stark City town, Missouri, USA.html">Stark City town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shoal Creek Estates village, Missouri, USA.html">Shoal Creek Estates village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Avilla town, Missouri, USA.html">Avilla town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Grand Falls Plaza town, Missouri, USA.html">Grand Falls Plaza town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brooklyn Heights town, Missouri, USA.html">Brooklyn Heights town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wentworth village, Missouri, USA.html">Wentworth village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Narcissa CDP, Oklahoma, USA.html">Narcissa CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Reeds town, Missouri, USA.html">Reeds town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dotyville CDP, Oklahoma, USA.html">Dotyville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waco city, Missouri, USA.html">Waco city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ritchey town, Missouri, USA.html">Ritchey town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dennis Acres village, Missouri, USA.html">Dennis Acres village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cliff Village village, Missouri, USA.html">Cliff Village village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Joplin-Miami CSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>
