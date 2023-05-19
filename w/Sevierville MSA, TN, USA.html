@@ -1,0 +1,551 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sevierville MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Sevierville MSA</div>
+    <div class="text longname">Sevierville MSA, TN, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">98.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">393 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ames MSA, IA, USA.html"><</a> <a class="button" href="Victoria MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burleigh County, North Dakota, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">238/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">848 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Malvern MSA, AR, USA.html"><</a> <a class="button" href="North Vernon MSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Tennessee, USA.html"><</a> <a class="button" href="82426, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">64/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">229 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond MSA, IN, USA.html"><</a> <a class="button" href="New Philadelphia-Dover MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond MSA, IN, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">85.18%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">239 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Atchison MSA, KS, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 5 [CCD], Franklin County, Mississippi, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.76%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">383 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newberry MSA, SC, USA.html"><</a> <a class="button" href="Henderson MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Tennessee, USA.html"><</a> <a class="button" href="Adrian township [CCD], Lenawee County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.78%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">788 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Santa Fe MSA, NM, USA.html"><</a> <a class="button" href="Lewistown MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Craigsville town, Virginia, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">438 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oskaloosa MSA, IA, USA.html"><</a> <a class="button" href="Coos Bay MSA, OR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Tennessee, USA.html"><</a> <a class="button" href="Lexington city [CCD], Dawson County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">428 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond MSA, VA, USA.html"><</a> <a class="button" href="Lynchburg MSA, VA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sunburst Neighborhood, Aurora City, Colorado, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">638 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McMinnville MSA, TN, USA.html"><</a> <a class="button" href="Rome MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="05255, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.82%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">571 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon MSA, OH, USA.html"><</a> <a class="button" href="Martinsville MSA, VA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Tennessee, USA.html"><</a> <a class="button" href="Jackson Triangle Neighborhood, Hayward City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.709</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">31 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexandria MSA, MN, USA.html"><</a> <a class="button" href="Grand Rapids MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kenai-Cook Inlet census subarea [CCD], Kenai Peninsula Borough, Alaska, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">28.99%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">29 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">97th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport MSA, OR, USA.html"><</a> <a class="button" href="Ludington MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakdale Neighborhood, Mobile City, Alabama, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1092/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">560 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Easton MSA, MD, USA.html"><</a> <a class="button" href="Ottawa-Peru MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="29376, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">403/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">814 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Decatur MSA, IN, USA.html"><</a> <a class="button" href="Calhoun MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Arapahoe precinct [CCD], Furnas County, Nebraska, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">190/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">815 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Toccoa MSA, GA, USA.html"><</a> <a class="button" href="West Point MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mayfield township [CCD], Lapeer County, Michigan, USA.html"><</a> <a class="button" href="Sevier County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">151/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">653 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hutchinson MSA, MN, USA.html"><</a> <a class="button" href="Zapata MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sevier County, Tennessee, USA.html"><</a> <a class="button" href="Fieldale CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="North Carolina, USA.html">North Carolina</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Tennessee, USA.html">Tennessee</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Knoxville-Morristown-Sevierville CSA, TN, USA.html">Knoxville-Morristown-Sevierville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Knoxville MSA, TN, USA.html">Knoxville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Asheville-Brevard CSA, NC, USA.html">Asheville-Brevard CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Knox County, Tennessee, USA.html">Knox County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Asheville MSA, NC, USA.html">Asheville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Blount County, Tennessee, USA.html">Blount County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Morristown MSA, TN, USA.html">Morristown MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sevier County, Tennessee, USA.html">Sevier County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Haywood County, North Carolina, USA.html">Haywood County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Tennessee, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8 [CCD], Knox County, Tennessee, USA.html">District 8</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 9 [CCD], Knox County, Tennessee, USA.html">District 9</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cocke County, Tennessee, USA.html">Cocke County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Newport MSA, TN, USA.html">Newport MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sevierville city, Tennessee, USA.html">Sevierville city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Swain County, North Carolina, USA.html">Swain County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8 [CCD], Blount County, Tennessee, USA.html">District 8</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Charleston township [CCD], Swain County, North Carolina, USA.html">Charleston township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5 [CCD], Sevier County, Tennessee, USA.html">District 5</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8 [CCD], Sevier County, Tennessee, USA.html">District 8</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4 [CCD], Sevier County, Tennessee, USA.html">District 4</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seymour CDP, Tennessee, USA.html">Seymour CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 9 [CCD], Blount County, Tennessee, USA.html">District 9</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 7 [CCD], Sevier County, Tennessee, USA.html">District 7</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 10 [CCD], Sevier County, Tennessee, USA.html">District 10</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6 [CCD], Sevier County, Tennessee, USA.html">District 6</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 9 [CCD], Sevier County, Tennessee, USA.html">District 9</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Sevier County, Tennessee, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Sevier County, Tennessee, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Sevier County, Tennessee, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 11 [CCD], Sevier County, Tennessee, USA.html">District 11</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pigeon Forge city, Tennessee, USA.html">Pigeon Forge city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8 [CCD], Jefferson County, Tennessee, USA.html">District 8</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Jefferson County, Tennessee, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5 [CCD], Cocke County, Tennessee, USA.html">District 5</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 7 [CCD], Jefferson County, Tennessee, USA.html">District 7</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6 [CCD], Jefferson County, Tennessee, USA.html">District 6</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gatlinburg city, Tennessee, USA.html">Gatlinburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairgarden CDP, Tennessee, USA.html">Fairgarden CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pittman Center town, Tennessee, USA.html">Pittman Center town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cataloochee township [CCD], Haywood County, North Carolina, USA.html">Cataloochee township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Forneys Creek UT [CCD], Swain County, North Carolina, USA.html">Forneys Creek UT</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Sevierville MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

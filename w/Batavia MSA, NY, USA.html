@@ -1,0 +1,581 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Batavia MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Batavia MSA</div>
+    <div class="text longname">Batavia MSA, NY, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58.4k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">541 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oneonta MSA, NY, USA.html"><</a> <a class="button" href="Palestine MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Terre Haute city, Indiana, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">483/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">515 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gardnerville Ranchos MSA, NV, USA.html"><</a> <a class="button" href="Norwalk MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="50126, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">46/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">347 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe MSA, LA, USA.html"><</a> <a class="button" href="Statesboro MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Amherstdale CDP, West Virginia, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">87.28%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">179 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond-Berea MSA, KY, USA.html"><</a> <a class="button" href="Manitowoc MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Genesee County, New York, USA.html"><</a> <a class="button" href="Glendive city, Montana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.71%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">604 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cullman MSA, AL, USA.html"><</a> <a class="button" href="Brownsville MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Genesee County, New York, USA.html"><</a> <a class="button" href="Cedar Rapids city [CCD], Linn County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.33%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">574 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Springfield MSA, MO, USA.html"><</a> <a class="button" href="Portales MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmore CCD [CCD], Jessamine County, Kentucky, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.71%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">632 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">32nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brownwood MSA, TX, USA.html"><</a> <a class="button" href="McPherson MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Collinsville CDP, Mississippi, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.62%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">233 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Leonard Wood MSA, MO, USA.html"><</a> <a class="button" href="Montrose MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="63015, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">583 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carbondale-Marion MSA, IL, USA.html"><</a> <a class="button" href="Wooster MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="39897, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.33%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">410 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Utica-Rome MSA, NY, USA.html"><</a> <a class="button" href="Ocala MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lugoff CDP, South Carolina, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.555</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">614 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Omaha-Council Bluffs MSA, NE-IA, USA.html"><</a> <a class="button" href="Tiffin MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="83843, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">806 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albuquerque MSA, NM, USA.html"><</a> <a class="button" href="Moscow MSA, ID, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Genesee County, New York, USA.html"><</a> <a class="button" href="49424, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">933/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">690 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenwood MSA, MS, USA.html"><</a> <a class="button" href="Price MSA, UT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yankee Springs township [CCD], Barry County, Michigan, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">629/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">575 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dunn MSA, NC, USA.html"><</a> <a class="button" href="Glens Falls MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Francis city [CCD], Anoka County, Minnesota, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">316/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">554 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kingston MSA, NY, USA.html"><</a> <a class="button" href="Ontario MSA, OR-ID, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="83617, USA.html"><</a> <a class="button" href="Genesee County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">145/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">667 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Othello MSA, WA, USA.html"><</a> <a class="button" href="Prineville MSA, OR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Genesee County, New York, USA.html"><</a> <a class="button" href="Lakeland Neighborhood, Fort Worth City, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Buffalo-Cheektowaga CSA, NY, USA.html">Buffalo-Cheektowaga CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Rochester-Batavia-Seneca Falls CSA, NY, USA.html">Rochester-Batavia-Seneca Falls CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Buffalo-Cheektowaga-Niagara Falls MSA, NY, USA.html">Buffalo-Cheektowaga-Niagara Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Rochester MSA, NY, USA.html">Rochester MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Erie County, New York, USA.html">Erie County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Monroe County, New York, USA.html">Monroe County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Niagara County, New York, USA.html">Niagara County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Livingston County, New York, USA.html">Livingston County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Genesee County, New York, USA.html">Genesee County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wyoming County, New York, USA.html">Wyoming County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Orleans County, New York, USA.html">Orleans County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ogden town [CCD], Monroe County, New York, USA.html">Ogden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Batavia city [CCD], Genesee County, New York, USA.html">Batavia city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Batavia city, New York, USA.html">Batavia city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sweden town [CCD], Monroe County, New York, USA.html">Sweden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alden town [CCD], Erie County, New York, USA.html">Alden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newstead town [CCD], Erie County, New York, USA.html">Newstead town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Le Roy town [CCD], Genesee County, New York, USA.html">Le Roy town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Royalton town [CCD], Niagara County, New York, USA.html">Royalton town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Batavia town [CCD], Genesee County, New York, USA.html">Batavia town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Attica town [CCD], Wyoming County, New York, USA.html">Attica town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Riga town [CCD], Monroe County, New York, USA.html">Riga town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shelby town [CCD], Orleans County, New York, USA.html">Shelby town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheatland town [CCD], Monroe County, New York, USA.html">Wheatland town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Le Roy village, New York, USA.html">Le Roy village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pembroke town [CCD], Genesee County, New York, USA.html">Pembroke town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caledonia town [CCD], Livingston County, New York, USA.html">Caledonia town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clarendon town [CCD], Orleans County, New York, USA.html">Clarendon town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bennington town [CCD], Wyoming County, New York, USA.html">Bennington town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York town [CCD], Livingston County, New York, USA.html">York town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oakfield town [CCD], Genesee County, New York, USA.html">Oakfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bergen town [CCD], Genesee County, New York, USA.html">Bergen town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Darien town [CCD], Genesee County, New York, USA.html">Darien town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alexander town [CCD], Genesee County, New York, USA.html">Alexander town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Attica village, New York, USA.html">Attica village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stafford town [CCD], Genesee County, New York, USA.html">Stafford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Byron town [CCD], Genesee County, New York, USA.html">Byron town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pavilion town [CCD], Genesee County, New York, USA.html">Pavilion town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elba town [CCD], Genesee County, New York, USA.html">Elba town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barre town [CCD], Orleans County, New York, USA.html">Barre town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oakfield village, New York, USA.html">Oakfield village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bethany town [CCD], Genesee County, New York, USA.html">Bethany town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alabama town [CCD], Genesee County, New York, USA.html">Alabama town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middlebury town [CCD], Wyoming County, New York, USA.html">Middlebury town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Covington town [CCD], Wyoming County, New York, USA.html">Covington town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bergen village, New York, USA.html">Bergen village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corfu village, New York, USA.html">Corfu village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pavilion CDP, New York, USA.html">Pavilion CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elba village, New York, USA.html">Elba village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alexander village, New York, USA.html">Alexander village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonawanda Reservation [CCD], Genesee County, New York, USA.html">Tonawanda Reservation</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Linwood CDP, New York, USA.html">Linwood CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonawanda Reservation [CCD], Erie County, New York, USA.html">Tonawanda Reservation</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Batavia MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

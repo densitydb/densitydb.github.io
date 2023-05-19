@@ -1,0 +1,872 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hickory-Lenoir CSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Hickory-Lenoir CSA</div>
+    <div class="text longname">Hickory-Lenoir CSA, NC, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">409.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">100 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tallahassee-Bainbridge CSA, FL-GA, USA.html"><</a> <a class="button" href="Peoria-Canton CSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Mateo CCD [CCD], San Mateo County, California, USA.html"><</a> <a class="button" href="Beaumont-Port Arthur MSA, TX, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">277/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">169 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">1st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dothan-Enterprise-Ozark CSA, AL, USA.html"><</a> <a class="button" href="Martin-Union City CSA, TN-KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Memphis city [CCD], St. Clair County, Michigan, USA.html"><</a> <a class="button" href="55092, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">75/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">68 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huntsville-Decatur-Albertville CSA, AL, USA.html"><</a> <a class="button" href="Erie-Meadville CSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Woodland village, Mississippi, USA.html"><</a> <a class="button" href="49319, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">78.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">54 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Wayne-Huntington-Auburn CSA, IN, USA.html"><</a> <a class="button" href="Medford-Grants Pass CSA, OR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penn township [CCD], Chester County, Pennsylvania, USA.html"><</a> <a class="button" href="Elm Springs city, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">77 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Asheville-Brevard CSA, NC, USA.html"><</a> <a class="button" href="Indianapolis-Carmel-Muncie CSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pepeekeo CDP, Hawaii, USA.html"><</a> <a class="button" href="51365, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">99 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sacramento-Roseville CSA, CA, USA.html"><</a> <a class="button" href="Erie-Meadville CSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="73942, USA.html"><</a> <a class="button" href="Encanto Neighborhood, Phoenix City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.78%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">67 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lubbock-Levelland CSA, TX, USA.html"><</a> <a class="button" href="Tucson-Nogales CSA, AZ, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monument CCD [CCD], El Paso County, Colorado, USA.html"><</a> <a class="button" href="Bethel Park municipality, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.26%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">87 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbia-Moberly-Mexico CSA, MO, USA.html"><</a> <a class="button" href="Portland-Lewiston-South Portland CSA, ME, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="03216, USA.html"><</a> <a class="button" href="Delaware township [CCD], Delaware County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">96 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lexington-Fayette--Richmond--Frankfort CSA, KY, USA.html"><</a> <a class="button" href="Birmingham-Hoover-Talladega CSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="35634, USA.html"><</a> <a class="button" href="Selbyville-Frankford CCD [CCD], Sussex County, Delaware, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">108 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Myrtle Beach-Conway CSA, SC-NC, USA.html"><</a> <a class="button" href="Charleston-Huntington-Ashland CSA, WV-OH-KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Linn township [CCD], Audrain County, Missouri, USA.html"><</a> <a class="button" href="Bristol County, Rhode Island, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.565</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">73 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbus-Auburn-Opelika CSA, GA-AL, USA.html"><</a> <a class="button" href="Jackson-Brownsville CSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Spokane CCD [CCD], Spokane County, Washington, USA.html"><</a> <a class="button" href="Belpre township [CCD], Washington County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">10.35%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">60 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ithaca-Cortland CSA, NY, USA.html"><</a> <a class="button" href="Parkersburg-Marietta-Vienna CSA, WV-OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chinatown Neighborhood, Los Angeles City, California, USA.html"><</a> <a class="button" href="Holland CDP, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">906/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">166 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wausau-Stevens Point-Wisconsin Rapids CSA, WI, USA.html"><</a> <a class="button" href="Oskaloosa-Pella CSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="55810, USA.html"><</a> <a class="button" href="Breckinridge Center CDP, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">394/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">169 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">1st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dothan-Enterprise-Ozark CSA, AL, USA.html"><</a> <a class="button" href="Martin-Union City CSA, TN-KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yolo CDP, California, USA.html"><</a> <a class="button" href="New Underwood city [CCD], Pennington County, South Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">234/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">168 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbus-West Point CSA, MS, USA.html"><</a> <a class="button" href="New Bern-Morehead City CSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="LaGrange village, Ohio, USA.html"><</a> <a class="button" href="Brooke County, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">195/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">159 of 171 CSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Moses Lake-Othello CSA, WA, USA.html"><</a> <a class="button" href="Hot Springs-Malvern CSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15057, USA.html"><</a> <a class="button" href="Perry township [CCD], Boone County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="North Carolina, USA.html">North Carolina</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Charlotte-Concord CSA, NC-SC, USA.html">Charlotte-Concord CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Charlotte-Concord-Gastonia MSA, NC-SC, USA.html">Charlotte-Concord-Gastonia MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Asheville-Brevard CSA, NC, USA.html">Asheville-Brevard CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Asheville MSA, NC, USA.html">Asheville MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hickory-Lenoir-Morganton MSA, NC, USA.html">Hickory-Lenoir-Morganton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Buncombe County, North Carolina, USA.html">Buncombe County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iredell County, North Carolina, USA.html">Iredell County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Catawba County, North Carolina, USA.html">Catawba County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cleveland County, North Carolina, USA.html">Cleveland County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cleveland [CCD], Cleveland County, North Carolina, USA.html">Cleveland</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Shelby MSA, NC, USA.html">Shelby MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Burke County, North Carolina, USA.html">Burke County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lincoln County, North Carolina, USA.html">Lincoln County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Caldwell County, North Carolina, USA.html">Caldwell County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="North Wilkesboro MSA, NC, USA.html">North Wilkesboro MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wilkes County, North Carolina, USA.html">Wilkes County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hickory township [CCD], Catawba County, North Carolina, USA.html">Hickory township</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Forest City MSA, NC, USA.html">Forest City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Rutherford County, North Carolina, USA.html">Rutherford County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Boone MSA, NC, USA.html">Boone MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Watauga County, North Carolina, USA.html">Watauga County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Marion MSA, NC, USA.html">Marion MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McDowell County, North Carolina, USA.html">McDowell County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Davidson township [CCD], Iredell County, North Carolina, USA.html">Davidson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hickory city, North Carolina, USA.html">Hickory city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Alexander County, North Carolina, USA.html">Alexander County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newton township [CCD], Catawba County, North Carolina, USA.html">Newton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Catawba Springs township [CCD], Lincoln County, North Carolina, USA.html">Catawba Springs township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morganton township [CCD], Burke County, North Carolina, USA.html">Morganton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clines township [CCD], Catawba County, North Carolina, USA.html">Clines township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ironton township [CCD], Lincoln County, North Carolina, USA.html">Ironton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincolnton township [CCD], Lincoln County, North Carolina, USA.html">Lincolnton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lenoir township [CCD], Caldwell County, North Carolina, USA.html">Lenoir township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion township [CCD], McDowell County, North Carolina, USA.html">Marion township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yancey County, North Carolina, USA.html">Yancey County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lenoir city, North Carolina, USA.html">Lenoir city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lovelady township [CCD], Caldwell County, North Carolina, USA.html">Lovelady township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Avery County, North Carolina, USA.html">Avery County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morganton city, North Carolina, USA.html">Morganton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Icard township [CCD], Burke County, North Carolina, USA.html">Icard township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mitchell County, North Carolina, USA.html">Mitchell County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Black Mountain township [CCD], Buncombe County, North Carolina, USA.html">Black Mountain township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newton city, North Carolina, USA.html">Newton city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Creek township [CCD], Caldwell County, North Carolina, USA.html">Lower Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hudson township [CCD], Caldwell County, North Carolina, USA.html">Hudson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Taylorsville township [CCD], Alexander County, North Carolina, USA.html">Taylorsville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mountain Creek township [CCD], Catawba County, North Carolina, USA.html">Mountain Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Silver Creek township [CCD], Burke County, North Carolina, USA.html">Silver Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wittenburg township [CCD], Alexander County, North Carolina, USA.html">Wittenburg township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fallstown township [CCD], Iredell County, North Carolina, USA.html">Fallstown township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Howards Creek township [CCD], Lincoln County, North Carolina, USA.html">Howards Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Stephens CDP, North Carolina, USA.html">St. Stephens CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shiloh township [CCD], Iredell County, North Carolina, USA.html">Shiloh township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lake Norman of Catawba CDP, North Carolina, USA.html">Lake Norman of Catawba CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Catawba township [CCD], Catawba County, North Carolina, USA.html">Catawba township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lovelady township [CCD], Burke County, North Carolina, USA.html">Lovelady township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Conover city, North Carolina, USA.html">Conover city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grassy Creek township [CCD], Mitchell County, North Carolina, USA.html">Grassy Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marion city, North Carolina, USA.html">Marion city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Caldwell township [CCD], Catawba County, North Carolina, USA.html">Caldwell township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Quaker Meadows township [CCD], Burke County, North Carolina, USA.html">Quaker Meadows township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Concord township [CCD], Iredell County, North Carolina, USA.html">Concord township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Catawba township [CCD], Caldwell County, North Carolina, USA.html">North Catawba township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Drexel township [CCD], Burke County, North Carolina, USA.html">Drexel township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Brook township [CCD], Lincoln County, North Carolina, USA.html">North Brook township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Granite Falls town, North Carolina, USA.html">Granite Falls town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Long View town, North Carolina, USA.html">Long View town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jacobs Fork township [CCD], Catawba County, North Carolina, USA.html">Jacobs Fork township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sawmills town, North Carolina, USA.html">Sawmills town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bandy's township [CCD], Catawba County, North Carolina, USA.html">Bandy's township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sharpes township [CCD], Alexander County, North Carolina, USA.html">Sharpes township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Valdese town, North Carolina, USA.html">Valdese town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bethlehem CDP, North Carolina, USA.html">Bethlehem CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blue Ridge township [CCD], Watauga County, North Carolina, USA.html">Blue Ridge township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little River township [CCD], Caldwell County, North Carolina, USA.html">Little River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Old Fort township [CCD], McDowell County, North Carolina, USA.html">Old Fort township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Watauga township [CCD], Watauga County, North Carolina, USA.html">Watauga township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nebo township [CCD], McDowell County, North Carolina, USA.html">Nebo township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gamewell town, North Carolina, USA.html">Gamewell town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mountain View CDP, North Carolina, USA.html">Mountain View CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Maiden town, North Carolina, USA.html">Maiden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan Store township [CCD], Rutherford County, North Carolina, USA.html">Logan Store township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hudson town, North Carolina, USA.html">Hudson town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dysartsville township [CCD], McDowell County, North Carolina, USA.html">Dysartsville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crooked Creek township [CCD], McDowell County, North Carolina, USA.html">Crooked Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ellendale township [CCD], Alexander County, North Carolina, USA.html">Ellendale township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Fork township [CCD], Burke County, North Carolina, USA.html">Lower Fork township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chimney Rock township [CCD], Rutherford County, North Carolina, USA.html">Chimney Rock township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moravian Falls township [CCD], Wilkes County, North Carolina, USA.html">Moravian Falls township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blowing Rock township [CCD], Watauga County, North Carolina, USA.html">Blowing Rock township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ingalls township [CCD], Avery County, North Carolina, USA.html">Ingalls township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glenwood township [CCD], McDowell County, North Carolina, USA.html">Glenwood township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Denver CDP, North Carolina, USA.html">Denver CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sharpesburg township [CCD], Iredell County, North Carolina, USA.html">Sharpesburg township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cajah's Mountain town, North Carolina, USA.html">Cajah's Mountain town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Creek township [CCD], Burke County, North Carolina, USA.html">Lower Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Icard CDP, North Carolina, USA.html">Icard CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Montford Cove township [CCD], McDowell County, North Carolina, USA.html">Montford Cove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Cove township [CCD], McDowell County, North Carolina, USA.html">North Cove township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Salem CDP, North Carolina, USA.html">Salem CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Taylorsville town, North Carolina, USA.html">Taylorsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Toe township [CCD], Yancey County, North Carolina, USA.html">South Toe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Higgins township [CCD], McDowell County, North Carolina, USA.html">Higgins township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boomer township [CCD], Wilkes County, North Carolina, USA.html">Boomer township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gwaltneys township [CCD], Alexander County, North Carolina, USA.html">Gwaltneys township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Millers township [CCD], Alexander County, North Carolina, USA.html">Millers township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Patterson township [CCD], Caldwell County, North Carolina, USA.html">Patterson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Broad River township [CCD], Buncombe County, North Carolina, USA.html">Broad River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linville township [CCD], Burke County, North Carolina, USA.html">Linville township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Drexel town, North Carolina, USA.html">Drexel town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Hope township [CCD], Iredell County, North Carolina, USA.html">New Hope township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Claremont city, North Carolina, USA.html">Claremont city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hildebran town, North Carolina, USA.html">Hildebran town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kings Creek township [CCD], Caldwell County, North Carolina, USA.html">Kings Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pineola township [CCD], Avery County, North Carolina, USA.html">Pineola township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northlakes CDP, North Carolina, USA.html">Northlakes CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Connelly Springs town, North Carolina, USA.html">Connelly Springs town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glen Alpine town, North Carolina, USA.html">Glen Alpine town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morgan township [CCD], Rutherford County, North Carolina, USA.html">Morgan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little River township [CCD], Alexander County, North Carolina, USA.html">Little River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johns River township [CCD], Caldwell County, North Carolina, USA.html">Johns River township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blowing Rock town, North Carolina, USA.html">Blowing Rock town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sugar Loaf township [CCD], Alexander County, North Carolina, USA.html">Sugar Loaf township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Camp Creek township [CCD], Rutherford County, North Carolina, USA.html">Camp Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Marion CDP, North Carolina, USA.html">West Marion CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rutherford College town, North Carolina, USA.html">Rutherford College town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yadkin Valley township [CCD], Caldwell County, North Carolina, USA.html">Yadkin Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper Creek township [CCD], Burke County, North Carolina, USA.html">Upper Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stony Point CDP, North Carolina, USA.html">Stony Point CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Altamont township [CCD], Avery County, North Carolina, USA.html">Altamont township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper Fork township [CCD], Burke County, North Carolina, USA.html">Upper Fork township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Golden Valley township [CCD], Rutherford County, North Carolina, USA.html">Golden Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rhodhiss town, North Carolina, USA.html">Rhodhiss town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Montreat town, North Carolina, USA.html">Montreat town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elk township [CCD], Wilkes County, North Carolina, USA.html">Elk township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Fort town, North Carolina, USA.html">Old Fort town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smoky Creek township [CCD], Burke County, North Carolina, USA.html">Smoky Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mulberry township [CCD], Caldwell County, North Carolina, USA.html">Mulberry township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Catawba town, North Carolina, USA.html">Catawba town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jonas Ridge township [CCD], Burke County, North Carolina, USA.html">Jonas Ridge township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brushy Mountain township [CCD], Wilkes County, North Carolina, USA.html">Brushy Mountain township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linville township [CCD], Avery County, North Carolina, USA.html">Linville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brackett township [CCD], McDowell County, North Carolina, USA.html">Brackett township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beaver Creek township [CCD], Wilkes County, North Carolina, USA.html">Beaver Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hiddenite CDP, North Carolina, USA.html">Hiddenite CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brookford town, North Carolina, USA.html">Brookford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Globe township [CCD], Caldwell County, North Carolina, USA.html">Globe township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar Rock village, North Carolina, USA.html">Cedar Rock village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carey's Flat township [CCD], Avery County, North Carolina, USA.html">Carey's Flat township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilson Creek township [CCD], Caldwell County, North Carolina, USA.html">Wilson Creek township</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Hickory-Lenoir CSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

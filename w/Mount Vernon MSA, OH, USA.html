@@ -1,0 +1,626 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mount Vernon MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Mount Vernon MSA</div>
+    <div class="text longname">Mount Vernon MSA, OH, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">62.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">519 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Enid MSA, OK, USA.html"><</a> <a class="button" href="Albemarle MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="95014, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">359/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">690 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pine Bluff MSA, AR, USA.html"><</a> <a class="button" href="Huntingdon MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson County, Oregon, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">46/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">344 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Auburn MSA, IN, USA.html"><</a> <a class="button" href="Norwalk MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="31535, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">92.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">36 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">96th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Middlesborough MSA, KY, USA.html"><</a> <a class="button" href="Boone MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="24246, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.91%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">865 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Quincy MSA, IL-MO, USA.html"><</a> <a class="button" href="Centralia MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="58651, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.90%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">763 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crawfordsville MSA, IN, USA.html"><</a> <a class="button" href="Deming MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="St. Mary's CDP, Colorado, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">724 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexandria MSA, MN, USA.html"><</a> <a class="button" href="Greensburg MSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="Franklin Grove township [CCD], Lee County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">683 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Danville MSA, IL, USA.html"><</a> <a class="button" href="West Point MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="07826, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">592 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Columbus MSA, MS, USA.html"><</a> <a class="button" href="Milwaukee-Waukesha-West Allis MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="75835, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">570 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Waterloo-Cedar Falls MSA, IA, USA.html"><</a> <a class="button" href="Sevierville MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eureka CDP, Wisconsin, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.533</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">778 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Luis Obispo-Paso Robles-Arroyo Grande MSA, CA, USA.html"><</a> <a class="button" href="Minneapolis-St. Paul-Bloomington MSA, MN-WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="Bridlespur Neighborhood, Kansas City City, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">613 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">34th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tucson MSA, AZ, USA.html"><</a> <a class="button" href="Oskaloosa MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="93614, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">836/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">754 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Opelousas MSA, LA, USA.html"><</a> <a class="button" href="Seneca Falls MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="Roslyn Harbor village, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">506/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">708 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="East Stroudsburg MSA, PA, USA.html"><</a> <a class="button" href="Greenfield Town MSA, MA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="62535, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">258/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">668 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lufkin MSA, TX, USA.html"><</a> <a class="button" href="Hammond MSA, LA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Knox County, Ohio, USA.html"><</a> <a class="button" href="Township 7, McNeill [CCD], Moore County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">152/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">648 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lewisburg MSA, PA, USA.html"><</a> <a class="button" href="Centralia MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Peacock Gap Neighborhood, San Rafael City, California, USA.html"><</a> <a class="button" href="Knox County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Ohio, USA.html">Ohio</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Columbus-Marion-Zanesville CSA, OH, USA.html">Columbus-Marion-Zanesville CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Columbus MSA, OH, USA.html">Columbus MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Mansfield-Ashland-Bucyrus CSA, OH, USA.html">Mansfield-Ashland-Bucyrus CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Delaware County, Ohio, USA.html">Delaware County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Licking County, Ohio, USA.html">Licking County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Mansfield MSA, OH, USA.html">Mansfield MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Richland County, Ohio, USA.html">Richland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Knox County, Ohio, USA.html">Knox County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ashland County, Ohio, USA.html">Ashland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ashland MSA, OH, USA.html">Ashland MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Holmes County, Ohio, USA.html">Holmes County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Coshocton County, Ohio, USA.html">Coshocton County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Coshocton MSA, OH, USA.html">Coshocton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Morrow County, Ohio, USA.html">Morrow County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Vernon city [CCD], Knox County, Ohio, USA.html">Mount Vernon city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Vernon city, Ohio, USA.html">Mount Vernon city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Howard township [CCD], Knox County, Ohio, USA.html">Howard township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Apple Valley CDP, Ohio, USA.html">Apple Valley CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson township [CCD], Richland County, Ohio, USA.html">Jefferson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hilliar township [CCD], Knox County, Ohio, USA.html">Hilliar township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Licking County, Ohio, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Worthington township [CCD], Richland County, Ohio, USA.html">Worthington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clinton township [CCD], Knox County, Ohio, USA.html">Clinton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fredericktown village [CCD], Knox County, Ohio, USA.html">Fredericktown village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fredericktown village, Ohio, USA.html">Fredericktown village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Knox County, Ohio, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="College township [CCD], Knox County, Ohio, USA.html">College township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hanover township [CCD], Ashland County, Ohio, USA.html">Hanover township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe township [CCD], Knox County, Ohio, USA.html">Monroe township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gambier village, Ohio, USA.html">Gambier village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morris township [CCD], Knox County, Ohio, USA.html">Morris township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Utica village, Ohio, USA.html">Utica village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brown township [CCD], Knox County, Ohio, USA.html">Brown township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry township [CCD], Morrow County, Ohio, USA.html">Perry township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Knox County, Ohio, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford township [CCD], Knox County, Ohio, USA.html">Milford township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester township [CCD], Morrow County, Ohio, USA.html">Chester township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Berlin township [CCD], Knox County, Ohio, USA.html">Berlin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Bloomfield township [CCD], Morrow County, Ohio, USA.html">South Bloomfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bennington township [CCD], Licking County, Ohio, USA.html">Bennington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Centerburg village, Ohio, USA.html">Centerburg village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pike township [CCD], Knox County, Ohio, USA.html">Pike township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant township [CCD], Knox County, Ohio, USA.html">Pleasant township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin township [CCD], Morrow County, Ohio, USA.html">Franklin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay township [CCD], Knox County, Ohio, USA.html">Clay township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry township [CCD], Richland County, Ohio, USA.html">Perry township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartford township [CCD], Licking County, Ohio, USA.html">Hartford township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middlebury township [CCD], Knox County, Ohio, USA.html">Middlebury township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butler township [CCD], Knox County, Ohio, USA.html">Butler township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden township [CCD], Licking County, Ohio, USA.html">Eden township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burlington township [CCD], Licking County, Ohio, USA.html">Burlington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Holmes County, Ohio, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Knox township [CCD], Holmes County, Ohio, USA.html">Knox township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Miller township [CCD], Knox County, Ohio, USA.html">Miller township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Knox County, Ohio, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morgan township [CCD], Knox County, Ohio, USA.html">Morgan township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Danville village, Ohio, USA.html">Danville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne township [CCD], Knox County, Ohio, USA.html">Wayne township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fallsbury township [CCD], Licking County, Ohio, USA.html">Fallsbury township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison township [CCD], Knox County, Ohio, USA.html">Harrison township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson township [CCD], Knox County, Ohio, USA.html">Jefferson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry township [CCD], Coshocton County, Ohio, USA.html">Perry township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tiverton township [CCD], Coshocton County, Ohio, USA.html">Tiverton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newcastle township [CCD], Coshocton County, Ohio, USA.html">Newcastle township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Howard CDP, Ohio, USA.html">Howard CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Martinsburg village, Ohio, USA.html">Martinsburg village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bladensburg CDP, Ohio, USA.html">Bladensburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gann village, Ohio, USA.html">Gann village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Mount Vernon MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,887 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Johnstown MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Johnstown MSA</div>
+    <div class="text longname">Johnstown MSA, PA, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">133.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">313 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jonesboro MSA, AR, USA.html"><</a> <a class="button" href="Dunn MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Dunn MSA, NC, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">482/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">517 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwalk MSA, OH, USA.html"><</a> <a class="button" href="Danville MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="46072, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">74/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">194 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Torrington MSA, CT, USA.html"><</a> <a class="button" href="Sunbury MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 5 [CCD], Perry County, Tennessee, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">89.44%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">118 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Big Rapids MSA, MI, USA.html"><</a> <a class="button" href="Marquette MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Elk Mound village [CCD], Dunn County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.85%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">868 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Merrill MSA, WI, USA.html"><</a> <a class="button" href="Central City MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Kaw City city, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.24%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">431 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Plainview MSA, TX, USA.html"><</a> <a class="button" href="Sweetwater MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 2 [CCD], Sumner County, Tennessee, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">734 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Harrison MSA, AR, USA.html"><</a> <a class="button" href="Beaver Dam MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Ingersoll township [CCD], Midland County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">927 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">1st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McAllen-Edinburg-Mission MSA, TX, USA.html"><</a> <a class="button" href="Cleveland MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Polk township [CCD], Marshall County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">607 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New York-Newark-Jersey City MSA, NY-NJ-PA, USA.html"><</a> <a class="button" href="Iron Mountain MSA, MI-WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="70785, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.80%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">577 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cedartown MSA, GA, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Lyndhurst CDP, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.592</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">268 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion MSA, NC, USA.html"><</a> <a class="button" href="Madisonville MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="44874, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.40%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">315 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="DeRidder MSA, LA, USA.html"><</a> <a class="button" href="Kerrville MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="The Villages at Carver Neighborhood, Atlanta City, Georgia, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1176/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">505 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yankton MSA, SD, USA.html"><</a> <a class="button" href="Pittsfield MSA, MA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakborough Neighborhood, Fort Wayne City, Indiana, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">705/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">501 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Portales MSA, NM, USA.html"><</a> <a class="button" href="Steamboat Springs MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lander CCD [CCD], Fremont County, Wyoming, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">345/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">500 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskogee MSA, OK, USA.html"><</a> <a class="button" href="Decatur MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lucas Valley Neighborhood, San Rafael City, California, USA.html"><</a> <a class="button" href="Cambria County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">245/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">419 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion MSA, IN, USA.html"><</a> <a class="button" href="Sierra Vista-Douglas MSA, AZ, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cambria County, Pennsylvania, USA.html"><</a> <a class="button" href="Sierra Vista-Douglas MSA, AZ, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Pennsylvania, USA.html">Pennsylvania</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Pittsburgh-New Castle-Weirton CSA, PA-OH-WV, USA.html">Pittsburgh-New Castle-Weirton CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Pittsburgh MSA, PA, USA.html">Pittsburgh MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Westmoreland County, Pennsylvania, USA.html">Westmoreland County</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="State College-DuBois CSA, PA, USA.html">State College-DuBois CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Johnstown-Somerset CSA, PA, USA.html">Johnstown-Somerset CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cambria County, Pennsylvania, USA.html">Cambria County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Altoona MSA, PA, USA.html">Altoona MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Blair County, Pennsylvania, USA.html">Blair County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Indiana County, Pennsylvania, USA.html">Indiana County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Indiana MSA, PA, USA.html">Indiana MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clearfield County, Pennsylvania, USA.html">Clearfield County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="DuBois MSA, PA, USA.html">DuBois MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Somerset County, Pennsylvania, USA.html">Somerset County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Somerset MSA, PA, USA.html">Somerset MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bedford County, Pennsylvania, USA.html">Bedford County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Johnstown city, Pennsylvania, USA.html">Johnstown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johnstown city [CCD], Cambria County, Pennsylvania, USA.html">Johnstown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan township [CCD], Blair County, Pennsylvania, USA.html">Logan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Cambria County, Pennsylvania, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conemaugh township [CCD], Somerset County, Pennsylvania, USA.html">Conemaugh township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allegheny township [CCD], Blair County, Pennsylvania, USA.html">Allegheny township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Antis township [CCD], Blair County, Pennsylvania, USA.html">Antis township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cambria township [CCD], Cambria County, Pennsylvania, USA.html">Cambria township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams township [CCD], Cambria County, Pennsylvania, USA.html">Adams township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper Yoder township [CCD], Cambria County, Pennsylvania, USA.html">Upper Yoder township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westmont borough [CCD], Cambria County, Pennsylvania, USA.html">Westmont borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westmont borough, Pennsylvania, USA.html">Westmont borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Cambria County, Pennsylvania, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Windber borough, Pennsylvania, USA.html">Windber borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenfield township [CCD], Blair County, Pennsylvania, USA.html">Greenfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northern Cambria borough [CCD], Cambria County, Pennsylvania, USA.html">Northern Cambria borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Northern Cambria borough, Pennsylvania, USA.html">Northern Cambria borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portage township [CCD], Cambria County, Pennsylvania, USA.html">Portage township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Green township [CCD], Indiana County, Pennsylvania, USA.html">Green township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ebensburg borough [CCD], Cambria County, Pennsylvania, USA.html">Ebensburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ebensburg borough, Pennsylvania, USA.html">Ebensburg borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elim CDP, Pennsylvania, USA.html">Elim CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Snyder township [CCD], Blair County, Pennsylvania, USA.html">Snyder township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paint township [CCD], Somerset County, Pennsylvania, USA.html">Paint township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cresson township [CCD], Cambria County, Pennsylvania, USA.html">Cresson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Allegheny township [CCD], Cambria County, Pennsylvania, USA.html">Allegheny township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belmont CDP, Pennsylvania, USA.html">Belmont CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stonycreek township [CCD], Cambria County, Pennsylvania, USA.html">Stonycreek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nanty-Glo borough [CCD], Cambria County, Pennsylvania, USA.html">Nanty-Glo borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nanty-Glo borough, Pennsylvania, USA.html">Nanty-Glo borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Portage borough [CCD], Cambria County, Pennsylvania, USA.html">Portage borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Portage borough, Pennsylvania, USA.html">Portage borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Taylor township [CCD], Cambria County, Pennsylvania, USA.html">East Taylor township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower Yoder township [CCD], Cambria County, Pennsylvania, USA.html">Lower Yoder township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Geistown borough, Pennsylvania, USA.html">Geistown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Geistown borough [CCD], Cambria County, Pennsylvania, USA.html">Geistown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Croyle township [CCD], Cambria County, Pennsylvania, USA.html">Croyle township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Summerhill township [CCD], Cambria County, Pennsylvania, USA.html">Summerhill township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Wheatfield township [CCD], Indiana County, Pennsylvania, USA.html">East Wheatfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Barr township [CCD], Cambria County, Pennsylvania, USA.html">Barr township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfield township [CCD], Westmoreland County, Pennsylvania, USA.html">Fairfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southmont borough [CCD], Cambria County, Pennsylvania, USA.html">Southmont borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Southmont borough, Pennsylvania, USA.html">Southmont borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Conemaugh township [CCD], Cambria County, Pennsylvania, USA.html">Conemaugh township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Susquehanna township [CCD], Cambria County, Pennsylvania, USA.html">Susquehanna township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blacklick township [CCD], Cambria County, Pennsylvania, USA.html">Blacklick township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pine township [CCD], Indiana County, Pennsylvania, USA.html">Pine township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beccaria township [CCD], Clearfield County, Pennsylvania, USA.html">Beccaria township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Patton borough [CCD], Cambria County, Pennsylvania, USA.html">Patton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Patton borough, Pennsylvania, USA.html">Patton borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clearfield township [CCD], Cambria County, Pennsylvania, USA.html">Clearfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ferndale borough [CCD], Cambria County, Pennsylvania, USA.html">Ferndale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ferndale borough, Pennsylvania, USA.html">Ferndale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gallitzin borough [CCD], Cambria County, Pennsylvania, USA.html">Gallitzin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gallitzin borough, Pennsylvania, USA.html">Gallitzin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mundys Corner CDP, Pennsylvania, USA.html">Mundys Corner CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cresson borough, Pennsylvania, USA.html">Cresson borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cresson borough [CCD], Cambria County, Pennsylvania, USA.html">Cresson borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reade township [CCD], Cambria County, Pennsylvania, USA.html">Reade township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Carroll township [CCD], Cambria County, Pennsylvania, USA.html">East Carroll township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Clair township [CCD], Westmoreland County, Pennsylvania, USA.html">St. Clair township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gallitzin township [CCD], Cambria County, Pennsylvania, USA.html">Gallitzin township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vinco CDP, Pennsylvania, USA.html">Vinco CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buffington township [CCD], Indiana County, Pennsylvania, USA.html">Buffington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hastings borough, Pennsylvania, USA.html">Hastings borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hastings borough [CCD], Cambria County, Pennsylvania, USA.html">Hastings borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gulich township [CCD], Clearfield County, Pennsylvania, USA.html">Gulich township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Loretto borough [CCD], Cambria County, Pennsylvania, USA.html">Loretto borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Loretto borough, Pennsylvania, USA.html">Loretto borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="University of Pittsburgh Johnstown CDP, Pennsylvania, USA.html">University of Pittsburgh Johnstown CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Carroll township [CCD], Cambria County, Pennsylvania, USA.html">West Carroll township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Conemaugh borough [CCD], Cambria County, Pennsylvania, USA.html">East Conemaugh borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Conemaugh borough, Pennsylvania, USA.html">East Conemaugh borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dale borough [CCD], Cambria County, Pennsylvania, USA.html">Dale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnside township [CCD], Clearfield County, Pennsylvania, USA.html">Burnside township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carrolltown borough [CCD], Cambria County, Pennsylvania, USA.html">Carrolltown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Carrolltown borough, Pennsylvania, USA.html">Carrolltown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Salix CDP, Pennsylvania, USA.html">Salix CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elder township [CCD], Cambria County, Pennsylvania, USA.html">Elder township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dale borough, Pennsylvania, USA.html">Dale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Juniata township [CCD], Blair County, Pennsylvania, USA.html">Juniata township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beaverdale CDP, Pennsylvania, USA.html">Beaverdale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Fork borough [CCD], Cambria County, Pennsylvania, USA.html">South Fork borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Fork borough, Pennsylvania, USA.html">South Fork borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White township [CCD], Cambria County, Pennsylvania, USA.html">White township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Paint borough [CCD], Somerset County, Pennsylvania, USA.html">Paint borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Paint borough, Pennsylvania, USA.html">Paint borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Colver CDP, Pennsylvania, USA.html">Colver CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lilly borough [CCD], Cambria County, Pennsylvania, USA.html">Lilly borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lilly borough, Pennsylvania, USA.html">Lilly borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Cambria County, Pennsylvania, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Spring Hill CDP, Pennsylvania, USA.html">Spring Hill CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scalp Level borough [CCD], Cambria County, Pennsylvania, USA.html">Scalp Level borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Scalp Level borough, Pennsylvania, USA.html">Scalp Level borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Taylor township [CCD], Cambria County, Pennsylvania, USA.html">West Taylor township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Heilwood CDP, Pennsylvania, USA.html">Heilwood CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brownstown borough [CCD], Cambria County, Pennsylvania, USA.html">Brownstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brownstown borough, Pennsylvania, USA.html">Brownstown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middle Taylor township [CCD], Cambria County, Pennsylvania, USA.html">Middle Taylor township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Munster township [CCD], Cambria County, Pennsylvania, USA.html">Munster township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sankertown borough [CCD], Cambria County, Pennsylvania, USA.html">Sankertown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sankertown borough, Pennsylvania, USA.html">Sankertown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lorain borough, Pennsylvania, USA.html">Lorain borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lorain borough [CCD], Cambria County, Pennsylvania, USA.html">Lorain borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Revloc CDP, Pennsylvania, USA.html">Revloc CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chest township [CCD], Clearfield County, Pennsylvania, USA.html">Chest township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Summerhill borough [CCD], Cambria County, Pennsylvania, USA.html">Summerhill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Summerhill borough, Pennsylvania, USA.html">Summerhill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ogle township [CCD], Somerset County, Pennsylvania, USA.html">Ogle township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chest township [CCD], Cambria County, Pennsylvania, USA.html">Chest township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sidman CDP, Pennsylvania, USA.html">Sidman CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vintondale borough, Pennsylvania, USA.html">Vintondale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vintondale borough [CCD], Cambria County, Pennsylvania, USA.html">Vintondale borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln township [CCD], Bedford County, Pennsylvania, USA.html">Lincoln township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="St. Michael CDP, Pennsylvania, USA.html">St. Michael CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Westover borough, Pennsylvania, USA.html">Westover borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dunlo CDP, Pennsylvania, USA.html">Dunlo CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blandburg CDP, Pennsylvania, USA.html">Blandburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dean township [CCD], Cambria County, Pennsylvania, USA.html">Dean township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Riverside CDP, Pennsylvania, USA.html">Riverside CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tunnelhill borough, Pennsylvania, USA.html">Tunnelhill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Daisytown borough [CCD], Cambria County, Pennsylvania, USA.html">Daisytown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Daisytown borough, Pennsylvania, USA.html">Daisytown borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pavia township [CCD], Bedford County, Pennsylvania, USA.html">Pavia township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin borough [CCD], Cambria County, Pennsylvania, USA.html">Franklin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Franklin borough, Pennsylvania, USA.html">Franklin borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cherry Tree borough [CCD], Indiana County, Pennsylvania, USA.html">Cherry Tree borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cherry Tree borough, Pennsylvania, USA.html">Cherry Tree borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ashville borough [CCD], Cambria County, Pennsylvania, USA.html">Ashville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ashville borough, Pennsylvania, USA.html">Ashville borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilmore borough [CCD], Cambria County, Pennsylvania, USA.html">Wilmore borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wilmore borough, Pennsylvania, USA.html">Wilmore borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ehrenfeld borough [CCD], Cambria County, Pennsylvania, USA.html">Ehrenfeld borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ehrenfeld borough, Pennsylvania, USA.html">Ehrenfeld borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tunnelhill borough [CCD], Cambria County, Pennsylvania, USA.html">Tunnelhill borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cassandra borough [CCD], Cambria County, Pennsylvania, USA.html">Cassandra borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cassandra borough, Pennsylvania, USA.html">Cassandra borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chest Springs borough [CCD], Cambria County, Pennsylvania, USA.html">Chest Springs borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chest Springs borough, Pennsylvania, USA.html">Chest Springs borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tunnelhill borough [CCD], Blair County, Pennsylvania, USA.html">Tunnelhill borough</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Johnstown MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

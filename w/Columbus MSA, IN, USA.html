@@ -1,0 +1,560 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Columbus MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Columbus MSA</div>
+    <div class="text longname">Columbus MSA, IN, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">82.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">440 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Key West MSA, FL, USA.html"><</a> <a class="button" href="Athens MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bullitt County, Kentucky, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">711/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">292 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlsbad-Artesia MSA, NM, USA.html"><</a> <a class="button" href="Decatur MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Heritage Neighborhood, Moline City, Illinois, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">78/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">189 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madison MSA, WI, USA.html"><</a> <a class="button" href="Binghamton MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="Elmer city, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">78.33%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">407 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport MSA, OR, USA.html"><</a> <a class="button" href="Great Bend MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="District 2 [CCD], New Kent County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.83%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">379 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson MSA, GA, USA.html"><</a> <a class="button" href="Paris MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Davenport city [CCD], Scott County, Iowa, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">590 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Castle MSA, IN, USA.html"><</a> <a class="button" href="El Centro MSA, CA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Old Lycoming township [CCD], Lycoming County, Pennsylvania, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.55%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">43 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Philadelphia-Camden-Wilmington MSA, PA-NJ-DE-MD, USA.html"><</a> <a class="button" href="Atlanta-Sandy Springs-Roswell MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stevendale Neighborhood, Baton Rouge City, Louisiana, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">784 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sandusky MSA, OH, USA.html"><</a> <a class="button" href="Fairmont MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43701, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">329 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Decatur MSA, AL, USA.html"><</a> <a class="button" href="Corinth MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Jacinto County, Texas, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">541 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall MSA, TX, USA.html"><</a> <a class="button" href="Green Bay MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="30342, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.565</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">502 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">46th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Des Moines-West Des Moines MSA, IA, USA.html"><</a> <a class="button" href="Altoona MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="Easley CCD [CCD], Pickens County, South Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.66%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">735 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fremont MSA, OH, USA.html"><</a> <a class="button" href="Hagerstown-Martinsburg MSA, MD-WV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="32736, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1487/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">340 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kingsville MSA, TX, USA.html"><</a> <a class="button" href="Huntsville MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North College MHP Neighborhood, Fort Collins City, Colorado, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">974/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">291 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crescent City MSA, CA, USA.html"><</a> <a class="button" href="Wilmington MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Stayton Meadows Neighborhood, Kansas City City, Missouri, USA.html"><</a> <a class="button" href="Bartholomew County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">509/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">320 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clarksville MSA, TN-KY, USA.html"><</a> <a class="button" href="Junction City MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="Fenton city, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">347/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">308 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kingsville MSA, TX, USA.html"><</a> <a class="button" href="Mansfield MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bartholomew County, Indiana, USA.html"><</a> <a class="button" href="Roanoke Rapids city, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Indiana, USA.html">Indiana</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Indianapolis-Carmel-Muncie CSA, IN, USA.html">Indianapolis-Carmel-Muncie CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Indianapolis-Carmel-Anderson MSA, IN, USA.html">Indianapolis-Carmel-Anderson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Johnson County, Indiana, USA.html">Johnson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Bartholomew County, Indiana, USA.html">Bartholomew County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbus township [CCD], Bartholomew County, Indiana, USA.html">Columbus township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbus city, Indiana, USA.html">Columbus city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jackson County, Indiana, USA.html">Jackson County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Seymour MSA, IN, USA.html">Seymour MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Shelby County, Indiana, USA.html">Shelby County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jennings County, Indiana, USA.html">Jennings County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="North Vernon MSA, IN, USA.html">North Vernon MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Decatur County, Indiana, USA.html">Decatur County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Greensburg MSA, IN, USA.html">Greensburg MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Brown County, Indiana, USA.html">Brown County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Geneva township [CCD], Jennings County, Indiana, USA.html">Geneva township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="German township [CCD], Bartholomew County, Indiana, USA.html">German township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Redding township [CCD], Jackson County, Indiana, USA.html">Redding township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Brown County, Indiana, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blue River township [CCD], Johnson County, Indiana, USA.html">Blue River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamblen township [CCD], Brown County, Indiana, USA.html">Hamblen township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edinburgh town, Indiana, USA.html">Edinburgh town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nineveh township [CCD], Johnson County, Indiana, USA.html">Nineveh township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison township [CCD], Bartholomew County, Indiana, USA.html">Harrison township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne township [CCD], Bartholomew County, Indiana, USA.html">Wayne township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haw Creek township [CCD], Bartholomew County, Indiana, USA.html">Haw Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay township [CCD], Bartholomew County, Indiana, USA.html">Clay township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sand Creek township [CCD], Bartholomew County, Indiana, USA.html">Sand Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hope town, Indiana, USA.html">Hope town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Shelby County, Indiana, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Van Buren township [CCD], Brown County, Indiana, USA.html">Van Buren township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ohio township [CCD], Bartholomew County, Indiana, USA.html">Ohio township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flat Rock township [CCD], Bartholomew County, Indiana, USA.html">Flat Rock township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hamilton township [CCD], Jackson County, Indiana, USA.html">Hamilton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rock Creek township [CCD], Bartholomew County, Indiana, USA.html">Rock Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Noble township [CCD], Shelby County, Indiana, USA.html">Noble township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pershing township [CCD], Jackson County, Indiana, USA.html">Pershing township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay township [CCD], Decatur County, Indiana, USA.html">Clay township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Shelby County, Indiana, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clifty township [CCD], Bartholomew County, Indiana, USA.html">Clifty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Bartholomew County, Indiana, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Decatur County, Indiana, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Taylorsville CDP, Indiana, USA.html">Taylorsville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Elizabethtown town, Indiana, USA.html">Elizabethtown town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hartsville town, Indiana, USA.html">Hartsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Clifford town, Indiana, USA.html">Clifford town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jonesville town, Indiana, USA.html">Jonesville town</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Columbus MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

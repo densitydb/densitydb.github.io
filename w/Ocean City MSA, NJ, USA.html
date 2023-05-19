@@ -1,0 +1,578 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ocean City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Ocean City MSA</div>
+    <div class="text longname">Ocean City MSA, NJ, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">95.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">402 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairbanks MSA, AK, USA.html"><</a> <a class="button" href="Corvallis MSA, OR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Rogers County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">512/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">487 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alice MSA, TX, USA.html"><</a> <a class="button" href="Carroll MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Brush CCD [CCD], Morgan County, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">129/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">95 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">90th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskegon MSA, MI, USA.html"><</a> <a class="button" href="Greenville-Anderson-Mauldin MSA, SC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Americus CDP, Indiana, USA.html"><</a> <a class="button" href="Cape May County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">84.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">270 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Torrington MSA, CT, USA.html"><</a> <a class="button" href="Mount Vernon MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="08056, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.84%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">415 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tallahassee MSA, FL, USA.html"><</a> <a class="button" href="Wilmington MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Big Blue precinct [CCD], Saline County, Nebraska, USA.html"><</a> <a class="button" href="Cape May County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.47%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">486 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tucson MSA, AZ, USA.html"><</a> <a class="button" href="Athens MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="08059, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.94%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">511 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Roswell MSA, NM, USA.html"><</a> <a class="button" href="Campbellsville MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Elkins city, West Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.10%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">903 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reading MSA, PA, USA.html"><</a> <a class="button" href="Effingham MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="West township [CCD], Marshall County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">659 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shelby MSA, NC, USA.html"><</a> <a class="button" href="Claremont-Lebanon MSA, NH-VT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Lexington Park Neighborhood, Philadelphia City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">623 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Statesboro MSA, GA, USA.html"><</a> <a class="button" href="Bucyrus MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Conchas Dam CDP, New Mexico, USA.html"><</a> <a class="button" href="Cape May County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.228</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">1 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><span class="button">&nbsp;&nbsp;</span> <a class="button" href="Breckenridge MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="88312, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">57.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">2 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">100th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Breckenridge MSA, CO, USA.html"><</a> <a class="button" href="Kill Devil Hills MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="04414, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1147/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">524 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Adrian MSA, MI, USA.html"><</a> <a class="button" href="Zapata MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="65616, USA.html"><</a> <a class="button" href="Cape May County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">727/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">480 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pierre MSA, SD, USA.html"><</a> <a class="button" href="Dixon MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Shadow Hills Neighborhood, Los Angeles City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">312/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">564 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">40th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kalispell MSA, MT, USA.html"><</a> <a class="button" href="Bangor MSA, ME, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape May County, New Jersey, USA.html"><</a> <a class="button" href="Zarate CDP, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">174/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">570 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Warrensburg MSA, MO, USA.html"><</a> <a class="button" href="Easton MSA, MD, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 7 [CCD], Washington County, Tennessee, USA.html"><</a> <a class="button" href="Cape May County, New Jersey, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New Jersey, USA.html">New Jersey</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Philadelphia-Reading-Camden CSA, PA-NJ-DE-MD, USA.html">Philadelphia-Reading-Camden CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Atlantic City-Hammonton MSA, NJ, USA.html">Atlantic City-Hammonton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Atlantic County, New Jersey, USA.html">Atlantic County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cumberland County, New Jersey, USA.html">Cumberland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Vineland-Bridgeton MSA, NJ, USA.html">Vineland-Bridgeton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cape May County, New Jersey, USA.html">Cape May County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Egg Harbor township [CCD], Atlantic County, New Jersey, USA.html">Egg Harbor township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lower township [CCD], Cape May County, New Jersey, USA.html">Lower township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middle township [CCD], Cape May County, New Jersey, USA.html">Middle township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Upper township [CCD], Cape May County, New Jersey, USA.html">Upper township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ocean City city, New Jersey, USA.html">Ocean City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ocean City city [CCD], Cape May County, New Jersey, USA.html">Ocean City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Somers Point city, New Jersey, USA.html">Somers Point city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Somers Point city [CCD], Atlantic County, New Jersey, USA.html">Somers Point city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Villas CDP, New Jersey, USA.html">Villas CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dennis township [CCD], Cape May County, New Jersey, USA.html">Dennis township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maurice River township [CCD], Cumberland County, New Jersey, USA.html">Maurice River township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cape May Court House CDP, New Jersey, USA.html">Cape May Court House CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wildwood city [CCD], Cape May County, New Jersey, USA.html">Wildwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wildwood city, New Jersey, USA.html">Wildwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Wildwood city [CCD], Cape May County, New Jersey, USA.html">North Wildwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Wildwood city, New Jersey, USA.html">North Wildwood city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rio Grande CDP, New Jersey, USA.html">Rio Grande CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wildwood Crest borough [CCD], Cape May County, New Jersey, USA.html">Wildwood Crest borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wildwood Crest borough, New Jersey, USA.html">Wildwood Crest borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="North Cape May CDP, New Jersey, USA.html">North Cape May CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cape May city, New Jersey, USA.html">Cape May city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cape May city [CCD], Cape May County, New Jersey, USA.html">Cape May city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Whitesboro CDP, New Jersey, USA.html">Whitesboro CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodbine borough [CCD], Cape May County, New Jersey, USA.html">Woodbine borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Woodbine borough, New Jersey, USA.html">Woodbine borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Erma CDP, New Jersey, USA.html">Erma CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sea Isle City city [CCD], Cape May County, New Jersey, USA.html">Sea Isle City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sea Isle City city, New Jersey, USA.html">Sea Isle City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Estell Manor city [CCD], Atlantic County, New Jersey, USA.html">Estell Manor city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Estell Manor city, New Jersey, USA.html">Estell Manor city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Avalon borough [CCD], Cape May County, New Jersey, USA.html">Avalon borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Avalon borough, New Jersey, USA.html">Avalon borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Cape May borough [CCD], Cape May County, New Jersey, USA.html">West Cape May borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Cape May borough, New Jersey, USA.html">West Cape May borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stone Harbor borough [CCD], Cape May County, New Jersey, USA.html">Stone Harbor borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stone Harbor borough, New Jersey, USA.html">Stone Harbor borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burleigh CDP, New Jersey, USA.html">Burleigh CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belleplain CDP, New Jersey, USA.html">Belleplain CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Wildwood borough [CCD], Cape May County, New Jersey, USA.html">West Wildwood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Wildwood borough, New Jersey, USA.html">West Wildwood borough</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corbin City city [CCD], Atlantic County, New Jersey, USA.html">Corbin City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corbin City city, New Jersey, USA.html">Corbin City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cape May Point borough [CCD], Cape May County, New Jersey, USA.html">Cape May Point borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cape May Point borough, New Jersey, USA.html">Cape May Point borough</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Diamond Beach CDP, New Jersey, USA.html">Diamond Beach CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Strathmere CDP, New Jersey, USA.html">Strathmere CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Ocean City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

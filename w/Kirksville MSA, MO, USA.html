@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kirksville MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Kirksville MSA</div>
+    <div class="text longname">Kirksville MSA, MO, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">29.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">819 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bainbridge MSA, GA, USA.html"><</a> <a class="button" href="Fort Morgan MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="89701, USA.html"><</a> <a class="button" href="Marion County, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">703/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">297 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williamsport MSA, PA, USA.html"><</a> <a class="button" href="Topeka MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Floyd township [CCD], O'Brien County, Iowa, USA.html"><</a> <a class="button" href="Topeka MSA, KS, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">768 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brownsville MSA, TN, USA.html"><</a> <a class="button" href="Clewiston MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="04743, USA.html"><</a> <a class="button" href="28167, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">86.74%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">195 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">79th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beckley MSA, WV, USA.html"><</a> <a class="button" href="Plattsburgh MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Broad Creek CDP, North Carolina, USA.html"><</a> <a class="button" href="Paola city, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">810 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon MSA, IL, USA.html"><</a> <a class="button" href="Bemidji MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orangeburg CCD [CCD], Orangeburg County, South Carolina, USA.html"><</a> <a class="button" href="40370, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">426 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morgantown MSA, WV, USA.html"><</a> <a class="button" href="Lawrence MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Isabella-Pletcher CCD [CCD], Chilton County, Alabama, USA.html"><</a> <a class="button" href="68128, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.39%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">206 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lawton MSA, OK, USA.html"><</a> <a class="button" href="Davenport-Moline-Rock Island MSA, IA-IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indiana borough, Pennsylvania, USA.html"><</a> <a class="button" href="48150, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">828 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cincinnati MSA, OH-KY-IN, USA.html"><</a> <a class="button" href="Murray MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bridgman city, Michigan, USA.html"><</a> <a class="button" href="20009, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.05%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">374 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huntsville MSA, TX, USA.html"><</a> <a class="button" href="Deming MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marlborough town [CCD], Cheshire County, New Hampshire, USA.html"><</a> <a class="button" href="District 1 [CCD], New Kent County, Virginia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.96%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">524 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albertville MSA, AL, USA.html"><</a> <a class="button" href="Tiffin MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pine Level township [CCD], Johnston County, North Carolina, USA.html"><</a> <a class="button" href="14466, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.556</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">606 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ottawa MSA, KS, USA.html"><</a> <a class="button" href="Terre Haute MSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="03878, USA.html"><</a> <a class="button" href="Texas CCD [CCD], Heard County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">279 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Greenville MSA, NC, USA.html"><</a> <a class="button" href="Rock Springs MSA, WY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon-Hollywood-Montclair Neighborhood, Lexington City, Kentucky, USA.html"><</a> <a class="button" href="81039, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1206/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">486 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Richmond MSA, IN, USA.html"><</a> <a class="button" href="Rome MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marvin village, North Carolina, USA.html"><</a> <a class="button" href="Seaside CCD [CCD], Clatsop County, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">861/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">365 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alma MSA, MI, USA.html"><</a> <a class="button" href="Bartlesville MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Monroe city, Louisiana, USA.html"><</a> <a class="button" href="53532, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">457/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">364 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chattanooga MSA, TN-GA, USA.html"><</a> <a class="button" href="Stephenville MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairbanks Ranch CDP, California, USA.html"><</a> <a class="button" href="Holmen village, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">203/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">490 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jacksonville MSA, IL, USA.html"><</a> <a class="button" href="Amsterdam MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 5 [CCD], Coahoma County, Mississippi, USA.html"><</a> <a class="button" href="29340, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Missouri, USA.html">Missouri</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Iowa, USA.html">Iowa</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Ottumwa MSA, IA, USA.html">Ottumwa MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Adair County, Missouri, USA.html">Adair County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton township [CCD], Adair County, Missouri, USA.html">Benton township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kirksville city, Missouri, USA.html">Kirksville city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Macon County, Missouri, USA.html">Macon County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Appanoose County, Iowa, USA.html">Appanoose County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Linn County, Missouri, USA.html">Linn County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Davis County, Iowa, USA.html">Davis County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sullivan County, Missouri, USA.html">Sullivan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Scotland County, Missouri, USA.html">Scotland County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Putnam County, Missouri, USA.html">Putnam County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schuyler County, Missouri, USA.html">Schuyler County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Knox County, Missouri, USA.html">Knox County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="La Plata township [CCD], Macon County, Missouri, USA.html">La Plata township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="La Plata city, Missouri, USA.html">La Plata city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Nineveh township [CCD], Adair County, Missouri, USA.html">Nineveh township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Penn township [CCD], Sullivan County, Missouri, USA.html">Penn township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prairie township [CCD], Schuyler County, Missouri, USA.html">Prairie township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt River township [CCD], Adair County, Missouri, USA.html">Salt River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Schuyler County, Missouri, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pettis township [CCD], Adair County, Missouri, USA.html">Pettis township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fabius township [CCD], Schuyler County, Missouri, USA.html">Fabius township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lancaster city, Missouri, USA.html">Lancaster city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay township [CCD], Adair County, Missouri, USA.html">Clay township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Polk township [CCD], Adair County, Missouri, USA.html">Polk township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt River township [CCD], Schuyler County, Missouri, USA.html">Salt River township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Queen City city, Missouri, USA.html">Queen City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Macon County, Missouri, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Elm township [CCD], Putnam County, Missouri, USA.html">Elm township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lyon township [CCD], Knox County, Missouri, USA.html">Lyon township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilson township [CCD], Adair County, Missouri, USA.html">Wilson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greensburg township [CCD], Knox County, Missouri, USA.html">Greensburg township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greentop city, Missouri, USA.html">Greentop city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Novinger city, Missouri, USA.html">Novinger city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morrow township [CCD], Adair County, Missouri, USA.html">Morrow township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyacondah township [CCD], Davis County, Iowa, USA.html">Wyacondah township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Independence township [CCD], Schuyler County, Missouri, USA.html">Independence township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glenwood township [CCD], Schuyler County, Missouri, USA.html">Glenwood township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Adair County, Missouri, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Downing city, Missouri, USA.html">Downing city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grove township [CCD], Davis County, Iowa, USA.html">Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vest township [CCD], Scotland County, Missouri, USA.html">Vest township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wells township [CCD], Appanoose County, Iowa, USA.html">Wells township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brashear city, Missouri, USA.html">Brashear city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walnut township [CCD], Adair County, Missouri, USA.html">Walnut township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morris township [CCD], Sullivan County, Missouri, USA.html">Morris township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grant township [CCD], Putnam County, Missouri, USA.html">Grant township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Glenwood village, Missouri, USA.html">Glenwood village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fabius township [CCD], Davis County, Iowa, USA.html">Fabius township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Sullivan County, Missouri, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shelton township [CCD], Knox County, Missouri, USA.html">Shelton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buchanan township [CCD], Sullivan County, Missouri, USA.html">Buchanan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chariton township [CCD], Schuyler County, Missouri, USA.html">Chariton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Easley township [CCD], Macon County, Missouri, USA.html">Easley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Pleasant township [CCD], Scotland County, Missouri, USA.html">Mount Pleasant township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Salem township [CCD], Linn County, Missouri, USA.html">North Salem township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Miller township [CCD], Scotland County, Missouri, USA.html">Miller township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Drake township [CCD], Macon County, Missouri, USA.html">Drake township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millard village, Missouri, USA.html">Millard village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gibbs village, Missouri, USA.html">Gibbs village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johnston township [CCD], Macon County, Missouri, USA.html">Johnston township</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Kirksville MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

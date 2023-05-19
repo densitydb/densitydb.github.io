@@ -1,0 +1,662 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Burlington MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Burlington MSA</div>
+    <div class="text longname">Burlington MSA, IA-IL, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">45.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">640 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Madisonville MSA, KY, USA.html"><</a> <a class="button" href="Shawano MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="85224, USA.html"><</a> <a class="button" href="21921, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">630/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">372 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Guymon MSA, OK, USA.html"><</a> <a class="button" href="Kapaa MSA, HI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="02828, USA.html"><</a> <a class="button" href="17112, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">624 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">33rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bennettsville MSA, SC, USA.html"><</a> <a class="button" href="Quincy MSA, IL-MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Teterboro borough, New Jersey, USA.html"><</a> <a class="button" href="Ventura River Neighborhood, Ventura City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">85.69%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">227 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield MSA, IA, USA.html"><</a> <a class="button" href="Steamboat Springs MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Towanda township [CCD], McLean County, Illinois, USA.html"><</a> <a class="button" href="Village Neighborhood, Wichita City, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">742 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dubuque MSA, IA, USA.html"><</a> <a class="button" href="Marion MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Upper St. Vrain CCD [CCD], Boulder County, Colorado, USA.html"><</a> <a class="button" href="Herman town [CCD], Dodge County, Wisconsin, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.59%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">361 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="York-Hanover MSA, PA, USA.html"><</a> <a class="button" href="Kingston MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="34286, USA.html"><</a> <a class="button" href="Orchard Lake Village city, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.91%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">528 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Dublin MSA, GA, USA.html"><</a> <a class="button" href="Chambersburg-Waynesboro MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="45801, USA.html"><</a> <a class="button" href="Salt Creek Commons CDP, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.16%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">788 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">16th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Point Pleasant MSA, WV-OH, USA.html"><</a> <a class="button" href="Cumberland MSA, MD-WV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winchester CCD [CCD], Clark County, Kentucky, USA.html"><</a> <a class="button" href="Niskayuna town [CCD], Schenectady County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">316 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">66th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield MSA, IA, USA.html"><</a> <a class="button" href="Lubbock MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Spearfish city [CCD], Lawrence County, South Dakota, USA.html"><</a> <a class="button" href="Park County, Wyoming, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">329 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Seneca MSA, SC, USA.html"><</a> <a class="button" href="Racine MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairlawn city, Ohio, USA.html"><</a> <a class="button" href="Wea township [CCD], Tippecanoe County, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.618</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">147 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Platte MSA, NE, USA.html"><</a> <a class="button" href="El Dorado MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bellevue Neighborhood, Schenectady City, New York, USA.html"><</a> <a class="button" href="33705, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.52%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">387 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ocala MSA, FL, USA.html"><</a> <a class="button" href="Torrington MSA, CT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Russell Springs city, Kentucky, USA.html"><</a> <a class="button" href="72932, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1101/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">555 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jefferson MSA, GA, USA.html"><</a> <a class="button" href="Gardnerville Ranchos MSA, NV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ashby district [CCD], Rockingham County, Virginia, USA.html"><</a> <a class="button" href="99671, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">807/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">414 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="La Grande MSA, OR, USA.html"><</a> <a class="button" href="Marion MSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Antonio Heights CDP, California, USA.html"><</a> <a class="button" href="37409, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">459/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">361 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Winona MSA, MN, USA.html"><</a> <a class="button" href="Charleston-Mattoon MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Covington-Porterdale CCD [CCD], Newton County, Georgia, USA.html"><</a> <a class="button" href="The Dalles CCD [CCD], Wasco County, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">264/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">391 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Auburn MSA, NY, USA.html"><</a> <a class="button" href="Jamestown-Dunkirk-Fredonia MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Pembroke CDP, Massachusetts, USA.html"><</a> <a class="button" href="81521, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Illinois, USA.html">Illinois</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Iowa, USA.html">Iowa</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Davenport-Moline CSA, IA-IL, USA.html">Davenport-Moline CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Davenport-Moline-Rock Island MSA, IA-IL, USA.html">Davenport-Moline-Rock Island MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Fort Madison-Keokuk MSA, IA-IL-MO, USA.html">Fort Madison-Keokuk MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Des Moines County, Iowa, USA.html">Des Moines County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lee County, Iowa, USA.html">Lee County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Macomb MSA, IL, USA.html">Macomb MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="McDonough County, Illinois, USA.html">McDonough County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burlington city [CCD], Des Moines County, Iowa, USA.html">Burlington city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Burlington city, Iowa, USA.html">Burlington city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Henry County, Iowa, USA.html">Henry County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hancock County, Illinois, USA.html">Hancock County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Warren County, Illinois, USA.html">Warren County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Mercer County, Illinois, USA.html">Mercer County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Louisa County, Iowa, USA.html">Louisa County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Henderson County, Illinois, USA.html">Henderson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Burlington city [CCD], Des Moines County, Iowa, USA.html">West Burlington city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Burlington city, Iowa, USA.html">West Burlington city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wapello township [CCD], Louisa County, Iowa, USA.html">Wapello township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New London township [CCD], Henry County, Iowa, USA.html">New London township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Flint River township [CCD], Des Moines County, Iowa, USA.html">Flint River township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mediapolis city [CCD], Des Moines County, Iowa, USA.html">Mediapolis city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mediapolis city, Iowa, USA.html">Mediapolis city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oquawka township [CCD], Henderson County, Illinois, USA.html">Oquawka township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="La Harpe township [CCD], Hancock County, Illinois, USA.html">La Harpe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scott township [CCD], Henry County, Iowa, USA.html">Scott township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morning Sun township [CCD], Louisa County, Iowa, USA.html">Morning Sun township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oquawka village, Illinois, USA.html">Oquawka village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stronghurst township [CCD], Henderson County, Illinois, USA.html">Stronghurst township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tama township [CCD], Des Moines County, Iowa, USA.html">Tama township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Danville city [CCD], Des Moines County, Iowa, USA.html">Danville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Danville city, Iowa, USA.html">Danville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tompkins township [CCD], Warren County, Illinois, USA.html">Tompkins township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Baltimore township [CCD], Henry County, Iowa, USA.html">Baltimore township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dallas City township [CCD], Hancock County, Illinois, USA.html">Dallas City township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Des Moines County, Iowa, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gladstone township [CCD], Henderson County, Illinois, USA.html">Gladstone township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beaverdale CDP, Iowa, USA.html">Beaverdale CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stronghurst village, Illinois, USA.html">Stronghurst village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dallas City city, Illinois, USA.html">Dallas City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin township [CCD], Des Moines County, Iowa, USA.html">Franklin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Danville township [CCD], Des Moines County, Iowa, USA.html">Danville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Denmark township [CCD], Lee County, Iowa, USA.html">Denmark township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton township [CCD], Des Moines County, Iowa, USA.html">Benton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lomax township [CCD], Henderson County, Illinois, USA.html">Lomax township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blandinsville township [CCD], McDonough County, Illinois, USA.html">Blandinsville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Concordia township [CCD], Des Moines County, Iowa, USA.html">Concordia township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Keithsburg township [CCD], Mercer County, Illinois, USA.html">Keithsburg township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Green Bay township [CCD], Lee County, Iowa, USA.html">Green Bay township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Yellow Springs township [CCD], Des Moines County, Iowa, USA.html">Yellow Springs township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Biggsville township [CCD], Henderson County, Illinois, USA.html">Biggsville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sumner township [CCD], Warren County, Illinois, USA.html">Sumner township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Grove township [CCD], Des Moines County, Iowa, USA.html">Pleasant Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Huron township [CCD], Des Moines County, Iowa, USA.html">Huron township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lomax village, Illinois, USA.html">Lomax village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Abington township [CCD], Mercer County, Illinois, USA.html">Abington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pontoosuc township [CCD], Hancock County, Illinois, USA.html">Pontoosuc township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middletown city [CCD], Des Moines County, Iowa, USA.html">Middletown city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Middletown city, Iowa, USA.html">Middletown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Media township [CCD], Henderson County, Illinois, USA.html">Media township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canaan township [CCD], Henry County, Iowa, USA.html">Canaan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Ridge township [CCD], Lee County, Iowa, USA.html">Pleasant Ridge township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ellison township [CCD], Warren County, Illinois, USA.html">Ellison township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hale township [CCD], Warren County, Illinois, USA.html">Hale township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eliot township [CCD], Louisa County, Iowa, USA.html">Eliot township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Biggsville village, Illinois, USA.html">Biggsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Des Moines County, Iowa, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rozetta township [CCD], Henderson County, Illinois, USA.html">Rozetta township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ohio Grove township [CCD], Mercer County, Illinois, USA.html">Ohio Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Durham township [CCD], Hancock County, Illinois, USA.html">Durham township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Raritan township [CCD], Henderson County, Illinois, USA.html">Raritan township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gladstone village, Illinois, USA.html">Gladstone village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carman township [CCD], Henderson County, Illinois, USA.html">Carman township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Terre Haute township [CCD], Henderson County, Illinois, USA.html">Terre Haute township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bald Bluff township [CCD], Henderson County, Illinois, USA.html">Bald Bluff township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Point Pleasant township [CCD], Warren County, Illinois, USA.html">Point Pleasant township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Des Moines County, Iowa, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Media village, Illinois, USA.html">Media village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Raritan village, Illinois, USA.html">Raritan village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gulf Port village, Illinois, USA.html">Gulf Port village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Burlington MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

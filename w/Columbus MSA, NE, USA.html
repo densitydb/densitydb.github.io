@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Columbus MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Columbus MSA</div>
+    <div class="text longname">Columbus MSA, NE, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">34.3k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">773 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">17th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lewisburg MSA, TN, USA.html"><</a> <a class="button" href="Dodge City MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="84405, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">761/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">266 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Faribault-Northfield MSA, MN, USA.html"><</a> <a class="button" href="Blacksburg-Christiansburg-Radford MSA, VA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="45804, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">653 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Breckenridge MSA, CO, USA.html"><</a> <a class="button" href="Hilo MSA, HI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="14486, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">74.59%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">490 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albany-Schenectady-Troy MSA, NY, USA.html"><</a> <a class="button" href="Topeka MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="North Yelm CDP, Washington, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.15%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">159 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Montrose MSA, CO, USA.html"><</a> <a class="button" href="Nacogdoches MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="Newton Grove township [CCD], Sampson County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">745 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">20th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Juneau MSA, AK, USA.html"><</a> <a class="button" href="Marietta MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="48813, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.58%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">731 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Jesup MSA, GA, USA.html"><</a> <a class="button" href="Española MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wayne County, Georgia, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">482 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">48th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carbondale-Marion MSA, IL, USA.html"><</a> <a class="button" href="Goldsboro MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="London Mills village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">605 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bennettsville MSA, SC, USA.html"><</a> <a class="button" href="New York-Newark-Jersey City MSA, NY-NJ-PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="Brooklyn borough [CCD], Kings County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">872 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Yuma MSA, AZ, USA.html"><</a> <a class="button" href="The Villages MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="56131, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.550</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">660 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Spartanburg MSA, SC, USA.html"><</a> <a class="button" href="Pueblo MSA, CO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="Southwest Village Neighborhood, Wichita City, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">902 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">3rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wooster MSA, OH, USA.html"><</a> <a class="button" href="Jefferson MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakfield village, New York, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1234/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">473 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">49th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lima MSA, OH, USA.html"><</a> <a class="button" href="Bloomsburg-Berwick MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crestwood-Hinda Heights Neighborhood, Lexington City, Kentucky, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">941/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">310 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">67th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mountain Home MSA, ID, USA.html"><</a> <a class="button" href="Othello MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="Grandyle Village CDP, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">579/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">267 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">71st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Williston MSA, ND, USA.html"><</a> <a class="button" href="Fayetteville-Springdale-Rogers MSA, AR-MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="North Belle Vernon borough, Pennsylvania, USA.html"><</a> <a class="button" href="Platte County, Nebraska, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">317/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">335 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">64th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Emporia MSA, KS, USA.html"><</a> <a class="button" href="Ocala MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Platte County, Nebraska, USA.html"><</a> <a class="button" href="Lake Elmo city [CCD], Washington County, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Nebraska, USA.html">Nebraska</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Grand Island MSA, NE, USA.html">Grand Island MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Norfolk MSA, NE, USA.html">Norfolk MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, Nebraska, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Platte County, Nebraska, USA.html">Platte County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbus city [CCD], Platte County, Nebraska, USA.html">Columbus city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Columbus city, Nebraska, USA.html">Columbus city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Colfax County, Nebraska, USA.html">Colfax County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Butler County, Nebraska, USA.html">Butler County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Merrick County, Nebraska, USA.html">Merrick County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stanton County, Nebraska, USA.html">Stanton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Boone County, Nebraska, USA.html">Boone County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Polk County, Nebraska, USA.html">Polk County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Nance County, Nebraska, USA.html">Nance County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbus township [CCD], Platte County, Nebraska, USA.html">Columbus township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southeast Manchester precinct [CCD], Boone County, Nebraska, USA.html">Southeast Manchester precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Granville township [CCD], Platte County, Nebraska, USA.html">Granville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shell Creek township [CCD], Platte County, Nebraska, USA.html">Shell Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Osceola precinct [CCD], Polk County, Nebraska, USA.html">North Osceola precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beaver precinct [CCD], Boone County, Nebraska, USA.html">Beaver precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Humphrey city, Nebraska, USA.html">Humphrey city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alexis township [CCD], Butler County, Nebraska, USA.html">Alexis township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newman Grove city, Nebraska, USA.html">Newman Grove city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newman Grove city [CCD], Madison County, Nebraska, USA.html">Newman Grove city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stanton precinct [CCD], Colfax County, Nebraska, USA.html">Stanton precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butler township [CCD], Platte County, Nebraska, USA.html">Butler township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Savannah township [CCD], Butler County, Nebraska, USA.html">Savannah township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Silver Creek township [CCD], Merrick County, Nebraska, USA.html">Silver Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lost Creek township [CCD], Platte County, Nebraska, USA.html">Lost Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oconee township [CCD], Platte County, Nebraska, USA.html">Oconee township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Bernard township [CCD], Platte County, Nebraska, USA.html">St. Bernard township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Humphrey township [CCD], Platte County, Nebraska, USA.html">Humphrey township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bismark township [CCD], Platte County, Nebraska, USA.html">Bismark township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Duncan village, Nebraska, USA.html">Duncan village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lakeview CDP, Nebraska, USA.html">Lakeview CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Creston township [CCD], Platte County, Nebraska, USA.html">Creston township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand Prairie township [CCD], Platte County, Nebraska, USA.html">Grand Prairie township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Platte Center village, Nebraska, USA.html">Platte Center village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland precinct [CCD], Colfax County, Nebraska, USA.html">Richland precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monroe village, Nebraska, USA.html">Monroe village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lindsay village, Nebraska, USA.html">Lindsay village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Genoa township [CCD], Nance County, Nebraska, USA.html">Genoa township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burrows township [CCD], Platte County, Nebraska, USA.html">Burrows township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boone precinct [CCD], Boone County, Nebraska, USA.html">Boone precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Walker township [CCD], Platte County, Nebraska, USA.html">Walker township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherman township [CCD], Platte County, Nebraska, USA.html">Sherman township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shell Creek precinct [CCD], Colfax County, Nebraska, USA.html">Shell Creek precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Creston village, Nebraska, USA.html">Creston village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Loup township [CCD], Platte County, Nebraska, USA.html">Loup township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="DMR precinct [CCD], Stanton County, Nebraska, USA.html">DMR precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison precinct [CCD], Madison County, Nebraska, USA.html">Madison precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shell Creek precinct [CCD], Madison County, Nebraska, USA.html">Shell Creek precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilson precinct [CCD], Colfax County, Nebraska, USA.html">Wilson precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Green Garden precinct [CCD], Madison County, Nebraska, USA.html">Green Garden precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kalamazoo precinct [CCD], Madison County, Nebraska, USA.html">Kalamazoo precinct</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Joliet township [CCD], Platte County, Nebraska, USA.html">Joliet township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe township [CCD], Platte County, Nebraska, USA.html">Monroe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prairie Creek township [CCD], Nance County, Nebraska, USA.html">Prairie Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodville township [CCD], Platte County, Nebraska, USA.html">Woodville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Beaver township [CCD], Nance County, Nebraska, USA.html">Beaver township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tarnov village, Nebraska, USA.html">Tarnov village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cornlea village, Nebraska, USA.html">Cornlea village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newman Grove city [CCD], Platte County, Nebraska, USA.html">Newman Grove city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Columbus MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

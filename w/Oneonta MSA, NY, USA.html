@@ -1,0 +1,656 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Oneonta MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Oneonta MSA</div>
+    <div class="text longname">Oneonta MSA, NY, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">58.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">540 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwalk MSA, OH, USA.html"><</a> <a class="button" href="Batavia MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Lake View Neighborhood, Chicago City, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">385/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">651 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Safford MSA, AZ, USA.html"><</a> <a class="button" href="Wilmington MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="55040, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">22/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">610 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">35th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley MSA, AL, USA.html"><</a> <a class="button" href="Brenham MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Isabella township [CCD], Isabella County, Michigan, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">87.97%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">159 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baraboo MSA, WI, USA.html"><</a> <a class="button" href="Bardstown MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Bryan city [CCD], Williams County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.09%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">642 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bloomington MSA, IN, USA.html"><</a> <a class="button" href="St. Cloud MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Monte Sano Neighborhood, Huntsville City, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">598 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">36th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salem MSA, OH, USA.html"><</a> <a class="button" href="Paragould MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="95819, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.39%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">365 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">61st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Barnstable Town MSA, MA, USA.html"><</a> <a class="button" href="Sonora MSA, CA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tappahannock district [CCD], Essex County, Virginia, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">692 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rockford MSA, IL, USA.html"><</a> <a class="button" href="Angola MSA, IN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Aragon CCD [CCD], Polk County, Georgia, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">814 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">13rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kankakee MSA, IL, USA.html"><</a> <a class="button" href="Fremont MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Seffner CDP, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.32%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">414 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">56th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Morehead City MSA, NC, USA.html"><</a> <a class="button" href="Pittsburgh MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Camp Hill borough, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.612</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">170 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Butte-Silver Bow MSA, MT, USA.html"><</a> <a class="button" href="Marquette MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hixton village, Wisconsin, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">21.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">74 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">92nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kahului-Wailuku-Lahaina MSA, HI, USA.html"><</a> <a class="button" href="East Stroudsburg MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Warsaw town, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1067/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">575 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Danville MSA, IL, USA.html"><</a> <a class="button" href="Somerset MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Otsego County, New York, USA.html"><</a> <a class="button" href="Middlebury town, Indiana, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">655/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">545 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Concord MSA, NH, USA.html"><</a> <a class="button" href="Hutchinson MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brookville borough [CCD], Jefferson County, Pennsylvania, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">233/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">731 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">22nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coshocton MSA, OH, USA.html"><</a> <a class="button" href="Augusta-Waterville MSA, ME, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="47610, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">106/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">822 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Talladega-Sylacauga MSA, AL, USA.html"><</a> <a class="button" href="Brevard MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="La Platte CDP, Nebraska, USA.html"><</a> <a class="button" href="Otsego County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="New York, USA.html">New York</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Albany-Schenectady CSA, NY, USA.html">Albany-Schenectady CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Albany-Schenectady-Troy MSA, NY, USA.html">Albany-Schenectady-Troy MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Syracuse-Auburn CSA, NY, USA.html">Syracuse-Auburn CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Syracuse MSA, NY, USA.html">Syracuse MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Utica-Rome MSA, NY, USA.html">Utica-Rome MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Oneida County, New York, USA.html">Oneida County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison County, New York, USA.html">Madison County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Herkimer County, New York, USA.html">Herkimer County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Otsego County, New York, USA.html">Otsego County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Amsterdam MSA, NY, USA.html">Amsterdam MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montgomery County, New York, USA.html">Montgomery County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Chenango County, New York, USA.html">Chenango County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Delaware County, New York, USA.html">Delaware County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Schoharie County, New York, USA.html">Schoharie County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oneonta city [CCD], Otsego County, New York, USA.html">Oneonta city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oneonta city, New York, USA.html">Oneonta city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sidney town [CCD], Delaware County, New York, USA.html">Sidney town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oneonta town [CCD], Otsego County, New York, USA.html">Oneonta town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Minden town [CCD], Montgomery County, New York, USA.html">Minden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Unadilla town [CCD], Otsego County, New York, USA.html">Unadilla town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sidney village, New York, USA.html">Sidney village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canajoharie town [CCD], Montgomery County, New York, USA.html">Canajoharie town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otsego town [CCD], Otsego County, New York, USA.html">Otsego town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Norwich town [CCD], Chenango County, New York, USA.html">Norwich town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bainbridge town [CCD], Chenango County, New York, USA.html">Bainbridge town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Davenport town [CCD], Delaware County, New York, USA.html">Davenport town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford town [CCD], Otsego County, New York, USA.html">Milford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otego town [CCD], Otsego County, New York, USA.html">Otego town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Guilford town [CCD], Chenango County, New York, USA.html">Guilford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Berlin town [CCD], Chenango County, New York, USA.html">New Berlin town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richmondville town [CCD], Schoharie County, New York, USA.html">Richmondville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Laurens town [CCD], Otsego County, New York, USA.html">Laurens town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin town [CCD], Delaware County, New York, USA.html">Franklin town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookfield town [CCD], Madison County, New York, USA.html">Brookfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Worcester town [CCD], Otsego County, New York, USA.html">Worcester town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richfield town [CCD], Otsego County, New York, USA.html">Richfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartwick town [CCD], Otsego County, New York, USA.html">Hartwick town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edmeston town [CCD], Otsego County, New York, USA.html">Edmeston town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winfield town [CCD], Herkimer County, New York, USA.html">Winfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Middlefield town [CCD], Otsego County, New York, USA.html">Middlefield town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West End CDP, New York, USA.html">West End CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cooperstown village, New York, USA.html">Cooperstown village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maryland town [CCD], Otsego County, New York, USA.html">Maryland town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Morris town [CCD], Otsego County, New York, USA.html">Morris town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sharon town [CCD], Schoharie County, New York, USA.html">Sharon town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butternuts town [CCD], Otsego County, New York, USA.html">Butternuts town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seward town [CCD], Schoharie County, New York, USA.html">Seward town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbia town [CCD], Herkimer County, New York, USA.html">Columbia town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridgewater town [CCD], Oneida County, New York, USA.html">Bridgewater town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harpersfield town [CCD], Delaware County, New York, USA.html">Harpersfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield town [CCD], Otsego County, New York, USA.html">Springfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pittsfield town [CCD], Otsego County, New York, USA.html">Pittsfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cherry Valley town [CCD], Otsego County, New York, USA.html">Cherry Valley town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Lisbon town [CCD], Otsego County, New York, USA.html">New Lisbon town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Summit town [CCD], Schoharie County, New York, USA.html">Summit town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Unadilla village, New York, USA.html">Unadilla village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Richfield Springs village, New York, USA.html">Richfield Springs village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burlington town [CCD], Otsego County, New York, USA.html">Burlington town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Warren town [CCD], Herkimer County, New York, USA.html">Warren town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Worcester CDP, New York, USA.html">Worcester CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plainfield town [CCD], Otsego County, New York, USA.html">Plainfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="New Berlin village, New York, USA.html">New Berlin village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Columbus town [CCD], Chenango County, New York, USA.html">Columbus town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Otego village, New York, USA.html">Otego village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Exeter town [CCD], Otsego County, New York, USA.html">Exeter town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Westford town [CCD], Otsego County, New York, USA.html">Westford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stark town [CCD], Herkimer County, New York, USA.html">Stark town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Roseboom town [CCD], Otsego County, New York, USA.html">Roseboom town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Edmeston CDP, New York, USA.html">Edmeston CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hartwick CDP, New York, USA.html">Hartwick CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgewater CDP, New York, USA.html">Bridgewater CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Schenevus CDP, New York, USA.html">Schenevus CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morris village, New York, USA.html">Morris village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cherry Valley village, New York, USA.html">Cherry Valley village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Decatur town [CCD], Otsego County, New York, USA.html">Decatur town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milford village, New York, USA.html">Milford village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Gilbertsville village, New York, USA.html">Gilbertsville village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laurens village, New York, USA.html">Laurens village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Oneonta MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

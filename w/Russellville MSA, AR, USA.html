@@ -1,0 +1,737 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Russellville MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Russellville MSA</div>
+    <div class="text longname">Russellville MSA, AR, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.6k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">432 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kokomo MSA, IN, USA.html"><</a> <a class="button" href="Laurel MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Howard County, Indiana, USA.html"><</a> <a class="button" href="37042, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">339/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">720 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vernal MSA, UT, USA.html"><</a> <a class="button" href="Hot Springs MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="10921, USA.html"><</a> <a class="button" href="Lavaca city, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">18/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">677 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bainbridge MSA, GA, USA.html"><</a> <a class="button" href="Lebanon MSA, MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sandyston township [CCD], Sussex County, New Jersey, USA.html"><</a> <a class="button" href="Rains County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">77.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">423 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grand Junction MSA, CO, USA.html"><</a> <a class="button" href="Elizabethtown-Fort Knox MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36034, USA.html"><</a> <a class="button" href="Forest Trails Neighborhood, Tulsa City, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">12.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">262 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Goldsboro MSA, NC, USA.html"><</a> <a class="button" href="Austin MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Huntsville Ward 1 township [CCD], Madison County, Arkansas, USA.html"><</a> <a class="button" href="Lott CCD [CCD], Falls County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.73%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">538 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weatherford MSA, OK, USA.html"><</a> <a class="button" href="Storm Lake MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="College Park Neighborhood, Pleasant Hill City, California, USA.html"><</a> <a class="button" href="Deposit town [CCD], Delaware County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">471 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grand Junction MSA, CO, USA.html"><</a> <a class="button" href="Lufkin MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Five Points Neighborhood, Detroit City, Michigan, USA.html"><</a> <a class="button" href="Heritage Square Neighborhood, Saginaw City, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.68%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">216 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Truckee-Grass Valley MSA, CA, USA.html"><</a> <a class="button" href="West Plains MSA, MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="02536, USA.html"><</a> <a class="button" href="Newton township [CCD], Harvey County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.04%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">424 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marshall MSA, TX, USA.html"><</a> <a class="button" href="Baltimore-Columbia-Towson MSA, MD, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="47106, USA.html"><</a> <a class="button" href="Liberty township [CCD], Cole County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">166 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">82nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Castle MSA, PA, USA.html"><</a> <a class="button" href="Kalispell MSA, MT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92284, USA.html"><</a> <a class="button" href="20758, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.561</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">553 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lynchburg MSA, VA, USA.html"><</a> <a class="button" href="Baton Rouge MSA, LA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="16617, USA.html"><</a> <a class="button" href="17238, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">11.65%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">369 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexandria MSA, LA, USA.html"><</a> <a class="button" href="Rolla MSA, MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="36091, USA.html"><</a> <a class="button" href="65571, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">940/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">685 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">27th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fallon MSA, NV, USA.html"><</a> <a class="button" href="Corsicana MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Westville district [CCD], Mathews County, Virginia, USA.html"><</a> <a class="button" href="81657, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">523/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">688 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ashtabula MSA, OH, USA.html"><</a> <a class="button" href="Gainesville MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 7 [CCD], Catahoula Parish, Louisiana, USA.html"><</a> <a class="button" href="Redfield city, South Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">239/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">715 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Poplar Bluff MSA, MO, USA.html"><</a> <a class="button" href="Marietta MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sunnyvale Neighborhood, Semmes City, Alabama, USA.html"><</a> <a class="button" href="Milaca city, Minnesota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">168/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">592 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Beeville MSA, TX, USA.html"><</a> <a class="button" href="Fitzgerald MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="29108, USA.html"><</a> <a class="button" href="27332, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Arkansas, USA.html">Arkansas</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Little Rock-North Little Rock CSA, AR, USA.html">Little Rock-North Little Rock CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Little Rock-North Little Rock-Conway MSA, AR, USA.html">Little Rock-North Little Rock-Conway MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Hot Springs-Malvern CSA, AR, USA.html">Hot Springs-Malvern CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Garland County, Arkansas, USA.html">Garland County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Hot Springs MSA, AR, USA.html">Hot Springs MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Pope County, Arkansas, USA.html">Pope County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Harrison MSA, AR, USA.html">Harrison MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Illinois township [CCD], Pope County, Arkansas, USA.html">Illinois township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Russellville city, Arkansas, USA.html">Russellville city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Johnson County, Arkansas, USA.html">Johnson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Logan County, Arkansas, USA.html">Logan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Conway County, Arkansas, USA.html">Conway County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yell County, Arkansas, USA.html">Yell County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hale township [CCD], Garland County, Arkansas, USA.html">Hale township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Van Buren County, Arkansas, USA.html">Van Buren County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Perry County, Arkansas, USA.html">Perry County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Scott County, Arkansas, USA.html">Scott County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Welborn township [CCD], Conway County, Arkansas, USA.html">Welborn township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Montgomery County, Arkansas, USA.html">Montgomery County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Searcy County, Arkansas, USA.html">Searcy County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dardanelle township [CCD], Yell County, Arkansas, USA.html">Dardanelle township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Newton County, Arkansas, USA.html">Newton County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dover township [CCD], Pope County, Arkansas, USA.html">Dover township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Galla township [CCD], Pope County, Arkansas, USA.html">Galla township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilson township [CCD], Pope County, Arkansas, USA.html">Wilson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dardanelle city, Arkansas, USA.html">Dardanelle city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clark township [CCD], Pope County, Arkansas, USA.html">Clark township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Valley township [CCD], Pope County, Arkansas, USA.html">Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pottsville city, Arkansas, USA.html">Pottsville city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Atkins city, Arkansas, USA.html">Atkins city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Perry township [CCD], Johnson County, Arkansas, USA.html">Perry township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Danville township [CCD], Yell County, Arkansas, USA.html">Danville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Howell township [CCD], Johnson County, Arkansas, USA.html">Howell township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Danville city, Arkansas, USA.html">Danville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gum Log township [CCD], Pope County, Arkansas, USA.html">Gum Log township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Martin township [CCD], Pope County, Arkansas, USA.html">Martin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ward township [CCD], Yell County, Arkansas, USA.html">Ward township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dover city, Arkansas, USA.html">Dover city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Centerville township [CCD], Yell County, Arkansas, USA.html">Centerville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Magazine township [CCD], Yell County, Arkansas, USA.html">Magazine township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Pope County, Arkansas, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ferguson township [CCD], Yell County, Arkansas, USA.html">Ferguson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Convenience township [CCD], Pope County, Arkansas, USA.html">Convenience township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="London city, Arkansas, USA.html">London city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ola city, Arkansas, USA.html">Ola city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Griffin township [CCD], Pope County, Arkansas, USA.html">Griffin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lamar township [CCD], Yell County, Arkansas, USA.html">Lamar township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Pope County, Arkansas, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bayliss township [CCD], Pope County, Arkansas, USA.html">Bayliss township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oden township [CCD], Montgomery County, Arkansas, USA.html">Oden township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shoal Creek township [CCD], Logan County, Arkansas, USA.html">Shoal Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Delaware township [CCD], Logan County, Arkansas, USA.html">Delaware township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moreland township [CCD], Pope County, Arkansas, USA.html">Moreland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Griffin township [CCD], Conway County, Arkansas, USA.html">Griffin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prairie township [CCD], Yell County, Arkansas, USA.html">Prairie township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Riley township [CCD], Yell County, Arkansas, USA.html">Riley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Center township [CCD], Pope County, Arkansas, USA.html">Center township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burnett township [CCD], Pope County, Arkansas, USA.html">Burnett township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Casa township [CCD], Perry County, Arkansas, USA.html">Casa township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Plainview city, Arkansas, USA.html">Plainview city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Pleasant township [CCD], Searcy County, Arkansas, USA.html">Mount Pleasant township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washita township [CCD], Montgomery County, Arkansas, USA.html">Washita township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hector town, Arkansas, USA.html">Hector town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gregory township [CCD], Conway County, Arkansas, USA.html">Gregory township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Phoenix township [CCD], Pope County, Arkansas, USA.html">Phoenix township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sulphur Springs township [CCD], Yell County, Arkansas, USA.html">Sulphur Springs township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mason township [CCD], Yell County, Arkansas, USA.html">Mason township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wheeler township [CCD], Van Buren County, Arkansas, USA.html">Wheeler township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Petit Jean township [CCD], Logan County, Arkansas, USA.html">Petit Jean township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belleville city, Arkansas, USA.html">Belleville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Galla Rock township [CCD], Yell County, Arkansas, USA.html">Galla Rock township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Waveland township [CCD], Yell County, Arkansas, USA.html">Waveland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sims township [CCD], Montgomery County, Arkansas, USA.html">Sims township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Yell County, Arkansas, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar Falls township [CCD], Conway County, Arkansas, USA.html">Cedar Falls township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rover township [CCD], Yell County, Arkansas, USA.html">Rover township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Havana city, Arkansas, USA.html">Havana city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Old Hickory township [CCD], Conway County, Arkansas, USA.html">Old Hickory township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rose Creek township [CCD], Perry County, Arkansas, USA.html">Rose Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Van Buren County, Arkansas, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mountain township [CCD], Yell County, Arkansas, USA.html">Mountain township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Newton County, Arkansas, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tyler township [CCD], Perry County, Arkansas, USA.html">Tyler township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="New Tennessee township [CCD], Perry County, Arkansas, USA.html">New Tennessee township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mountain township [CCD], Logan County, Arkansas, USA.html">Mountain township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Smyrna township [CCD], Pope County, Arkansas, USA.html">Smyrna township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fannie township [CCD], Montgomery County, Arkansas, USA.html">Fannie township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Herring township [CCD], Yell County, Arkansas, USA.html">Herring township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Blue Mountain township [CCD], Logan County, Arkansas, USA.html">Blue Mountain township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bluffton township [CCD], Yell County, Arkansas, USA.html">Bluffton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gilkey township [CCD], Yell County, Arkansas, USA.html">Gilkey township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Martin township [CCD], Conway County, Arkansas, USA.html">Martin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Freeman township [CCD], Pope County, Arkansas, USA.html">Freeman township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Gravelly Hill township [CCD], Yell County, Arkansas, USA.html">Gravelly Hill township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Briggsville township [CCD], Yell County, Arkansas, USA.html">Briggsville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Petit Jean township [CCD], Conway County, Arkansas, USA.html">Petit Jean township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dutch Creek township [CCD], Yell County, Arkansas, USA.html">Dutch Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blue Mountain town, Arkansas, USA.html">Blue Mountain town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ions Creek township [CCD], Yell County, Arkansas, USA.html">Ions Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Compton township [CCD], Yell County, Arkansas, USA.html">Compton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="White Eagle township [CCD], Conway County, Arkansas, USA.html">White Eagle township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Corinth town, Arkansas, USA.html">Corinth town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crawford township [CCD], Yell County, Arkansas, USA.html">Crawford township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jones township [CCD], Newton County, Arkansas, USA.html">Jones township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Little Texas township [CCD], Scott County, Arkansas, USA.html">Little Texas township</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Russellville MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

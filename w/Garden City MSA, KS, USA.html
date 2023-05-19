@@ -1,0 +1,575 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Garden City MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Garden City MSA</div>
+    <div class="text longname">Garden City MSA, KS, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">42.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">671 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">28th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Celina MSA, OH, USA.html"><</a> <a class="button" href="Summit Park MSA, UT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Belleville city [CCD], St. Clair County, Illinois, USA.html"><</a> <a class="button" href="Midland city [CCD], Midland County, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">908/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">190 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lansing-East Lansing MSA, MI, USA.html"><</a> <a class="button" href="Tallahassee MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kenmar CDP, Pennsylvania, USA.html"><</a> <a class="button" href="Burlington city, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">7.5/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">851 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kalispell MSA, MT, USA.html"><</a> <a class="button" href="Williston MSA, ND, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="43511, USA.html"><</a> <a class="button" href="55396, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">39.79%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">858 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">8th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Andrews MSA, TX, USA.html"><</a> <a class="button" href="Taos MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Andrews County, Texas, USA.html"><</a> <a class="button" href="15233, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">50.12%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">48 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">95th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlsbad-Artesia MSA, NM, USA.html"><</a> <a class="button" href="Levelland MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eastmont Neighborhood, Oakland City, California, USA.html"><</a> <a class="button" href="Arlington Heights Neighborhood, Riverside City, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.29%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">496 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="San Angelo MSA, TX, USA.html"><</a> <a class="button" href="Fairmont MSA, WV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Copper Creek Neighborhood, Fayetteville City, Arkansas, USA.html"><</a> <a class="button" href="10013, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">122 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">87th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wichita MSA, KS, USA.html"><</a> <a class="button" href="Athens-Clarke County MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Severna Park CDP, Maryland, USA.html"><</a> <a class="button" href="Union town [CCD], Broome County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.41%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">330 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Moberly MSA, MO, USA.html"><</a> <a class="button" href="Abilene MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sedalia township [CCD], Pettis County, Missouri, USA.html"><</a> <a class="button" href="Rebersburg CDP, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.01%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">841 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Somerset MSA, PA, USA.html"><</a> <a class="button" href="Maryville MSA, MO, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="River Grove village, Illinois, USA.html"><</a> <a class="button" href="57108, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.81%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">821 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Heber MSA, UT, USA.html"><</a> <a class="button" href="Grants MSA, NM, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="15473, USA.html"><</a> <a class="button" href="Hopkinton town [CCD], St. Lawrence County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.523</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">818 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">12nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kapaa MSA, HI, USA.html"><</a> <a class="button" href="Big Spring MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Garfield township [CCD], Roberts County, South Dakota, USA.html"><</a> <a class="button" href="Rochester township [CCD], Lorain County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">707 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Muskegon MSA, MI, USA.html"><</a> <a class="button" href="El Centro MSA, CA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="79821, USA.html"><</a> <a class="button" href="88048, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1515/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">330 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">65th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Laurinburg MSA, NC, USA.html"><</a> <a class="button" href="Altoona MSA, PA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blue Jay CDP, Ohio, USA.html"><</a> <a class="button" href="West Concord CDP, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1170/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">191 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Great Falls MSA, MT, USA.html"><</a> <a class="button" href="Utica-Rome MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="McFarland village [CCD], Dane County, Wisconsin, USA.html"><</a> <a class="button" href="59105, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">667/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">211 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">77th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bismarck MSA, ND, USA.html"><</a> <a class="button" href="Utica-Rome MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Baraboo city, Wisconsin, USA.html"><</a> <a class="button" href="15146, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">373/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">294 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Burlington-South Burlington MSA, VT, USA.html"><</a> <a class="button" href="Lima MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cranbury CDP, New Jersey, USA.html"><</a> <a class="button" href="Perkins township [CCD], Erie County, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Kansas, USA.html">Kansas</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Finney County, Kansas, USA.html">Finney County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garden City city [CCD], Finney County, Kansas, USA.html">Garden City city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garden City city, Kansas, USA.html">Garden City city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Grant County, Kansas, USA.html">Grant County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garden City township [CCD], Finney County, Kansas, USA.html">Garden City township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Gray County, Kansas, USA.html">Gray County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Scott County, Kansas, USA.html">Scott County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kearny County, Kansas, USA.html">Kearny County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Haskell County, Kansas, USA.html">Haskell County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherlock township [CCD], Finney County, Kansas, USA.html">Sherlock township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Ness County, Kansas, USA.html">Ness County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hamilton County, Kansas, USA.html">Hamilton County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lakin township [CCD], Kearny County, Kansas, USA.html">Lakin township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Holcomb city, Kansas, USA.html">Holcomb city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lakin city, Kansas, USA.html">Lakin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leoti township [CCD], Wichita County, Kansas, USA.html">Leoti township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wichita County, Kansas, USA.html">Wichita County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Stanton County, Kansas, USA.html">Stanton County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haskell township [CCD], Haskell County, Kansas, USA.html">Haskell township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hodgeman County, Kansas, USA.html">Hodgeman County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Lane County, Kansas, USA.html">Lane County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dudley township [CCD], Haskell County, Kansas, USA.html">Dudley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dighton township [CCD], Lane County, Kansas, USA.html">Dighton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Deerfield township [CCD], Kearny County, Kansas, USA.html">Deerfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Deerfield city, Kansas, USA.html">Deerfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ingalls township [CCD], Gray County, Kansas, USA.html">Ingalls township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ivanhoe township [CCD], Finney County, Kansas, USA.html">Ivanhoe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lockport township [CCD], Haskell County, Kansas, USA.html">Lockport township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pierceville township [CCD], Finney County, Kansas, USA.html">Pierceville township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherman township [CCD], Grant County, Kansas, USA.html">Sherman township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garfield township [CCD], Finney County, Kansas, USA.html">Garfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southside township [CCD], Kearny County, Kansas, USA.html">Southside township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Valley township [CCD], Scott County, Kansas, USA.html">Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Bow township [CCD], Stanton County, Kansas, USA.html">Big Bow township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Logan township [CCD], Gray County, Kansas, USA.html">Logan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Terry township [CCD], Finney County, Kansas, USA.html">Terry township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pleasant Valley township [CCD], Finney County, Kansas, USA.html">Pleasant Valley township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hartland township [CCD], Kearny County, Kansas, USA.html">Hartland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Foote township [CCD], Gray County, Kansas, USA.html">Foote township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kendall township [CCD], Kearny County, Kansas, USA.html">Kendall township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lamont township [CCD], Hamilton County, Kansas, USA.html">Lamont township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alamota township [CCD], Lane County, Kansas, USA.html">Alamota township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake township [CCD], Scott County, Kansas, USA.html">Lake township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kendall township [CCD], Hamilton County, Kansas, USA.html">Kendall township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Hibbard township [CCD], Kearny County, Kansas, USA.html">East Hibbard township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="West Hibbard township [CCD], Kearny County, Kansas, USA.html">West Hibbard township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Johnson township [CCD], Ness County, Kansas, USA.html">Johnson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Roscoe township [CCD], Hodgeman County, Kansas, USA.html">South Roscoe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Roscoe township [CCD], Hodgeman County, Kansas, USA.html">North Roscoe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Hamilton County, Kansas, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton township [CCD], Hodgeman County, Kansas, USA.html">Benton township</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Garden City MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

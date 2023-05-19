@@ -1,0 +1,893 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cedar Rapids MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Cedar Rapids MSA</div>
+    <div class="text longname">Cedar Rapids MSA, IA, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">276.5k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">177 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sioux Falls MSA, SD, USA.html"><</a> <a class="button" href="Bremerton-Silverdale MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Northwest Clackamas CCD [CCD], Clackamas County, Oregon, USA.html"><</a> <a class="button" href="Durham city, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">910/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">186 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">80th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vermillion MSA, SD, USA.html"><</a> <a class="button" href="Mankato-North Mankato MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Candlelight Neighborhood, Arvada City, Colorado, USA.html"><</a> <a class="button" href="Bellefontaine city, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">291 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">69th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rocky Mount MSA, NC, USA.html"><</a> <a class="button" href="Manitowoc MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Crockery township [CCD], Ottawa County, Michigan, USA.html"><</a> <a class="button" href="Saddletree township [CCD], Robeson County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">83.53%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">277 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Canton-Massillon MSA, OH, USA.html"><</a> <a class="button" href="Mankato-North Mankato MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Bloomington village, Ohio, USA.html"><</a> <a class="button" href="Verdi CDP, Nevada, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">3.57%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">693 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="State College MSA, PA, USA.html"><</a> <a class="button" href="Atchison MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Southborough town [CCD], Worcester County, Massachusetts, USA.html"><</a> <a class="button" href="27979, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.06%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">344 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">63rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Los Angeles-Long Beach-Anaheim MSA, CA, USA.html"><</a> <a class="button" href="Midland MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sea Breeze CDP, North Carolina, USA.html"><</a> <a class="button" href="12110, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.98%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">258 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">72nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pahrump MSA, NV, USA.html"><</a> <a class="button" href="Greenville-Anderson-Mauldin MSA, SC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="11726, USA.html"><</a> <a class="button" href="Cortland Neighborhood, Flagstaff City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.17%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">762 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">18th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Gainesville MSA, GA, USA.html"><</a> <a class="button" href="Amsterdam MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Calverton CDP, New York, USA.html"><</a> <a class="button" href="38305, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.19%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">115 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">88th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Centralia MSA, WA, USA.html"><</a> <a class="button" href="Ketchikan MSA, AK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Church Hill Neighborhood, Richmond City, Virginia, USA.html"><</a> <a class="button" href="East Murray CCD [CCD], Murray County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">358 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">62nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blacksburg-Christiansburg-Radford MSA, VA, USA.html"><</a> <a class="button" href="Rochester MSA, NY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sloatsburg Neighborhood, Ramapo City, New York, USA.html"><</a> <a class="button" href="Bloomville village, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.569</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">471 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">50th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwalk MSA, OH, USA.html"><</a> <a class="button" href="La Grande MSA, OR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="District 1 [CCD], Scott County, Mississippi, USA.html"><</a> <a class="button" href="48198, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">6.61%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">834 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">11st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fort Wayne MSA, IN, USA.html"><</a> <a class="button" href="Pella MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="27517, USA.html"><</a> <a class="button" href="Southwest Colorado Springs Neighborhood, Colorado Springs City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1615/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">282 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Casper MSA, WY, USA.html"><</a> <a class="button" href="Evansville MSA, IN-KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="De Witt town [CCD], Onondaga County, New York, USA.html"><</a> <a class="button" href="Rio Vista city, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1107/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">222 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Longview MSA, WA, USA.html"><</a> <a class="button" href="Nashville-Davidson--Murfreesboro--Franklin MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78584, USA.html"><</a> <a class="button" href="Weiser city, Idaho, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">728/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">176 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cape Coral-Fort Myers MSA, FL, USA.html"><</a> <a class="button" href="Palm Bay-Melbourne-Titusville MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Willow Bend One Neighborhood, El Paso City, Texas, USA.html"><</a> <a class="button" href="Las Ligas Neighborhood, Avondale City, Arizona, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">569/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">150 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">84th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Idaho Falls MSA, ID, USA.html"><</a> <a class="button" href="Columbus MSA, GA-AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bowling Green city, Ohio, USA.html"><</a> <a class="button" href="North Beach Neighborhood, Hollywood City, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Iowa, USA.html">Iowa</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Davenport-Moline CSA, IA-IL, USA.html">Davenport-Moline CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Cedar Rapids-Iowa City CSA, IA, USA.html">Cedar Rapids-Iowa City CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Linn County, Iowa, USA.html">Linn County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Iowa City MSA, IA, USA.html">Iowa City MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Waterloo-Cedar Falls MSA, IA, USA.html">Waterloo-Cedar Falls MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Johnson County, Iowa, USA.html">Johnson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar Rapids city [CCD], Linn County, Iowa, USA.html">Cedar Rapids city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cedar Rapids city, Iowa, USA.html">Cedar Rapids city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Black Hawk County, Iowa, USA.html">Black Hawk County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dubuque County, Iowa, USA.html">Dubuque County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Dubuque MSA, IA, USA.html">Dubuque MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clinton County, Iowa, USA.html">Clinton County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Clinton MSA, IA, USA.html">Clinton MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marion township [CCD], Linn County, Iowa, USA.html">Marion township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Marion city, Iowa, USA.html">Marion city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Benton County, Iowa, USA.html">Benton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jones County, Iowa, USA.html">Jones County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Buchanan County, Iowa, USA.html">Buchanan County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jackson County, Iowa, USA.html">Jackson County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Poweshiek County, Iowa, USA.html">Poweshiek County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Cedar County, Iowa, USA.html">Cedar County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Delaware County, Iowa, USA.html">Delaware County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tama County, Iowa, USA.html">Tama County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Iowa County, Iowa, USA.html">Iowa County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe township [CCD], Linn County, Iowa, USA.html">Monroe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Franklin township [CCD], Linn County, Iowa, USA.html">Franklin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairview township [CCD], Jones County, Iowa, USA.html">Fairview township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hiawatha city, Iowa, USA.html">Hiawatha city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Anamosa city, Iowa, USA.html">Anamosa city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lovell township [CCD], Jones County, Iowa, USA.html">Lovell township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Grove township [CCD], Johnson County, Iowa, USA.html">Big Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Vinton city [CCD], Benton County, Iowa, USA.html">Vinton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vinton city, Iowa, USA.html">Vinton city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Vernon city, Iowa, USA.html">Mount Vernon city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson township [CCD], Johnson County, Iowa, USA.html">Jefferson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fairfax township [CCD], Linn County, Iowa, USA.html">Fairfax township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Monticello city, Iowa, USA.html">Monticello city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Linn County, Iowa, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Robins city, Iowa, USA.html">Robins city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Putnam township [CCD], Linn County, Iowa, USA.html">Putnam township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fremont township [CCD], Benton County, Iowa, USA.html">Fremont township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairfax city, Iowa, USA.html">Fairfax city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Center Point city, Iowa, USA.html">Center Point city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Creek township [CCD], Black Hawk County, Iowa, USA.html">Big Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Marengo township [CCD], Iowa County, Iowa, USA.html">Marengo township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bertram township [CCD], Linn County, Iowa, USA.html">Bertram township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Cascade city, Iowa, USA.html">Cascade city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Polk township [CCD], Benton County, Iowa, USA.html">Polk township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Belle Plaine city [CCD], Benton County, Iowa, USA.html">Belle Plaine city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Belle Plaine city, Iowa, USA.html">Belle Plaine city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lisbon city, Iowa, USA.html">Lisbon city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ely city, Iowa, USA.html">Ely city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brown township [CCD], Linn County, Iowa, USA.html">Brown township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Atkins city, Iowa, USA.html">Atkins city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Florence township [CCD], Benton County, Iowa, USA.html">Florence township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lenox township [CCD], Iowa County, Iowa, USA.html">Lenox township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fayette township [CCD], Linn County, Iowa, USA.html">Fayette township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maine township [CCD], Linn County, Iowa, USA.html">Maine township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Linn County, Iowa, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Urbana city, Iowa, USA.html">Urbana city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pioneer township [CCD], Cedar County, Iowa, USA.html">Pioneer township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Whitewater township [CCD], Dubuque County, Iowa, USA.html">Whitewater township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clark township [CCD], Tama County, Iowa, USA.html">Clark township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otter Creek township [CCD], Linn County, Iowa, USA.html">Otter Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Palo city, Iowa, USA.html">Palo city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Walford city, Iowa, USA.html">Walford city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dysart city, Iowa, USA.html">Dysart city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grant township [CCD], Linn County, Iowa, USA.html">Grant township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dayton township [CCD], Cedar County, Iowa, USA.html">Dayton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cascade township [CCD], Dubuque County, Iowa, USA.html">Cascade township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Central City city, Iowa, USA.html">Central City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Leroy township [CCD], Benton County, Iowa, USA.html">Leroy township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eldorado township [CCD], Benton County, Iowa, USA.html">Eldorado township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Springville city, Iowa, USA.html">Springville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rome township [CCD], Jones County, Iowa, USA.html">Rome township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Fremont township [CCD], Cedar County, Iowa, USA.html">Fremont township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Fork township [CCD], Delaware County, Iowa, USA.html">South Fork township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Benton County, Iowa, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Benton township [CCD], Benton County, Iowa, USA.html">Benton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Iowa County, Iowa, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shellsburg city, Iowa, USA.html">Shellsburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Shellsburg city [CCD], Benton County, Iowa, USA.html">Shellsburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newhall city, Iowa, USA.html">Newhall city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wyoming township [CCD], Jones County, Iowa, USA.html">Wyoming township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Taylor township [CCD], Benton County, Iowa, USA.html">Taylor township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Canton township [CCD], Benton County, Iowa, USA.html">Canton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clinton township [CCD], Linn County, Iowa, USA.html">Clinton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kane township [CCD], Benton County, Iowa, USA.html">Kane township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Linn township [CCD], Linn County, Iowa, USA.html">Linn township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jefferson township [CCD], Buchanan County, Iowa, USA.html">Jefferson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Spring Grove township [CCD], Linn County, Iowa, USA.html">Spring Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Richland township [CCD], Jones County, Iowa, USA.html">Richland township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Van Horne city, Iowa, USA.html">Van Horne city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Shueyville city, Iowa, USA.html">Shueyville city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Adams township [CCD], Delaware County, Iowa, USA.html">Adams township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blairstown city, Iowa, USA.html">Blairstown city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="College township [CCD], Linn County, Iowa, USA.html">College township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Coggon city, Iowa, USA.html">Coggon city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Walker city, Iowa, USA.html">Walker city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sharon township [CCD], Clinton County, Iowa, USA.html">Sharon township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenfield township [CCD], Jones County, Iowa, USA.html">Greenfield township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cass township [CCD], Jones County, Iowa, USA.html">Cass township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alburnett city, Iowa, USA.html">Alburnett city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Olin city, Iowa, USA.html">Olin city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oxford township [CCD], Jones County, Iowa, USA.html">Oxford township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wayne township [CCD], Jones County, Iowa, USA.html">Wayne township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Benton County, Iowa, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Keystone city, Iowa, USA.html">Keystone city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Homer township [CCD], Buchanan County, Iowa, USA.html">Homer township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe township [CCD], Johnson County, Iowa, USA.html">Monroe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar township [CCD], Johnson County, Iowa, USA.html">Cedar township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monmouth township [CCD], Jackson County, Iowa, USA.html">Monmouth township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cedar township [CCD], Benton County, Iowa, USA.html">Cedar township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wyoming city, Iowa, USA.html">Wyoming city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Madison township [CCD], Jones County, Iowa, USA.html">Madison township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Buffalo township [CCD], Linn County, Iowa, USA.html">Buffalo township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="York township [CCD], Tama County, Iowa, USA.html">York township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Boulder township [CCD], Linn County, Iowa, USA.html">Boulder township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Norway city, Iowa, USA.html">Norway city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salt Creek township [CCD], Tama County, Iowa, USA.html">Salt Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Washington township [CCD], Jones County, Iowa, USA.html">Washington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson township [CCD], Jones County, Iowa, USA.html">Jackson township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Scotch Grove township [CCD], Jones County, Iowa, USA.html">Scotch Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Iowa township [CCD], Benton County, Iowa, USA.html">Iowa township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oneida township [CCD], Tama County, Iowa, USA.html">Oneida township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Oxford Junction city, Iowa, USA.html">Oxford Junction city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Union township [CCD], Delaware County, Iowa, USA.html">Union township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Geneseo township [CCD], Tama County, Iowa, USA.html">Geneseo township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrison township [CCD], Benton County, Iowa, USA.html">Harrison township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Clair township [CCD], Benton County, Iowa, USA.html">St. Clair township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Butler township [CCD], Jackson County, Iowa, USA.html">Butler township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newton township [CCD], Buchanan County, Iowa, USA.html">Newton township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Garrison city, Iowa, USA.html">Garrison city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hazel Green township [CCD], Delaware County, Iowa, USA.html">Hazel Green township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Castle Grove township [CCD], Jones County, Iowa, USA.html">Castle Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cono township [CCD], Buchanan County, Iowa, USA.html">Cono township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hale township [CCD], Jones County, Iowa, USA.html">Hale township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Liberty township [CCD], Clinton County, Iowa, USA.html">Liberty township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Honey Creek township [CCD], Iowa County, Iowa, USA.html">Honey Creek township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eden township [CCD], Benton County, Iowa, USA.html">Eden township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bertram city, Iowa, USA.html">Bertram city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bruce township [CCD], Benton County, Iowa, USA.html">Bruce township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Massillon township [CCD], Cedar County, Iowa, USA.html">Massillon township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Martelle city, Iowa, USA.html">Martelle city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brandon township [CCD], Jackson County, Iowa, USA.html">Brandon township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe township [CCD], Benton County, Iowa, USA.html">Monroe township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Big Grove township [CCD], Benton County, Iowa, USA.html">Big Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clay township [CCD], Jones County, Iowa, USA.html">Clay township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Onslow city, Iowa, USA.html">Onslow city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Homer township [CCD], Benton County, Iowa, USA.html">Homer township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stone City CDP, Iowa, USA.html">Stone City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Auburn city, Iowa, USA.html">Mount Auburn city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Prairieburg city, Iowa, USA.html">Prairieburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Watkins CDP, Iowa, USA.html">Watkins CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Luzerne city, Iowa, USA.html">Luzerne city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Center Junction CDP, Iowa, USA.html">Center Junction CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Morley city, Iowa, USA.html">Morley city</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Cedar Rapids MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vicksburg MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Vicksburg MSA</div>
+    <div class="text longname">Vicksburg MSA, MS, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">53.9k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">571 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Big Stone Gap MSA, VA, USA.html"><</a> <a class="button" href="Enterprise MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lone Mountain Neighborhood, Las Vegas City, Nevada, USA.html"><</a> <a class="button" href="76542, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">282/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">799 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Shelton MSA, WA, USA.html"><</a> <a class="button" href="El Dorado MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="45879, USA.html"><</a> <a class="button" href="Maeser CDP, Utah, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">19/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">667 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Grenada MSA, MS, USA.html"><</a> <a class="button" href="Duncan MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oblong township [CCD], Crawford County, Illinois, USA.html"><</a> <a class="button" href="97102, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">40.63%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">853 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Albany MSA, GA, USA.html"><</a> <a class="button" href="Yakima MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lansing Neighborhood, Salem City, Oregon, USA.html"><</a> <a class="button" href="Kingsborough Neighborhood, Aurora City, Colorado, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.76%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">878 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Houghton MSA, MI, USA.html"><</a> <a class="button" href="Salem MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clay CCD [CCD], Webster County, Kentucky, USA.html"><</a> <a class="button" href="Lincoln-Lemington-Belmar Neighborhood, Pittsburgh City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">54.31%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">10 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">99th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Point MSA, MS, USA.html"><</a> <a class="button" href="Forrest City MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="39347, USA.html"><</a> <a class="button" href="Oxford city, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.68%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">656 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Vidalia MSA, GA, USA.html"><</a> <a class="button" href="Fitzgerald MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Glenwood city, Minnesota, USA.html"><</a> <a class="button" href="Canyon Lake CDP, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.14%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">838 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">10th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Storm Lake MSA, IA, USA.html"><</a> <a class="button" href="Rochelle MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Na-Au-Say township [CCD], Kendall County, Illinois, USA.html"><</a> <a class="button" href="Washington Court House city, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">916 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">2nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Clarksdale MSA, MS, USA.html"><</a> <a class="button" href="Guymon MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="92384, USA.html"><</a> <a class="button" href="Farina township [CCD], Hettinger County, North Dakota, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">2.48%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">861 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">8th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hobbs MSA, NM, USA.html"><</a> <a class="button" href="Big Spring MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Bloom township [CCD], Clay County, Kansas, USA.html"><</a> <a class="button" href="61944, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.609</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">174 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kalispell MSA, MT, USA.html"><</a> <a class="button" href="Tahlequah MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexander city, North Dakota, USA.html"><</a> <a class="button" href="Cherokee County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">14.13%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">231 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">75th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Danville MSA, VA, USA.html"><</a> <a class="button" href="Uvalde MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pacolet town, South Carolina, USA.html"><</a> <a class="button" href="Livingston city, Kentucky, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1153/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">520 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Eufaula MSA, AL-GA, USA.html"><</a> <a class="button" href="Ellensburg MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Reinholds CDP, Pennsylvania, USA.html"><</a> <a class="button" href="Spring township [CCD], Centre County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">468/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">756 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Blackfoot MSA, ID, USA.html"><</a> <a class="button" href="Vernal MSA, UT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Daleville town, Indiana, USA.html"><</a> <a class="button" href="Breckenridge village, Michigan, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">195/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">803 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">14th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kendallville MSA, IN, USA.html"><</a> <a class="button" href="Jennings MSA, LA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Magnolia city, Texas, USA.html"><</a> <a class="button" href="28666, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">134/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">715 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Menomonie MSA, WI, USA.html"><</a> <a class="button" href="Rutland MSA, VT, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Watervliet township [CCD], Berrien County, Michigan, USA.html"><</a> <a class="button" href="Atmore city, Alabama, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Louisiana, USA.html">Louisiana</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Mississippi, USA.html">Mississippi</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Jackson-Vicksburg-Brookhaven CSA, MS, USA.html">Jackson-Vicksburg-Brookhaven CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Jackson MSA, MS, USA.html">Jackson MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hinds County, Mississippi, USA.html">Hinds County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Warren County, Mississippi, USA.html">Warren County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Hinds County, Mississippi, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Copiah County, Mississippi, USA.html">Copiah County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Yazoo County, Mississippi, USA.html">Yazoo County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vicksburg city, Mississippi, USA.html">Vicksburg city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Warren County, Mississippi, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5 [CCD], Warren County, Mississippi, USA.html">District 5</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Madison Parish, Louisiana, USA.html">Madison Parish</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Claiborne County, Mississippi, USA.html">Claiborne County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4 [CCD], Warren County, Mississippi, USA.html">District 4</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="East Carroll Parish, Louisiana, USA.html">East Carroll Parish</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Mississippi, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Warren County, Mississippi, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Warren County, Mississippi, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Yazoo County, Mississippi, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Copiah County, Mississippi, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4 [CCD], Copiah County, Mississippi, USA.html">District 4</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Tensas Parish, Louisiana, USA.html">Tensas Parish</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Beechwood CDP, Mississippi, USA.html">Beechwood CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Claiborne County, Mississippi, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5 [CCD], Claiborne County, Mississippi, USA.html">District 5</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4 [CCD], Claiborne County, Mississippi, USA.html">District 4</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Madison Parish, Louisiana, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Claiborne County, Mississippi, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Issaquena County, Mississippi, USA.html">Issaquena County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Port Gibson city, Mississippi, USA.html">Port Gibson city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Madison Parish, Louisiana, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Claiborne County, Mississippi, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alcorn State University CDP, Mississippi, USA.html">Alcorn State University CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Jefferson County, Mississippi, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4 [CCD], Tensas Parish, Louisiana, USA.html">District 4</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Tensas Parish, Louisiana, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Tensas Parish, Louisiana, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Jefferson County, Mississippi, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], East Carroll Parish, Louisiana, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5 [CCD], Jefferson County, Mississippi, USA.html">District 5</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Issaquena County, Mississippi, USA.html">District 1</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Vicksburg MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

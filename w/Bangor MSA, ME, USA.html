@@ -1,0 +1,773 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bangor MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Bangor MSA</div>
+    <div class="text longname">Bangor MSA, ME, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">152.2k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">283 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Alexandria MSA, LA, USA.html"><</a> <a class="button" href="Albany MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Gresham CCD [CCD], Multnomah County, Oregon, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">429/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">587 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Auburn MSA, IN, USA.html"><</a> <a class="button" href="Port Angeles MSA, WA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Ward township [CCD], Lonoke County, Arkansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">17/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">711 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">24th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="West Plains MSA, MO, USA.html"><</a> <a class="button" href="Albert Lea MSA, MN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Smithville CCD [CCD], Bastrop County, Texas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">90.87%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">87 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">91st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newport MSA, TN, USA.html"><</a> <a class="button" href="Houghton MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Camp Branch township [CCD], Warren County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.78%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">873 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">6th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilmington MSA, OH, USA.html"><</a> <a class="button" href="Duluth MSA, MN-WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="29010, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.95%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">756 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">19th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Boulder MSA, CO, USA.html"><</a> <a class="button" href="Miami MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Emmet County, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.22%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">416 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">55th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake Havasu City-Kingman MSA, AZ, USA.html"><</a> <a class="button" href="Milledgeville MSA, GA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Calvert CCD [CCD], Robertson County, Texas, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">174 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">81st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kalispell MSA, MT, USA.html"><</a> <a class="button" href="El Centro MSA, CA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="98851, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.02%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">640 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">31st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rome MSA, GA, USA.html"><</a> <a class="button" href="Helena-West Helena MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Allegheny County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">431 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">54th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wheeling MSA, WV-OH, USA.html"><</a> <a class="button" href="Parkersburg-Vienna MSA, WV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Fairfax town [CCD], Franklin County, Vermont, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.598</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">227 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="New Bern MSA, NC, USA.html"><</a> <a class="button" href="Danville MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Twining Neighborhood, Washington City, District of Columbia, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">13.84%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">238 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">74th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Snyder MSA, TX, USA.html"><</a> <a class="button" href="Winnemucca MSA, NV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Iuka Ravine Neighborhood, Columbus City, Ohio, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1398/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">378 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">59th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valdosta MSA, GA, USA.html"><</a> <a class="button" href="Bardstown MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lake of the Woods CDP, Virginia, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">666/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">530 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Wilson MSA, NC, USA.html"><</a> <a class="button" href="Vernon MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ironwood city [CCD], Gogebic County, Michigan, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">311/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">565 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">39th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ocean City MSA, NJ, USA.html"><</a> <a class="button" href="Oxford MSA, MS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Penobscot County, Maine, USA.html"><</a> <a class="button" href="Thornbury township [CCD], Delaware County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">198/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">510 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">45th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Rio Grande City MSA, TX, USA.html"><</a> <a class="button" href="Morristown MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Springs Neighborhood, East Hampton City, New York, USA.html"><</a> <a class="button" href="Penobscot County, Maine, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Maine, USA.html">Maine</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Penobscot County, Maine, USA.html">Penobscot County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Aroostook County, Maine, USA.html">Aroostook County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Hancock County, Maine, USA.html">Hancock County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Somerset County, Maine, USA.html">Somerset County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Waldo County, Maine, USA.html">Waldo County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bangor city [CCD], Penobscot County, Maine, USA.html">Bangor city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bangor city, Maine, USA.html">Bangor city</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Maine, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Piscataquis County, Maine, USA.html">Piscataquis County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orono town [CCD], Penobscot County, Maine, USA.html">Orono town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Orono CDP, Maine, USA.html">Orono CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brewer city [CCD], Penobscot County, Maine, USA.html">Brewer city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Brewer city, Maine, USA.html">Brewer city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hampden town [CCD], Penobscot County, Maine, USA.html">Hampden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Old Town city [CCD], Penobscot County, Maine, USA.html">Old Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Old Town city, Maine, USA.html">Old Town city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hermon town [CCD], Penobscot County, Maine, USA.html">Hermon town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bucksport town [CCD], Hancock County, Maine, USA.html">Bucksport town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lincoln town [CCD], Penobscot County, Maine, USA.html">Lincoln town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Glenburn town [CCD], Penobscot County, Maine, USA.html">Glenburn town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hampden CDP, Maine, USA.html">Hampden CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dover-Foxcroft town [CCD], Piscataquis County, Maine, USA.html">Dover-Foxcroft town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Millinocket town [CCD], Penobscot County, Maine, USA.html">Millinocket town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millinocket CDP, Maine, USA.html">Millinocket CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winterport town [CCD], Waldo County, Maine, USA.html">Winterport town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orrington town [CCD], Penobscot County, Maine, USA.html">Orrington town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dexter town [CCD], Penobscot County, Maine, USA.html">Dexter town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Holden town [CCD], Penobscot County, Maine, USA.html">Holden town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newport town [CCD], Penobscot County, Maine, USA.html">Newport town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford town [CCD], Penobscot County, Maine, USA.html">Milford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Levant town [CCD], Penobscot County, Maine, USA.html">Levant town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corinth town [CCD], Penobscot County, Maine, USA.html">Corinth town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carmel town [CCD], Penobscot County, Maine, USA.html">Carmel town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lincoln CDP, Maine, USA.html">Lincoln CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Corinna town [CCD], Penobscot County, Maine, USA.html">Corinna town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milford CDP, Maine, USA.html">Milford CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Eddington town [CCD], Penobscot County, Maine, USA.html">Eddington town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dexter CDP, Maine, USA.html">Dexter CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="St. Albans town [CCD], Somerset County, Maine, USA.html">St. Albans town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Palmyra town [CCD], Somerset County, Maine, USA.html">Palmyra town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Veazie town [CCD], Penobscot County, Maine, USA.html">Veazie town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newport CDP, Maine, USA.html">Newport CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dedham town [CCD], Hancock County, Maine, USA.html">Dedham town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Newburgh town [CCD], Penobscot County, Maine, USA.html">Newburgh town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Millinocket town [CCD], Penobscot County, Maine, USA.html">East Millinocket town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Charleston town [CCD], Penobscot County, Maine, USA.html">Charleston town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bradley town [CCD], Penobscot County, Maine, USA.html">Bradley town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="East Millinocket CDP, Maine, USA.html">East Millinocket CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Greenbush town [CCD], Penobscot County, Maine, USA.html">Greenbush town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Enfield town [CCD], Penobscot County, Maine, USA.html">Enfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hudson town [CCD], Penobscot County, Maine, USA.html">Hudson town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kenduskeag town [CCD], Penobscot County, Maine, USA.html">Kenduskeag town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Plymouth town [CCD], Penobscot County, Maine, USA.html">Plymouth town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sangerville town [CCD], Piscataquis County, Maine, USA.html">Sangerville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Etna town [CCD], Penobscot County, Maine, USA.html">Etna town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Dixmont town [CCD], Penobscot County, Maine, USA.html">Dixmont town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Medway town [CCD], Penobscot County, Maine, USA.html">Medway town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stetson town [CCD], Penobscot County, Maine, USA.html">Stetson town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bradford town [CCD], Penobscot County, Maine, USA.html">Bradford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Howland town [CCD], Penobscot County, Maine, USA.html">Howland town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garland town [CCD], Penobscot County, Maine, USA.html">Garland town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Troy town [CCD], Waldo County, Maine, USA.html">Troy town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Exeter town [CCD], Penobscot County, Maine, USA.html">Exeter town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Howland CDP, Maine, USA.html">Howland CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Monroe town [CCD], Waldo County, Maine, USA.html">Monroe town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lee town [CCD], Penobscot County, Maine, USA.html">Lee town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Detroit town [CCD], Somerset County, Maine, USA.html">Detroit town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Patten town [CCD], Penobscot County, Maine, USA.html">Patten town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Clifton town [CCD], Penobscot County, Maine, USA.html">Clifton town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alton town [CCD], Penobscot County, Maine, USA.html">Alton town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sherman town [CCD], Aroostook County, Maine, USA.html">Sherman town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Otis town [CCD], Hancock County, Maine, USA.html">Otis town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lagrange town [CCD], Penobscot County, Maine, USA.html">Lagrange town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Jackson town [CCD], Waldo County, Maine, USA.html">Jackson town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mattawamkeag town [CCD], Penobscot County, Maine, USA.html">Mattawamkeag town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="South Aroostook UT [CCD], Aroostook County, Maine, USA.html">South Aroostook UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Chester town [CCD], Penobscot County, Maine, USA.html">Chester town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Washington UT [CCD], Washington County, Maine, USA.html">North Washington UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Southeast Piscataquis UT [CCD], Piscataquis County, Maine, USA.html">Southeast Piscataquis UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Ripley town [CCD], Somerset County, Maine, USA.html">Ripley town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mariaville town [CCD], Hancock County, Maine, USA.html">Mariaville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Cambridge town [CCD], Somerset County, Maine, USA.html">Cambridge town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="North Penobscot UT [CCD], Penobscot County, Maine, USA.html">North Penobscot UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Winn town [CCD], Penobscot County, Maine, USA.html">Winn town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stacyville town [CCD], Penobscot County, Maine, USA.html">Stacyville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Burlington town [CCD], Penobscot County, Maine, USA.html">Burlington town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Penobscot Indian Island Reservation [CCD], Penobscot County, Maine, USA.html">Penobscot Indian Island Reservation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lowell town [CCD], Penobscot County, Maine, USA.html">Lowell town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Passadumkeag town [CCD], Penobscot County, Maine, USA.html">Passadumkeag town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Central Penobscot UT [CCD], Penobscot County, Maine, USA.html">East Central Penobscot UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northeast Piscataquis UT [CCD], Piscataquis County, Maine, USA.html">Northeast Piscataquis UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Springfield town [CCD], Penobscot County, Maine, USA.html">Springfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Argyle UT [CCD], Penobscot County, Maine, USA.html">Argyle UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Amherst town [CCD], Hancock County, Maine, USA.html">Amherst town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Crystal town [CCD], Aroostook County, Maine, USA.html">Crystal town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Medford town [CCD], Piscataquis County, Maine, USA.html">Medford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Woodville town [CCD], Penobscot County, Maine, USA.html">Woodville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Mount Chase town [CCD], Penobscot County, Maine, USA.html">Mount Chase town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Prentiss UT [CCD], Penobscot County, Maine, USA.html">Prentiss UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Central Aroostook UT [CCD], Aroostook County, Maine, USA.html">Central Aroostook UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lake View plantation [CCD], Piscataquis County, Maine, USA.html">Lake View plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carroll plantation [CCD], Penobscot County, Maine, USA.html">Carroll plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kingman UT [CCD], Penobscot County, Maine, USA.html">Kingman UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Edinburg town [CCD], Penobscot County, Maine, USA.html">Edinburg town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Reed plantation [CCD], Aroostook County, Maine, USA.html">Reed plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lakeville town [CCD], Penobscot County, Maine, USA.html">Lakeville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Maxfield town [CCD], Penobscot County, Maine, USA.html">Maxfield town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Hancock UT [CCD], Hancock County, Maine, USA.html">East Hancock UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hersey town [CCD], Aroostook County, Maine, USA.html">Hersey town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Webster plantation [CCD], Penobscot County, Maine, USA.html">Webster plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Macwahoc plantation [CCD], Aroostook County, Maine, USA.html">Macwahoc plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Moro plantation [CCD], Aroostook County, Maine, USA.html">Moro plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seboeis plantation [CCD], Penobscot County, Maine, USA.html">Seboeis plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Drew plantation [CCD], Penobscot County, Maine, USA.html">Drew plantation</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Aroostook UT [CCD], Aroostook County, Maine, USA.html">Northwest Aroostook UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Whitney UT [CCD], Penobscot County, Maine, USA.html">Whitney UT</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Northwest Hancock UT [CCD], Hancock County, Maine, USA.html">Northwest Hancock UT</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Bangor MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

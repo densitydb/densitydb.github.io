@@ -1,0 +1,845 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Salisbury MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Salisbury MSA</div>
+    <div class="text longname">Salisbury MSA, MD-DE, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">418.0k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">130 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">86th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brownsville-Harlingen MSA, TX, USA.html"><</a> <a class="button" href="Mobile MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Loudoun County, Virginia, USA.html"><</a> <a class="button" href="Downey-Norwalk CCD [CCD], Los Angeles County, California, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">427/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">591 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">37th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cleveland MSA, TN, USA.html"><</a> <a class="button" href="Weirton-Steubenville MSA, WV-OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Forest Springs Neighborhood, Flagstaff City, Arizona, USA.html"><</a> <a class="button" href="Swannanoa CDP, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">70/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">205 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">78th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pottsville MSA, PA, USA.html"><</a> <a class="button" href="Frankfort MSA, KY, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Sebring CCD [CCD], Highlands County, Florida, USA.html"><</a> <a class="button" href="Luzerne township [CCD], Fayette County, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">68.50%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">577 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Nashville-Davidson--Murfreesboro--Franklin MSA, TN, USA.html"><</a> <a class="button" href="Kansas City MSA, MO-KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="71237, USA.html"><</a> <a class="button" href="Blue Ridge township [CCD], Henderson County, North Carolina, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">8.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">376 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">60th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Steamboat Springs MSA, CO, USA.html"><</a> <a class="button" href="South Bend-Mishawaka MSA, IN-MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Highland Park city, Illinois, USA.html"><</a> <a class="button" href="33778, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">16.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">163 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Tyler MSA, TX, USA.html"><</a> <a class="button" href="Enterprise MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Picketville Neighborhood, Jacksonville City, Florida, USA.html"><</a> <a class="button" href="Fort Sill CCD [CCD], Comanche County, Oklahoma, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.70%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">302 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">68th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Summit Park MSA, UT, USA.html"><</a> <a class="button" href="Winchester MSA, VA-WV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Argentine Neighborhood, Kansas City City, Kansas, USA.html"><</a> <a class="button" href="Dogwood Hollow Neighborhood, Levittown City, Pennsylvania, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.27%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">494 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">47th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Fairfield MSA, IA, USA.html"><</a> <a class="button" href="Bay City MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oak Park Neighborhood, Des Moines City, Iowa, USA.html"><</a> <a class="button" href="Dodge City city [CCD], Ford County, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.03%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">581 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ludington MSA, MI, USA.html"><</a> <a class="button" href="Carbondale-Marion MSA, IL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Valley township [CCD], Scioto County, Ohio, USA.html"><</a> <a class="button" href="Dyker Heights Neighborhood, New York City, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.36%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">403 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">57th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Washington Court House MSA, OH, USA.html"><</a> <a class="button" href="Camden MSA, AR, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kirbyville CCD [CCD], Jasper County, Texas, USA.html"><</a> <a class="button" href="87901, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.744</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">22 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Ludington MSA, MI, USA.html"><</a> <a class="button" href="Cullowhee MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Downtown Neighborhood, Blacksburg City, Virginia, USA.html"><</a> <a class="button" href="McClure village, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">32.64%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">18 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">98th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Berlin MSA, NH-VT, USA.html"><</a> <a class="button" href="Key West MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Union township [CCD], Wilkes County, North Carolina, USA.html"><</a> <a class="button" href="59347, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1366/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">396 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">58th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Butte-Silver Bow MSA, MT, USA.html"><</a> <a class="button" href="Beaver Dam MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Summerland CDP, California, USA.html"><</a> <a class="button" href="Ridge Manor CCD [CCD], Hernando County, Florida, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">643/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">553 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">41st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Escanaba MSA, MI, USA.html"><</a> <a class="button" href="Clewiston MSA, FL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Orange Beach city, Alabama, USA.html"><</a> <a class="button" href="Holden town [CCD], Worcester County, Massachusetts, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">326/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">541 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Norwalk MSA, OH, USA.html"><</a> <a class="button" href="Elko MSA, NV, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Medina township [CCD], Medina County, Ohio, USA.html"><</a> <a class="button" href="Clear Lake city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">231/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">438 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">53rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Chambersburg-Waynesboro MSA, PA, USA.html"><</a> <a class="button" href="Jamestown MSA, ND, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Monroe city, Wisconsin, USA.html"><</a> <a class="button" href="78266, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_csa" href="Washington-Baltimore-Arlington CSA, DC-MD-VA-WV-PA, USA.html">Washington-Baltimore-Arlington CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Virginia, USA.html">Virginia</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="Philadelphia-Reading-Camden CSA, PA-NJ-DE-MD, USA.html">Philadelphia-Reading-Camden CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Maryland, USA.html">Maryland</a></li>
+
+
+<li class="linklistel"><a class="button b_state" href="Delaware, USA.html">Delaware</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Sussex County, Delaware, USA.html">Sussex County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Dover MSA, DE, USA.html">Dover MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Kent County, Delaware, USA.html">Kent County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wicomico County, Maryland, USA.html">Wicomico County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Worcester County, Maryland, USA.html">Worcester County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Selbyville-Frankford CCD [CCD], Sussex County, Delaware, USA.html">Selbyville-Frankford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lewes CCD [CCD], Sussex County, Delaware, USA.html">Lewes CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Millsboro CCD [CCD], Sussex County, Delaware, USA.html">Millsboro CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Accomack County, Virginia, USA.html">Accomack County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Caroline County, Maryland, USA.html">Caroline County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Salisbury city, Maryland, USA.html">Salisbury city</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Cambridge MSA, MD, USA.html">Cambridge MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Dorchester County, Maryland, USA.html">Dorchester County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Seaford CCD [CCD], Sussex County, Delaware, USA.html">Seaford CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5, Parsons [CCD], Wicomico County, Maryland, USA.html">District 5, Parsons</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Laurel-Delmar CCD [CCD], Sussex County, Delaware, USA.html">Laurel-Delmar CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Somerset County, Maryland, USA.html">Somerset County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford South CCD [CCD], Sussex County, Delaware, USA.html">Milford South CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milton CCD [CCD], Sussex County, Delaware, USA.html">Milton CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 9, Salisbury [CCD], Wicomico County, Maryland, USA.html">District 9, Salisbury</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 13, Camden [CCD], Wicomico County, Maryland, USA.html">District 13, Camden</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Georgetown CCD [CCD], Sussex County, Delaware, USA.html">Georgetown CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Harrington CCD [CCD], Kent County, Delaware, USA.html">Harrington CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Bridgeville-Greenwood CCD [CCD], Sussex County, Delaware, USA.html">Bridgeville-Greenwood CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ocean Pines CDP, Maryland, USA.html">Ocean Pines CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Milford North CCD [CCD], Kent County, Delaware, USA.html">Milford North CCD</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milford city, Delaware, USA.html">Milford city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3, Sinepuxent [CCD], Worcester County, Maryland, USA.html">District 3, Sinepuxent</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8, Nutters [CCD], Wicomico County, Maryland, USA.html">District 8, Nutters</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5, Ocean Pines [CCD], Worcester County, Maryland, USA.html">District 5, Ocean Pines</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Seaford city, Delaware, USA.html">Seaford city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 16, Fruitland [CCD], Wicomico County, Maryland, USA.html">District 16, Fruitland</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3, Denton [CCD], Caroline County, Maryland, USA.html">District 3, Denton</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6, Northern [CCD], Worcester County, Maryland, USA.html">District 6, Northern</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Georgetown town, Delaware, USA.html">Georgetown town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 7, Ocean City [CCD], Worcester County, Maryland, USA.html">District 7, Ocean City</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millsboro town, Delaware, USA.html">Millsboro town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ocean City town, Maryland, USA.html">Ocean City town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2, Central [CCD], Worcester County, Maryland, USA.html">District 2, Central</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1, Southern [CCD], Worcester County, Maryland, USA.html">District 1, Southern</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4, Western [CCD], Worcester County, Maryland, USA.html">District 4, Western</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fruitland city, Maryland, USA.html">Fruitland city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 11, Delmar [CCD], Wicomico County, Maryland, USA.html">District 11, Delmar</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Berlin town, Maryland, USA.html">Berlin town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5, Federalsburg [CCD], Caroline County, Maryland, USA.html">District 5, Federalsburg</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1, West Princess Anne [CCD], Somerset County, Maryland, USA.html">District 1, West Princess Anne</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 15, East Princess Anne [CCD], Somerset County, Maryland, USA.html">District 15, East Princess Anne</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Ocean City CDP, Maryland, USA.html">West Ocean City CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2 [CCD], Accomack County, Virginia, USA.html">District 2</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pocomoke City city, Maryland, USA.html">Pocomoke City city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 13, Westover [CCD], Somerset County, Maryland, USA.html">District 13, Westover</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Laurel town, Delaware, USA.html">Laurel town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Delmar town, Maryland, USA.html">Delmar town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4, Pittsburg [CCD], Wicomico County, Maryland, USA.html">District 4, Pittsburg</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3 [CCD], Accomack County, Virginia, USA.html">District 3</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 15, Hebron [CCD], Wicomico County, Maryland, USA.html">District 15, Hebron</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Princess Anne town, Maryland, USA.html">Princess Anne town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6 [CCD], Accomack County, Virginia, USA.html">District 6</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1 [CCD], Accomack County, Virginia, USA.html">District 1</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chincoteague town, Virginia, USA.html">Chincoteague town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Milton town, Delaware, USA.html">Milton town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Selbyville town, Delaware, USA.html">Selbyville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Lewes city, Delaware, USA.html">Lewes city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1, Barren Creek [CCD], Wicomico County, Maryland, USA.html">District 1, Barren Creek</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bridgeville town, Delaware, USA.html">Bridgeville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ocean View town, Delaware, USA.html">Ocean View town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 7, Crisfield [CCD], Somerset County, Maryland, USA.html">District 7, Crisfield</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Crisfield city, Maryland, USA.html">Crisfield city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2, Quantico [CCD], Wicomico County, Maryland, USA.html">District 2, Quantico</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Long Neck CDP, Delaware, USA.html">Long Neck CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 8, Lawsons [CCD], Somerset County, Maryland, USA.html">District 8, Lawsons</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Snow Hill town, Maryland, USA.html">Snow Hill town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 14, Willards [CCD], Wicomico County, Maryland, USA.html">District 14, Willards</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 1, Fork [CCD], Dorchester County, Maryland, USA.html">District 1, Fork</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Millville town, Delaware, USA.html">Millville town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Delmar town, Delaware, USA.html">Delmar town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 7, Trappe [CCD], Wicomico County, Maryland, USA.html">District 7, Trappe</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Captains Cove CDP, Virginia, USA.html">Captains Cove CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 17, Westside [CCD], Wicomico County, Maryland, USA.html">District 17, Westside</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Pittsville town, Maryland, USA.html">Pittsville town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3, Brinkleys [CCD], Somerset County, Maryland, USA.html">District 3, Brinkleys</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 10, Sharptown [CCD], Wicomico County, Maryland, USA.html">District 10, Sharptown</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Blades town, Delaware, USA.html">Blades town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Hebron town, Maryland, USA.html">Hebron town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Rehoboth Beach city, Delaware, USA.html">Rehoboth Beach city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 4, Dublin [CCD], Somerset County, Maryland, USA.html">District 4, Dublin</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenwood town, Delaware, USA.html">Greenwood town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Willards town, Maryland, USA.html">Willards town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bethany Beach town, Delaware, USA.html">Bethany Beach town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6, Dennis [CCD], Wicomico County, Maryland, USA.html">District 6, Dennis</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 5, Mount Vernon [CCD], Somerset County, Maryland, USA.html">District 5, Mount Vernon</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dagsboro town, Delaware, USA.html">Dagsboro town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 3, Vienna [CCD], Dorchester County, Maryland, USA.html">District 3, Vienna</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Eden CDP, Maryland, USA.html">Eden CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Frankford town, Delaware, USA.html">Frankford town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 12, Asbury [CCD], Somerset County, Maryland, USA.html">District 12, Asbury</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mount Vernon CDP, Maryland, USA.html">Mount Vernon CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sharptown town, Maryland, USA.html">Sharptown town</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 6, Fairmount [CCD], Somerset County, Maryland, USA.html">District 6, Fairmount</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Ellendale town, Delaware, USA.html">Ellendale town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bishopville CDP, Maryland, USA.html">Bishopville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 2, St. Peters [CCD], Somerset County, Maryland, USA.html">District 2, St. Peters</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="West Pocomoke CDP, Maryland, USA.html">West Pocomoke CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="South Bethany town, Delaware, USA.html">South Bethany town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fairmount CDP, Maryland, USA.html">Fairmount CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Newark CDP, Maryland, USA.html">Newark CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Deal Island CDP, Maryland, USA.html">Deal Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 14, Deal Island [CCD], Somerset County, Maryland, USA.html">District 14, Deal Island</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Mardela Springs town, Maryland, USA.html">Mardela Springs town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dewey Beach town, Delaware, USA.html">Dewey Beach town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Fenwick Island town, Delaware, USA.html">Fenwick Island town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Chance CDP, Maryland, USA.html">Chance CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 9, Tangier [CCD], Somerset County, Maryland, USA.html">District 9, Tangier</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Parsonsburg CDP, Maryland, USA.html">Parsonsburg CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bethel town, Delaware, USA.html">Bethel town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Slaughter Beach town, Delaware, USA.html">Slaughter Beach town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Tyaskin CDP, Maryland, USA.html">Tyaskin CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nanticoke CDP, Maryland, USA.html">Nanticoke CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 10, Smith Island [CCD], Somerset County, Maryland, USA.html">District 10, Smith Island</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Smith Island CDP, Maryland, USA.html">Smith Island CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Allen CDP, Maryland, USA.html">Allen CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Bivalve CDP, Maryland, USA.html">Bivalve CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Jesterville CDP, Maryland, USA.html">Jesterville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Greenbackville CDP, Virginia, USA.html">Greenbackville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Powellville CDP, Maryland, USA.html">Powellville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Quantico CDP, Maryland, USA.html">Quantico CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Whaleyville CDP, Maryland, USA.html">Whaleyville CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Dames Quarter CDP, Maryland, USA.html">Dames Quarter CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 11, Dames Quarter [CCD], Somerset County, Maryland, USA.html">District 11, Dames Quarter</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Girdletree CDP, Maryland, USA.html">Girdletree CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Henlopen Acres town, Delaware, USA.html">Henlopen Acres town</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Nanticoke Acres CDP, Maryland, USA.html">Nanticoke Acres CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="District 11, Drawbridge [CCD], Dorchester County, Maryland, USA.html">District 11, Drawbridge</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Stockton CDP, Maryland, USA.html">Stockton CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Frenchtown-Rumbly CDP, Maryland, USA.html">Frenchtown-Rumbly CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Whitehaven CDP, Maryland, USA.html">Whitehaven CDP</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Waterview CDP, Maryland, USA.html">Waterview CDP</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Salisbury MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>

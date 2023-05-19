@@ -1,0 +1,608 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Centralia MSA</title>
+    <link rel="icon" type="image/png" href="/thumbnail.png">
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css" />
+    <script src="https://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
+
+    <div class="text shortname">Centralia MSA</div>
+    <div class="text longname">Centralia MSA, IL, USA</div>
+
+    <table class="centered_table">
+        
+<tr class="tableheader">
+    <td style="width: 31%;">
+        <span class="text value">Statistic:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">Value</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">Ordinal</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">Percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Within Type</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal">Overall</span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Population:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">37.7k</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">723 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">23rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Newton MSA, IA, USA.html"><</a> <a class="button" href="Newberry MSA, SC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="75081, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=1km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">374/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">665 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">29th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Salem MSA, OH, USA.html"><</a> <a class="button" href="Alpena MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Oakland city [CCD], Burt County, Nebraska, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">AW Density:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">25/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">580 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">38th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pittsburg MSA, KS, USA.html"><</a> <a class="button" href="Clinton MSA, IA, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="05777, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">White %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">87.86%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">162 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">83rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Helena MSA, MT, USA.html"><</a> <a class="button" href="Chillicothe MSA, OH, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="Clarence town [CCD], Erie County, New York, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hispanic %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">1.89%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">866 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">7th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Mount Vernon MSA, OH, USA.html"><</a> <a class="button" href="Merrill MSA, WI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Hyde Park town [CCD], Lamoille County, Vermont, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Black %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">4.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">447 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">52nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Weirton-Steubenville MSA, WV-OH, USA.html"><</a> <a class="button" href="Fairbanks MSA, AK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="Urbandale city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Asian %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.93%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">519 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">44th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Carlsbad-Artesia MSA, NM, USA.html"><</a> <a class="button" href="North Platte MSA, NE, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="Maury County, Tennessee, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Native %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.25%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">533 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">43rd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Kokomo MSA, IN, USA.html"><</a> <a class="button" href="Sturgis MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="13459, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Hawaiian / PI %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.00%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">894 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">4th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Pontiac MSA, IL, USA.html"><</a> <a class="button" href="Lawrenceburg MSA, TN, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="60441, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Other / Mixed %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">5.07%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">228 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">76th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Toccoa MSA, GA, USA.html"><</a> <a class="button" href="Wichita Falls MSA, TX, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="Gravois township [CCD], St. Louis County, Missouri, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Housing Units per Adult:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">0.590</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">284 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">70th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Klamath Falls MSA, OR, USA.html"><</a> <a class="button" href="Emporia MSA, KS, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="74332, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">Vacancy %:</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">9.98%</span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">540 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">42nd percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Indianola MSA, MS, USA.html"><</a> <a class="button" href="Columbus MSA, GA-AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="New Hampton city, Iowa, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=250m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">702/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">850 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">9th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Coffeyville MSA, KS, USA.html"><</a> <a class="button" href="Washington MSA, NC, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Marion County, Illinois, USA.html"><</a> <a class="button" href="Alma city, Kansas, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=500m):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">486/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">735 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">21st percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Brenham MSA, TX, USA.html"><</a> <a class="button" href="Owosso MSA, MI, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Lincoln County, Colorado, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=2km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">264/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">650 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">30th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Cookeville MSA, TN, USA.html"><</a> <a class="button" href="Anniston-Oxford-Jacksonville MSA, AL, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="78382, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+
+<tr >
+    <td style="width: 31%;">
+        <span class="text value">PW Density (r=4km):</span>
+    </td>
+    <td style="width: 15%;">
+        <span class="text value">138/km<sup>2</sup></span>
+    </td>
+    <td style="width: 25%;">
+        <span class="text ordinal">695 of 933 MSAs</span>
+    </td>
+    <td style="width: 17%;">
+        <span class="text ordinal">26th percentile</span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="Storm Lake MSA, IA, USA.html"><</a> <a class="button" href="Tahlequah MSA, OK, USA.html">></a></span>
+    </td>
+    <td style="width: 8%;">
+        <span class="text ordinal"><a class="button" href="49093, USA.html"><</a> <a class="button" href="Marion County, Illinois, USA.html">></a></span>
+    </td>
+</tr>
+
+    </table>
+
+    <p></p>
+
+    <div id="map" class="centered_table map"></div>
+
+    <script src="/scripts/map.js"></script>
+
+    <div class="centered_table">
+        <ul class="linklist">
+            <li class="linklistelfirst">Related</li>
+            
+<li class="linklistel"><a class="button b_state" href="Illinois, USA.html">Illinois</a></li>
+
+
+<li class="linklistel"><a class="button b_csa" href="St. Louis-St. Charles-Farmington CSA, MO-IL, USA.html">St. Louis-St. Charles-Farmington CSA</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="St. Louis MSA, MO-IL, USA.html">St. Louis MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Marion County, Illinois, USA.html">Marion County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Jefferson County, Illinois, USA.html">Jefferson County</a></li>
+
+
+<li class="linklistel"><a class="button b_msa" href="Mount Vernon MSA, IL, USA.html">Mount Vernon MSA</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clinton County, Illinois, USA.html">Clinton County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Fayette County, Illinois, USA.html">Fayette County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Wayne County, Illinois, USA.html">Wayne County</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Centralia township [CCD], Marion County, Illinois, USA.html">Centralia township</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Washington County, Illinois, USA.html">Washington County</a></li>
+
+
+<li class="linklistel"><a class="button b_county" href="Clay County, Illinois, USA.html">Clay County</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Centralia city, Illinois, USA.html">Centralia city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Salem township [CCD], Marion County, Illinois, USA.html">Salem township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Salem city, Illinois, USA.html">Salem city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Brookside township [CCD], Clinton County, Illinois, USA.html">Brookside township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Sandoval township [CCD], Marion County, Illinois, USA.html">Sandoval township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Rome township [CCD], Jefferson County, Illinois, USA.html">Rome township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Raccoon township [CCD], Marion County, Illinois, USA.html">Raccoon township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Odin township [CCD], Marion County, Illinois, USA.html">Odin township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Field township [CCD], Jefferson County, Illinois, USA.html">Field township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Irvington township [CCD], Washington County, Illinois, USA.html">Irvington township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Sandoval village, Illinois, USA.html">Sandoval village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kinmundy township [CCD], Marion County, Illinois, USA.html">Kinmundy township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Stevenson township [CCD], Marion County, Illinois, USA.html">Stevenson township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Central City village, Illinois, USA.html">Central City village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Iuka township [CCD], Marion County, Illinois, USA.html">Iuka township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Tonti township [CCD], Marion County, Illinois, USA.html">Tonti township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Wamac city, Illinois, USA.html">Wamac city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Patoka township [CCD], Marion County, Illinois, USA.html">Patoka township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Odin village, Illinois, USA.html">Odin village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Grand Prairie township [CCD], Jefferson County, Illinois, USA.html">Grand Prairie township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Haines township [CCD], Marion County, Illinois, USA.html">Haines township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="La Clede township [CCD], Fayette County, Illinois, USA.html">La Clede township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Alma township [CCD], Marion County, Illinois, USA.html">Alma township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kinmundy city, Illinois, USA.html">Kinmundy city</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Lone Grove township [CCD], Fayette County, Illinois, USA.html">Lone Grove township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Orchard township [CCD], Wayne County, Illinois, USA.html">Orchard township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Xenia township [CCD], Clay County, Illinois, USA.html">Xenia township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Farrington township [CCD], Jefferson County, Illinois, USA.html">Farrington township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Larkinsburg township [CCD], Clay County, Illinois, USA.html">Larkinsburg township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Farina village, Illinois, USA.html">Farina village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Junction City village, Illinois, USA.html">Junction City village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Patoka village, Illinois, USA.html">Patoka village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Wilberton township [CCD], Fayette County, Illinois, USA.html">Wilberton township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Kaskaskia township [CCD], Fayette County, Illinois, USA.html">Kaskaskia township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Iuka village, Illinois, USA.html">Iuka village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Romine township [CCD], Marion County, Illinois, USA.html">Romine township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Omega township [CCD], Marion County, Illinois, USA.html">Omega township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meridian township [CCD], Clinton County, Illinois, USA.html">Meridian township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Foster township [CCD], Marion County, Illinois, USA.html">Foster township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Hickory Hill township [CCD], Wayne County, Illinois, USA.html">Hickory Hill township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="East Fork township [CCD], Clinton County, Illinois, USA.html">East Fork township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Oskaloosa township [CCD], Clay County, Illinois, USA.html">Oskaloosa township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Carrigan township [CCD], Marion County, Illinois, USA.html">Carrigan township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Songer township [CCD], Clay County, Illinois, USA.html">Songer township</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Meacham township [CCD], Marion County, Illinois, USA.html">Meacham township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Alma village, Illinois, USA.html">Alma village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Pope township [CCD], Fayette County, Illinois, USA.html">Pope township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Kell village, Illinois, USA.html">Kell village</a></li>
+
+
+<li class="linklistel"><a class="button b_ccd" href="Garden Hill township [CCD], Wayne County, Illinois, USA.html">Garden Hill township</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Vernon village, Illinois, USA.html">Vernon village</a></li>
+
+
+<li class="linklistel"><a class="button b_city" href="Walnut Hill village, Illinois, USA.html">Walnut Hill village</a></li>
+
+        </ul>
+    </div>
+
+    <div class="text description centered_table">Source for Centralia MSA's shape is Census. AW (area weighted) density is the standard
+        Population/Area density.
+        PW (population weighted) density with a radius of X is the population-weighted density within
+        X miles of each census block's interior point, as defined by the census. For more information,
+        see <a href="https://kavigupta.org/2021/09/26/Youre-calculating-population-density-incorrectly/">this page</a>.
+
+        Website by Kavi Gupta
+    </div>
+
+</body>
+
+</html>
