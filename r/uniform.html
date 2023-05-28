@@ -6,10 +6,6 @@
     <script type='module'>
         import { loadJSON } from '/scripts/load_json.js';
 
-        let values = loadJSON("/index/pages.json");
-        var randomIndex = Math.floor(Math.random() * values.length);
-        let x = values[randomIndex];
-        document.location = "/article.html?longname=" + x;
     </script>
 </head>
 
