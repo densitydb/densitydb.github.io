@@ -1,8 +1,8 @@
-(self['webpackChunkassets'] = self['webpackChunkassets'] || []).push([["453"], {
-"2109": (function (module, __webpack_exports__, __webpack_require__) {
+(self["webpackChunkassets"] = self["webpackChunkassets"] || []).push([["453"], {
+2109: (function (module, __webpack_exports__, __webpack_require__) {
 "use strict";
 __webpack_require__.d(__webpack_exports__, {
-  Z: function() { return __WEBPACK_DEFAULT_EXPORT__; }
+  Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 });
 /* ESM import */var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3694);
 /* ESM import */var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -84,7 +84,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.maplibregl-map{font:12px/20px Helveti
 
 
 }),
-"7702": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+7702: (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
 /* ESM import */var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3379);
 /* ESM import */var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -129,7 +129,7 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 
 }),
-"38": (function (module, __unused_webpack_exports, __webpack_require__) {
+38: (function (module, __unused_webpack_exports, __webpack_require__) {
 /* provided dependency */ var console = __webpack_require__(110);
 /**
  * MapLibre GL JS
