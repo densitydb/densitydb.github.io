@@ -192,6 +192,2412 @@ return maplibregl$1;
 
 
 }),
+45844: (function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  mh: () => (/* reexport */ Layer),
+  D5: () => (/* reexport */ map_Map),
+  ot: () => (/* reexport */ FullscreenControl),
+  Hw: () => (/* reexport */ Source),
+  PE: () => (/* reexport */ useControl),
+  Sx: () => (/* reexport */ useMap)
+});
+
+// UNUSED EXPORTS: Marker, NavigationControl, Popup, LogoControl, GeolocateControl, ScaleControl, default, TerrainControl, MapProvider, AttributionControl
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(72668);
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/use-map.js
+function _array_like_to_array(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function _array_with_holes(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _iterable_to_array_limit(arr, i) {
+    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    if (_i == null) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _s, _e;
+    try {
+        for(_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function _non_iterable_rest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function use_map_ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        use_map_ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _sliced_to_array(arr, i) {
+    return _array_with_holes(arr) || _iterable_to_array_limit(arr, i) || _unsupported_iterable_to_array(arr, i) || _non_iterable_rest();
+}
+function _unsupported_iterable_to_array(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _array_like_to_array(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(n);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _array_like_to_array(o, minLen);
+}
+
+
+
+var MountedMapsContext = react.createContext(null);
+var MapProvider = function(props) {
+    var _useState = _sliced_to_array(useState({}), 2), maps = _useState[0], setMaps = _useState[1];
+    var onMapMount = useCallback(function(map) {
+        var id = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 'default';
+        setMaps(function(currMaps) {
+            if (id === 'current') {
+                throw new Error("'current' cannot be used as map id");
+            }
+            if (currMaps[id]) {
+                throw new Error("Multiple maps with the same id: ".concat(id));
+            }
+            return _object_spread_props(_object_spread({}, currMaps), _define_property({}, id, map));
+        });
+    }, []);
+    var onMapUnmount = useCallback(function() {
+        var id = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : 'default';
+        setMaps(function(currMaps) {
+            if (currMaps[id]) {
+                var nextMaps = _object_spread({}, currMaps);
+                delete nextMaps[id];
+                return nextMaps;
+            }
+            return currMaps;
+        });
+    }, []);
+    return React.createElement(MountedMapsContext.Provider, {
+        value: {
+            maps: maps,
+            onMapMount: onMapMount,
+            onMapUnmount: onMapUnmount
+        }
+    }, props.children);
+};
+function useMap() {
+    var _useContext;
+    var maps = (_useContext = (0,react.useContext)(MountedMapsContext)) === null || _useContext === void 0 ? void 0 : _useContext.maps;
+    var currentMap = (0,react.useContext)(MapContext);
+    var mapsWithCurrent = (0,react.useMemo)(function() {
+        return _object_spread_props(_object_spread({}, maps), {
+            current: currentMap === null || currentMap === void 0 ? void 0 : currentMap.map
+        });
+    }, [
+        maps,
+        currentMap
+    ]);
+    return mapsWithCurrent;
+} //# sourceMappingURL=use-map.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/deep-equal.js
+/**
+ * Compare two points
+ * @param a
+ * @param b
+ * @returns true if the points are equal
+ */ function _type_of(obj) {
+    "@swc/helpers - typeof";
+    return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj;
+}
+function arePointsEqual(a, b) {
+    var ax = Array.isArray(a) ? a[0] : a ? a.x : 0;
+    var ay = Array.isArray(a) ? a[1] : a ? a.y : 0;
+    var bx = Array.isArray(b) ? b[0] : b ? b.x : 0;
+    var by = Array.isArray(b) ? b[1] : b ? b.y : 0;
+    return ax === bx && ay === by;
+}
+/* eslint-disable complexity */ /**
+ * Compare any two objects
+ * @param a
+ * @param b
+ * @returns true if the objects are deep equal
+ */ function deepEqual(a, b) {
+    if (a === b) {
+        return true;
+    }
+    if (!a || !b) {
+        return false;
+    }
+    if (Array.isArray(a)) {
+        if (!Array.isArray(b) || a.length !== b.length) {
+            return false;
+        }
+        for(var i = 0; i < a.length; i++){
+            if (!deepEqual(a[i], b[i])) {
+                return false;
+            }
+        }
+        return true;
+    } else if (Array.isArray(b)) {
+        return false;
+    }
+    if ((typeof a === "undefined" ? "undefined" : _type_of(a)) === 'object' && (typeof b === "undefined" ? "undefined" : _type_of(b)) === 'object') {
+        var aKeys = Object.keys(a);
+        var bKeys = Object.keys(b);
+        if (aKeys.length !== bKeys.length) {
+            return false;
+        }
+        var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+        try {
+            for(var _iterator = aKeys[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                var key = _step.value;
+                if (!b.hasOwnProperty(key)) {
+                    return false;
+                }
+                if (!deepEqual(a[key], b[key])) {
+                    return false;
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally{
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return != null) {
+                    _iterator.return();
+                }
+            } finally{
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+        return true;
+    }
+    return false;
+} //# sourceMappingURL=deep-equal.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/transform.js
+
+/**
+ * Capture a transform's current state
+ * @param transform
+ * @returns descriptor of the view state
+ */ function transformToViewState(tr) {
+    return {
+        longitude: tr.center.lng,
+        latitude: tr.center.lat,
+        zoom: tr.zoom,
+        pitch: tr.pitch,
+        bearing: tr.bearing,
+        padding: tr.padding
+    };
+}
+/* eslint-disable complexity */ /**
+ * Applies requested view state to a transform
+ * @returns an object containing detected changes
+ */ function applyViewStateToTransform(/** An object that describes Maplibre's camera state */ tr, /** Props from Map component */ props) {
+    var v = props.viewState || props;
+    var changes = {};
+    if ('longitude' in v && 'latitude' in v && (v.longitude !== tr.center.lng || v.latitude !== tr.center.lat)) {
+        var LngLat = tr.center.constructor;
+        // @ts-expect-error we should not import LngLat class from maplibre-gl because we don't know the source of mapLib
+        changes.center = new LngLat(v.longitude, v.latitude);
+    }
+    if ('zoom' in v && v.zoom !== tr.zoom) {
+        changes.zoom = v.zoom;
+    }
+    if ('bearing' in v && v.bearing !== tr.bearing) {
+        changes.bearing = v.bearing;
+    }
+    if ('pitch' in v && v.pitch !== tr.pitch) {
+        changes.pitch = v.pitch;
+    }
+    if (v.padding && tr.padding && !deepEqual(v.padding, tr.padding)) {
+        changes.padding = v.padding;
+    }
+    return changes;
+} //# sourceMappingURL=transform.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/style-utils.js
+function style_utils_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function style_utils_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            style_utils_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function style_utils_ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function style_utils_object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        style_utils_ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+var refProps = [
+    'type',
+    'source',
+    'source-layer',
+    'minzoom',
+    'maxzoom',
+    'filter',
+    'layout'
+];
+// Prepare a map style object for diffing
+// If immutable - convert to plain object
+// Work around some issues in older styles that would fail Mapbox's diffing
+function normalizeStyle(style) {
+    if (!style) {
+        return null;
+    }
+    if (typeof style === 'string') {
+        return style;
+    }
+    if ('toJS' in style) {
+        style = style.toJS();
+    }
+    if (!style.layers) {
+        return style;
+    }
+    var layerIndex = {};
+    var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+    try {
+        for(var _iterator = style.layers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+            var layer = _step.value;
+            layerIndex[layer.id] = layer;
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally{
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+                _iterator.return();
+            }
+        } finally{
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
+    }
+    var layers = style.layers.map(function(layer) {
+        var normalizedLayer = null;
+        if ('interactive' in layer) {
+            normalizedLayer = Object.assign({}, layer);
+            // Breaks style diffing :(
+            // @ts-ignore legacy field not typed
+            delete normalizedLayer.interactive;
+        }
+        // Style diffing doesn't work with refs so expand them out manually before diffing.
+        // @ts-ignore legacy field not typed
+        var layerRef = layerIndex[layer.ref];
+        if (layerRef) {
+            normalizedLayer = normalizedLayer || Object.assign({}, layer);
+            // @ts-ignore
+            delete normalizedLayer.ref;
+            var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+            try {
+                // https://github.com/mapbox/mapbox-gl-js/blob/master/src/style-spec/deref.js
+                for(var _iterator = refProps[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                    var propName = _step.value;
+                    if (propName in layerRef) {
+                        normalizedLayer[propName] = layerRef[propName];
+                    }
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally{
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return != null) {
+                        _iterator.return();
+                    }
+                } finally{
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+        }
+        return normalizedLayer || layer;
+    });
+    // Do not mutate the style object provided by the user
+    return style_utils_object_spread_props(style_utils_object_spread({}, style), {
+        layers: layers
+    });
+} //# sourceMappingURL=style-utils.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/maplibre/maplibre.js
+/* provided dependency */ var console = __webpack_require__(20110);
+function _class_call_check(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _create_class(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function maplibre_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function maplibre_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            maplibre_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function maplibre_ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function maplibre_object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        maplibre_ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+
+
+
+var DEFAULT_STYLE = {
+    version: 8,
+    sources: {},
+    layers: []
+};
+var pointerEvents = {
+    mousedown: 'onMouseDown',
+    mouseup: 'onMouseUp',
+    mouseover: 'onMouseOver',
+    mousemove: 'onMouseMove',
+    click: 'onClick',
+    dblclick: 'onDblClick',
+    mouseenter: 'onMouseEnter',
+    mouseleave: 'onMouseLeave',
+    mouseout: 'onMouseOut',
+    contextmenu: 'onContextMenu',
+    touchstart: 'onTouchStart',
+    touchend: 'onTouchEnd',
+    touchmove: 'onTouchMove',
+    touchcancel: 'onTouchCancel'
+};
+var cameraEvents = {
+    movestart: 'onMoveStart',
+    move: 'onMove',
+    moveend: 'onMoveEnd',
+    dragstart: 'onDragStart',
+    drag: 'onDrag',
+    dragend: 'onDragEnd',
+    zoomstart: 'onZoomStart',
+    zoom: 'onZoom',
+    zoomend: 'onZoomEnd',
+    rotatestart: 'onRotateStart',
+    rotate: 'onRotate',
+    rotateend: 'onRotateEnd',
+    pitchstart: 'onPitchStart',
+    pitch: 'onPitch',
+    pitchend: 'onPitchEnd'
+};
+var otherEvents = {
+    wheel: 'onWheel',
+    boxzoomstart: 'onBoxZoomStart',
+    boxzoomend: 'onBoxZoomEnd',
+    boxzoomcancel: 'onBoxZoomCancel',
+    resize: 'onResize',
+    load: 'onLoad',
+    render: 'onRender',
+    idle: 'onIdle',
+    remove: 'onRemove',
+    data: 'onData',
+    styledata: 'onStyleData',
+    sourcedata: 'onSourceData',
+    error: 'onError'
+};
+var settingNames = [
+    'minZoom',
+    'maxZoom',
+    'minPitch',
+    'maxPitch',
+    'maxBounds',
+    'projection',
+    'renderWorldCopies'
+];
+var handlerNames = [
+    'scrollZoom',
+    'boxZoom',
+    'dragRotate',
+    'dragPan',
+    'keyboard',
+    'doubleClickZoom',
+    'touchZoomRotate',
+    'touchPitch'
+];
+/**
+ * A wrapper for mapbox-gl's Map class
+ */ var maplibre_Maplibre = /*#__PURE__*/ function() {
+    "use strict";
+    function Maplibre(MapClass, props, container) {
+        var _this = this;
+        _class_call_check(this, Maplibre);
+        // mapboxgl.Map instance
+        this._map = null;
+        // Internal states
+        this._internalUpdate = false;
+        this._hoveredFeatures = null;
+        this._propsedCameraUpdate = null;
+        this._styleComponents = {};
+        this._onEvent = function(e) {
+            // @ts-ignore
+            var cb = _this.props[otherEvents[e.type]];
+            if (cb) {
+                cb(e);
+            } else if (e.type === 'error') {
+                console.error(e.error); // eslint-disable-line
+            }
+        };
+        this._onCameraEvent = function(e) {
+            if (_this._internalUpdate) {
+                return;
+            }
+            e.viewState = _this._propsedCameraUpdate || transformToViewState(_this._map.transform);
+            // @ts-ignore
+            var cb = _this.props[cameraEvents[e.type]];
+            if (cb) {
+                cb(e);
+            }
+        };
+        this._onCameraUpdate = function(tr) {
+            if (_this._internalUpdate) {
+                return tr;
+            }
+            _this._propsedCameraUpdate = transformToViewState(tr);
+            return applyViewStateToTransform(tr, _this.props);
+        };
+        this._onPointerEvent = function(e) {
+            if (e.type === 'mousemove' || e.type === 'mouseout') {
+                _this._updateHover(e);
+            }
+            // @ts-ignore
+            var cb = _this.props[pointerEvents[e.type]];
+            if (cb) {
+                if (_this.props.interactiveLayerIds && e.type !== 'mouseover' && e.type !== 'mouseout') {
+                    e.features = _this._hoveredFeatures || _this._queryRenderedFeatures(e.point);
+                }
+                cb(e);
+                delete e.features;
+            }
+        };
+        this._MapClass = MapClass;
+        this.props = props;
+        this._initialize(container);
+    }
+    _create_class(Maplibre, [
+        {
+            key: "map",
+            get: function get() {
+                return this._map;
+            }
+        },
+        {
+            key: "setProps",
+            value: function setProps(props) {
+                var oldProps = this.props;
+                this.props = props;
+                var settingsChanged = this._updateSettings(props, oldProps);
+                var sizeChanged = this._updateSize(props);
+                var viewStateChanged = this._updateViewState(props);
+                this._updateStyle(props, oldProps);
+                this._updateStyleComponents(props);
+                this._updateHandlers(props, oldProps);
+                // If 1) view state has changed to match props and
+                //    2) the props change is not triggered by map events,
+                // it's driven by an external state change. Redraw immediately
+                if (settingsChanged || sizeChanged || viewStateChanged && !this._map.isMoving()) {
+                    this.redraw();
+                }
+            }
+        },
+        {
+            /* eslint-disable complexity,max-statements */ key: "_initialize",
+            value: function _initialize(container) {
+                var _this = this;
+                var props = this.props;
+                var _props_mapStyle = props.mapStyle, mapStyle = _props_mapStyle === void 0 ? DEFAULT_STYLE : _props_mapStyle;
+                var mapOptions = maplibre_object_spread_props(maplibre_object_spread({}, props, props.initialViewState), {
+                    container: container,
+                    style: normalizeStyle(mapStyle)
+                });
+                var viewState = mapOptions.initialViewState || mapOptions.viewState || mapOptions;
+                Object.assign(mapOptions, {
+                    center: [
+                        viewState.longitude || 0,
+                        viewState.latitude || 0
+                    ],
+                    zoom: viewState.zoom || 0,
+                    pitch: viewState.pitch || 0,
+                    bearing: viewState.bearing || 0
+                });
+                if (props.gl) {
+                    // eslint-disable-next-line
+                    var getContext = HTMLCanvasElement.prototype.getContext;
+                    // Hijack canvas.getContext to return our own WebGLContext
+                    // This will be called inside the mapboxgl.Map constructor
+                    // @ts-expect-error
+                    HTMLCanvasElement.prototype.getContext = function() {
+                        // Unhijack immediately
+                        HTMLCanvasElement.prototype.getContext = getContext;
+                        return props.gl;
+                    };
+                }
+                var map = new this._MapClass(mapOptions);
+                // Props that are not part of constructor options
+                if (viewState.padding) {
+                    map.setPadding(viewState.padding);
+                }
+                if (props.cursor) {
+                    map.getCanvas().style.cursor = props.cursor;
+                }
+                // add listeners
+                map.transformCameraUpdate = this._onCameraUpdate;
+                map.on('style.load', function() {
+                    var _map_getProjection;
+                    // Map style has changed, this would have wiped out all settings from props
+                    _this._styleComponents = {
+                        light: map.getLight(),
+                        sky: map.getSky(),
+                        // @ts-ignore getProjection() does not exist in v4
+                        projection: (_map_getProjection = map.getProjection) === null || _map_getProjection === void 0 ? void 0 : _map_getProjection.call(map),
+                        terrain: map.getTerrain()
+                    };
+                    _this._updateStyleComponents(_this.props);
+                });
+                map.on('sourcedata', function() {
+                    // Some sources have loaded, we may need them to attach terrain
+                    _this._updateStyleComponents(_this.props);
+                });
+                for(var eventName in pointerEvents){
+                    map.on(eventName, this._onPointerEvent);
+                }
+                for(var eventName1 in cameraEvents){
+                    map.on(eventName1, this._onCameraEvent);
+                }
+                for(var eventName2 in otherEvents){
+                    map.on(eventName2, this._onEvent);
+                }
+                this._map = map;
+            }
+        },
+        {
+            /* eslint-enable complexity,max-statements */ key: "recycle",
+            value: function recycle() {
+                // Clean up unnecessary elements before storing for reuse.
+                var container = this.map.getContainer();
+                var children = container.querySelector('[mapboxgl-children]');
+                children === null || children === void 0 ? void 0 : children.remove();
+                Maplibre.savedMaps.push(this);
+            }
+        },
+        {
+            key: "destroy",
+            value: function destroy() {
+                this._map.remove();
+            }
+        },
+        {
+            // Force redraw the map now. Typically resize() and jumpTo() is reflected in the next
+            // render cycle, which is managed by Mapbox's animation loop.
+            // This removes the synchronization issue caused by requestAnimationFrame.
+            key: "redraw",
+            value: function redraw() {
+                var map = this._map;
+                // map._render will throw error if style does not exist
+                // https://github.com/mapbox/mapbox-gl-js/blob/fb9fc316da14e99ff4368f3e4faa3888fb43c513
+                //   /src/ui/map.js#L1834
+                if (map.style) {
+                    // cancel the scheduled update
+                    if (map._frame) {
+                        map._frame.cancel();
+                        map._frame = null;
+                    }
+                    // the order is important - render() may schedule another update
+                    map._render();
+                }
+            }
+        },
+        {
+            /* Trigger map resize if size is controlled
+       @param {object} nextProps
+       @returns {bool} true if size has changed
+     */ key: "_updateSize",
+            value: function _updateSize(nextProps) {
+                // Check if size is controlled
+                var viewState = nextProps.viewState;
+                if (viewState) {
+                    var map = this._map;
+                    if (viewState.width !== map.transform.width || viewState.height !== map.transform.height) {
+                        map.resize();
+                        return true;
+                    }
+                }
+                return false;
+            }
+        },
+        {
+            // Adapted from map.jumpTo
+            /* Update camera to match props
+       @param {object} nextProps
+       @param {bool} triggerEvents - should fire camera events
+       @returns {bool} true if anything is changed
+     */ key: "_updateViewState",
+            value: function _updateViewState(nextProps) {
+                var map = this._map;
+                var tr = map.transform;
+                var isMoving = map.isMoving();
+                // Avoid manipulating the real transform when interaction/animation is ongoing
+                // as it would interfere with Mapbox's handlers
+                if (!isMoving) {
+                    var changes = applyViewStateToTransform(tr, nextProps);
+                    if (Object.keys(changes).length > 0) {
+                        this._internalUpdate = true;
+                        map.jumpTo(changes);
+                        this._internalUpdate = false;
+                        return true;
+                    }
+                }
+                return false;
+            }
+        },
+        {
+            /* Update camera constraints and projection settings to match props
+       @param {object} nextProps
+       @param {object} currProps
+       @returns {bool} true if anything is changed
+     */ key: "_updateSettings",
+            value: function _updateSettings(nextProps, currProps) {
+                var map = this._map;
+                var changed = false;
+                var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+                try {
+                    for(var _iterator = settingNames[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                        var propName = _step.value;
+                        if (propName in nextProps && !deepEqual(nextProps[propName], currProps[propName])) {
+                            changed = true;
+                            var setter = map["set".concat(propName[0].toUpperCase()).concat(propName.slice(1))];
+                            setter === null || setter === void 0 ? void 0 : setter.call(map, nextProps[propName]);
+                        }
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally{
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return != null) {
+                            _iterator.return();
+                        }
+                    } finally{
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
+                return changed;
+            }
+        },
+        {
+            /* Update map style to match props */ key: "_updateStyle",
+            value: function _updateStyle(nextProps, currProps) {
+                if (nextProps.cursor !== currProps.cursor) {
+                    this._map.getCanvas().style.cursor = nextProps.cursor || '';
+                }
+                if (nextProps.mapStyle !== currProps.mapStyle) {
+                    var _nextProps_mapStyle = nextProps.mapStyle, mapStyle = _nextProps_mapStyle === void 0 ? DEFAULT_STYLE : _nextProps_mapStyle, _nextProps_styleDiffing = nextProps.styleDiffing, styleDiffing = _nextProps_styleDiffing === void 0 ? true : _nextProps_styleDiffing;
+                    var options = {
+                        diff: styleDiffing
+                    };
+                    if ('localIdeographFontFamily' in nextProps) {
+                        // @ts-ignore Mapbox specific prop
+                        options.localIdeographFontFamily = nextProps.localIdeographFontFamily;
+                    }
+                    this._map.setStyle(normalizeStyle(mapStyle), options);
+                }
+            }
+        },
+        {
+            /* Update fog, light, projection and terrain to match props
+     * These props are special because
+     * 1. They can not be applied right away. Certain conditions (style loaded, source loaded, etc.) must be met
+     * 2. They can be overwritten by mapStyle
+     */ key: "_updateStyleComponents",
+            value: function _updateStyleComponents(param) {
+                var light = param.light, projection = param.projection, sky = param.sky, terrain = param.terrain;
+                var map = this._map;
+                var currProps = this._styleComponents;
+                // We can safely manipulate map style once it's loaded
+                if (map.style._loaded) {
+                    var _currProps_projection;
+                    if (light && !deepEqual(light, currProps.light)) {
+                        currProps.light = light;
+                        map.setLight(light);
+                    }
+                    if (projection && !deepEqual(projection, currProps.projection) && projection !== ((_currProps_projection = currProps.projection) === null || _currProps_projection === void 0 ? void 0 : _currProps_projection.type)) {
+                        var // @ts-ignore setProjection does not exist in v4
+                        _map_setProjection;
+                        currProps.projection = typeof projection === 'string' ? {
+                            type: projection
+                        } : projection;
+                        (_map_setProjection = map.setProjection) === null || _map_setProjection === void 0 ? void 0 : _map_setProjection.call(map, currProps.projection);
+                    }
+                    if (sky && !deepEqual(sky, currProps.sky)) {
+                        currProps.sky = sky;
+                        map.setSky(sky);
+                    }
+                    if (terrain !== undefined && !deepEqual(terrain, currProps.terrain)) {
+                        if (!terrain || map.getSource(terrain.source)) {
+                            currProps.terrain = terrain;
+                            map.setTerrain(terrain);
+                        }
+                    }
+                }
+            }
+        },
+        {
+            /* Update interaction handlers to match props */ key: "_updateHandlers",
+            value: function _updateHandlers(nextProps, currProps) {
+                var map = this._map;
+                var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+                try {
+                    for(var _iterator = handlerNames[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                        var propName = _step.value;
+                        var _nextProps_propName;
+                        var newValue = (_nextProps_propName = nextProps[propName]) !== null && _nextProps_propName !== void 0 ? _nextProps_propName : true;
+                        var _currProps_propName;
+                        var oldValue = (_currProps_propName = currProps[propName]) !== null && _currProps_propName !== void 0 ? _currProps_propName : true;
+                        if (!deepEqual(newValue, oldValue)) {
+                            if (newValue) {
+                                map[propName].enable(newValue);
+                            } else {
+                                map[propName].disable();
+                            }
+                        }
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally{
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return != null) {
+                            _iterator.return();
+                        }
+                    } finally{
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
+            }
+        },
+        {
+            key: "_queryRenderedFeatures",
+            value: function _queryRenderedFeatures(point) {
+                var map = this._map;
+                var _this_props = this.props, _this_props_interactiveLayerIds = _this_props.interactiveLayerIds, interactiveLayerIds = _this_props_interactiveLayerIds === void 0 ? [] : _this_props_interactiveLayerIds;
+                try {
+                    return map.queryRenderedFeatures(point, {
+                        layers: interactiveLayerIds.filter(map.getLayer.bind(map))
+                    });
+                } catch (e) {
+                    // May fail if style is not loaded
+                    return [];
+                }
+            }
+        },
+        {
+            key: "_updateHover",
+            value: function _updateHover(e) {
+                var props = this.props;
+                var shouldTrackHoveredFeatures = props.interactiveLayerIds && (props.onMouseMove || props.onMouseEnter || props.onMouseLeave);
+                if (shouldTrackHoveredFeatures) {
+                    var _this__hoveredFeatures;
+                    var eventType = e.type;
+                    var wasHovering = ((_this__hoveredFeatures = this._hoveredFeatures) === null || _this__hoveredFeatures === void 0 ? void 0 : _this__hoveredFeatures.length) > 0;
+                    var features = this._queryRenderedFeatures(e.point);
+                    var isHovering = features.length > 0;
+                    if (!isHovering && wasHovering) {
+                        e.type = 'mouseleave';
+                        this._onPointerEvent(e);
+                    }
+                    this._hoveredFeatures = features;
+                    if (isHovering && !wasHovering) {
+                        e.type = 'mouseenter';
+                        this._onPointerEvent(e);
+                    }
+                    e.type = eventType;
+                } else {
+                    this._hoveredFeatures = null;
+                }
+            }
+        }
+    ], [
+        {
+            key: "reuse",
+            value: function reuse(props, container) {
+                var that = Maplibre.savedMaps.pop();
+                if (!that) {
+                    return null;
+                }
+                var map = that.map;
+                // When reusing the saved map, we need to reparent the map(canvas) and other child nodes
+                // intoto the new container from the props.
+                // Step 1: reparenting child nodes from old container to new container
+                var oldContainer = map.getContainer();
+                container.className = oldContainer.className;
+                while(oldContainer.childNodes.length > 0){
+                    container.appendChild(oldContainer.childNodes[0]);
+                }
+                // Step 2: replace the internal container with new container from the react component
+                // @ts-ignore
+                map._container = container;
+                // With maplibre-gl as mapLib, map uses ResizeObserver to observe when its container resizes.
+                // When reusing the saved map, we need to disconnect the observer and observe the new container.
+                // Step 3: telling the ResizeObserver to disconnect and observe the new container
+                // @ts-ignore
+                var resizeObserver = map._resizeObserver;
+                if (resizeObserver) {
+                    resizeObserver.disconnect();
+                    resizeObserver.observe(container);
+                }
+                // Step 4: apply new props
+                that.setProps(maplibre_object_spread_props(maplibre_object_spread({}, props), {
+                    styleDiffing: false
+                }));
+                map.resize();
+                var initialViewState = props.initialViewState;
+                if (initialViewState) {
+                    if (initialViewState.bounds) {
+                        map.fitBounds(initialViewState.bounds, maplibre_object_spread_props(maplibre_object_spread({}, initialViewState.fitBoundsOptions), {
+                            duration: 0
+                        }));
+                    } else {
+                        that._updateViewState(initialViewState);
+                    }
+                }
+                // Simulate load event
+                if (map.isStyleLoaded()) {
+                    map.fire('load');
+                } else {
+                    map.once('style.load', function() {
+                        return map.fire('load');
+                    });
+                }
+                // Force reload
+                // @ts-ignore
+                map._update();
+                return that;
+            }
+        }
+    ]);
+    return Maplibre;
+}();
+maplibre_Maplibre.savedMaps = [];
+/* ESM default export */ const maplibre_maplibre = (maplibre_Maplibre); //# sourceMappingURL=maplibre.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/maplibre/create-ref.js
+/** These methods may break the react binding if called directly */ var skipMethods = [
+    'setMaxBounds',
+    'setMinZoom',
+    'setMaxZoom',
+    'setMinPitch',
+    'setMaxPitch',
+    'setRenderWorldCopies',
+    'setProjection',
+    'setStyle',
+    'addSource',
+    'removeSource',
+    'addLayer',
+    'removeLayer',
+    'setLayerZoomRange',
+    'setFilter',
+    'setPaintProperty',
+    'setLayoutProperty',
+    'setLight',
+    'setTerrain',
+    'setFog',
+    'remove'
+];
+function createRef(mapInstance) {
+    if (!mapInstance) {
+        return null;
+    }
+    var map = mapInstance.map;
+    var result = {
+        getMap: function() {
+            return map;
+        }
+    };
+    var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+    try {
+        for(var _iterator = getMethodNames(map)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+            var key = _step.value;
+            // @ts-expect-error
+            if (!(key in result) && !skipMethods.includes(key)) {
+                result[key] = map[key].bind(map);
+            }
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally{
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+                _iterator.return();
+            }
+        } finally{
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
+    }
+    return result;
+}
+function getMethodNames(obj) {
+    var result = new Set();
+    var proto = obj;
+    while(proto){
+        var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+        try {
+            for(var _iterator = Object.getOwnPropertyNames(proto)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                var key = _step.value;
+                if (key[0] !== '_' && typeof obj[key] === 'function' && key !== 'fire' && key !== 'setEventedParent') {
+                    result.add(key);
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally{
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return != null) {
+                    _iterator.return();
+                }
+            } finally{
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+        proto = Object.getPrototypeOf(proto);
+    }
+    return Array.from(result);
+} //# sourceMappingURL=create-ref.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/use-isomorphic-layout-effect.js
+// From https://github.com/streamich/react-use/blob/master/src/useIsomorphicLayoutEffect.ts
+// useLayoutEffect but does not trigger warning in server-side rendering
+
+var useIsomorphicLayoutEffect = typeof document !== 'undefined' ? react.useLayoutEffect : react.useEffect;
+/* ESM default export */ const use_isomorphic_layout_effect = (useIsomorphicLayoutEffect); //# sourceMappingURL=use-isomorphic-layout-effect.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/set-globals.js
+/* provided dependency */ var set_globals_console = __webpack_require__(20110);
+function setGlobals(mapLib, props) {
+    var RTLTextPlugin = props.RTLTextPlugin, maxParallelImageRequests = props.maxParallelImageRequests, workerCount = props.workerCount, workerUrl = props.workerUrl;
+    if (RTLTextPlugin && mapLib.getRTLTextPluginStatus && mapLib.getRTLTextPluginStatus() === 'unavailable') {
+        var _ref = typeof RTLTextPlugin === 'string' ? {
+            pluginUrl: RTLTextPlugin
+        } : RTLTextPlugin, pluginUrl = _ref.pluginUrl, _ref_lazy = _ref.lazy, lazy = _ref_lazy === void 0 ? true : _ref_lazy;
+        mapLib.setRTLTextPlugin(pluginUrl, function(error) {
+            if (error) {
+                // eslint-disable-next-line
+                set_globals_console.error(error);
+            }
+        }, lazy);
+    }
+    if (maxParallelImageRequests !== undefined) {
+        mapLib.setMaxParallelImageRequests(maxParallelImageRequests);
+    }
+    if (workerCount !== undefined) {
+        mapLib.setWorkerCount(workerCount);
+    }
+    if (workerUrl !== undefined) {
+        mapLib.setWorkerUrl(workerUrl);
+    }
+} //# sourceMappingURL=set-globals.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/map.js
+/* provided dependency */ var map_console = __webpack_require__(20110);
+function map_array_like_to_array(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function map_array_with_holes(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+function map_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function map_iterable_to_array_limit(arr, i) {
+    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    if (_i == null) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _s, _e;
+    try {
+        for(_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function map_non_iterable_rest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function map_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            map_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function map_sliced_to_array(arr, i) {
+    return map_array_with_holes(arr) || map_iterable_to_array_limit(arr, i) || map_unsupported_iterable_to_array(arr, i) || map_non_iterable_rest();
+}
+function map_unsupported_iterable_to_array(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return map_array_like_to_array(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(n);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return map_array_like_to_array(o, minLen);
+}
+
+
+
+
+
+
+
+var MapContext = react.createContext(null);
+function _Map(props, ref) {
+    var mountedMapsContext = (0,react.useContext)(MountedMapsContext);
+    var _useState = map_sliced_to_array((0,react.useState)(null), 2), mapInstance = _useState[0], setMapInstance = _useState[1];
+    var containerRef = (0,react.useRef)();
+    var _useRef = (0,react.useRef)({
+        mapLib: null,
+        map: null
+    }), contextValue = _useRef.current;
+    (0,react.useEffect)(function() {
+        var mapLib = props.mapLib;
+        var isMounted = true;
+        var maplibre;
+        Promise.resolve(mapLib || Promise.resolve(/* import() */).then(__webpack_require__.t.bind(__webpack_require__, 50038, 19))).then(function(module) {
+            if (!isMounted) {
+                return;
+            }
+            if (!module) {
+                throw new Error('Invalid mapLib');
+            }
+            var mapboxgl = 'Map' in module ? module : module.default;
+            if (!mapboxgl.Map) {
+                throw new Error('Invalid mapLib');
+            }
+            setGlobals(mapboxgl, props);
+            if (props.reuseMaps) {
+                maplibre = maplibre_maplibre.reuse(props, containerRef.current);
+            }
+            if (!maplibre) {
+                maplibre = new maplibre_maplibre(mapboxgl.Map, props, containerRef.current);
+            }
+            contextValue.map = createRef(maplibre);
+            contextValue.mapLib = mapboxgl;
+            setMapInstance(maplibre);
+            mountedMapsContext === null || mountedMapsContext === void 0 ? void 0 : mountedMapsContext.onMapMount(contextValue.map, props.id);
+        }).catch(function(error) {
+            var onError = props.onError;
+            if (onError) {
+                onError({
+                    type: 'error',
+                    target: null,
+                    originalEvent: null,
+                    error: error
+                });
+            } else {
+                map_console.error(error); // eslint-disable-line
+            }
+        });
+        return function() {
+            isMounted = false;
+            if (maplibre) {
+                mountedMapsContext === null || mountedMapsContext === void 0 ? void 0 : mountedMapsContext.onMapUnmount(props.id);
+                if (props.reuseMaps) {
+                    maplibre.recycle();
+                } else {
+                    maplibre.destroy();
+                }
+            }
+        };
+    }, []);
+    use_isomorphic_layout_effect(function() {
+        if (mapInstance) {
+            mapInstance.setProps(props);
+        }
+    });
+    (0,react.useImperativeHandle)(ref, function() {
+        return contextValue.map;
+    }, [
+        mapInstance
+    ]);
+    var style = (0,react.useMemo)(function() {
+        return map_object_spread({
+            position: 'relative',
+            width: '100%',
+            height: '100%'
+        }, props.style);
+    }, [
+        props.style
+    ]);
+    var CHILD_CONTAINER_STYLE = {
+        height: '100%'
+    };
+    return react.createElement("div", {
+        id: props.id,
+        ref: containerRef,
+        style: style
+    }, mapInstance && react.createElement(MapContext.Provider, {
+        value: contextValue
+    }, react.createElement("div", {
+        "mapboxgl-children": "",
+        style: CHILD_CONTAINER_STYLE
+    }, props.children)));
+}
+var map_Map = react.forwardRef(_Map); //# sourceMappingURL=map.js.map
+
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(90113);
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/apply-react-style.js
+// This is a simplified version of
+// https://github.com/facebook/react/blob/4131af3e4bf52f3a003537ec95a1655147c81270/src/renderers/dom/shared/CSSPropertyOperations.js#L62
+var unitlessNumber = /box|flex|grid|column|lineHeight|fontWeight|opacity|order|tabSize|zIndex/;
+function applyReactStyle(element, styles) {
+    if (!element || !styles) {
+        return;
+    }
+    var style = element.style;
+    for(var key in styles){
+        var value = styles[key];
+        if (Number.isFinite(value) && !unitlessNumber.test(key)) {
+            style[key] = "".concat(value, "px");
+        } else {
+            style[key] = value;
+        }
+    }
+} //# sourceMappingURL=apply-react-style.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/compare-class-names.js
+/** Compare two classNames string and return the difference */ function compareClassNames(prevClassName, nextClassName) {
+    if (prevClassName === nextClassName) {
+        return null;
+    }
+    var prevClassList = getClassList(prevClassName);
+    var nextClassList = getClassList(nextClassName);
+    var diff = [];
+    var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+    try {
+        for(var _iterator = nextClassList[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+            var c = _step.value;
+            if (!prevClassList.has(c)) {
+                diff.push(c);
+            }
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally{
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+                _iterator.return();
+            }
+        } finally{
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
+    }
+    var _iteratorNormalCompletion1 = true, _didIteratorError1 = false, _iteratorError1 = undefined;
+    try {
+        for(var _iterator1 = prevClassList[Symbol.iterator](), _step1; !(_iteratorNormalCompletion1 = (_step1 = _iterator1.next()).done); _iteratorNormalCompletion1 = true){
+            var c1 = _step1.value;
+            if (!nextClassList.has(c1)) {
+                diff.push(c1);
+            }
+        }
+    } catch (err) {
+        _didIteratorError1 = true;
+        _iteratorError1 = err;
+    } finally{
+        try {
+            if (!_iteratorNormalCompletion1 && _iterator1.return != null) {
+                _iterator1.return();
+            }
+        } finally{
+            if (_didIteratorError1) {
+                throw _iteratorError1;
+            }
+        }
+    }
+    return diff.length === 0 ? null : diff;
+}
+function getClassList(className) {
+    return new Set(className ? className.trim().split(/\s+/) : []);
+} //# sourceMappingURL=compare-class-names.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/marker.js
+/* global document */ function marker_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function marker_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            marker_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function marker_ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function marker_object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        marker_ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+
+
+
+
+
+
+
+/* eslint-disable complexity,max-statements */ var Marker = (0,react.memo)((0,react.forwardRef)(function(props, ref) {
+    var _useContext = (0,react.useContext)(MapContext), map = _useContext.map, mapLib = _useContext.mapLib;
+    var thisRef = (0,react.useRef)({
+        props: props
+    });
+    var marker = (0,react.useMemo)(function() {
+        var hasChildren = false;
+        react.Children.forEach(props.children, function(el) {
+            if (el) {
+                hasChildren = true;
+            }
+        });
+        var options = marker_object_spread_props(marker_object_spread({}, props), {
+            element: hasChildren ? document.createElement('div') : undefined
+        });
+        var mk = new mapLib.Marker(options);
+        mk.setLngLat([
+            props.longitude,
+            props.latitude
+        ]);
+        mk.getElement().addEventListener('click', function(e) {
+            var _thisRef_current_props_onClick, _thisRef_current_props;
+            (_thisRef_current_props_onClick = (_thisRef_current_props = thisRef.current.props).onClick) === null || _thisRef_current_props_onClick === void 0 ? void 0 : _thisRef_current_props_onClick.call(_thisRef_current_props, {
+                type: 'click',
+                target: mk,
+                originalEvent: e
+            });
+        });
+        mk.on('dragstart', function(e) {
+            var _thisRef_current_props_onDragStart, _thisRef_current_props;
+            var evt = e;
+            evt.lngLat = marker.getLngLat();
+            (_thisRef_current_props_onDragStart = (_thisRef_current_props = thisRef.current.props).onDragStart) === null || _thisRef_current_props_onDragStart === void 0 ? void 0 : _thisRef_current_props_onDragStart.call(_thisRef_current_props, evt);
+        });
+        mk.on('drag', function(e) {
+            var _thisRef_current_props_onDrag, _thisRef_current_props;
+            var evt = e;
+            evt.lngLat = marker.getLngLat();
+            (_thisRef_current_props_onDrag = (_thisRef_current_props = thisRef.current.props).onDrag) === null || _thisRef_current_props_onDrag === void 0 ? void 0 : _thisRef_current_props_onDrag.call(_thisRef_current_props, evt);
+        });
+        mk.on('dragend', function(e) {
+            var _thisRef_current_props_onDragEnd, _thisRef_current_props;
+            var evt = e;
+            evt.lngLat = marker.getLngLat();
+            (_thisRef_current_props_onDragEnd = (_thisRef_current_props = thisRef.current.props).onDragEnd) === null || _thisRef_current_props_onDragEnd === void 0 ? void 0 : _thisRef_current_props_onDragEnd.call(_thisRef_current_props, evt);
+        });
+        return mk;
+    }, []);
+    (0,react.useEffect)(function() {
+        marker.addTo(map.getMap());
+        return function() {
+            marker.remove();
+        };
+    }, []);
+    var longitude = props.longitude, latitude = props.latitude, offset = props.offset, style = props.style, _props_draggable = props.draggable, draggable = _props_draggable === void 0 ? false : _props_draggable, _props_popup = props.popup, popup = _props_popup === void 0 ? null : _props_popup, _props_rotation = props.rotation, rotation = _props_rotation === void 0 ? 0 : _props_rotation, _props_rotationAlignment = props.rotationAlignment, rotationAlignment = _props_rotationAlignment === void 0 ? 'auto' : _props_rotationAlignment, _props_pitchAlignment = props.pitchAlignment, pitchAlignment = _props_pitchAlignment === void 0 ? 'auto' : _props_pitchAlignment;
+    (0,react.useEffect)(function() {
+        applyReactStyle(marker.getElement(), style);
+    }, [
+        style
+    ]);
+    (0,react.useImperativeHandle)(ref, function() {
+        return marker;
+    }, []);
+    var oldProps = thisRef.current.props;
+    if (marker.getLngLat().lng !== longitude || marker.getLngLat().lat !== latitude) {
+        marker.setLngLat([
+            longitude,
+            latitude
+        ]);
+    }
+    if (offset && !arePointsEqual(marker.getOffset(), offset)) {
+        marker.setOffset(offset);
+    }
+    if (marker.isDraggable() !== draggable) {
+        marker.setDraggable(draggable);
+    }
+    if (marker.getRotation() !== rotation) {
+        marker.setRotation(rotation);
+    }
+    if (marker.getRotationAlignment() !== rotationAlignment) {
+        marker.setRotationAlignment(rotationAlignment);
+    }
+    if (marker.getPitchAlignment() !== pitchAlignment) {
+        marker.setPitchAlignment(pitchAlignment);
+    }
+    if (marker.getPopup() !== popup) {
+        marker.setPopup(popup);
+    }
+    var classNameDiff = compareClassNames(oldProps.className, props.className);
+    if (classNameDiff) {
+        var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+        try {
+            for(var _iterator = classNameDiff[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                var c = _step.value;
+                marker.toggleClassName(c);
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally{
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return != null) {
+                    _iterator.return();
+                }
+            } finally{
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    }
+    thisRef.current.props = props;
+    return (0,react_dom.createPortal)(props.children, marker.getElement());
+})); //# sourceMappingURL=marker.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/popup.js
+function popup_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function popup_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            popup_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+
+
+
+
+
+
+/* eslint-disable complexity,max-statements */ var Popup = (0,react.memo)((0,react.forwardRef)(function(props, ref) {
+    var _useContext = (0,react.useContext)(MapContext), map = _useContext.map, mapLib = _useContext.mapLib;
+    var container = (0,react.useMemo)(function() {
+        return document.createElement('div');
+    }, []);
+    var thisRef = (0,react.useRef)({
+        props: props
+    });
+    var popup = (0,react.useMemo)(function() {
+        var options = popup_object_spread({}, props);
+        var pp = new mapLib.Popup(options);
+        pp.setLngLat([
+            props.longitude,
+            props.latitude
+        ]);
+        pp.once('open', function(e) {
+            var _thisRef_current_props_onOpen, _thisRef_current_props;
+            (_thisRef_current_props_onOpen = (_thisRef_current_props = thisRef.current.props).onOpen) === null || _thisRef_current_props_onOpen === void 0 ? void 0 : _thisRef_current_props_onOpen.call(_thisRef_current_props, e);
+        });
+        return pp;
+    }, []);
+    (0,react.useEffect)(function() {
+        var onClose = function(e) {
+            var _thisRef_current_props_onClose, _thisRef_current_props;
+            (_thisRef_current_props_onClose = (_thisRef_current_props = thisRef.current.props).onClose) === null || _thisRef_current_props_onClose === void 0 ? void 0 : _thisRef_current_props_onClose.call(_thisRef_current_props, e);
+        };
+        popup.on('close', onClose);
+        popup.setDOMContent(container).addTo(map.getMap());
+        return function() {
+            // https://github.com/visgl/react-map-gl/issues/1825
+            // onClose should not be fired if the popup is removed by unmounting
+            // When using React strict mode, the component is mounted twice.
+            // Firing the onClose callback here would be a false signal to remove the component.
+            popup.off('close', onClose);
+            if (popup.isOpen()) {
+                popup.remove();
+            }
+        };
+    }, []);
+    (0,react.useEffect)(function() {
+        applyReactStyle(popup.getElement(), props.style);
+    }, [
+        props.style
+    ]);
+    (0,react.useImperativeHandle)(ref, function() {
+        return popup;
+    }, []);
+    if (popup.isOpen()) {
+        var oldProps = thisRef.current.props;
+        if (popup.getLngLat().lng !== props.longitude || popup.getLngLat().lat !== props.latitude) {
+            popup.setLngLat([
+                props.longitude,
+                props.latitude
+            ]);
+        }
+        if (props.offset && !deepEqual(oldProps.offset, props.offset)) {
+            popup.setOffset(props.offset);
+        }
+        if (oldProps.anchor !== props.anchor || oldProps.maxWidth !== props.maxWidth) {
+            popup.options.anchor = props.anchor;
+            popup.setMaxWidth(props.maxWidth);
+        }
+        var classNameDiff = compareClassNames(oldProps.className, props.className);
+        if (classNameDiff) {
+            var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+            try {
+                for(var _iterator = classNameDiff[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                    var c = _step.value;
+                    popup.toggleClassName(c);
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally{
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return != null) {
+                        _iterator.return();
+                    }
+                } finally{
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+        }
+        thisRef.current.props = props;
+    }
+    return (0,react_dom.createPortal)(props.children, container);
+})); //# sourceMappingURL=popup.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/use-control.js
+
+
+function useControl(onCreate, arg1, arg2, arg3) {
+    var context = (0,react.useContext)(MapContext);
+    var ctrl = (0,react.useMemo)(function() {
+        return onCreate(context);
+    }, []);
+    (0,react.useEffect)(function() {
+        var opts = arg3 || arg2 || arg1;
+        var onAdd = typeof arg1 === 'function' && typeof arg2 === 'function' ? arg1 : null;
+        var onRemove = typeof arg2 === 'function' ? arg2 : typeof arg1 === 'function' ? arg1 : null;
+        var map = context.map;
+        if (!map.hasControl(ctrl)) {
+            map.addControl(ctrl, opts === null || opts === void 0 ? void 0 : opts.position);
+            if (onAdd) {
+                onAdd(context);
+            }
+        }
+        return function() {
+            if (onRemove) {
+                onRemove(context);
+            }
+            // Map might have been removed (parent effects are destroyed before child ones)
+            if (map.hasControl(ctrl)) {
+                map.removeControl(ctrl);
+            }
+        };
+    }, []);
+    return ctrl;
+} //# sourceMappingURL=use-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/attribution-control.js
+
+
+
+function _AttributionControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.AttributionControl(props);
+    }, {
+        position: props.position
+    });
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var AttributionControl = (0,react.memo)(_AttributionControl); //# sourceMappingURL=attribution-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/fullscreen-control.js
+
+
+
+function _FullscreenControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.FullscreenControl({
+            container: props.containerId && document.getElementById(props.containerId)
+        });
+    }, {
+        position: props.position
+    });
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._controlContainer, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var FullscreenControl = (0,react.memo)(_FullscreenControl); //# sourceMappingURL=fullscreen-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/geolocate-control.js
+
+
+
+function _GeolocateControl(props, ref) {
+    var thisRef = (0,react.useRef)({
+        props: props
+    });
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        var gc = new mapLib.GeolocateControl(props);
+        // Hack: fix GeolocateControl reuse
+        // When using React strict mode, the component is mounted twice.
+        // GeolocateControl's UI creation is asynchronous. Removing and adding it back causes the UI to be initialized twice.
+        var setupUI = gc._setupUI;
+        gc._setupUI = function() {
+            if (!gc._container.hasChildNodes()) {
+                setupUI();
+            }
+        };
+        gc.on('geolocate', function(e) {
+            var _thisRef_current_props_onGeolocate, _thisRef_current_props;
+            (_thisRef_current_props_onGeolocate = (_thisRef_current_props = thisRef.current.props).onGeolocate) === null || _thisRef_current_props_onGeolocate === void 0 ? void 0 : _thisRef_current_props_onGeolocate.call(_thisRef_current_props, e);
+        });
+        gc.on('error', function(e) {
+            var _thisRef_current_props_onError, _thisRef_current_props;
+            (_thisRef_current_props_onError = (_thisRef_current_props = thisRef.current.props).onError) === null || _thisRef_current_props_onError === void 0 ? void 0 : _thisRef_current_props_onError.call(_thisRef_current_props, e);
+        });
+        gc.on('outofmaxbounds', function(e) {
+            var _thisRef_current_props_onOutOfMaxBounds, _thisRef_current_props;
+            (_thisRef_current_props_onOutOfMaxBounds = (_thisRef_current_props = thisRef.current.props).onOutOfMaxBounds) === null || _thisRef_current_props_onOutOfMaxBounds === void 0 ? void 0 : _thisRef_current_props_onOutOfMaxBounds.call(_thisRef_current_props, e);
+        });
+        gc.on('trackuserlocationstart', function(e) {
+            var _thisRef_current_props_onTrackUserLocationStart, _thisRef_current_props;
+            (_thisRef_current_props_onTrackUserLocationStart = (_thisRef_current_props = thisRef.current.props).onTrackUserLocationStart) === null || _thisRef_current_props_onTrackUserLocationStart === void 0 ? void 0 : _thisRef_current_props_onTrackUserLocationStart.call(_thisRef_current_props, e);
+        });
+        gc.on('trackuserlocationend', function(e) {
+            var _thisRef_current_props_onTrackUserLocationEnd, _thisRef_current_props;
+            (_thisRef_current_props_onTrackUserLocationEnd = (_thisRef_current_props = thisRef.current.props).onTrackUserLocationEnd) === null || _thisRef_current_props_onTrackUserLocationEnd === void 0 ? void 0 : _thisRef_current_props_onTrackUserLocationEnd.call(_thisRef_current_props, e);
+        });
+        return gc;
+    }, {
+        position: props.position
+    });
+    thisRef.current.props = props;
+    (0,react.useImperativeHandle)(ref, function() {
+        return ctrl;
+    }, []);
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var GeolocateControl = (0,react.memo)((0,react.forwardRef)(_GeolocateControl)); //# sourceMappingURL=geolocate-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/navigation-control.js
+
+
+
+function _NavigationControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.NavigationControl(props);
+    }, {
+        position: props.position
+    });
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var NavigationControl = (0,react.memo)(_NavigationControl); //# sourceMappingURL=navigation-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/scale-control.js
+
+
+
+function _ScaleControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.ScaleControl(props);
+    }, {
+        position: props.position
+    });
+    var propsRef = (0,react.useRef)(props);
+    var prevProps = propsRef.current;
+    propsRef.current = props;
+    var style = props.style;
+    if (props.maxWidth !== undefined && props.maxWidth !== prevProps.maxWidth) {
+        ctrl.options.maxWidth = props.maxWidth;
+    }
+    if (props.unit !== undefined && props.unit !== prevProps.unit) {
+        ctrl.setUnit(props.unit);
+    }
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, style);
+    }, [
+        style
+    ]);
+    return null;
+}
+var ScaleControl = (0,react.memo)(_ScaleControl); //# sourceMappingURL=scale-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/terrain-control.js
+
+
+
+function _TerrainControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.TerrainControl(props);
+    }, {
+        position: props.position
+    });
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var TerrainControl = (0,react.memo)(_TerrainControl); //# sourceMappingURL=terrain-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/logo-control.js
+
+
+
+function _LogoControl(props) {
+    var ctrl = useControl(function(param) {
+        var mapLib = param.mapLib;
+        return new mapLib.LogoControl(props);
+    }, {
+        position: props.position
+    });
+    (0,react.useEffect)(function() {
+        applyReactStyle(ctrl._container, props.style);
+    }, [
+        props.style
+    ]);
+    return null;
+}
+var LogoControl = (0,react.memo)(_LogoControl); //# sourceMappingURL=logo-control.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/utils/assert.js
+function assert(condition, message) {
+    if (!condition) {
+        throw new Error(message);
+    }
+} //# sourceMappingURL=assert.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/source.js
+/* provided dependency */ var source_console = __webpack_require__(20110);
+function source_array_like_to_array(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function source_array_with_holes(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+function source_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function source_iterable_to_array_limit(arr, i) {
+    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    if (_i == null) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _s, _e;
+    try {
+        for(_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function source_non_iterable_rest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function source_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            source_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function source_sliced_to_array(arr, i) {
+    return source_array_with_holes(arr) || source_iterable_to_array_limit(arr, i) || source_unsupported_iterable_to_array(arr, i) || source_non_iterable_rest();
+}
+function source_unsupported_iterable_to_array(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return source_array_like_to_array(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(n);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return source_array_like_to_array(o, minLen);
+}
+
+
+
+
+
+var sourceCounter = 0;
+function createSource(map, id, props) {
+    // @ts-ignore
+    if (map.style && map.style._loaded) {
+        var options = source_object_spread({}, props);
+        delete options.id;
+        delete options.children;
+        // @ts-ignore
+        map.addSource(id, options);
+        return map.getSource(id);
+    }
+    return null;
+}
+/* eslint-disable complexity */ function updateSource(source, props, prevProps) {
+    assert(props.id === prevProps.id, 'source id changed');
+    assert(props.type === prevProps.type, 'source type changed');
+    var changedKey = '';
+    var changedKeyCount = 0;
+    for(var key in props){
+        if (key !== 'children' && key !== 'id' && !deepEqual(prevProps[key], props[key])) {
+            changedKey = key;
+            changedKeyCount++;
+        }
+    }
+    if (!changedKeyCount) {
+        return;
+    }
+    var type = props.type;
+    if (type === 'geojson') {
+        source.setData(props.data);
+    } else if (type === 'image') {
+        source.updateImage({
+            url: props.url,
+            coordinates: props.coordinates
+        });
+    } else {
+        switch(changedKey){
+            case 'coordinates':
+                var // @ts-ignore
+                _source_setCoordinates;
+                (_source_setCoordinates = source.setCoordinates) === null || _source_setCoordinates === void 0 ? void 0 : _source_setCoordinates.call(source, props.coordinates);
+                break;
+            case 'url':
+                var // @ts-ignore
+                _source_setUrl;
+                (_source_setUrl = source.setUrl) === null || _source_setUrl === void 0 ? void 0 : _source_setUrl.call(source, props.url);
+                break;
+            case 'tiles':
+                var // @ts-ignore
+                _source_setTiles;
+                (_source_setTiles = source.setTiles) === null || _source_setTiles === void 0 ? void 0 : _source_setTiles.call(source, props.tiles);
+                break;
+            default:
+                // eslint-disable-next-line
+                source_console.warn("Unable to update <Source> prop: ".concat(changedKey));
+        }
+    }
+}
+/* eslint-enable complexity */ function Source(props) {
+    var map = (0,react.useContext)(MapContext).map.getMap();
+    var propsRef = (0,react.useRef)(props);
+    var _useState = source_sliced_to_array((0,react.useState)(0), 2), setStyleLoaded = _useState[1];
+    var id = (0,react.useMemo)(function() {
+        return props.id || "jsx-source-".concat(sourceCounter++);
+    }, []);
+    (0,react.useEffect)(function() {
+        if (map) {
+            /* global setTimeout */ var forceUpdate = function() {
+                return setTimeout(function() {
+                    return setStyleLoaded(function(version) {
+                        return version + 1;
+                    });
+                }, 0);
+            };
+            map.on('styledata', forceUpdate);
+            forceUpdate();
+            return function() {
+                map.off('styledata', forceUpdate);
+                // @ts-ignore
+                if (map.style && map.style._loaded && map.getSource(id)) {
+                    var _map_getStyle;
+                    // Parent effects are destroyed before child ones, see
+                    // https://github.com/facebook/react/issues/16728
+                    // Source can only be removed after all child layers are removed
+                    var allLayers = (_map_getStyle = map.getStyle()) === null || _map_getStyle === void 0 ? void 0 : _map_getStyle.layers;
+                    if (allLayers) {
+                        var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+                        try {
+                            for(var _iterator = allLayers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                                var layer = _step.value;
+                                // @ts-ignore (2339) source does not exist on all layer types
+                                if (layer.source === id) {
+                                    map.removeLayer(layer.id);
+                                }
+                            }
+                        } catch (err) {
+                            _didIteratorError = true;
+                            _iteratorError = err;
+                        } finally{
+                            try {
+                                if (!_iteratorNormalCompletion && _iterator.return != null) {
+                                    _iterator.return();
+                                }
+                            } finally{
+                                if (_didIteratorError) {
+                                    throw _iteratorError;
+                                }
+                            }
+                        }
+                    }
+                    map.removeSource(id);
+                }
+            };
+        }
+        return undefined;
+    }, [
+        map
+    ]);
+    // @ts-ignore
+    var source = map && map.style && map.getSource(id);
+    if (source) {
+        updateSource(source, props, propsRef.current);
+    } else {
+        source = createSource(map, id, props);
+    }
+    propsRef.current = props;
+    return source && react.Children.map(props.children, function(child) {
+        return child && (0,react.cloneElement)(child, {
+            source: id
+        });
+    }) || null;
+} //# sourceMappingURL=source.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/components/layer.js
+/* provided dependency */ var layer_console = __webpack_require__(20110);
+function layer_array_like_to_array(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function layer_array_with_holes(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+function layer_define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function layer_iterable_to_array_limit(arr, i) {
+    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    if (_i == null) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _s, _e;
+    try {
+        for(_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function layer_non_iterable_rest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function layer_object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            layer_define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function layer_ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function layer_object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        layer_ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function layer_sliced_to_array(arr, i) {
+    return layer_array_with_holes(arr) || layer_iterable_to_array_limit(arr, i) || layer_unsupported_iterable_to_array(arr, i) || layer_non_iterable_rest();
+}
+function layer_unsupported_iterable_to_array(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return layer_array_like_to_array(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(n);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return layer_array_like_to_array(o, minLen);
+}
+
+
+
+
+/* eslint-disable complexity, max-statements */ function updateLayer(map, id, props, prevProps) {
+    assert(props.id === prevProps.id, 'layer id changed');
+    assert(props.type === prevProps.type, 'layer type changed');
+    if (props.type === 'custom' || prevProps.type === 'custom') {
+        return;
+    }
+    // @ts-ignore filter does not exist in some Layer types
+    var _props_layout = props.layout, layout = _props_layout === void 0 ? {} : _props_layout, _props_paint = props.paint, paint = _props_paint === void 0 ? {} : _props_paint, filter = props.filter, minzoom = props.minzoom, maxzoom = props.maxzoom, beforeId = props.beforeId;
+    if (beforeId !== prevProps.beforeId) {
+        map.moveLayer(id, beforeId);
+    }
+    if (layout !== prevProps.layout) {
+        var prevLayout = prevProps.layout || {};
+        for(var key in layout){
+            if (!deepEqual(layout[key], prevLayout[key])) {
+                map.setLayoutProperty(id, key, layout[key]);
+            }
+        }
+        for(var key1 in prevLayout){
+            if (!layout.hasOwnProperty(key1)) {
+                map.setLayoutProperty(id, key1, undefined);
+            }
+        }
+    }
+    if (paint !== prevProps.paint) {
+        var prevPaint = prevProps.paint || {};
+        for(var key2 in paint){
+            if (!deepEqual(paint[key2], prevPaint[key2])) {
+                map.setPaintProperty(id, key2, paint[key2]);
+            }
+        }
+        for(var key3 in prevPaint){
+            if (!paint.hasOwnProperty(key3)) {
+                map.setPaintProperty(id, key3, undefined);
+            }
+        }
+    }
+    // @ts-ignore filter does not exist in some Layer types
+    if (!deepEqual(filter, prevProps.filter)) {
+        map.setFilter(id, filter);
+    }
+    if (minzoom !== prevProps.minzoom || maxzoom !== prevProps.maxzoom) {
+        map.setLayerZoomRange(id, minzoom, maxzoom);
+    }
+}
+function createLayer(map, id, props) {
+    // @ts-ignore
+    if (map.style && map.style._loaded && (!('source' in props) || map.getSource(props.source))) {
+        var options = layer_object_spread_props(layer_object_spread({}, props), {
+            id: id
+        });
+        delete options.beforeId;
+        // @ts-ignore
+        map.addLayer(options, props.beforeId);
+    }
+}
+/* eslint-enable complexity, max-statements */ var layerCounter = 0;
+function Layer(props) {
+    var map = (0,react.useContext)(MapContext).map.getMap();
+    var propsRef = (0,react.useRef)(props);
+    var _useState = layer_sliced_to_array((0,react.useState)(0), 2), setStyleLoaded = _useState[1];
+    var id = (0,react.useMemo)(function() {
+        return props.id || "jsx-layer-".concat(layerCounter++);
+    }, []);
+    (0,react.useEffect)(function() {
+        if (map) {
+            var forceUpdate = function() {
+                return setStyleLoaded(function(version) {
+                    return version + 1;
+                });
+            };
+            map.on('styledata', forceUpdate);
+            forceUpdate();
+            return function() {
+                map.off('styledata', forceUpdate);
+                // @ts-ignore
+                if (map.style && map.style._loaded && map.getLayer(id)) {
+                    map.removeLayer(id);
+                }
+            };
+        }
+        return undefined;
+    }, [
+        map
+    ]);
+    // @ts-ignore
+    var layer = map && map.style && map.getLayer(id);
+    if (layer) {
+        try {
+            updateLayer(map, id, props, propsRef.current);
+        } catch (error) {
+            layer_console.warn(error); // eslint-disable-line
+        }
+    } else {
+        createLayer(map, id, props);
+    }
+    // Store last rendered props
+    propsRef.current = props;
+    return null;
+} //# sourceMappingURL=layer.js.map
+
+;// CONCATENATED MODULE: ./node_modules/@vis.gl/react-maplibre/dist/index.js
+
+
+/* ESM default export */ const dist = ((/* unused pure expression or super */ null && (Map)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Types
+
+
+
+ //# sourceMappingURL=index.js.map
+
+;// CONCATENATED MODULE: ./node_modules/react-map-gl/dist/maplibre.js
+
+ //# sourceMappingURL=maplibre.js.map
+
+
+}),
 
 }]);
 //# sourceMappingURL=maplibre.js.map
