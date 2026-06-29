@@ -12,11 +12,6 @@ jobs:
   update-retrostat:
     runs-on: ubuntu-22.04
     steps:
-      - name: Check urbanstats token permissions
-        run: gh api /repos/kavigupta/urbanstats --jq '.permissions'
-        env:
-          GH_TOKEN: ${{ secrets.URBANSTATS_TOKEN }}
-
       - name: Checkout densitydb.github.io
         uses: actions/checkout@v4
 
@@ -69,6 +64,7 @@ jobs:
           BRANCH="auto-retrostat-$(date +%Y%m%d)"
           git checkout -b "$BRANCH"
           git commit -m "Update retrostat cached data"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/kavigupta/urbanstats.git"
           git push origin "$BRANCH"
           PR_URL=$(gh pr create \
             --repo kavigupta/urbanstats \
