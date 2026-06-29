@@ -71,6 +71,6 @@ jobs:
             --title "Update retrostat cached data" \
             --body "Automated retrostat update from densitydb CI." \
             --base main)
-          gh pr merge "$PR_URL" --auto --merge
+          gh pr merge "$PR_URL" --auto --squash
         env:
           GH_TOKEN: ${{ secrets.URBANSTATS_TOKEN }}
