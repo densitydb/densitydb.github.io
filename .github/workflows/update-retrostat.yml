@@ -52,7 +52,7 @@ jobs:
           git commit -m "Update retrostat data"
           git push
 
-      - name: Push urbanstats changes
+      - name: Create urbanstats PR
         working-directory: urbanstats
         run: |
           git config user.name "github-actions[bot]"
@@ -61,7 +61,15 @@ jobs:
             echo "No urbanstats changes to commit"
             exit 0
           fi
+          BRANCH="auto-retrostat-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH"
           git commit -m "Update retrostat cached data"
-          git push
+          git push origin "$BRANCH"
+          PR_URL=$(gh pr create \
+            --repo kavigupta/urbanstats \
+            --title "Update retrostat cached data" \
+            --body "Automated retrostat update from densitydb CI." \
+            --base main)
+          gh pr merge "$PR_URL" --auto --merge
         env:
           GH_TOKEN: ${{ secrets.URBANSTATS_TOKEN }}
