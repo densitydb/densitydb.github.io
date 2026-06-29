@@ -32,7 +32,9 @@ jobs:
             urbanstats/requirements_torch.txt
 
       - name: Install dependencies
-        run: pip install -r urbanstats/requirements.txt -r urbanstats/requirements_torch.txt
+        run: |
+          pip install -r urbanstats/requirements.txt
+          pip install -r urbanstats/requirements_torch.txt
 
       - name: Run update_retrostat
         working-directory: urbanstats
