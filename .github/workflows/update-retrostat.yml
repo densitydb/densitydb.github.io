@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update-retrostat:
@@ -21,6 +20,7 @@ jobs:
         with:
           repository: kavigupta/urbanstats
           path: urbanstats
+          # token: ${{ secrets.URBANSTATS_TOKEN }}
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
@@ -40,7 +40,7 @@ jobs:
         working-directory: urbanstats
         run: python -m urbanstats.games.update_retrostat ..
 
-      - name: Create densitydb PR with retrostat changes
+      - name: Commit and push retrostat changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -49,14 +49,19 @@ jobs:
             echo "No retrostat changes to commit"
             exit 0
           fi
-          BRANCH="auto-retrostat-$(date +%Y%m%d)"
-          git checkout -b "$BRANCH"
           git commit -m "Update retrostat data"
-          git push origin "$BRANCH"
-          PR_URL=$(gh pr create \
-            --title "Update retrostat data" \
-            --body "Automated retrostat update." \
-            --base main)
-          # gh pr merge "$PR_URL" --auto --merge
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push
+
+      # - name: Push urbanstats changes
+      #   working-directory: urbanstats
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "github-actions[bot]@users.noreply.github.com"
+      #     if git diff --cached --quiet; then
+      #       echo "No urbanstats changes to commit"
+      #       exit 0
+      #     fi
+      #     git commit -m "Update retrostat cached data"
+      #     git push
+      #   env:
+      #     GH_TOKEN: ${{ secrets.URBANSTATS_TOKEN }}
